@@ -1,6 +1,6 @@
-# Search Results
+# 🔍 Search Results
 The Search Results section displays the output of a search query, showing matching products, articles, and pages with support for filtering and sorting.
-**When to use it:** This section is part of the search results template and active whenever a visitor performs a search.
+📌 **When to use it:** This section is part of the search results template and active whenever a visitor performs a search.
 
 **On this page**
 
@@ -13,7 +13,7 @@ The Search Results section displays the output of a search query, showing matchi
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -64,14 +64,14 @@ The Search Results section displays the output of a search query, showing matchi
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Enable filtering and sorting to make it easier for visitors to narrow down results.
 
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Products are not appearing in search results.**\
 Shopify indexes products based on title, description, and tags. Make sure products are published and have descriptive content.

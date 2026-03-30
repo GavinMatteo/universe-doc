@@ -1,6 +1,6 @@
-# Page Content
+# 📄 Page Content
 The Page Content section renders the content of a standard Shopify page exactly as written in the page editor. It optionally displays an additional heading and subheading above the page content.
-**When to use it:** This section is part of the page template and active on all standard pages by default.
+📌 **When to use it:** This section is part of the page template and active on all standard pages by default.
 
 **On this page**
 
@@ -13,7 +13,7 @@ The Page Content section renders the content of a standard Shopify page exactly 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -49,14 +49,14 @@ The Page Content section renders the content of a standard Shopify page exactly 
 
 ---
 
-## Tips
+## 💡 Tips
 
 - For rich content with images and formatted text, write it in the Shopify page editor.
 
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I add sections to a standard page?**\
 Yes. From the Theme Editor, add sections above or below this section on the page template.

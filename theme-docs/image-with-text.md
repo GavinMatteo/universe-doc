@@ -1,6 +1,6 @@
-# Image With Text
+# 🖼️ Image With Text
 The Image With Text section divides the page into two columns: one for an image and one for text content built with blocks. The image and text sides can be swapped. It is one of the most versatile sections in the theme.
-**When to use it:** Use it whenever you need to pair a visual with explanatory content.
+📌 **When to use it:** Use it whenever you need to pair a visual with explanatory content.
 
 **On this page**
 
@@ -18,7 +18,7 @@ The Image With Text section divides the page into two columns: one for an image 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -54,7 +54,7 @@ The Image With Text section divides the page into two columns: one for an image 
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Heading
 
@@ -98,7 +98,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Upload a separate mobile image to ensure correct cropping on smaller screens.
 - For a storytelling layout, stack multiple Image With Text sections alternating the image side.
@@ -106,7 +106,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I add a video instead of an image?**\
 Not in this section. For video with text, use the Promo Banner section instead.

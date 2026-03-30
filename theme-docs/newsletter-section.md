@@ -1,6 +1,6 @@
-# Newsletter
+# 📧 Newsletter
 The Newsletter section displays a full-width email signup form with a block-based content area for heading, supporting text, and the form. Subscribers are added directly to the Shopify Email customer list.
-**When to use it:** Use it at the bottom of the home page or at the end of key landing pages.
+📌 **When to use it:** Use it at the bottom of the home page or at the end of key landing pages.
 
 **On this page**
 
@@ -18,7 +18,7 @@ The Newsletter section displays a full-width email signup form with a block-base
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -47,7 +47,7 @@ The Newsletter section displays a full-width email signup form with a block-base
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Heading
 
@@ -87,7 +87,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Add an incentive in the paragraph block to increase signups, for example a discount code.
 - Keep the heading short and benefit-focused.
@@ -95,7 +95,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Where do subscribers go?**\
 They are added as customers in Shopify admin tagged as email subscribers.

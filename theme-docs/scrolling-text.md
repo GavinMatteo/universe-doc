@@ -1,6 +1,6 @@
-# Scrolling Text
+# 📜 Scrolling Text
 The Scrolling Text section is a continuous horizontal marquee of text and optional icon or image dividers. It is a purely decorative motion section that adds energy and brand personality between content sections.
-**When to use it:** Use it as a visual separator between sections on the home page.
+📌 **When to use it:** Use it as a visual separator between sections on the home page.
 
 **On this page**
 
@@ -17,7 +17,7 @@ The Scrolling Text section is a continuous horizontal marquee of text and option
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -47,7 +47,7 @@ The Scrolling Text section is a continuous horizontal marquee of text and option
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Text
 
@@ -80,7 +80,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Keep text items short: one to three words each.
 - Use opposite scroll directions on stacked Scrolling Text sections for a more dynamic effect.
@@ -88,7 +88,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I pause the scrolling on hover?**\
 No. The marquee runs continuously and does not pause on hover.

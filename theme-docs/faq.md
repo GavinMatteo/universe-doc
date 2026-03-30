@@ -1,6 +1,6 @@
-# FAQ
+# ❓ FAQ
 The FAQ section displays questions and answers in an accordion format. Visitors click a question to expand the answer. You can group questions under titled headings and control vertical spacing between items.
-**When to use it:** Add it to your home page, product pages, or a dedicated FAQ page.
+📌 **When to use it:** Add it to your home page, product pages, or a dedicated FAQ page.
 
 **On this page**
 
@@ -17,7 +17,7 @@ The FAQ section displays questions and answers in an accordion format. Visitors 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -53,7 +53,7 @@ The FAQ section displays questions and answers in an accordion format. Visitors 
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Group Title
 
@@ -98,7 +98,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Use the questions your support team actually receives. Real questions perform better than hypothetical ones.
 - Keep answers concise. If an answer needs more than three sentences, consider linking to a page instead.
@@ -106,7 +106,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **How many accordion items can I add?**\
 There is no hard limit, but more than 10 to 15 questions is usually too many for one section.

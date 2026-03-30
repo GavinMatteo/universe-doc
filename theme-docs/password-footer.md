@@ -1,6 +1,6 @@
-# Password Page Footer
+# 🔒 Password Page Footer
 The Password Page Footer appears at the bottom of the coming soon page and shows the Powered by Shopify notice.
-**When to use it:** Active automatically when your store is password protected.
+📌 **When to use it:** Active automatically when your store is password protected.
 
 **On this page**
 
@@ -11,7 +11,7 @@ The Password Page Footer appears at the bottom of the coming soon page and shows
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Colors
 

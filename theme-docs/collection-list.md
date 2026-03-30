@@ -1,6 +1,6 @@
-# Collection List
+# 📂 Collection List
 The Collection List section displays a curated selection of collections in a grid or carousel. You add each collection manually as a block, choosing exactly which ones appear and in what order. Each block lets you override the collection image and title.
-**When to use it:** Use it on the home page or a landing page to help visitors navigate to the most important areas of your store.
+📌 **When to use it:** Use it on the home page or a landing page to help visitors navigate to the most important areas of your store.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Collection List section displays a curated selection of collections in a gri
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -56,7 +56,7 @@ The Collection List section displays a curated selection of collections in a gri
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Collection
 
@@ -81,14 +81,14 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Add only your most important collections. A focused selection of 3 to 6 performs better than an exhaustive list.
 
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I show all collections automatically?**\
 No. This section requires manual blocks. For an automatic listing use the Collections List page section instead.

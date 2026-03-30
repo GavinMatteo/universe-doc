@@ -1,6 +1,6 @@
-# Announcement Bar
+# 📢 Announcement Bar
 The Announcement Bar displays a thin strip of text at the top of the page, above the header. It is used to communicate promotions, shipping thresholds, or important store notices. It supports both a continuously scrolling marquee and a static carousel of individual messages.
-**When to use it:** Use it whenever you have a time-sensitive offer or key information you want every visitor to see on arrival.
+📌 **When to use it:** Use it whenever you have a time-sensitive offer or key information you want every visitor to see on arrival.
 
 **On this page**
 
@@ -15,7 +15,7 @@ The Announcement Bar displays a thin strip of text at the top of the page, above
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -45,7 +45,7 @@ The Announcement Bar displays a thin strip of text at the top of the page, above
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Announcement slide
 
@@ -56,7 +56,7 @@ The Announcement Bar displays a thin strip of text at the top of the page, above
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Keep announcement text short and direct. Visitors glance at it for one or two seconds at most.
 - If you use the Marquee type, make sure the message reads naturally when it loops back to the start.
@@ -64,7 +64,7 @@ The Announcement Bar displays a thin strip of text at the top of the page, above
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I show different messages at different times?**\
 The Announcement Bar does not have built-in scheduling. To rotate messages, use the Carousel type and add multiple Announcement slide blocks.

@@ -1,6 +1,6 @@
-# Footer
+# 🔗 Footer
 The Footer appears at the bottom of every page. It supports multiple layout types and a flexible block system for text columns, navigation menus, a logo, and a newsletter signup. It also shows social icons, policy links, payment icons, and language or currency selectors.
-**When to use it:** The Footer is a global section active on every page. Configure it once in the Theme Editor.
+📌 **When to use it:** The Footer is a global section active on every page. Configure it once in the Theme Editor.
 
 **On this page**
 
@@ -19,7 +19,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -59,7 +59,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Text Block
 
@@ -114,7 +114,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Include at minimum a menu with links to key pages and a newsletter signup.
 - The column span setting on each block controls its width in the footer grid.
@@ -122,7 +122,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **How do I change the footer layout style?**\
 Use the Top Footer setting.

@@ -1,6 +1,6 @@
-# Custom Liquid
+# 💻 Custom Liquid
 The Custom Liquid section lets you inject raw Liquid code directly into a page. It is intended for developers who need to add custom functionality, embed third-party scripts, or render dynamic content that standard sections do not support.
-**When to use it:** Use it only when you need something that cannot be achieved with the built-in sections. It requires knowledge of Shopify Liquid templating.
+📌 **When to use it:** Use it only when you need something that cannot be achieved with the built-in sections. It requires knowledge of Shopify Liquid templating.
 
 **On this page**
 
@@ -13,7 +13,7 @@ The Custom Liquid section lets you inject raw Liquid code directly into a page. 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -42,14 +42,14 @@ The Custom Liquid section lets you inject raw Liquid code directly into a page. 
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Always test custom code in a development store or theme preview before publishing.
 
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Is Custom Liquid safe?**\
 Liquid runs server-side. Be careful with any JavaScript you inject, as it runs in the visitor browser.

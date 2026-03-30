@@ -1,6 +1,6 @@
-# Collection Product Grid
+# 🗂️ Collection Product Grid
 The Collection Product Grid is the main product listing area on collection pages. It displays products in a configurable grid with support for filtering, sorting, color swatches, quick buy, and quick view. This section has the most direct impact on browsing and conversion on collection pages.
-**When to use it:** This section is part of the collection template and is active by default on all collection pages.
+📌 **When to use it:** This section is part of the collection template and is active by default on all collection pages.
 
 **On this page**
 
@@ -15,7 +15,7 @@ The Collection Product Grid is the main product listing area on collection pages
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -61,7 +61,7 @@ The Collection Product Grid is the main product listing area on collection pages
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Shape Divider
 
@@ -77,7 +77,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Enable filters and sorting to reduce friction for visitors who know what they are looking for.
 - Use 2 columns on mobile and 3 or 4 on desktop as a starting point.
@@ -85,7 +85,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Filters are not showing even though the setting is enabled. Why?**\
 Filters are powered by Shopify Search and Discovery. Configure your filters in Shopify admin under Online Store > Navigation before they appear here.

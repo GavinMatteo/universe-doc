@@ -1,6 +1,6 @@
-# Newsletter Popup
+# 📬 Newsletter Popup
 The Newsletter Popup is a timed overlay that appears after a set delay. Once dismissed, a cookie prevents it from showing again for the number of days you configure.
-**When to use it:** Configure it once in the Theme Editor. It activates globally on the pages you choose.
+📌 **When to use it:** Configure it once in the Theme Editor. It activates globally on the pages you choose.
 
 **On this page**
 
@@ -17,7 +17,7 @@ The Newsletter Popup is a timed overlay that appears after a set delay. Once dis
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -42,7 +42,7 @@ The Newsletter Popup is a timed overlay that appears after a set delay. Once dis
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Heading
 
@@ -83,7 +83,7 @@ The Newsletter Popup is a timed overlay that appears after a set delay. Once dis
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Set a delay of at least 5 seconds so the popup does not interrupt visitors immediately.
 - Set the expiry to at least 14 days so returning visitors are not repeatedly interrupted.
@@ -91,7 +91,7 @@ The Newsletter Popup is a timed overlay that appears after a set delay. Once dis
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **The popup is not appearing.**\
 After dismissing once, the cookie blocks it. Clear your browser cookies and reload the page to test.

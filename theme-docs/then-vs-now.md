@@ -1,6 +1,6 @@
-# Then vs Now
+# ↔️ Then vs Now
 The Then vs Now section displays two images in a before-and-after slider controlled by dragging a handle. It is used for product transformations, before-and-after results, or comparing old and new versions.
-**When to use it:** Use it when showing both states simultaneously is more powerful than showing them separately.
+📌 **When to use it:** Use it when showing both states simultaneously is more powerful than showing them separately.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Then vs Now section displays two images in a before-and-after slider control
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -58,7 +58,7 @@ The Then vs Now section displays two images in a before-and-after slider control
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Image
 
@@ -85,7 +85,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - The two images should be the same dimensions and aspect ratio to align correctly.
 - Label each side clearly using the Heading field in each block.
@@ -93,7 +93,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I add more than two images?**\
 No. The section is designed for exactly two images.

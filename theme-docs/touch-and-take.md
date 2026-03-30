@@ -1,6 +1,6 @@
-# Touch and Take
+# 👆 Touch and Take
 The Touch and Take section overlays a lifestyle image with interactive product hotspots. Visitors tap or click a hotspot to reveal a product card with name, price, and a quick-add button.
-**When to use it:** Use it on the home page or campaign pages to make lifestyle photography directly shoppable.
+📌 **When to use it:** Use it on the home page or campaign pages to make lifestyle photography directly shoppable.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Touch and Take section overlays a lifestyle image with interactive product h
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -54,7 +54,7 @@ The Touch and Take section overlays a lifestyle image with interactive product h
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Product
 
@@ -82,7 +82,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Lifestyle images with multiple products in the scene work best.
 - Keep the number of hotspots to 3 or 4 maximum.
@@ -90,7 +90,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **The hotspot position looks different on mobile.**\
 Use the separate horizontal and vertical mobile position fields to fine-tune placement on smaller screens.

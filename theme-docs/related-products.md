@@ -1,6 +1,6 @@
-# Related Products
+# 🔄 Related Products
 The Related Products section displays a carousel or grid of products related to the one currently being viewed. Shopify selects related products automatically based on tags, collections, and purchase history.
-**When to use it:** Typically placed at the bottom of the product page template to encourage further browsing.
+📌 **When to use it:** Typically placed at the bottom of the product page template to encourage further browsing.
 
 **On this page**
 
@@ -15,7 +15,7 @@ The Related Products section displays a carousel or grid of products related to 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -65,7 +65,7 @@ The Related Products section displays a carousel or grid of products related to 
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Shape Divider
 
@@ -81,14 +81,14 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Keep the number of visible products between 4 and 6.
 
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I manually choose which related products to show?**\
 No. Related products are determined automatically by Shopify. To influence recommendations, ensure products are correctly tagged.

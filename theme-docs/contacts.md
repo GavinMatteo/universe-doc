@@ -1,6 +1,6 @@
-# Contact Form
+# 📞 Contact Form
 The Contact Form section displays a heading, a paragraph, an optional image, and a Shopify-native contact form. Submissions go directly to your store contact email. No third-party app is required.
-**When to use it:** Add it to your contact page template or any page where you want visitors to reach you.
+📌 **When to use it:** Add it to your contact page template or any page where you want visitors to reach you.
 
 **On this page**
 
@@ -15,7 +15,7 @@ The Contact Form section displays a heading, a paragraph, an optional image, and
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -52,7 +52,7 @@ The Contact Form section displays a heading, a paragraph, an optional image, and
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Shape Divider
 
@@ -68,7 +68,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - The form fields are fixed by Shopify and cannot be changed without custom code.
 - Adding a phone number or address in the paragraph gives visitors an alternative way to contact you.
@@ -76,7 +76,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Where do form submissions go?**\
 They are sent to the email set as your store contact email in Shopify admin under Settings > Store details.

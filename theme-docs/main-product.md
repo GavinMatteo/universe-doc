@@ -1,6 +1,6 @@
-# Product Page
+# 🛍️ Product Page
 The Product Page section is the core of your product detail page. It is fully modular: build the content column by adding and reordering blocks for title, price, description, variants, buy buttons, reviews, accordions, trust badges, and more. This section has the most direct impact on your store conversion rate.
-**When to use it:** This section is part of the product template and active on every product detail page.
+📌 **When to use it:** This section is part of the product template and active on every product detail page.
 
 **On this page**
 
@@ -40,7 +40,7 @@ The Product Page section is the core of your product detail page. It is fully mo
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -76,7 +76,7 @@ The Product Page section is the core of your product detail page. It is fully mo
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Media conversion labels
 
@@ -498,7 +498,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Order blocks with conversion in mind: Title, Price, Variants, and Buy buttons should always be above the fold.
 - Add the Inventory block to create urgency by showing low stock counts.
@@ -507,7 +507,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **The variant selector is not showing.**\
 Add the Variants block from the block panel. It does not appear by default.

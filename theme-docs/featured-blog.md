@@ -1,6 +1,6 @@
-# Featured Blog
+# 📝 Featured Blog
 The Featured Blog section displays the most recent articles from a selected blog as cards with a featured image, title, date, and excerpt. It updates automatically as you publish new articles.
-**When to use it:** Use it on the home page to show that your store has active content.
+📌 **When to use it:** Use it on the home page to show that your store has active content.
 
 **On this page**
 
@@ -15,7 +15,7 @@ The Featured Blog section displays the most recent articles from a selected blog
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -54,7 +54,7 @@ The Featured Blog section displays the most recent articles from a selected blog
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Shape Divider
 
@@ -70,7 +70,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Connect it to a blog that is actively updated.
 - Make sure your blog posts have featured images. Cards without images look incomplete.
@@ -78,7 +78,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I select specific articles to show?**\
 No. The section automatically pulls the most recent posts from the selected blog.

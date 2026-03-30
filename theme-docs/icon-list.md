@@ -1,6 +1,6 @@
-# Icon List
+# 📋 Icon List
 The Icon List section displays a grid of cards combining an icon, a heading, and a short description. It is widely used for selling points, trust signals, product features, or shipping and returns policies.
-**When to use it:** Use it below the hero on the home page to communicate your key benefits.
+📌 **When to use it:** Use it below the hero on the home page to communicate your key benefits.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Icon List section displays a grid of cards combining an icon, a heading, and
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -58,7 +58,7 @@ The Icon List section displays a grid of cards combining an icon, a heading, and
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Icon/Logo
 
@@ -84,7 +84,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Limit each card to a single clear point.
 - Match icon size and stroke width to the overall visual weight of your brand.
@@ -92,7 +92,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I use my own icons?**\
 Yes. Each block has an image picker for a custom icon image.

@@ -1,6 +1,6 @@
-# Multicolumn
+# 🔲 Multicolumn
 The Multicolumn section displays a row of cards in a fixed grid. Each card can contain an image, heading, text, and button. It is used to present categories, team members, process steps, or any content that benefits from a side-by-side layout.
-**When to use it:** Use it when you need to present multiple items of equal weight in a clean, structured way.
+📌 **When to use it:** Use it when you need to present multiple items of equal weight in a clean, structured way.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Multicolumn section displays a row of cards in a fixed grid. Each card can c
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -56,7 +56,7 @@ The Multicolumn section displays a row of cards in a fixed grid. Each card can c
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Column
 
@@ -88,14 +88,14 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Match the number of blocks to your column count to avoid orphaned cards on the last row.
 
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can each column have a different background color?**\
 No. The background is uniform across all columns, set by the section color scheme.

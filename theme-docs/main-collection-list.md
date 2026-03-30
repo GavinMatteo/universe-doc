@@ -1,6 +1,6 @@
-# Collections List Page
+# 🗄️ Collections List Page
 The Collections List Page section automatically displays all published collections in your store in a grid layout with pagination. Unlike the Collection List section, no manual block configuration is needed.
-**When to use it:** This section is part of the list-collections template and active on the /collections page.
+📌 **When to use it:** This section is part of the list-collections template and active on the /collections page.
 
 **On this page**
 
@@ -13,7 +13,7 @@ The Collections List Page section automatically displays all published collectio
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -53,14 +53,14 @@ The Collections List Page section automatically displays all published collectio
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Make sure all collections have featured images assigned in Shopify admin.
 
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I exclude specific collections?**\
 Not natively. All published collections appear. To hide one, make it unlisted.

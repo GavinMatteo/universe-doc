@@ -1,6 +1,6 @@
-# Featured Product
+# 🌟 Featured Product
 The Featured Product section embeds a full product detail experience anywhere on the page. It uses the same modular block system as the main Product Page section, letting you include title, price, variants, buy buttons, accordions, reviews, and more.
-**When to use it:** Use it on the home page to spotlight a hero product, or on landing pages for a single-product campaign.
+📌 **When to use it:** Use it on the home page to spotlight a hero product, or on landing pages for a single-product campaign.
 
 **On this page**
 
@@ -40,7 +40,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -86,7 +86,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Media conversion labels
 
@@ -508,7 +508,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Select a product with high-quality images.
 - Keep the block count focused on the home page: Title, Price, Variants, and Buy buttons are usually enough.
@@ -516,7 +516,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I show multiple products in this section?**\
 No. For multiple products use Featured Collection instead.

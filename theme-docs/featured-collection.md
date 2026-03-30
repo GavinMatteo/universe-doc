@@ -1,6 +1,6 @@
-# Featured Collection
+# 🗃️ Featured Collection
 The Featured Collection section displays a grid or carousel of products from a collection you choose. You can add Collection blocks to display products from multiple collections as tabs. It supports quick buy, quick view, and color swatches.
-**When to use it:** Use it on the home page to showcase a best-seller collection, new arrivals, or a curated selection.
+📌 **When to use it:** Use it on the home page to showcase a best-seller collection, new arrivals, or a curated selection.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Featured Collection section displays a grid or carousel of products from a c
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -67,7 +67,7 @@ The Featured Collection section displays a grid or carousel of products from a c
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Collection
 
@@ -91,7 +91,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Limit visible products to 4 to 8. Too many reduces urgency.
 - Enable the View all button so visitors can see the full collection.
@@ -99,7 +99,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I manually choose which products to show?**\
 Not directly. Products come from the selected collection. Adjust sort order or visibility within the collection in Shopify admin.

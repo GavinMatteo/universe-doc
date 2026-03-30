@@ -1,6 +1,6 @@
-# Reviews Showcase
+# ⭐ Reviews Showcase
 The Reviews Showcase section displays customer review cards in a carousel with an overall star rating at the top. Each review block contains the reviewer photo, name, role, a star rating, and the review text. Reviews are added manually as blocks.
-**When to use it:** Use it on the home page or product pages as a dedicated social proof section.
+📌 **When to use it:** Use it on the home page or product pages as a dedicated social proof section.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Reviews Showcase section displays customer review cards in a carousel with a
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -58,7 +58,7 @@ The Reviews Showcase section displays customer review cards in a carousel with a
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Review Slide
 
@@ -85,7 +85,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Use specific, detailed reviews. Generic short reviews add little credibility.
 - Include reviewer photos where possible. Cards with photos perform better than text-only ones.
@@ -93,7 +93,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Do these reviews sync with a review app?**\
 No. Reviews are added manually. For live sync use the review app own embed blocks.

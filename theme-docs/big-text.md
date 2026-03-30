@@ -1,6 +1,6 @@
-# Big Text
+# 🔤 Big Text
 The Big Text section uses large typographic text as its main visual element, with a scrolling marquee running through it. It is a statement section built around typography rather than imagery, used for brand messages, taglines, or campaign names.
-**When to use it:** Use it as a visual break between content sections, or as a standalone brand statement on campaign pages.
+📌 **When to use it:** Use it as a visual break between content sections, or as a standalone brand statement on campaign pages.
 
 **On this page**
 
@@ -15,7 +15,7 @@ The Big Text section uses large typographic text as its main visual element, wit
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -57,7 +57,7 @@ The Big Text section uses large typographic text as its main visual element, wit
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Shape Divider
 
@@ -73,7 +73,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Works best with a short, punchy headline of 2 to 5 words.
 - Pair it with a contrasting color scheme to make the typography stand out.
@@ -81,7 +81,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I disable the scrolling text?**\
 Yes. Uncheck the Enable scroll setting.

@@ -1,4 +1,4 @@
-# Support
+# 💬 Support
 
 This page explains what is covered by theme support, how to contact us, and what to expect when you submit a request.
 

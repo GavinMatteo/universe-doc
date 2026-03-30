@@ -1,6 +1,6 @@
-# Featured Data
+# 📊 Featured Data
 The Featured Data section displays animated number counters alongside a label and description. Each counter can be paired with a built-in illustration or a custom image. Use it to communicate key brand statistics.
-**When to use it:** Use it on the home page or About page to build credibility through numbers.
+📌 **When to use it:** Use it on the home page or About page to build credibility through numbers.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Featured Data section displays animated number counters alongside a label an
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -52,7 +52,7 @@ The Featured Data section displays animated number counters alongside a label an
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Data block
 
@@ -83,7 +83,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Use numbers that are genuinely impressive for your brand, not inflated.
 - The symbol field lets you add a unit after the number, for example %, +, or k.
@@ -91,7 +91,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Do the numbers animate automatically?**\
 Yes. The counters count up from zero when the section scrolls into view, provided Reveal sections on scroll is enabled in Theme Settings.

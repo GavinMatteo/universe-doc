@@ -1,4 +1,4 @@
-# Getting Started
+# 🚀 Getting Started
 
 Welcome to the Universe theme documentation. This guide covers everything you need to get started: installing the theme, understanding the Theme Editor, and knowing where to find each setting.
 

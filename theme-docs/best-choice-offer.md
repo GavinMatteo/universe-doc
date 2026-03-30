@@ -1,6 +1,6 @@
-# Best Choice Offer
+# 🏆 Best Choice Offer
 The Best Choice Offer section displays two or three products side by side in a comparison layout, with one product highlighted as the recommended choice. Each card shows key features as bullet points, a custom image, and a buy button.
-**When to use it:** Use it on product pages, landing pages, or the home page to highlight a hero product alongside alternatives.
+📌 **When to use it:** Use it on product pages, landing pages, or the home page to highlight a hero product alongside alternatives.
 
 **On this page**
 
@@ -17,7 +17,7 @@ The Best Choice Offer section displays two or three products side by side in a c
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -54,7 +54,7 @@ The Best Choice Offer section displays two or three products side by side in a c
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Secondary Choice Product
 
@@ -105,7 +105,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - The highlighted product should always be your best-margin or best-converting option.
 - Keep feature labels consistent across all cards so the comparison reads cleanly.
@@ -113,7 +113,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I add more than three products?**\
 No. The section supports a maximum of two secondary products plus one highlighted product.

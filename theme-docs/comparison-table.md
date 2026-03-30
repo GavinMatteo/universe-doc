@@ -1,6 +1,6 @@
-# Comparison Table
+# ⚖️ Comparison Table
 The Comparison Table displays a structured table comparing up to three products or plans side by side. Each row is a feature block and each column shows availability with a checkmark, an X, or custom text. One column can be highlighted as the recommended option.
-**When to use it:** Use it on product pages, pricing pages, or landing pages when visitors need to decide between options.
+📌 **When to use it:** Use it on product pages, pricing pages, or landing pages when visitors need to decide between options.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Comparison Table displays a structured table comparing up to three products 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -72,7 +72,7 @@ The Comparison Table displays a structured table comparing up to three products 
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Comparison row
 
@@ -101,7 +101,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Limit rows to the features that actually matter to buyers. More than 10 rows becomes overwhelming.
 - The highlighted column should always be your most important or best-converting option.
@@ -109,7 +109,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I add more than three columns?**\
 No. The section supports a maximum of three columns.

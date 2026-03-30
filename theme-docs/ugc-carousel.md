@@ -1,6 +1,6 @@
-# UGC Carousel
+# 📸 UGC Carousel
 The UGC Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, a label badge, a title, and body text.
-**When to use it:** Use it on the home page or product pages to display customer videos, unboxing content, or testimonial clips.
+📌 **When to use it:** Use it on the home page or product pages to display customer videos, unboxing content, or testimonial clips.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The UGC Carousel displays a horizontal carousel of video or image cards styled t
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -56,7 +56,7 @@ The UGC Carousel displays a horizontal carousel of video or image cards styled t
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### UGC Slide
 
@@ -92,7 +92,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Short vertical videos (9:16 ratio) look best in this carousel.
 - Enable autoplay on each card for the most engaging experience.
@@ -100,7 +100,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I embed videos from YouTube or Vimeo?**\
 Yes. Use the Or embed video from Youtube or Vimeo url field and paste the URL.

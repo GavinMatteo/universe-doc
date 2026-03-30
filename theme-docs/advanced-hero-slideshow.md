@@ -1,6 +1,6 @@
-# Advanced Hero Slideshow
+# 🎬 Advanced Hero Slideshow
 The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines a large foreground image with scrolling text that moves at a different speed in the background. The result is a parallax-like depth effect as the visitor scrolls. It works best for editorial home pages, campaign landing pages, or brand storytelling.
-**When to use it:** Use it when you want a strong visual opening with a cinematic feel.
+📌 **When to use it:** Use it when you want a strong visual opening with a cinematic feel.
 
 **On this page**
 
@@ -15,7 +15,7 @@ The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -56,7 +56,7 @@ The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines 
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Slide
 
@@ -93,7 +93,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Use a high-quality image with a clear subject that reads well at full width.
 - Keep the heading short. The background text carries most of the visual weight.
@@ -102,7 +102,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can each slide have a different image?**\
 Yes. Each slide block has its own image picker for desktop and mobile.

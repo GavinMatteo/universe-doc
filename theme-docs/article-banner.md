@@ -1,6 +1,6 @@
-# Article Banner
+# 📰 Article Banner
 The Article Banner appears at the top of every blog post and displays the article title, metadata (author, date, tags, comments), and an optional hero image. It is part of the article template and inherits its content from the published blog post automatically.
-**When to use it:** This section is part of the article template. Configure it once and it applies to all blog articles.
+📌 **When to use it:** This section is part of the article template. Configure it once and it applies to all blog articles.
 
 **On this page**
 
@@ -18,7 +18,7 @@ The Article Banner appears at the top of every blog post and displays the articl
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -51,7 +51,7 @@ The Article Banner appears at the top of every blog post and displays the articl
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Article title
 
@@ -91,14 +91,14 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Upload a hero image directly in Shopify admin when writing the article for the best result.
 
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **The hero image is not showing. Why?**\
 Make sure Show article image is enabled and the article has a featured image assigned in Shopify admin.

@@ -1,6 +1,6 @@
-# Advanced Product Carousel
+# 🎠 Advanced Product Carousel
 The Advanced Product Carousel is an interactive product showcase with a wheel-style animation. As the visitor scrolls through products, each card rotates into view. It works best with a small, curated set of hero products rather than a full collection.
-**When to use it:** Use it on the home page or a campaign page to spotlight 4 to 8 key products in a memorable way.
+📌 **When to use it:** Use it on the home page or a campaign page to spotlight 4 to 8 key products in a memorable way.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Advanced Product Carousel is an interactive product showcase with a wheel-st
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -61,7 +61,7 @@ The Advanced Product Carousel is an interactive product showcase with a wheel-st
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Product
 
@@ -86,7 +86,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Works best with 4 to 6 products. Too many breaks the rhythm of the animation.
 - Use product images with a consistent background or transparent PNGs for a cleaner result.
@@ -94,7 +94,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I link the section to a collection?**\
 No. Each product is added manually as a block, giving you full control over which products appear and in what order.

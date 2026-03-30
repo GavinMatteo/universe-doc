@@ -1,4 +1,4 @@
-# Changelog
+# 📋 Changelog
 
 This page lists all updates to the Universe theme. When a new version is available, you will see an **Update available** notice in your Shopify admin under **Online Store > Themes**.
 

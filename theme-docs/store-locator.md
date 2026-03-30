@@ -1,6 +1,6 @@
-# Store Locator
+# 📍 Store Locator
 The Store Locator section displays an interactive Google Maps map with pinned markers for each physical store location. Each location is added as a block with name, address, coordinates, and optional custom marker. A search input can filter visible markers.
-**When to use it:** Use it on a dedicated store locator page or on the Contact page for brands with physical retail.
+📌 **When to use it:** Use it on a dedicated store locator page or on the Contact page for brands with physical retail.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Store Locator section displays an interactive Google Maps map with pinned ma
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -60,7 +60,7 @@ The Store Locator section displays an interactive Google Maps map with pinned ma
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Store
 
@@ -89,7 +89,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - You need a Google Maps API key with the Maps JavaScript API enabled.
 - Find exact coordinates by right-clicking a location in Google Maps.
@@ -97,7 +97,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **The map is not loading.**\
 Check that your Google Maps API key is valid and has the Maps JavaScript API enabled in Google Cloud Console.

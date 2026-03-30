@@ -1,6 +1,6 @@
-# Spotlighted Product
+# 🔦 Spotlighted Product
 The Spotlighted Product section frames a single product as a full-width hero with a large scrolling text marquee running behind the product image. Feature Slide blocks let you add additional gallery images alongside the main product.
-**When to use it:** Use it on the home page to give a hero product or new launch the highest possible visual prominence.
+📌 **When to use it:** Use it on the home page to give a hero product or new launch the highest possible visual prominence.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Spotlighted Product section frames a single product as a full-width hero wit
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -67,7 +67,7 @@ The Spotlighted Product section frames a single product as a full-width hero wit
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Feature Slide
 
@@ -91,7 +91,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Use a PNG product image with a transparent background for the cleanest result.
 - Enable the Glass Effect for a frosted-glass background that separates the product from the scrolling text.
@@ -99,7 +99,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I spotlight multiple products in the same section?**\
 No. For multi-product carousels use Featured Collection or Advanced Product Carousel instead.

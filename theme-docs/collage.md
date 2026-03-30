@@ -1,6 +1,6 @@
-# Collage
+# 🎨 Collage
 The Collage section is a free-form CSS grid where you place text, image, and video blocks at custom column and row positions. You control exactly how large each cell is and where it sits, making it ideal for editorial layouts, mood boards, or brand storytelling.
-**When to use it:** Use it when you need a layout that feels handcrafted rather than templated.
+📌 **When to use it:** Use it when you need a layout that feels handcrafted rather than templated.
 
 **On this page**
 
@@ -18,7 +18,7 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -54,7 +54,7 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Text Block
 
@@ -106,7 +106,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Plan your grid before building it in the editor.
 - Mix block types: one large image, one text block, and one smaller image or video is a solid starting combination.
@@ -115,7 +115,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **My blocks are overlapping. What is wrong?**\
 Overlapping happens when two blocks share the same grid area. Double-check the column and row values for each block.

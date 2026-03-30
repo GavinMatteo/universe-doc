@@ -1,6 +1,6 @@
-# Diagonal Texts
+# ↗️ Diagonal Texts
 The Diagonal Texts section displays two rows of scrolling marquee text arranged at a diagonal angle, with optional icon or image dividers between them. It is a purely decorative motion section that adds energy and brand character.
-**When to use it:** Use it as a visual separator between content sections on the home page or campaign pages.
+📌 **When to use it:** Use it as a visual separator between content sections on the home page or campaign pages.
 
 **On this page**
 
@@ -19,7 +19,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -49,7 +49,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Top Text
 
@@ -99,7 +99,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Set the two rows to scroll in opposite directions for a dynamic effect.
 - Keep text short and repeatable. One or two words per item work well.
@@ -107,7 +107,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I stop the text from scrolling?**\
 No. The scrolling marquee is the core behavior of this section and cannot be disabled.

@@ -1,6 +1,6 @@
-# Collection Banner
+# 🏷️ Collection Banner
 The Collection Banner sits at the top of collection pages and displays the collection title, description, and an optional hero image or scrolling promotional text. It gives each collection page a distinct visual identity without requiring a custom template.
-**When to use it:** Add it to your collection template in the Theme Editor to give every collection a branded header automatically.
+📌 **When to use it:** Add it to your collection template in the Theme Editor to give every collection a branded header automatically.
 
 **On this page**
 
@@ -15,7 +15,7 @@ The Collection Banner sits at the top of collection pages and displays the colle
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -55,7 +55,7 @@ The Collection Banner sits at the top of collection pages and displays the colle
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Shape Divider
 
@@ -71,7 +71,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - If you upload a custom image it overrides the collection image set in Shopify admin.
 - The scrolling promotional text is a good place for a short collection tagline or a relevant discount offer.
@@ -79,7 +79,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **The collection image is not showing. Why?**\
 Make sure Show collection image is enabled and the collection has an image in Shopify admin, or a custom image is uploaded here.

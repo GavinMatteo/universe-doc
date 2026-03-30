@@ -1,6 +1,6 @@
-# Sticky Section
+# 📌 Sticky Section
 The Sticky Section is a two-column layout where one side (an image) stays fixed on screen as the visitor scrolls, while the other side (built from Content blocks) scrolls through headings and text. It creates a storytelling format ideal for explaining features step by step.
-**When to use it:** Use it on the home page or product landing pages to walk visitors through key benefits.
+📌 **When to use it:** Use it on the home page or product landing pages to walk visitors through key benefits.
 
 **On this page**
 
@@ -16,7 +16,7 @@ The Sticky Section is a two-column layout where one side (an image) stays fixed 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -57,7 +57,7 @@ The Sticky Section is a two-column layout where one side (an image) stays fixed 
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Content Block
 
@@ -81,7 +81,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Plan the number of content blocks around how much vertical scroll you want. Three to five blocks is a good range.
 - Each content block should communicate a single complete idea.
@@ -89,7 +89,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **The sticky image is not sticking. Why?**\
 The sticky behavior depends on the total height of the content blocks. Add more blocks or increase padding if the content is too short to trigger the effect.

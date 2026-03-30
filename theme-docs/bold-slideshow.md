@@ -1,6 +1,6 @@
-# Bold Slideshow
+# 🎞️ Bold Slideshow
 The Bold Slideshow is built for impact. It spans the full width of the page and supports slides with either an image or a video as the background, with text, buttons, and star ratings overlaid on top. It is the go-to choice for home pages or any page where you want to capture attention in the first few seconds.
-**When to use it:** Use it for the home page hero or any page where a strong first impression is the priority.
+📌 **When to use it:** Use it for the home page hero or any page where a strong first impression is the priority.
 
 **On this page**
 
@@ -17,7 +17,7 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -50,7 +50,7 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Image slide
 
@@ -143,7 +143,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## Tips
+## 💡 Tips
 
 - If your slides contain text worth reading, set autoplay to at least 6 or 7 seconds.
 - Use a separate mobile image or video. Desktop media rarely crops well to portrait orientation.
@@ -152,7 +152,7 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Can I mix image slides and video slides in the same slideshow?**\
 Yes. Add both block types to the same section. The order follows the block order in the Theme Editor.

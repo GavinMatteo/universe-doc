@@ -1,6 +1,6 @@
-# Header and Navigation
+# 🧭 Header and Navigation
 The Header and Navigation section controls the top bar of every page: logo, navigation menu, search, cart icon, and optional language and currency selectors. It supports four mega menu block types for rich dropdown navigation.
-**When to use it:** The Header is a global section active on every page. Configure it once in the Theme Editor.
+📌 **When to use it:** The Header is a global section active on every page. Configure it once in the Theme Editor.
 
 **On this page**
 
@@ -17,7 +17,7 @@ The Header and Navigation section controls the top bar of every page: logo, navi
 
 ---
 
-## Section Settings
+## ⚙️ Section Settings
 
 ### Content and Layout
 
@@ -56,7 +56,7 @@ The Header and Navigation section controls the top bar of every page: logo, navi
 
 ---
 
-## Blocks
+## 🧩 Blocks
 
 ### Mega Menu - Shop
 
@@ -96,7 +96,7 @@ The Header and Navigation section controls the top bar of every page: logo, navi
 
 ---
 
-## Tips
+## 💡 Tips
 
 - Use a sticky header so visitors always have access to navigation and the cart icon.
 - If you use a transparent header on the home page, upload a separate logo for the transparent state.
@@ -105,7 +105,7 @@ The Header and Navigation section controls the top bar of every page: logo, navi
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **How do I enable a mega menu?**\
 Add a Mega menu block and set the Menu item to apply to field to exactly match the navigation item label. The match is case sensitive.
