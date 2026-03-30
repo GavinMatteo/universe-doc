@@ -1,4 +1,4 @@
-# Documentation
+# Universe Theme Documentation
 
 Complete reference for all sections, blocks, settings, and global theme configuration for the Universe theme.
 
@@ -6,94 +6,93 @@ Complete reference for all sections, blocks, settings, and global theme configur
 
 ---
 
-## Start here
+## 🚀 Start here
 
-- [Getting Started](getting-started.md)
-- [Support](support.md)
-- [FAQ](faq-general.md)
-- [Changelog](changelog.md)
+- [🚀 Getting Started](getting-started.md)
+- [💬 Support](support.md)
+- [🙋 FAQ](faq-general.md)
+- [📋 Changelog](changelog.md)
 
-## Theme Settings
+## ⚙️ Theme Settings
 
-- [Theme Settings](theme-settings.md)
+- [⚙️ Theme Settings](theme-settings.md)
+- [📐 General settings](general-settings.md)
 
-## Layout and Navigation
+## 🌐 Global sections
 
-- [Header and Navigation](header-nav.md)
-- [Announcement Bar](announcement-bar.md)
-- [Footer](footer.md)
+- [📢 Announcement Bar](announcement-bar.md)
+- [🛒 Drawer Cart](drawer-cart.md)
+- [🔗 Footer](footer.md)
+- [🧭 Header and Navigation](header-nav.md)
+- [📬 Newsletter Popup](popup-newsletter.md)
 
-## Hero and Slideshows
+## 🧩 Sections
 
-- [Bold Slideshow](bold-slideshow.md)
-- [Advanced Hero Slideshow](advanced-hero-slideshow.md)
-- [Promo Banner](promo-banner.md)
-- [Big Text](big-text.md)
+- [🎬 Advanced Hero Slideshow](advanced-hero-slideshow.md)
+- [🎠 Advanced Product Carousel](advanced-product-carousel.md)
+- [🏆 Best Choice Offer](best-choice-offer.md)
+- [🔤 Big Text](big-text.md)
+- [🎨 Collage](collage.md)
+- [📂 Collection List](collection-list.md)
+- [⚖️ Comparison Table](comparison-table.md)
+- [📞 Contact Form](contacts.md)
+- [💻 Custom Liquid](custom-liquid.md)
+- [↗️ Diagonal Texts](diagonal-texts.md)
+- [❓ FAQ](faq.md)
+- [📝 Featured Blog](featured-blog.md)
+- [🗃️ Featured Collection](featured-collection.md)
+- [📊 Featured Data](featured-data.md)
+- [🌟 Featured Product](featured-product.md)
+- [📋 Icon List](icon-list.md)
+- [🖼️ Image With Text](image-with-text.md)
+- [🔲 Multicolumn](multicolumn.md)
+- [📧 Newsletter](newsletter-section.md)
+- [🎯 Promo Banner](promo-banner.md)
+- [💬 Quotes Carousel](quotes.md)
+- [🔄 Related Products](related-products.md)
+- [⭐ Reviews Showcase](reviews-showcase.md)
+- [✍️ Rich Text](rich-text.md)
+- [💊 Scrolling Pills](scrolling-pills.md)
+- [📜 Scrolling Text](scrolling-text.md)
+- [🎞️ Bold Slideshow](bold-slideshow.md)
+- [🔦 Spotlighted Product](spotlighted-product.md)
+- [📌 Sticky Section](sticky-section.md)
+- [📍 Store Locator](store-locator.md)
+- [↔️ Then vs Now](then-vs-now.md)
+- [👆 Touch and Take](touch-and-take.md)
+- [📸 UGC Carousel](ugc-carousel.md)
 
-## Product Sections
+## 🗂️ Collection pages
 
-- [Product Page](main-product.md)
-- [Featured Product](featured-product.md)
-- [Spotlighted Product](spotlighted-product.md)
-- [Sticky Section](sticky-section.md)
-- [Best Choice Offer](best-choice-offer.md)
-- [Touch and Take](touch-and-take.md)
-- [Advanced Product Carousel](advanced-product-carousel.md)
-- [Related Products](related-products.md)
+- [🏷️ Collection Banner](collection-grid-banner.md)
+- [🗂️ Collection Product Grid](collection-grid-product.md)
+- [🗄️ Collections List Page](main-collection-list.md)
 
-## Collection Sections
+## 🛍️ Product page
 
-- [Collection Banner](collection-grid-banner.md)
-- [Collection Product Grid](collection-grid-product.md)
-- [Collection List](collection-list.md)
-- [Collections List Page](main-collection-list.md)
+- [🛍️ Product Page](main-product.md)
 
-## Content Sections
+## 📄 Other pages
 
-- [Image With Text](image-with-text.md)
-- [Rich Text](rich-text.md)
-- [Multicolumn](multicolumn.md)
-- [Icon List](icon-list.md)
-- [Collage](collage.md)
-- [Featured Data](featured-data.md)
-- [Comparison Table](comparison-table.md)
-- [Then vs Now](then-vs-now.md)
+- [🚫 404 Page](404.md)
+- [📰 Article Banner](article-banner.md)
+- [🗞️ Article Content](article-overlay.md)
+- [📖 Blog Listing](blog.md)
+- [🧺 Cart Page](main-cart-items.md)
+- [📄 Page Content](page.md)
+- [🔒 Password Page Footer](password-footer.md)
+- [🔐 Password Page Header](password-header.md)
+- [🔍 Search Results](search.md)
 
-## Testimonials and Social Proof
+## 📚 Guides
 
-- [Reviews Showcase](reviews-showcase.md)
-- [Quotes Carousel](quotes.md)
-- [UGC Carousel](ugc-carousel.md)
+- [👗 Build for success: Fashion](guide-fashion.md)
+- [🍽️ Build for success: Food and drink](guide-food.md)
+- [💄 Build for success: Health and beauty](guide-beauty.md)
+- [🎨 Color swatches](guide-color-swatches.md)
+- [🧭 Mega menu](guide-mega-menu.md)
+- [⚡ Performance](guide-performance.md)
 
-## Marketing and Conversion
+## 🔧 Troubleshooting
 
-- [Scrolling Text](scrolling-text.md)
-- [Scrolling Pills](scrolling-pills.md)
-- [Diagonal Texts](diagonal-texts.md)
-- [Newsletter](newsletter-section.md)
-- [Newsletter Popup](popup-newsletter.md)
-- [Featured Blog](featured-blog.md)
-- [Featured Collection](featured-collection.md)
-
-## Cart
-
-- [Drawer Cart](drawer-cart.md)
-- [Cart Page](main-cart-items.md)
-
-## Utility
-
-- [FAQ](faq.md)
-- [Contact Form](contacts.md)
-- [Store Locator](store-locator.md)
-- [Custom Liquid](custom-liquid.md)
-
-## Page Templates
-
-- [404 Page](404.md)
-- [Article Banner](article-banner.md)
-- [Article Content](article-overlay.md)
-- [Blog Listing](blog.md)
-- [Page Content](page.md)
-- [Search Results](search.md)
-- [Password Page Header](password-header.md)
-- [Password Page Footer](password-footer.md)
+- [🔧 Common issues](troubleshooting.md)

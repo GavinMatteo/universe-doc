@@ -11,6 +11,9 @@ Theme Settings are global options that affect the entire store, independent of a
 - [Buttons](#buttons)
 - [Color Swatch](#color-swatch)
 - [Labels](#labels)
+  - [Sold out label](#sold-out-label)
+  - [Sale label](#sale-label)
+  - [Custom label](#custom-label)
 - [Animations](#animations)
 - [Cart](#cart)
 - [Dynamic Island](#dynamic-island)
@@ -126,19 +129,31 @@ Configures how product variant color swatches are displayed on product and colle
 
 ## Labels
 
-Configures the appearance of Sold Out, Sale, and Custom product labels on product cards.
+Configures the appearance of product labels on cards. Labels appear automatically based on product conditions.
+
+### Sold out label
 
 | Setting | What it does |
 |---|---|
-| **Show Label** | Shows a Sold Out label on product cards when inventory reaches zero. |
-| **Background Color** | The background color of the Sold Out label. |
-| **Text Color** | The text color of the Sold Out label. |
-| **Show Label** | Shows a Sale label on product cards that have a compare-at price set. |
-| **Background Color** | The background color of the Sale label. |
-| **Text Color** | The text color of the Sale label. |
-| **Show Label** | Enables a custom label that can be applied to products using a metafield. |
-| **Background Color** | The background color of the custom label. |
-| **Text Color** | The text color of the custom label. |
+| **Show label** | Shows a Sold out label on product cards when a product has no available inventory. |
+| **Background color** | The background color of the Sold out label. |
+| **Text color** | The text color of the Sold out label. |
+
+### Sale label
+
+| Setting | What it does |
+|---|---|
+| **Show label** | Shows a Sale label on product cards that have a compare-at price set. |
+| **Background color** | The background color of the Sale label. |
+| **Text color** | The text color of the Sale label. |
+
+### Custom label
+
+| Setting | What it does |
+|---|---|
+| **Show label** | Enables a custom label that can be applied to individual products using a product metafield. |
+| **Background color** | The background color of the custom label. |
+| **Text color** | The text color of the custom label. |
 
 ## Animations
 
