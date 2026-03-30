@@ -18,39 +18,53 @@
 * [Newsletter Popup](popup-newsletter.md)
 
 ## Sections
-* [Advanced Hero Slideshow](advanced-hero-slideshow.md)
-* [Advanced Product Carousel](advanced-product-carousel.md)
-* [Best Choice Offer](best-choice-offer.md)
-* [Big Text](big-text.md)
-* [Collage](collage.md)
-* [Collection List](collection-list.md)
-* [Comparison Table](comparison-table.md)
-* [Contact Form](contacts.md)
-* [Custom Liquid](custom-liquid.md)
-* [Diagonal Texts](diagonal-texts.md)
-* [FAQ](faq.md)
-* [Featured Blog](featured-blog.md)
-* [Featured Collection](featured-collection.md)
-* [Featured Data](featured-data.md)
-* [Featured Product](featured-product.md)
-* [Icon List](icon-list.md)
-* [Image With Text](image-with-text.md)
-* [Multicolumn](multicolumn.md)
-* [Newsletter](newsletter-section.md)
-* [Promo Banner](promo-banner.md)
-* [Quotes Carousel](quotes.md)
-* [Related Products](related-products.md)
-* [Reviews Showcase](reviews-showcase.md)
-* [Rich Text](rich-text.md)
-* [Scrolling Pills](scrolling-pills.md)
-* [Scrolling Text](scrolling-text.md)
-* [Bold Slideshow](bold-slideshow.md)
-* [Spotlighted Product](spotlighted-product.md)
-* [Sticky Section](sticky-section.md)
-* [Store Locator](store-locator.md)
-* [Then vs Now](then-vs-now.md)
-* [Touch and Take](touch-and-take.md)
-* [UGC Carousel](ugc-carousel.md)
+
+### Hero and slideshows
+* [Advanced Hero Slideshow](sections/advanced-hero-slideshow.md)
+* [Bold Slideshow](sections/bold-slideshow.md)
+* [Promo Banner](sections/promo-banner.md)
+* [Big Text](sections/big-text.md)
+
+### Product sections
+* [Advanced Product Carousel](sections/advanced-product-carousel.md)
+* [Best Choice Offer](sections/best-choice-offer.md)
+* [Featured Product](sections/featured-product.md)
+* [Spotlighted Product](sections/spotlighted-product.md)
+* [Sticky Section](sections/sticky-section.md)
+* [Touch and Take](sections/touch-and-take.md)
+
+### Collection sections
+* [Collection List](sections/collection-list.md)
+* [Featured Collection](sections/featured-collection.md)
+
+### Content sections
+* [Collage](sections/collage.md)
+* [Comparison Table](sections/comparison-table.md)
+* [Featured Data](sections/featured-data.md)
+* [Icon List](sections/icon-list.md)
+* [Image With Text](sections/image-with-text.md)
+* [Multicolumn](sections/multicolumn.md)
+* [Rich Text](sections/rich-text.md)
+* [Then vs Now](sections/then-vs-now.md)
+
+### Testimonials and social proof
+* [Quotes Carousel](sections/quotes.md)
+* [Reviews Showcase](sections/reviews-showcase.md)
+* [UGC Carousel](sections/ugc-carousel.md)
+
+### Marketing and conversion
+* [Diagonal Texts](sections/diagonal-texts.md)
+* [Featured Blog](sections/featured-blog.md)
+* [Newsletter](sections/newsletter-section.md)
+* [Scrolling Pills](sections/scrolling-pills.md)
+* [Scrolling Text](sections/scrolling-text.md)
+
+### Utility
+* [Contact Form](sections/contacts.md)
+* [Custom Liquid](sections/custom-liquid.md)
+* [FAQ](sections/faq.md)
+* [Related Products](sections/related-products.md)
+* [Store Locator](sections/store-locator.md)
 
 ## Collection pages
 * [Collection Banner](collection-grid-banner.md)
@@ -78,6 +92,7 @@
 * [Color swatches](guide-color-swatches.md)
 * [Mega menu](guide-mega-menu.md)
 * [Performance](guide-performance.md)
+* [Custom templates](guides/guide-custom-template.md)
 
 ## Troubleshooting
 * [Common issues](troubleshooting.md)

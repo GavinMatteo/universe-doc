@@ -1,98 +1,47 @@
-# Universe Theme Documentation
+# Universe theme documentation
 
-Complete reference for all sections, blocks, settings, and global theme configuration for the Universe theme.
+Welcome to the official documentation for Universe, the Shopify theme by Developpy.
 
-> Setting names in these docs match exactly what you see in the Shopify Theme Editor.
+Use the sidebar to navigate, or start from one of the sections below.
 
 ---
 
-## 🚀 Start here
+## New to Universe?
 
-- [🚀 Getting Started](getting-started.md)
-- [💬 Support](support.md)
-- [🙋 FAQ](faq-general.md)
-- [📋 Changelog](changelog.md)
+Start here to get up and running quickly.
 
-## ⚙️ Theme Settings
+- [Getting Started](getting-started.md) — install the theme, configure the Theme Editor, and complete your first setup
+- [General settings](general-settings.md) — understand the settings that appear in every section
+- [Theme Settings](theme-settings.md) — configure colors, typography, cart, and global options
 
-- [⚙️ Theme Settings](theme-settings.md)
-- [📐 General settings](general-settings.md)
+---
 
-## 🌐 Global sections
+## Build your store
 
-- [📢 Announcement Bar](announcement-bar.md)
-- [🛒 Drawer Cart](drawer-cart.md)
-- [🔗 Footer](footer.md)
-- [🧭 Header and Navigation](header-nav.md)
-- [📬 Newsletter Popup](popup-newsletter.md)
+Step-by-step guides for merchants ready to build.
 
-## 🧩 Sections
+- [Build for success: Fashion](guide-fashion.md) — recommended section order and settings for fashion brands
+- [Build for success: Food and drink](guide-food.md) — recommended setup for food and drink stores
+- [Build for success: Health and beauty](guide-beauty.md) — recommended setup for health and beauty brands
+- [Color swatches](guide-color-swatches.md) — configure variant color swatches
+- [Mega menu](guide-mega-menu.md) — build rich dropdown navigation
+- [Performance](guide-performance.md) — keep your Lighthouse score high
 
-- [🎬 Advanced Hero Slideshow](advanced-hero-slideshow.md)
-- [🎠 Advanced Product Carousel](advanced-product-carousel.md)
-- [🏆 Best Choice Offer](best-choice-offer.md)
-- [🔤 Big Text](big-text.md)
-- [🎨 Collage](collage.md)
-- [📂 Collection List](collection-list.md)
-- [⚖️ Comparison Table](comparison-table.md)
-- [📞 Contact Form](contacts.md)
-- [💻 Custom Liquid](custom-liquid.md)
-- [↗️ Diagonal Texts](diagonal-texts.md)
-- [❓ FAQ](faq.md)
-- [📝 Featured Blog](featured-blog.md)
-- [🗃️ Featured Collection](featured-collection.md)
-- [📊 Featured Data](featured-data.md)
-- [🌟 Featured Product](featured-product.md)
-- [📋 Icon List](icon-list.md)
-- [🖼️ Image With Text](image-with-text.md)
-- [🔲 Multicolumn](multicolumn.md)
-- [📧 Newsletter](newsletter-section.md)
-- [🎯 Promo Banner](promo-banner.md)
-- [💬 Quotes Carousel](quotes.md)
-- [🔄 Related Products](related-products.md)
-- [⭐ Reviews Showcase](reviews-showcase.md)
-- [✍️ Rich Text](rich-text.md)
-- [💊 Scrolling Pills](scrolling-pills.md)
-- [📜 Scrolling Text](scrolling-text.md)
-- [🎞️ Bold Slideshow](bold-slideshow.md)
-- [🔦 Spotlighted Product](spotlighted-product.md)
-- [📌 Sticky Section](sticky-section.md)
-- [📍 Store Locator](store-locator.md)
-- [↔️ Then vs Now](then-vs-now.md)
-- [👆 Touch and Take](touch-and-take.md)
-- [📸 UGC Carousel](ugc-carousel.md)
+---
 
-## 🗂️ Collection pages
+## Most visited sections
 
-- [🏷️ Collection Banner](collection-grid-banner.md)
-- [🗂️ Collection Product Grid](collection-grid-product.md)
-- [🗄️ Collections List Page](main-collection-list.md)
+- [Header and Navigation](header-nav.md)
+- [Bold Slideshow](sections/bold-slideshow.md)
+- [Product Page](main-product.md)
+- [Drawer Cart](drawer-cart.md)
+- [Featured Collection](sections/featured-collection.md)
 
-## 🛍️ Product page
+---
 
-- [🛍️ Product Page](main-product.md)
+## Need help?
 
-## 📄 Other pages
-
-- [🚫 404 Page](404.md)
-- [📰 Article Banner](article-banner.md)
-- [🗞️ Article Content](article-overlay.md)
-- [📖 Blog Listing](blog.md)
-- [🧺 Cart Page](main-cart-items.md)
-- [📄 Page Content](page.md)
-- [🔒 Password Page Footer](password-footer.md)
-- [🔐 Password Page Header](password-header.md)
-- [🔍 Search Results](search.md)
-
-## 📚 Guides
-
-- [👗 Build for success: Fashion](guide-fashion.md)
-- [🍽️ Build for success: Food and drink](guide-food.md)
-- [💄 Build for success: Health and beauty](guide-beauty.md)
-- [🎨 Color swatches](guide-color-swatches.md)
-- [🧭 Mega menu](guide-mega-menu.md)
-- [⚡ Performance](guide-performance.md)
-
-## 🔧 Troubleshooting
-
-- [🔧 Common issues](troubleshooting.md)
+- [FAQ](faq-general.md) — answers to common questions
+- [Troubleshooting](troubleshooting.md) — solutions to known issues
+- [Support](support.md) — how to contact us and what is covered
+- [Changelog](changelog.md) — what changed in each version
