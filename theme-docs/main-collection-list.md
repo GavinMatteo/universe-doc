@@ -1,4 +1,4 @@
-# 🗄️ Collections List Page
+# Collections List Page
 The Collections List Page section automatically displays all published collections in your store in a grid layout with pagination. Unlike the Collection List section, no manual block configuration is needed.
 📌 **When to use it:** This section is part of the list-collections template and active on the /collections page.
 

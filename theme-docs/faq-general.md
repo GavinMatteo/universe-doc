@@ -1,4 +1,4 @@
-# 🙋 FAQ
+# FAQ
 
 Answers to the most common questions about the Universe theme.
 

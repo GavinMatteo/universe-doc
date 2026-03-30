@@ -1,4 +1,4 @@
-# 📢 Announcement Bar
+# Announcement Bar
 The Announcement Bar displays a thin strip of text at the top of the page, above the header. It is used to communicate promotions, shipping thresholds, or important store notices. It supports both a continuously scrolling marquee and a static carousel of individual messages.
 📌 **When to use it:** Use it whenever you have a time-sensitive offer or key information you want every visitor to see on arrival.
 

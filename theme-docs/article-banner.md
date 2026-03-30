@@ -1,4 +1,4 @@
-# 📰 Article Banner
+# Article Banner
 The Article Banner appears at the top of every blog post and displays the article title, metadata (author, date, tags, comments), and an optional hero image. It is part of the article template and inherits its content from the published blog post automatically.
 📌 **When to use it:** This section is part of the article template. Configure it once and it applies to all blog articles.
 

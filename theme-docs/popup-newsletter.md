@@ -1,4 +1,4 @@
-# 📬 Newsletter Popup
+# Newsletter Popup
 The Newsletter Popup is a timed overlay that appears after a set delay. Once dismissed, a cookie prevents it from showing again for the number of days you configure.
 📌 **When to use it:** Configure it once in the Theme Editor. It activates globally on the pages you choose.
 

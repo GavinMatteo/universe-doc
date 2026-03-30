@@ -1,4 +1,4 @@
-# 🔐 Password Page Header
+# Password Page Header
 The Password Page Header appears at the top of the password-protected coming soon page. It shows your store logo and the selected color scheme.
 📌 **When to use it:** Active automatically when your store is password protected.
 

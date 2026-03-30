@@ -1,4 +1,4 @@
-# 🔗 Footer
+# Footer
 The Footer appears at the bottom of every page. It supports multiple layout types and a flexible block system for text columns, navigation menus, a logo, and a newsletter signup. It also shows social icons, policy links, payment icons, and language or currency selectors.
 📌 **When to use it:** The Footer is a global section active on every page. Configure it once in the Theme Editor.
 

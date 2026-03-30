@@ -1,4 +1,4 @@
-# 🔍 Search Results
+# Search Results
 The Search Results section displays the output of a search query, showing matching products, articles, and pages with support for filtering and sorting.
 📌 **When to use it:** This section is part of the search results template and active whenever a visitor performs a search.
 

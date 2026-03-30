@@ -1,4 +1,4 @@
-# 👗 Build for success: Fashion
+# Build for success: Fashion
 
 A step-by-step guide to building a high-converting home page for a fashion brand using Universe.
 

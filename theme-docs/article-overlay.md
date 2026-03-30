@@ -1,4 +1,4 @@
-# 🗞️ Article Content
+# Article Content
 The Article Content section renders the body of a blog post along with optional sharing buttons, previous and next post navigation, and a comments section.
 📌 **When to use it:** This section is part of the article template and is always active on blog post pages.
 

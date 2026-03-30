@@ -1,4 +1,4 @@
-# 🗂️ Collection Product Grid
+# Collection Product Grid
 The Collection Product Grid is the main product listing area on collection pages. It displays products in a configurable grid with support for filtering, sorting, color swatches, quick buy, and quick view. This section has the most direct impact on browsing and conversion on collection pages.
 📌 **When to use it:** This section is part of the collection template and is active by default on all collection pages.
 

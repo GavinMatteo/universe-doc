@@ -1,4 +1,4 @@
-# 🗂️ Custom templates
+# Custom templates
 
 How to create alternate page templates in Universe for products, collections, and pages.
 

@@ -1,4 +1,4 @@
-# 🧭 Mega menu
+# Mega menu
 
 How to set up the mega menu in the Header and Navigation section.
 

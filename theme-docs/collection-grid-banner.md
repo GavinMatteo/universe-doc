@@ -1,4 +1,4 @@
-# 🏷️ Collection Banner
+# Collection Banner
 The Collection Banner sits at the top of collection pages and displays the collection title, description, and an optional hero image or scrolling promotional text. It gives each collection page a distinct visual identity without requiring a custom template.
 📌 **When to use it:** Add it to your collection template in the Theme Editor to give every collection a branded header automatically.
 

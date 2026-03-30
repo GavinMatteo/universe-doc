@@ -1,4 +1,4 @@
-# 📐 General settings
+# General settings
 
 Some settings appear in almost every section of Universe. This page explains them once so you do not need to re-read them for every section.
 

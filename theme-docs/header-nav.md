@@ -1,4 +1,4 @@
-# 🧭 Header and Navigation
+# Header and Navigation
 The Header and Navigation section controls the top bar of every page: logo, navigation menu, search, cart icon, and optional language and currency selectors. It supports four mega menu block types for rich dropdown navigation.
 📌 **When to use it:** The Header is a global section active on every page. Configure it once in the Theme Editor.
 

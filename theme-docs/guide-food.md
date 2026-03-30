@@ -1,4 +1,4 @@
-# 🍽️ Build for success: Food and drink
+# Build for success: Food and drink
 
 A step-by-step guide to building a high-converting home page for a food or drink brand using Universe.
 

@@ -1,4 +1,4 @@
-# 🎨 Color swatches
+# Color swatches
 
 How to configure color swatches for product variants in Universe.
 

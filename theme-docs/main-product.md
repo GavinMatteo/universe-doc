@@ -1,4 +1,4 @@
-# 🛍️ Product Page
+# Product Page
 The Product Page section is the core of your product detail page. It is fully modular: build the content column by adding and reordering blocks for title, price, description, variants, buy buttons, reviews, accordions, trust badges, and more. This section has the most direct impact on your store conversion rate.
 📌 **When to use it:** This section is part of the product template and active on every product detail page.
 

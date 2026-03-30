@@ -1,4 +1,4 @@
-# 📄 Page Content
+# Page Content
 The Page Content section renders the content of a standard Shopify page exactly as written in the page editor. It optionally displays an additional heading and subheading above the page content.
 📌 **When to use it:** This section is part of the page template and active on all standard pages by default.
 

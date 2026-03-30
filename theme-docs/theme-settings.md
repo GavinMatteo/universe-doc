@@ -1,4 +1,4 @@
-# ⚙️ Theme Settings
+# Theme Settings
 
 Theme Settings are global options that affect the entire store, independent of any individual section. Access them in the Theme Editor by clicking **Theme settings** at the bottom of the left panel.
 

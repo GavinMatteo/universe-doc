@@ -1,4 +1,4 @@
-# 🛒 Drawer Cart
+# Drawer Cart
 The Drawer Cart is a slide-in cart panel that appears when a visitor adds an item or clicks the cart icon. It lets visitors review their cart, apply discount codes, see a free shipping progress bar, and proceed to checkout without leaving the current page. It also supports cross-sell product suggestions.
 📌 **When to use it:** This section is active globally and appears on every page. Configure it once in the Theme Editor.
 

@@ -1,4 +1,4 @@
-# 🧺 Cart Page
+# Cart Page
 The Cart Page section renders the full cart on the /cart page, including line items, discount code, cart notes, a terms checkbox, payment icons, and the checkout button.
 📌 **When to use it:** Active on the cart page when Cart type is set to Page in Theme Settings > Cart.
 

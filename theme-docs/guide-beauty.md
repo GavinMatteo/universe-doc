@@ -1,4 +1,4 @@
-# 💄 Build for success: Health and beauty
+# Build for success: Health and beauty
 
 A step-by-step guide to building a high-converting home page for a health or beauty brand using Universe.
 

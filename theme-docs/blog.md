@@ -1,4 +1,4 @@
-# 📖 Blog Listing
+# Blog Listing
 The Blog Listing section displays all posts from a blog in a grid or collage layout. Visitors can filter posts by tag and paginate through large numbers of articles.
 📌 **When to use it:** This section is part of the blog template and is active on all blog index pages automatically.
 

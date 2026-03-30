@@ -1,4 +1,4 @@
-# ⚡ Performance
+# Performance
 
 How to keep Universe fast and maintain a high Lighthouse score.
 

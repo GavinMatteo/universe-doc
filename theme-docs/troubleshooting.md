@@ -1,4 +1,4 @@
-# 🔧 Common issues
+# Common issues
 
 Solutions to the most frequently reported problems with Universe.
 
