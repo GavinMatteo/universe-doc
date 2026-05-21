@@ -137,14 +137,7 @@ def build_toc(schema, meta_blocks, has_tips=True, has_faq=True):
         items.append('- [FAQ](#faq)')
     return '\n'.join(items)
 
-def write_section_doc(fname, schema, meta, all_labels, descriptions, context_overrides, screenshots=None, asset_prefix='assets/screenshots'):
-    """Render a single section's markdown.
-
-    screenshots: optional list of {'file': ..., 'caption': ...} dicts.
-    asset_prefix: relative path from the rendered .md to the screenshots folder.
-                  e.g. 'assets/screenshots' for root pages, '../assets/screenshots'
-                  for pages in theme-docs/sections/.
-    """
+def write_section_doc(fname, schema, meta, all_labels, descriptions, context_overrides):
     title, intro, when, tips, faq = meta
     settings = schema.get('settings', [])
     blocks = schema.get('blocks', [])
@@ -165,18 +158,6 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
     if when:
         lines.append(f'📌 **When to use it:** {when}\n')
     lines.append('\n')
-
-    # Screenshots — rendered after intro and "when to use", before the TOC.
-    if screenshots:
-        for shot in screenshots:
-            fname_img = shot.get('file', '')
-            caption = shot.get('caption', '')
-            if not fname_img:
-                continue
-            lines.append(f'![{caption}]({asset_prefix}/{fname_img})\n')
-            if caption:
-                lines.append(f'*{caption}*\n')
-            lines.append('\n')
 
     # In-page TOC
     toc = build_toc(schema, block_name_map, has_tips=bool(tips), has_faq=bool(faq))
@@ -492,10 +473,6 @@ def main(theme_path, out_dir):
     from descriptions import SETTING_DESCRIPTIONS
     from section_meta import SECTION_META
     from context_overrides import CONTEXT_OVERRIDES
-    try:
-        from section_screenshots import SECTION_SCREENSHOTS
-    except ImportError:
-        SECTION_SCREENSHOTS = {}
 
     # Accept either a zip or an already-extracted theme directory.
     cleanup_tmp = None
@@ -547,20 +524,16 @@ def main(theme_path, out_dir):
             skipped_no_meta.append(liquid_name)
             continue
 
-        subdir = '' if liquid_name in ROOT_SECTIONS else 'sections'
-        asset_prefix = 'assets/screenshots' if subdir == '' else '../assets/screenshots'
-        section_shots = SECTION_SCREENSHOTS.get(liquid_name, [])
-
         try:
             content = write_section_doc(
                 liquid_name, schema, meta, all_labels,
-                SETTING_DESCRIPTIONS, CONTEXT_OVERRIDES,
-                screenshots=section_shots, asset_prefix=asset_prefix,
+                SETTING_DESCRIPTIONS, CONTEXT_OVERRIDES
             )
         except Exception as exc:
             errors.append(f'{liquid_name}: render error: {exc}')
             continue
 
+        subdir = '' if liquid_name in ROOT_SECTIONS else 'sections'
         out_path = os.path.join(out_dir, subdir, output_filename(liquid_name))
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
         with open(out_path, 'w', encoding='utf-8') as f:
