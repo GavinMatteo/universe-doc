@@ -40,7 +40,7 @@ The Store Locator section displays an interactive Google Maps map with pinned ma
 | **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
 | **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 | **Google Maps API key** | Your Google Maps API key, required to render the interactive map. Generate it in Google Cloud Console with Maps JavaScript API enabled. |
-| **Fallback image** |  |
+| **Fallback image** | A static image displayed in place of the interactive map when no Google Maps API key is set. |
 | **Map's marker color** | The default color of map pin markers for locations without a custom marker image. |
 | **Map's marker size** | The size of the default map pin icons in pixels. |
 | **Map background color** | The background color of the map canvas, visible in areas with no roads or geography. |

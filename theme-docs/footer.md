@@ -40,7 +40,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 | **Show currencies** | Shows a currency selector in the footer. |
 | **Show language selector** | Shows a language selector in the footer. |
 | **Show payments methods** | Shows accepted payment method icons at the bottom of the footer. |
-| **Show "Powered by Shopify" link** |  |
+| **Show "Powered by Shopify" link** | Shows the standard "Powered by Shopify" attribution link at the bottom of the footer. |
 
 
 ### Colors
