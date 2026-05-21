@@ -1,6 +1,10 @@
 # Blog Listing
+
 The Blog Listing section displays all posts from a blog in a grid or collage layout. Visitors can filter posts by tag and paginate through large numbers of articles.
+
 📌 **When to use it:** This section is part of the blog template and is active on all blog index pages automatically.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Blog Listing section displays all posts from a blog in a grid or collage lay
 - [Tips](#tips)
 - [FAQ](#faq)
 
+
 ---
 
 ## ⚙️ Section Settings
@@ -21,7 +26,6 @@ The Blog Listing section displays all posts from a blog in a grid or collage lay
 
 | Setting | What it does |
 |---|---|
-| **Show breadcrumb navigation** | Shows breadcrumb navigation helping visitors trace their path through the store. |
 | **Show tag filters** | Shows a tag filter bar above the article grid. |
 | **Posts per page** | How many articles are shown per page before pagination appears. |
 | **Layout** | Controls the overall visual layout of the section. |
@@ -65,6 +69,7 @@ The Blog Listing section displays all posts from a blog in a grid or collage lay
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -77,13 +82,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Enable tag filtering if your blog has clearly defined categories.
+
 - Make sure all articles have a featured image. The layout looks significantly better with images.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I show articles from multiple blogs on the same page?**\
 No. Each blog page shows articles from one blog only.

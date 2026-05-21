@@ -1,6 +1,10 @@
 # Featured Product
+
 The Featured Product section embeds a full product detail experience anywhere on the page. It uses the same modular block system as the main Product Page section, letting you include title, price, variants, buy buttons, accordions, reviews, and more.
-📌 **When to use it:** Use it on the home page to spotlight a hero product, or on landing pages for a single-product campaign.
+
+📌 **When to use it:** Use it on the homepage to spotlight a hero product, or on landing pages for a single-product campaign.
+
+
 
 **On this page**
 
@@ -10,9 +14,9 @@ The Featured Product section embeds a full product detail experience anywhere on
   - [Spacing](#spacing)
 - [Blocks](#blocks)
   - [Media conversion labels](#media-conversion-labels)
-  - [Title](#title)
+  - [Heading](#heading)
   - [Description](#description)
-  - [Text Block](#text-block)
+  - [Text block](#text-block)
   - [Price](#price)
   - [Vendor/SKU](#vendor-sku)
   - [Share](#share)
@@ -33,10 +37,11 @@ The Featured Product section embeds a full product detail experience anywhere on
   - [Separator](#separator)
   - [Custom liquid](#custom-liquid)
   - [App Block](#app-block)
-  - [Ingredients Table](#ingredients-table)
+  - [Ingredients table](#ingredients-table)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -59,8 +64,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Button text** | The label displayed on the button. Leave blank to hide the button. |
 | **Button link** | The page or URL the button links to when clicked. |
 | **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
-| **Desktop Thumbnail positioning** | Where the thumbnail strip appears relative to the main image on desktop. |
-| **Show Mobile Thumbnails** | Shows a thumbnail strip below the product image on mobile. |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
+| **Desktop thumbnail positioning** | Where the thumbnail strip appears relative to the main image on desktop. |
+| **Show mobile thumbnails** | Shows a thumbnail strip below the product image on mobile. |
 | **Media ratio** | The aspect ratio of the product media area. Auto uses the image's natural ratio. |
 | **Zoom options** | How the product image behaves on click: Lightbox opens it fullscreen, Hover zooms in on the image. |
 | **Enable video loop** | When enabled, product videos restart automatically when they reach the end. |
@@ -93,20 +99,25 @@ The Featured Product section embeds a full product detail experience anywhere on
 | Setting | What it does |
 |---|---|
 | **Show low stock counter** | Shows a counter or urgency message when stock drops below the threshold. |
-| **Low inventory threshold** | The stock level below which the low stock indicator activates. |
+| **Low inventory treshold** | The stock level below which the low stock indicator activates. |
 | **Show inventory count** | Controls when to show the exact stock number: Always, or only when below the low inventory threshold. |
-| **Show Micro copy** | Shows a small urgency text on the product media, for example "Only 3 left in stock". |
+| **Label text color** |  |
+| **Label background color** |  |
+| **Show micro copy** | Shows a small urgency text on the product media, for example "Only 3 left in stock". |
 | **Text** | The urgency message shown on the product media. Leave blank to use the default text. |
-| **Block's color palette** | The color palette for the labels and counters overlaid on the product media. |
+| **Label text color** |  |
+| **Label background color** |  |
 
 
-### Title
+### Heading
 
 | Setting | What it does |
 |---|---|
 | **Heading size** | The visual size of the product title heading on the product page. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -118,19 +129,22 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 **Spacing**
 
+
 | Setting | What it does |
 |---|---|
 | **Margin bottom** | The space below this block in pixels on desktop. Use it to control the vertical gap between individual product page blocks. |
 | **Margin bottom (mobile)** | The space below this block in pixels on mobile. |
 
 
-### Text Block
+### Text block
 
 | Setting | What it does |
 |---|---|
 | **Text** | The text content for this block. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -142,9 +156,11 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 | Setting | What it does |
 |---|---|
-| **Hide Taxes and shipping informations** | When enabled, hides the taxes and shipping notice typically shown below the product price. |
+| **Hide taxes and shipping information** | When enabled, hides the taxes and shipping notice typically shown below the product price. |
+
 
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -159,7 +175,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Show vendor** | Shows the product vendor (brand) name. |
 | **Show SKU** | Shows the product SKU code below the title. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -171,6 +189,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 **Spacing**
 
+
 | Setting | What it does |
 |---|---|
 | **Margin bottom** | The space below this block in pixels on desktop. Use it to control the vertical gap between individual product page blocks. |
@@ -181,10 +200,12 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 | Setting | What it does |
 |---|---|
-| **Low inventory threshold** | The stock level below which the low stock indicator activates. |
+| **Low inventory treshold** | The stock level below which the low stock indicator activates. |
 | **Show inventory count** | Controls when to show the exact stock number: Always, or only when below the low inventory threshold. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -221,7 +242,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Author** | Name of reviewer 5. |
 | **Paragraph** | Review text from reviewer 5. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -236,7 +259,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Total score** | The aggregate rating score shown in the section header, for example 4.9. |
 | **Reviews amount** | The total number of reviews shown next to the aggregate score, for example 312. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -251,7 +276,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Heading** | The heading above the Pairs well with product list. |
 | **Block's color palette** | The color palette for the Pairs well with product cards. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -261,7 +288,13 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 ### Pickup availability
 
+| Setting | What it does |
+|---|---|
+| **Enable soft background** |  |
+
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -276,7 +309,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Variant type** | How variant options are displayed: Dropdown selector, Button pills, or Color swatches. |
 | **Enable buttons as swatch** | Displays variant buttons as color swatches using values configured in Theme Settings > Color Swatch. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -288,12 +323,14 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 | Setting | What it does |
 |---|---|
-| **Quantity Picker** | Shows a quantity input so visitors can select how many units to add to cart. |
+| **Quantity picker** | Shows a quantity input so visitors can select how many units to add to cart. |
 | **Show dynamic checkout buttons** | Shows express checkout buttons like Buy with Shop Pay or Pay with PayPal below the main add to cart button. |
 | **Conversion booster copy** | A short reassurance message near the buy button, for example "Free returns on all orders". Leave blank to hide. |
 | **Logo** | The logo image displayed in the header. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -309,9 +346,12 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Date tolerance (days)** | Buffer days added to the estimated shipping date. |
 | **Delay after shipping (days)** | Number of business days from shipment to delivery. |
 | **Date tolerance (days)** | Buffer days added to the estimated delivery date. |
+| **Enable soft background** |  |
 | **Date format** | How the estimated date is displayed, for example as day number and month name. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -323,6 +363,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 | Setting | What it does |
 |---|---|
+| **Enable soft background** |  |
 | **Icon** | The icon for the first step in the multistep trust bar. Choose from the built-in icon library. |
 | **Text** | The short label for the first step, for example "Free shipping". |
 | **Icon** | The icon for the second step. |
@@ -330,7 +371,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Icon** | The icon for the third step. |
 | **Text** | The short label for the third step. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -342,6 +385,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 | Setting | What it does |
 |---|---|
+| **Enable soft background** |  |
 | **Icon** | The icon for the first row in the icons with text block. |
 | **Heading** | The heading for the first row. |
 | **Paragraph** | The supporting description for the first row. |
@@ -352,7 +396,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Heading** | The heading for the third row. |
 | **Paragraph** | The supporting description for the third row. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -370,7 +416,9 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Content from page** | A Shopify page whose content populates the accordion body. If set, it overrides the Paragraph field. |
 | **Image upload** | An optional image displayed inside the accordion body when expanded. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -392,8 +440,11 @@ The Featured Product section embeds a full product detail experience anywhere on
 |---|---|
 | **Heading** | The heading displayed above the bullet points list. |
 | **Paragraph** | The bullet point items. Format each point on a new line in the rich text editor. |
+| **Enable soft background** |  |
+
 
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -405,9 +456,11 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 | Setting | What it does |
 |---|---|
-| **Choose Image** | The image displayed in this section. Click to upload or select from your media library. |
+| **Choose image** | The image displayed in this section. Click to upload or select from your media library. |
+
 
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -419,6 +472,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 **Spacing**
 
+
 | Setting | What it does |
 |---|---|
 | **Margin bottom** | The space below this block in pixels on desktop. Use it to control the vertical gap between individual product page blocks. |
@@ -429,7 +483,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 
 | Setting | What it does |
 |---|---|
-| **Liquid Code** | Raw Liquid code injected into the page. Requires knowledge of Shopify Liquid templating. |
+| **Liquid code** | Raw Liquid code injected into the page. Requires knowledge of Shopify Liquid templating. |
 
 
 ### App Block
@@ -437,7 +491,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 Supports third-party app blocks from the Shopify App Store, for example review apps or loyalty programs.
 
 
-### Ingredients Table
+### Ingredients table
 
 | Setting | What it does |
 |---|---|
@@ -486,7 +540,9 @@ Supports third-party app blocks from the Shopify App Store, for example review a
 | **Ingredient 20** | The name of the twentieth ingredient. |
 | **Amount 20** | The quantity for ingredient 20. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
@@ -497,6 +553,7 @@ Supports third-party app blocks from the Shopify App Store, for example review a
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -510,16 +567,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Select a product with high-quality images.
-- Keep the block count focused on the home page: Title, Price, Variants, and Buy buttons are usually enough.
+
+- Keep the block count focused on the homepage: Title, Price, Variants, and Buy buttons are usually enough.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I show multiple products in this section?**\
 No. For multiple products use Featured Collection instead.
+
 
 **The variant selector is not showing. Why?**\
 Add the Variants block from the block panel. It does not appear by default.

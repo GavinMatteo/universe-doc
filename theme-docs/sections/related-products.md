@@ -1,6 +1,10 @@
 # Related Products
+
 The Related Products section displays a carousel or grid of products related to the one currently being viewed. Shopify selects related products automatically based on tags, collections, and purchase history.
+
 📌 **When to use it:** Typically placed at the bottom of the product page template to encourage further browsing.
+
+
 
 **On this page**
 
@@ -12,6 +16,7 @@ The Related Products section displays a carousel or grid of products related to 
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -34,14 +39,14 @@ The Related Products section displays a carousel or grid of products related to 
 | **Products per row (desktop)** | The number of product or collection columns per row on desktop. |
 | **Products per row (mobile)** | The number of columns per row on mobile. |
 | **Maximum products to show** | The maximum number of products to show in this section. |
-| **Enable Carousel (desktop)** | Shows items in a horizontally scrollable carousel on desktop instead of a static grid. |
-| **Enable Carousel (mobile)** | Shows items in a horizontally scrollable carousel on mobile instead of a static grid. |
+| **Enable carousel (desktop)** | Shows items in a horizontally scrollable carousel on desktop instead of a static grid. |
+| **Enable carousel (mobile)** | Shows items in a horizontally scrollable carousel on mobile instead of a static grid. |
 | **Image ratio** | Controls the aspect ratio of product images in this section. Options typically include Square, Portrait, Landscape, and Adapt (uses the image's natural ratio). |
 | **Product card animation type** | The hover animation on product cards: Zoom, Slide, or None. |
 | **Show vendor** | Shows the product vendor (brand) name. |
 | **Show variant options** | Displays variant options (such as color or size swatches) directly on the product card without opening the product page. |
 | **Enable quick buy** | Adds a quick buy button to product cards. For single-variant products it adds to cart directly. For multi-variant products it opens a small variant selector. |
-| **Enable quick view** | Adds a quick view button to product cards. Clicking it opens a product detail overlay without leaving the current page. |
+| **Enable quick view (Desktop only)** | Adds a quick view button to product cards. Clicking it opens a product detail overlay without leaving the current page. |
 | **Hide border** | Removes the border around product cards for a cleaner, borderless appearance. |
 
 
@@ -71,6 +76,7 @@ The Related Products section displays a carousel or grid of products related to 
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -83,12 +89,15 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Keep the number of visible products between 4 and 6.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I manually choose which related products to show?**\
 No. Related products are determined automatically by Shopify. To influence recommendations, ensure products are correctly tagged.

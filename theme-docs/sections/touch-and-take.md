@@ -1,6 +1,10 @@
 # Touch and Take
+
 The Touch and Take section overlays a lifestyle image with interactive product hotspots. Visitors tap or click a hotspot to reveal a product card with name, price, and a quick-add button.
-📌 **When to use it:** Use it on the home page or campaign pages to make lifestyle photography directly shoppable.
+
+📌 **When to use it:** Use it on the homepage or campaign pages to make lifestyle photography directly shoppable.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Touch and Take section overlays a lifestyle image with interactive product h
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -32,6 +37,10 @@ The Touch and Take section overlays a lifestyle image with interactive product h
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -72,6 +81,7 @@ The Touch and Take section overlays a lifestyle image with interactive product h
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -84,13 +94,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Lifestyle images with multiple products in the scene work best.
+
 - Keep the number of hotspots to 3 or 4 maximum.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **The hotspot position looks different on mobile.**\
 Use the separate horizontal and vertical mobile position fields to fine-tune placement on smaller screens.

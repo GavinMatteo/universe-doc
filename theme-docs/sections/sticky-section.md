@@ -1,6 +1,10 @@
 # Sticky Section
+
 The Sticky Section is a two-column layout where one side (an image) stays fixed on screen as the visitor scrolls, while the other side (built from Content blocks) scrolls through headings and text. It creates a storytelling format ideal for explaining features step by step.
-📌 **When to use it:** Use it on the home page or product landing pages to walk visitors through key benefits.
+
+📌 **When to use it:** Use it on the homepage or product landing pages to walk visitors through key benefits.
+
+
 
 **On this page**
 
@@ -9,10 +13,11 @@ The Sticky Section is a two-column layout where one side (an image) stays fixed 
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Content Block](#content-block)
+  - [Content block](#content-block)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -32,9 +37,6 @@ The Sticky Section is a two-column layout where one side (an image) stays fixed 
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
-| **Button text** | The label displayed on the button. Leave blank to hide the button. |
-| **Button link** | The page or URL the button links to when clicked. |
-| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
 
 
 ### Colors
@@ -59,7 +61,7 @@ The Sticky Section is a two-column layout where one side (an image) stays fixed 
 
 ## 🧩 Blocks
 
-### Content Block
+### Content block
 
 | Setting | What it does |
 |---|---|
@@ -70,6 +72,7 @@ The Sticky Section is a two-column layout where one side (an image) stays fixed 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -83,13 +86,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Plan the number of content blocks around how much vertical scroll you want. Three to five blocks is a good range.
+
 - Each content block should communicate a single complete idea.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **The sticky image is not sticking. Why?**\
 The sticky behavior depends on the total height of the content blocks. Add more blocks or increase padding if the content is too short to trigger the effect.

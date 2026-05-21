@@ -1,6 +1,10 @@
 # Scrolling Pills
+
 The Scrolling Pills section displays a horizontal row of interactive pill-shaped tags that scroll across the screen. Each pill shows a front label and can reveal a back label or image on hover. Clicking a pill navigates to a linked URL.
-📌 **When to use it:** Use it as a visual navigation aid on the home page or to add interactive motion between sections.
+
+📌 **When to use it:** Use it as a visual navigation aid on the homepage or to add interactive motion between sections.
+
+
 
 **On this page**
 
@@ -12,7 +16,7 @@ The Scrolling Pills section displays a horizontal row of interactive pill-shaped
   - [Pill](#pill)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
-- [FAQ](#faq)
+
 
 ---
 
@@ -30,6 +34,10 @@ The Scrolling Pills section displays a horizontal row of interactive pill-shaped
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -59,7 +67,7 @@ The Scrolling Pills section displays a horizontal row of interactive pill-shaped
 | Setting | What it does |
 |---|---|
 | **Text** | The text shown on the front face of the pill before the visitor hovers. |
-| **Scrolling Text** | The scrolling text shown on the back face of the pill on hover. |
+| **Scrolling text** | The scrolling text shown on the back face of the pill on hover. |
 | **Link** | The URL this pill navigates to when clicked. |
 | **Image** | An image shown on the back face of the pill on hover, alongside or instead of the back text. |
 
@@ -67,6 +75,7 @@ The Scrolling Pills section displays a horizontal row of interactive pill-shaped
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -80,6 +89,9 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - The flip effect works best when front and back labels are short and complementary.
+
 - Add a URL to each pill to make them functional navigation elements, not just decorative.
+
 

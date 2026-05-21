@@ -1,6 +1,10 @@
 # Featured Blog
+
 The Featured Blog section displays the most recent articles from a selected blog as cards with a featured image, title, date, and excerpt. It updates automatically as you publish new articles.
-📌 **When to use it:** Use it on the home page to show that your store has active content.
+
+📌 **When to use it:** Use it on the homepage to show that your store has active content.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Featured Blog section displays the most recent articles from a selected blog
 - [Tips](#tips)
 - [FAQ](#faq)
 
+
 ---
 
 ## ⚙️ Section Settings
@@ -24,6 +29,7 @@ The Featured Blog section displays the most recent articles from a selected blog
 | **Choose blog** | Selects which blog to pull recent articles from. The section automatically shows the latest posts. |
 | **View all** | Shows a View all link below the article cards, linking to the full blog page. |
 | **Show blog's date** | Shows the publication date on each article card. |
+| **Show excerpt on list articles** |  |
 | **Heading** | The main heading displayed at the top of this block or section. |
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
@@ -32,6 +38,10 @@ The Featured Blog section displays the most recent articles from a selected blog
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -60,6 +70,7 @@ The Featured Blog section displays the most recent articles from a selected blog
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -72,13 +83,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Connect it to a blog that is actively updated.
+
 - Make sure your blog posts have featured images. Cards without images look incomplete.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I select specific articles to show?**\
 No. The section automatically pulls the most recent posts from the selected blog.

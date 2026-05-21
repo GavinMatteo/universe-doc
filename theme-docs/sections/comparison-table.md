@@ -1,6 +1,10 @@
 # Comparison Table
+
 The Comparison Table displays a structured table comparing up to three products or plans side by side. Each row is a feature block and each column shows availability with a checkmark, an X, or custom text. One column can be highlighted as the recommended option.
+
 📌 **When to use it:** Use it on product pages, pricing pages, or landing pages when visitors need to decide between options.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Comparison Table displays a structured table comparing up to three products 
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -50,6 +55,10 @@ The Comparison Table displays a structured table comparing up to three products 
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -91,6 +100,7 @@ The Comparison Table displays a structured table comparing up to three products 
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -103,16 +113,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Limit rows to the features that actually matter to buyers. More than 10 rows becomes overwhelming.
+
 - The highlighted column should always be your most important or best-converting option.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I add more than three columns?**\
 No. The section supports a maximum of three columns.
+
 
 **Can I use images in the rows?**\
 No. Row cells support only a checkmark icon, an X icon, or short text.

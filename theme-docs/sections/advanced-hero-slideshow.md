@@ -1,6 +1,10 @@
 # Advanced Hero Slideshow
-The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines a large foreground image with scrolling text that moves at a different speed in the background. The result is a parallax-like depth effect as the visitor scrolls. It works best for editorial home pages, campaign landing pages, or brand storytelling.
+
+The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines a large foreground image with scrolling text that moves at a different speed in the background. The result is a parallax-like depth effect as the visitor scrolls. It works best for editorial homepages, campaign landing pages, or brand storytelling.
+
 📌 **When to use it:** Use it when you want a strong visual opening with a cinematic feel.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines 
 - [Tips](#tips)
 - [FAQ](#faq)
 
+
 ---
 
 ## ⚙️ Section Settings
@@ -24,9 +29,9 @@ The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines 
 | **Heading** | The main heading displayed at the top of this block or section. |
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
-| **Paragraph** | A secondary line of text below the heading. Use it for a short supporting statement or tagline. |
+| **Paragraph** | The body text for this block. Supports rich text formatting. |
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
-| **Background Text Size (desktop)** | The font size of the scrolling background text on desktop, in pixels. |
+| **Background text size (desktop)** | The font size of the scrolling background text on desktop, in pixels. |
 | **Background text opacity (desktop)** | How visible the background text is. 0 is invisible, 100 is fully opaque. |
 | **Background text letter spacing (desktop)** | The letter spacing of the background text, controlling how spread out the characters appear. |
 | **Repeat background text on mobile** | When enabled, the background text repeats to fill the full width on mobile screens. |
@@ -63,7 +68,7 @@ The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines 
 | Setting | What it does |
 |---|---|
 | **Choose image** | The main image displayed in the foreground of this slide. |
-| **Background Text** | The heading or label for this block element. |
+| **Background text** | The heading or label for this block element. |
 | **Heading** | A heading displayed over the foreground image on this slide. |
 | **Short description** | A short description shown below the heading on this slide. |
 | **Button text** | The label displayed on the button. Leave blank to hide the button. |
@@ -72,7 +77,9 @@ The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines 
 | **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 | **Background text color** | The color of the large background text element on this slide. |
 
+
 **Colors**
+
 
 | Setting | What it does |
 |---|---|
@@ -83,6 +90,7 @@ The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -95,17 +103,23 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Use a high-quality image with a clear subject that reads well at full width.
+
 - Keep the heading short. The background text carries most of the visual weight.
+
 - On mobile, enable the Repeat background text on mobile option to fill the screen correctly.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can each slide have a different image?**\
 Yes. Each slide block has its own image picker for desktop and mobile.
+
 
 **The background text is not visible. Why?**\
 Check the Background text opacity setting. If it is 0 the text is invisible. Also verify that the text color contrasts with the section background.

@@ -1,6 +1,10 @@
 # Featured Collection
+
 The Featured Collection section displays a grid or carousel of products from a collection you choose. You can add Collection blocks to display products from multiple collections as tabs. It supports quick buy, quick view, and color swatches.
-📌 **When to use it:** Use it on the home page to showcase a best-seller collection, new arrivals, or a curated selection.
+
+📌 **When to use it:** Use it on the homepage to showcase a best-seller collection, new arrivals, or a curated selection.
+
+
 
 **On this page**
 
@@ -14,6 +18,7 @@ The Featured Collection section displays a grid or carousel of products from a c
 - [Tips](#tips)
 - [FAQ](#faq)
 
+
 ---
 
 ## ⚙️ Section Settings
@@ -26,24 +31,28 @@ The Featured Collection section displays a grid or carousel of products from a c
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
 | **Paragraph** | The body text for this block. Supports rich text formatting. |
-| **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
+| **Content alignments (mobile)** | Controls the horizontal alignment of the text column on mobile. |
 | **Content layout** | How the product info is positioned on the card relative to the image. |
 | **Content position** | The horizontal alignment of product info within the card. |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
-| **Enable Carousel (desktop)** | Shows items in a horizontally scrollable carousel on desktop instead of a static grid. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
+| **Enable carousel (desktop)** | Shows items in a horizontally scrollable carousel on desktop instead of a static grid. |
 | **Products per row (desktop)** | The number of product or collection columns per row on desktop. |
-| **Enable Carousel (mobile)** | Shows items in a horizontally scrollable carousel on mobile instead of a static grid. |
+| **Enable carousel (mobile)** | Shows items in a horizontally scrollable carousel on mobile instead of a static grid. |
 | **Collections per row (mobile)** | The number of columns per row on mobile. |
 | **Maximum products to show** | The maximum number of products to show in this section. |
-| **Show View All button** | Shows a View all button below the grid linking to the full collection page. |
+| **Show view all button** | Shows a View all button below the grid linking to the full collection page. |
 | **Image ratio** | Controls the aspect ratio of product images in this section. Options typically include Square, Portrait, Landscape, and Adapt (uses the image's natural ratio). |
 | **Product card animation type** | The hover animation on product cards: Zoom, Slide, or None. |
 | **Show vendor** | Shows the product vendor (brand) name. |
 | **Show variant options** | Displays variant options (such as color or size swatches) directly on the product card without opening the product page. |
 | **Enable quick buy** | Adds a quick buy button to product cards. For single-variant products it adds to cart directly. For multi-variant products it opens a small variant selector. |
-| **Enable quick view** | Adds a quick view button to product cards. Clicking it opens a product detail overlay without leaving the current page. |
+| **Enable quick view (Desktop only)** | Adds a quick view button to product cards. Clicking it opens a product detail overlay without leaving the current page. |
 | **Hide border** | Removes the border around product cards for a cleaner, borderless appearance. |
 
 
@@ -74,12 +83,13 @@ The Featured Collection section displays a grid or carousel of products from a c
 | Setting | What it does |
 |---|---|
 | **Collection** | The collection this block represents. Select from your store catalog. |
-| **Title** | The heading or label for this block element. |
+| **Heading** | The heading or label for this block element. |
 
 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -93,16 +103,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Limit visible products to 4 to 8. Too many reduces urgency.
+
 - Enable the View all button so visitors can see the full collection.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I manually choose which products to show?**\
 Not directly. Products come from the selected collection. Adjust sort order or visibility within the collection in Shopify admin.
+
 
 **The tabs for multiple collections are not showing.**\
 Add at least two Collection blocks from the block panel. Each block is one tab.

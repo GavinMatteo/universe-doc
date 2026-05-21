@@ -1,6 +1,10 @@
 # Bold Slideshow
-The Bold Slideshow is built for impact. It spans the full width of the page and supports slides with either an image or a video as the background, with text, buttons, and star ratings overlaid on top. It is the go-to choice for home pages or any page where you want to capture attention in the first few seconds.
-📌 **When to use it:** Use it for the home page hero or any page where a strong first impression is the priority.
+
+The Bold Slideshow is built for impact. It spans the full width of the page and supports slides with either an image or a video as the background, with text, buttons, and star ratings overlaid on top. It is the go-to choice for homepages or any page where you want to capture attention in the first few seconds.
+
+📌 **When to use it:** Use it for the homepage hero or any page where a strong first impression is the priority.
+
+
 
 **On this page**
 
@@ -15,6 +19,7 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 - [Tips](#tips)
 - [FAQ](#faq)
 
+
 ---
 
 ## ⚙️ Section Settings
@@ -26,8 +31,8 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 | **Enable autoplay** | When enabled, slides advance automatically. |
 | **Change slide every (seconds)** | How many seconds each slide is shown before advancing. |
 | **Show navigation** | Shows the arrow and dot navigation controls for the slideshow. |
-| **Section height desktop** | Controls how tall the slideshow appears on desktop. Choose from preset options including full screen. |
-| **Section height mobile** | Controls how tall the slideshow appears on mobile. Can be set independently from desktop. |
+| **Section height (in percentage)** | Controls how tall the slideshow appears on desktop. Choose from preset options including full screen. |
+| **Section height (mobile, in percentage)** | Controls how tall the slideshow appears on mobile. Can be set independently from desktop. |
 
 
 ### Colors
@@ -56,8 +61,8 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 
 | Setting | What it does |
 |---|---|
-| **Choose Image** | The background image for this slide on desktop. |
-| **Choose Image (mobile)** | A separate background image for mobile. If left blank, the desktop image is used. |
+| **Image** | The background image for this slide on desktop. |
+| **Mobile image** | A separate background image for mobile. If left blank, the desktop image is used. |
 | **Heading** | The main heading displayed at the top of this block or section. |
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
@@ -81,7 +86,7 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 | **Text color** | The color of text inside this section or block. |
 | **Overlay protection** | A dark overlay applied on top of the image to improve text readability. 0 means no overlay, 100 means fully black. |
 | **Overlay color** | A color tint applied on top of the background image to improve text readability. Black by default, but you can use any brand color. |
-| **Show stars** | Shows a star rating row above or below the heading to add social proof. |
+| **Show review stars** | Shows a star rating row above or below the heading to add social proof. |
 | **Number of stars** | The number of stars to display. Options are 4, 4.5, and 5. |
 | **Stars color** | The color of the star icons. |
 | **Stars and following text background color** | An optional background color behind the stars and following text. |
@@ -120,7 +125,7 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 | **Text color** | The color of text inside this section or block. |
 | **Overlay protection** | A dark overlay applied on top of the image to improve text readability. 0 means no overlay, 100 means fully black. |
 | **Overlay color** | A color tint applied on top of the background video to improve text readability. |
-| **Show stars** | Shows a star rating row above or below the heading to add social proof. |
+| **Show review stars** | Shows a star rating row above or below the heading to add social proof. |
 | **Number of stars** | The number of stars to display. Options are 4, 4.5, and 5. |
 | **Stars color** | The color of the star icons. |
 | **Stars and following text background color** | An optional background color behind the stars and following text. |
@@ -132,6 +137,7 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -145,20 +151,27 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - If your slides contain text worth reading, set autoplay to at least 6 or 7 seconds.
+
 - Use a separate mobile image or video. Desktop media rarely crops well to portrait orientation.
+
 - Increase Overlay protection if text is hard to read over a bright or complex image.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I mix image slides and video slides in the same slideshow?**\
 Yes. Add both block types to the same section. The order follows the block order in the Theme Editor.
 
+
 **The video does not autoplay. Why?**\
 Browsers block autoplay for videos that have an audio track. Make sure the video file is muted and in MP4 format.
+
 
 **Are the star ratings connected to my store reviews?**\
 No. Stars are set manually per slide. For real review data use the Reviews Showcase section instead.

@@ -1,6 +1,10 @@
 # Reviews Showcase
+
 The Reviews Showcase section displays customer review cards in a carousel with an overall star rating at the top. Each review block contains the reviewer photo, name, role, a star rating, and the review text. Reviews are added manually as blocks.
-📌 **When to use it:** Use it on the home page or product pages as a dedicated social proof section.
+
+📌 **When to use it:** Use it on the homepage or product pages as a dedicated social proof section.
+
+
 
 **On this page**
 
@@ -9,10 +13,11 @@ The Reviews Showcase section displays customer review cards in a carousel with a
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Review Slide](#review-slide)
+  - [Review slide](#review-slide)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -26,12 +31,16 @@ The Reviews Showcase section displays customer review cards in a carousel with a
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
 | **Paragraph** | The body text for this block. Supports rich text formatting. |
-| **Reviews Title** | The label next to the aggregate score, for example "Based on 312 reviews". |
-| **Reviews Score** | The aggregate score displayed next to the stars, for example 4.9. |
+| **Reviews heading** | The label next to the aggregate score, for example "Based on 312 reviews". |
+| **Reviews score** | The aggregate score displayed next to the stars, for example 4.9. |
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 | **Rating score stars color** | The color of the aggregate star rating at the top of the reviews section. |
 | **Review card stars color** | The color of stars on individual review cards. |
 | **Enable autoplay** | When enabled, slides advance automatically. |
@@ -60,20 +69,21 @@ The Reviews Showcase section displays customer review cards in a carousel with a
 
 ## 🧩 Blocks
 
-### Review Slide
+### Review slide
 
 | Setting | What it does |
 |---|---|
-| **Author Image** | A photo of the reviewer displayed on the review card. |
+| **Author image** | A photo of the reviewer displayed on the review card. |
 | **Heading** | The reviewer's name. |
 | **Subheading** | A subtitle for the reviewer, for example their role, location, or purchase date. |
 | **Paragraph** | The main body text for this block. |
-| **Rating Score** | The star rating for this review, from 1 to 5. |
+| **Rating score** | The star rating for this review, from 1 to 5. |
 
 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -87,13 +97,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Use specific, detailed reviews. Generic short reviews add little credibility.
+
 - Include reviewer photos where possible. Cards with photos perform better than text-only ones.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Do these reviews sync with a review app?**\
 No. Reviews are added manually. For live sync use the review app own embed blocks.

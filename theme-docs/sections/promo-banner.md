@@ -1,6 +1,10 @@
 # Promo Banner
+
 The Promo Banner section displays a full-width promotional area with a large data value display (a number and symbol like 70%), a heading, a paragraph, and a button. The background can be a static image or a looping video.
-📌 **When to use it:** Use it on the home page or campaign pages to communicate a time-sensitive offer or a key brand benefit.
+
+📌 **When to use it:** Use it on the homepage or campaign pages to communicate a time-sensitive offer or a key brand benefit.
+
+
 
 **On this page**
 
@@ -12,6 +16,7 @@ The Promo Banner section displays a full-width promotional area with a large dat
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -67,6 +72,7 @@ The Promo Banner section displays a full-width promotional area with a large dat
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -79,13 +85,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Use the data value and symbol fields to make the core offer as large and readable as possible.
+
 - For video backgrounds, keep the file short (under 10 MB) and remove the audio track.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I use both a video and an image as the background?**\
 If you upload a video file, it takes priority over the image. Upload a separate mobile video or image for the mobile experience.

@@ -1,6 +1,10 @@
 # Collection Product Grid
+
 The Collection Product Grid is the main product listing area on collection pages. It displays products in a configurable grid with support for filtering, sorting, color swatches, quick buy, and quick view. This section has the most direct impact on browsing and conversion on collection pages.
+
 📌 **When to use it:** This section is part of the collection template and is active by default on all collection pages.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Collection Product Grid is the main product listing area on collection pages
 - [Tips](#tips)
 - [FAQ](#faq)
 
+
 ---
 
 ## ⚙️ Section Settings
@@ -22,8 +27,8 @@ The Collection Product Grid is the main product listing area on collection pages
 | Setting | What it does |
 |---|---|
 | **Product per page** | The number of products displayed per page before pagination. |
-| **Number of columns on desktop** | The number of product or collection columns per row on desktop. |
-| **Number of columns on mobile** | The number of columns per row on mobile. |
+| **Products per row (desktop)** | The number of product or collection columns per row on desktop. |
+| **Products per row (mobile)** | The number of columns per row on mobile. |
 | **Show filters** | Shows the filter panel on collection or search pages. |
 | **Show color swatches** | Shows color swatches for products with a Color variant. Configure swatch values in Theme Settings. |
 | **Filters layout** | How the filters are displayed: Drawer (slide-in panel) or Sidebar (fixed column beside products). |
@@ -37,7 +42,7 @@ The Collection Product Grid is the main product listing area on collection pages
 | **Show vendor** | Shows the product vendor (brand) name. |
 | **Show variant options** | Displays variant options (such as color or size swatches) directly on the product card without opening the product page. |
 | **Enable quick buy** | Adds a quick buy button to product cards. For single-variant products it adds to cart directly. For multi-variant products it opens a small variant selector. |
-| **Enable quick view** | Adds a quick view button to product cards. Clicking it opens a product detail overlay without leaving the current page. |
+| **Enable quick view (Desktop only)** | Adds a quick view button to product cards. Clicking it opens a product detail overlay without leaving the current page. |
 | **Hide border** | Removes the border around product cards for a cleaner, borderless appearance. |
 
 
@@ -67,6 +72,7 @@ The Collection Product Grid is the main product listing area on collection pages
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -79,16 +85,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Enable filters and sorting to reduce friction for visitors who know what they are looking for.
+
 - Use 2 columns on mobile and 3 or 4 on desktop as a starting point.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Filters are not showing even though the setting is enabled. Why?**\
 Filters are powered by Shopify Search and Discovery. Configure your filters in Shopify admin under Online Store > Navigation before they appear here.
+
 
 **What is the difference between Quick buy and Quick view?**\
 Quick buy adds a product to cart directly or opens a mini variant selector. Quick view opens a product detail overlay without leaving the collection page.

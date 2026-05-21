@@ -1,6 +1,10 @@
 # Featured Data
+
 The Featured Data section displays animated number counters alongside a label and description. Each counter can be paired with a built-in illustration or a custom image. Use it to communicate key brand statistics.
-📌 **When to use it:** Use it on the home page or About page to build credibility through numbers.
+
+📌 **When to use it:** Use it on the homepage or About page to build credibility through numbers.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Featured Data section displays animated number counters alongside a label an
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -30,6 +35,10 @@ The Featured Data section displays animated number counters alongside a label an
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -73,6 +82,7 @@ The Featured Data section displays animated number counters alongside a label an
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -85,13 +95,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Use numbers that are genuinely impressive for your brand, not inflated.
+
 - The symbol field lets you add a unit after the number, for example %, +, or k.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Do the numbers animate automatically?**\
 Yes. The counters count up from zero when the section scrolls into view, provided Reveal sections on scroll is enabled in Theme Settings.

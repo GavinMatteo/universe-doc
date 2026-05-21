@@ -1,6 +1,10 @@
 # Footer
+
 The Footer appears at the bottom of every page. It supports multiple layout types and a flexible block system for text columns, navigation menus, a logo, and a newsletter signup. It also shows social icons, policy links, payment icons, and language or currency selectors.
+
 📌 **When to use it:** The Footer is a global section active on every page. Configure it once in the Theme Editor.
+
+
 
 **On this page**
 
@@ -9,13 +13,14 @@ The Footer appears at the bottom of every page. It supports multiple layout type
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Text Block](#text-block)
-  - [Menu Block](#menu-block)
-  - [Logo Block](#logo-block)
-  - [Newsletter Block](#newsletter-block)
+  - [Text block](#text-block)
+  - [Menu block](#menu-block)
+  - [Logo block](#logo-block)
+  - [Newsletter block](#newsletter-block)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -25,9 +30,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 
 | Setting | What it does |
 |---|---|
-| **Top Footer** | The layout style of the top area of the footer, above the column blocks. |
-| **Image** | An image displayed in the top section of the footer. |
-| **Text** | A large text element in the top footer area, for example your brand name or tagline. |
+| **Big text** | A large text element in the top footer area, for example your brand name or tagline. |
 | **Animation on text** | Adds a scroll animation to the top text element. |
 | **Show social icons** | Shows social media icons linking to your profiles. URLs must be entered in Theme Settings > Social media. |
 | **Show back to top button** | Shows a back to top button in the footer. |
@@ -37,6 +40,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 | **Show currencies** | Shows a currency selector in the footer. |
 | **Show language selector** | Shows a language selector in the footer. |
 | **Show payments methods** | Shows accepted payment method icons at the bottom of the footer. |
+| **Show "Powered by Shopify" link** |  |
 
 
 ### Colors
@@ -61,7 +65,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 
 ## 🧩 Blocks
 
-### Text Block
+### Text block
 
 | Setting | What it does |
 |---|---|
@@ -70,16 +74,16 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 | **Column span** | Controls how many columns wide this block is in the footer grid. Set to 2 for a wider block like a newsletter form. |
 
 
-### Menu Block
+### Menu block
 
 | Setting | What it does |
 |---|---|
 | **Heading** | The main heading displayed at the top of this block or section. |
-| **Choose Menu** | The navigation menu displayed in this footer block. Menus are managed in Shopify admin under Online Store > Navigation. |
+| **Choose navigation** | The navigation menu displayed in this footer block. Menus are managed in Shopify admin under Online Store > Navigation. |
 | **Column span** | Controls how many columns wide this block is in the footer grid. Set to 2 for a wider block like a newsletter form. |
 
 
-### Logo Block
+### Logo block
 
 | Setting | What it does |
 |---|---|
@@ -88,7 +92,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 | **Column span** | Controls how many columns wide this block is in the footer grid. Set to 2 for a wider block like a newsletter form. |
 
 
-### Newsletter Block
+### Newsletter block
 
 | Setting | What it does |
 |---|---|
@@ -104,6 +108,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -116,16 +121,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Include at minimum a menu with links to key pages and a newsletter signup.
+
 - The column span setting on each block controls its width in the footer grid.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **How do I change the footer layout style?**\
 Use the Top Footer setting.
+
 
 **Social icons are not showing.**\
 Social icons only appear if you have entered at least one URL in Theme Settings > Social media.

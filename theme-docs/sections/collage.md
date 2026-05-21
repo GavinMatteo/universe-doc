@@ -1,6 +1,10 @@
 # Collage
+
 The Collage section is a free-form CSS grid where you place text, image, and video blocks at custom column and row positions. You control exactly how large each cell is and where it sits, making it ideal for editorial layouts, mood boards, or brand storytelling.
+
 📌 **When to use it:** Use it when you need a layout that feels handcrafted rather than templated.
+
+
 
 **On this page**
 
@@ -9,12 +13,13 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Text Block](#text-block)
-  - [Image Block](#image-block)
-  - [Video Block](#video-block)
+  - [Text block](#text-block)
+  - [Image block](#image-block)
+  - [Video block](#video-block)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -32,6 +37,10 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -56,11 +65,11 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
 
 ## 🧩 Blocks
 
-### Text Block
+### Text block
 
 | Setting | What it does |
 |---|---|
-| **Title** | The heading or label for this block element. |
+| **Heading** | The heading or label for this block element. |
 | **Text** | The text content for this block. |
 | **Link** | An optional URL this block links to when clicked. |
 | **Title layout** | Controls the positioning of the title text within the text block. |
@@ -69,7 +78,7 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
 | **Row** | The number of grid rows this block spans in the collage layout. |
 
 
-### Image Block
+### Image block
 
 | Setting | What it does |
 |---|---|
@@ -80,7 +89,7 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
 | **Link** | An optional URL this block links to when clicked. |
 
 
-### Video Block
+### Video block
 
 | Setting | What it does |
 |---|---|
@@ -96,6 +105,7 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -108,17 +118,23 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Plan your grid before building it in the editor.
+
 - Mix block types: one large image, one text block, and one smaller image or video is a solid starting combination.
+
 - On mobile the grid collapses to a single column. Make sure the reading order of your blocks makes sense when stacked.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **My blocks are overlapping. What is wrong?**\
 Overlapping happens when two blocks share the same grid area. Double-check the column and row values for each block.
+
 
 **Can I use a video and an image in the same collage?**\
 Yes. Add an image block and a video block and position them independently on the grid.

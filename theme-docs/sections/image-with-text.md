@@ -1,6 +1,10 @@
 # Image With Text
+
 The Image With Text section divides the page into two columns: one for an image and one for text content built with blocks. The image and text sides can be swapped. It is one of the most versatile sections in the theme.
+
 📌 **When to use it:** Use it whenever you need to pair a visual with explanatory content.
+
+
 
 **On this page**
 
@@ -15,6 +19,7 @@ The Image With Text section divides the page into two columns: one for an image 
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -88,6 +93,7 @@ The Image With Text section divides the page into two columns: one for an image 
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -100,13 +106,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Upload a separate mobile image to ensure correct cropping on smaller screens.
+
 - For a storytelling layout, stack multiple Image With Text sections alternating the image side.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I add a video instead of an image?**\
 Not in this section. For video with text, use the Promo Banner section instead.

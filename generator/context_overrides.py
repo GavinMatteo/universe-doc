@@ -29,11 +29,6 @@ CONTEXT_OVERRIDES = {
     'u-advanced-hero-slideshow.liquid::advanced_slide': {
         'overlay_color': 'A color tint applied on top of the slide background image.',
     },
-    # Promo Banner: image background, not popup overlay
-    'u-promo-banner.liquid': {
-        'overlay_color': 'A color tint applied on top of the background image or video to improve text readability.',
-        'overlay_opacity': 'How opaque the overlay is. 0 is fully transparent (no tint), 100 is fully solid.',
-    },
     # Drawer cart: color_scheme is the main drawer palette
     'u-drawer-cart.liquid': {
         'color_scheme': 'The color palette applied to the main cart drawer panel.',
