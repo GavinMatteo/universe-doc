@@ -32,10 +32,12 @@ GitBook syncs only `theme-docs/`. Limit all checks to that subtree. Ignore `gene
 ### 3. Internal anchors (blocking)
 - For every file under `theme-docs/**/*.md`:
   - Find every link of the form `[text](#some-anchor)`.
-  - Compute the expected slug for each `## ` and `### ` heading using this algorithm (matches the generator's `make_anchor`):
+  - Compute the expected slug for each `## ` and `### ` heading using this algorithm (matches the generator's `make_anchor` in `generator/generate.py`):
     1. Lowercase
     2. Replace spaces with `-`
-    3. Strip any character not in `[a-z0-9-]`
+    3. Replace any character not in `[a-z0-9-]` with `-` (NOT strip — this matters for headings like "Vendor/SKU" → `vendor-sku` and "⚙️ Section Settings" → `section-settings`)
+    4. Collapse runs of `-` into a single `-`
+    5. Trim leading and trailing `-`
   - The link target must match at least one heading slug in the same file.
 - Report mismatches as `file.md: link "#foo" has no matching heading`.
 
