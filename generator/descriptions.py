@@ -853,4 +853,23 @@ SETTING_DESCRIPTIONS = {
     'subtitle': 'A short supporting paragraph below the heading in this block.',
     'text': 'The text content for this block.',
     'video_url': 'An external video URL from YouTube or Vimeo.',
+
+    # ---- SOCIAL MEDIA LINKS ----
+    'social_facebook_link': 'The full URL of your Facebook profile. Leave blank to hide the icon.',
+    'social_twitter_link': 'The full URL of your X (formerly Twitter) profile. Leave blank to hide the icon.',
+    'social_instagram_link': 'The full URL of your Instagram profile. Leave blank to hide the icon.',
+    'social_youtube_link': 'The full URL of your YouTube channel. Leave blank to hide the icon.',
+    'social_tiktok_link': 'The full URL of your TikTok profile. Leave blank to hide the icon.',
+    'social_snapchat_link': 'The full URL of your Snapchat profile. Leave blank to hide the icon.',
+    'social_pinterest_link': 'The full URL of your Pinterest profile or board. Leave blank to hide the icon.',
+    'social_tumblr_link': 'The full URL of your Tumblr profile. Leave blank to hide the icon.',
+    'social_linkedin_link': 'The full URL of your LinkedIn profile. Leave blank to hide the icon.',
+    'social_vimeo_link': 'The full URL of your Vimeo profile. Leave blank to hide the icon.',
+    'social_threads_link': 'The full URL of your Threads profile. Leave blank to hide the icon.',
+    'social_whatsapp_link': 'The click-to-chat contact link for your WhatsApp account, typically in the format https://wa.me/<number>. Leave blank to hide the icon.',
+    'social_discord_link': 'The invite link for your Discord server, typically in the format https://discord.gg/<code>. Leave blank to hide the icon.',
+    'social_twitch_link': 'The full URL of your Twitch channel. Leave blank to hide the icon.',
+    'social_messenger_link': 'The contact link for your Messenger account, typically in the format https://m.me/<page>. Leave blank to hide the icon.',
+    'social_telegram_link': 'The contact link or invite URL for your Telegram account, typically in the format https://t.me/<handle>. Leave blank to hide the icon.',
+    'share_email': 'Shows an email share button alongside the other social share icons, allowing visitors to send a link to the current page via their default email client.',
 }

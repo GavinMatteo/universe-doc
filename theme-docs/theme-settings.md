@@ -205,21 +205,21 @@ Stores your social media profile URLs and configures sharing options.
 
 | Setting | What it does |
 |---|---|
-| **Facebook** |  |
-| **X / Twitter** |  |
-| **Instagram** |  |
-| **YouTube** |  |
-| **TikTok** |  |
-| **Snapchat** |  |
-| **Pinterest** |  |
-| **Tumblr** |  |
-| **LinkedIn** |  |
-| **Vimeo** |  |
-| **Threads** |  |
-| **WhatsApp** |  |
-| **Discord** |  |
-| **Twitch** |  |
-| **Messenger** |  |
-| **Telegram** |  |
-| **Show email sharing** |  |
+| **Facebook** | The full URL of your Facebook profile. Leave blank to hide the icon. |
+| **X / Twitter** | The full URL of your X (formerly Twitter) profile. Leave blank to hide the icon. |
+| **Instagram** | The full URL of your Instagram profile. Leave blank to hide the icon. |
+| **YouTube** | The full URL of your YouTube channel. Leave blank to hide the icon. |
+| **TikTok** | The full URL of your TikTok profile. Leave blank to hide the icon. |
+| **Snapchat** | The full URL of your Snapchat profile. Leave blank to hide the icon. |
+| **Pinterest** | The full URL of your Pinterest profile or board. Leave blank to hide the icon. |
+| **Tumblr** | The full URL of your Tumblr profile. Leave blank to hide the icon. |
+| **LinkedIn** | The full URL of your LinkedIn profile. Leave blank to hide the icon. |
+| **Vimeo** | The full URL of your Vimeo profile. Leave blank to hide the icon. |
+| **Threads** | The full URL of your Threads profile. Leave blank to hide the icon. |
+| **WhatsApp** | The click-to-chat contact link for your WhatsApp account, typically in the format https://wa.me/<number>. Leave blank to hide the icon. |
+| **Discord** | The invite link for your Discord server, typically in the format https://discord.gg/<code>. Leave blank to hide the icon. |
+| **Twitch** | The full URL of your Twitch channel. Leave blank to hide the icon. |
+| **Messenger** | The contact link for your Messenger account, typically in the format https://m.me/<page>. Leave blank to hide the icon. |
+| **Telegram** | The contact link or invite URL for your Telegram account, typically in the format https://t.me/<handle>. Leave blank to hide the icon. |
+| **Show email sharing** | Shows an email share button alongside the other social share icons, allowing visitors to send a link to the current page via their default email client. |
 
