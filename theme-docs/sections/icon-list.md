@@ -1,6 +1,10 @@
 # Icon List
+
 The Icon List section displays a grid of cards combining an icon, a heading, and a short description. It is widely used for selling points, trust signals, product features, or shipping and returns policies.
-📌 **When to use it:** Use it below the hero on the home page to communicate your key benefits.
+
+📌 **When to use it:** Use it below the hero on the homepage to communicate your key benefits.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Icon List section displays a grid of cards combining an icon, a heading, and
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -29,13 +34,17 @@ The Icon List section displays a grid of cards combining an icon, a heading, and
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 | **Icon position** | Controls whether icons appear above or to the left of the card text. |
 | **Columns per row (desktop)** | The number of icon cards per row on desktop. |
-| **Icons Size** | The size of the icons in pixels. |
-| **Icon Stroke Width** | The stroke weight of the icon lines. Higher values produce bolder icons. |
+| **Icons size** | The size of the icons in pixels. |
+| **Icon stroke width** | The stroke weight of the icon lines. Higher values produce bolder icons. |
 | **Content alignments** | The horizontal alignment of text within each icon card. |
 | **Stack on mobile** | When enabled, icon cards stack vertically on mobile instead of remaining in a row. |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -74,6 +83,7 @@ The Icon List section displays a grid of cards combining an icon, a heading, and
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -86,16 +96,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Limit each card to a single clear point.
+
 - Match icon size and stroke width to the overall visual weight of your brand.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I use my own icons?**\
 Yes. Each block has an image picker for a custom icon image.
+
 
 **How do I center the icon above the text?**\
 Set Icon position to Top and Content alignments to Center.

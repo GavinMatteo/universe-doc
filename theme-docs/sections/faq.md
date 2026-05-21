@@ -1,6 +1,10 @@
 # FAQ
+
 The FAQ section displays questions and answers in an accordion format. Visitors click a question to expand the answer. You can group questions under titled headings and control vertical spacing between items.
-📌 **When to use it:** Add it to your home page, product pages, or a dedicated FAQ page.
+
+📌 **When to use it:** Add it to your homepage, product pages, or a dedicated FAQ page.
+
+
 
 **On this page**
 
@@ -9,11 +13,12 @@ The FAQ section displays questions and answers in an accordion format. Visitors 
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Group Title](#group-title)
+  - [Group title](#group-title)
   - [Accordion](#accordion)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -31,6 +36,10 @@ The FAQ section displays questions and answers in an accordion format. Visitors 
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -55,18 +64,20 @@ The FAQ section displays questions and answers in an accordion format. Visitors 
 
 ## 🧩 Blocks
 
-### Group Title
+### Group title
 
 | Setting | What it does |
 |---|---|
 | **Heading** | The heading or label for this block element. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
-| **Desktop Item margin bottom** | The space below this FAQ item on desktop, in pixels. |
-| **Mobile Item margin bottom** | The space below this FAQ item on mobile, in pixels. |
+| **Desktop item margin bottom** | The space below this FAQ item on desktop, in pixels. |
+| **Mobile item margin bottom** | The space below this FAQ item on mobile, in pixels. |
 
 
 ### Accordion
@@ -76,17 +87,20 @@ The FAQ section displays questions and answers in an accordion format. Visitors 
 | **Question** | The question text displayed in the collapsed accordion header. |
 | **Answer** | The answer text revealed when the visitor clicks to expand this item. |
 
+
 **Spacing**
+
 
 | Setting | What it does |
 |---|---|
-| **Desktop Item margin bottom** | The space below this FAQ item on desktop, in pixels. |
-| **Mobile Item margin bottom** | The space below this FAQ item on mobile, in pixels. |
+| **Desktop item margin bottom** | The space below this FAQ item on desktop, in pixels. |
+| **Mobile item margin bottom** | The space below this FAQ item on mobile, in pixels. |
 
 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -100,16 +114,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Use the questions your support team actually receives. Real questions perform better than hypothetical ones.
+
 - Keep answers concise. If an answer needs more than three sentences, consider linking to a page instead.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **How many accordion items can I add?**\
 There is no hard limit, but more than 10 to 15 questions is usually too many for one section.
+
 
 **Can I add images inside an answer?**\
 Not natively. The answer field supports rich text only.

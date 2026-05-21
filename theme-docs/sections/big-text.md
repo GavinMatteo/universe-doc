@@ -1,6 +1,10 @@
 # Big Text
+
 The Big Text section uses large typographic text as its main visual element, with a scrolling marquee running through it. It is a statement section built around typography rather than imagery, used for brand messages, taglines, or campaign names.
+
 📌 **When to use it:** Use it as a visual break between content sections, or as a standalone brand statement on campaign pages.
+
+
 
 **On this page**
 
@@ -12,6 +16,7 @@ The Big Text section uses large typographic text as its main visual element, wit
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -35,6 +40,7 @@ The Big Text section uses large typographic text as its main visual element, wit
 | **Button text** | The label displayed on the button. Leave blank to hide the button. |
 | **Button link** | The page or URL the button links to when clicked. |
 | **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -63,6 +69,7 @@ The Big Text section uses large typographic text as its main visual element, wit
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -75,16 +82,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Works best with a short, punchy headline of 2 to 5 words.
+
 - Pair it with a contrasting color scheme to make the typography stand out.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I disable the scrolling text?**\
 Yes. Uncheck the Enable scroll setting.
+
 
 **How do I change the scrolling direction?**\
 Use the Scrolling direction setting.

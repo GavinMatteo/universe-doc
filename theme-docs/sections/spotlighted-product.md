@@ -1,6 +1,10 @@
 # Spotlighted Product
+
 The Spotlighted Product section frames a single product as a full-width hero with a large scrolling text marquee running behind the product image. Feature Slide blocks let you add additional gallery images alongside the main product.
-📌 **When to use it:** Use it on the home page to give a hero product or new launch the highest possible visual prominence.
+
+📌 **When to use it:** Use it on the homepage to give a hero product or new launch the highest possible visual prominence.
+
+
 
 **On this page**
 
@@ -9,10 +13,11 @@ The Spotlighted Product section frames a single product as a full-width hero wit
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Feature Slide](#feature-slide)
+  - [Feature slide](#feature-slide)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -29,14 +34,14 @@ The Spotlighted Product section frames a single product as a full-width hero wit
 | **Bottom left button url** | The URL the bottom left link navigates to. |
 | **Bottom left button style** | The visual style of the bottom left link button: Solid, Outlined, or Link. |
 | **Images position** | Controls whether the product image appears on the left or right side of the section. |
-| **Scrolling Text Size (desktop)** | The font size of the scrolling background text on desktop, in pixels. |
-| **Scrolling Text Size (mobile)** | The font size of the scrolling background text on mobile, in pixels. |
+| **Scrolling text size (desktop)** | The font size of the scrolling background text on desktop, in pixels. |
+| **Scrolling text size (mobile)** | The font size of the scrolling background text on mobile, in pixels. |
 | **Product image** | A custom image to display for this product instead of its default product image. |
 | **Show product in a box** | Wraps the product image in a colored box for a cleaner, contained look. |
-| **Box Color** | The background color of the box behind the product image. |
+| **Box color** | The background color of the box behind the product image. |
 | **Box opacity** | How transparent the content box is. 0 is invisible, 100 is fully solid. |
-| **Glass Effect** | Replaces the color box with a frosted glass effect. When enabled, the color and opacity settings are ignored. |
-| **Show stars** | Shows a star rating row above or below the heading to add social proof. |
+| **Glass effect** | Replaces the color box with a frosted glass effect. When enabled, the color and opacity settings are ignored. |
+| **Show review stars** | Shows a star rating row above or below the heading to add social proof. |
 | **Number of stars** | The number of stars to display. Options are 4, 4.5, and 5. |
 | **Stars color** | The color of the star icons. |
 | **Stars background color** | An optional background color behind the stars and following text. |
@@ -69,17 +74,18 @@ The Spotlighted Product section frames a single product as a full-width hero wit
 
 ## 🧩 Blocks
 
-### Feature Slide
+### Feature slide
 
 | Setting | What it does |
 |---|---|
-| **Choose Image** | A product or lifestyle image for this feature slide in the Spotlighted Product section. |
-| **Scrolling Text** | A short scrolling text label associated with this slide. |
+| **Choose image** | A product or lifestyle image for this feature slide in the Spotlighted Product section. |
+| **Scrolling text** | A short scrolling text label associated with this slide. |
 
 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -93,13 +99,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Use a PNG product image with a transparent background for the cleanest result.
+
 - Enable the Glass Effect for a frosted-glass background that separates the product from the scrolling text.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I spotlight multiple products in the same section?**\
 No. For multi-product carousels use Featured Collection or Advanced Product Carousel instead.

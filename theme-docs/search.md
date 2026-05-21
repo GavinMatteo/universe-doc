@@ -1,6 +1,10 @@
 # Search Results
+
 The Search Results section displays the output of a search query, showing matching products, articles, and pages with support for filtering and sorting.
+
 📌 **When to use it:** This section is part of the search results template and active whenever a visitor performs a search.
+
+
 
 **On this page**
 
@@ -10,6 +14,7 @@ The Search Results section displays the output of a search query, showing matchi
   - [Spacing](#spacing)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -25,18 +30,14 @@ The Search Results section displays the output of a search query, showing matchi
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 | **Image ratio** | Controls the aspect ratio of product images in this section. Options typically include Square, Portrait, Landscape, and Adapt (uses the image's natural ratio). |
 | **Product card animation type** | The hover animation on product cards: Zoom, Slide, or None. |
-| **Card Content Layout** | How the product info is positioned on the card relative to the image. |
-| **Card Info Position** | The horizontal alignment of product info within the card. |
+| **Content layout** | How the product info is positioned on the card relative to the image. |
+| **Content position** | The horizontal alignment of product info within the card. |
 | **Show vendor** | Shows the product vendor (brand) name. |
 | **Show variant options** | Displays variant options (such as color or size swatches) directly on the product card without opening the product page. |
 | **Enable quick buy** | Adds a quick buy button to product cards. For single-variant products it adds to cart directly. For multi-variant products it opens a small variant selector. |
-| **Enable quick view** | Adds a quick view button to product cards. Clicking it opens a product detail overlay without leaving the current page. |
+| **Enable quick view (Desktop only)** | Adds a quick view button to product cards. Clicking it opens a product detail overlay without leaving the current page. |
 | **Hide border** | Removes the border around product cards for a cleaner, borderless appearance. |
-| **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
-| **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
-| **Highlighted text color** | The color applied to the highlighted words in the heading. |
 | **Show date** | Shows the publication date below article cards in search results. |
-| **Show author** | Shows the author name below article cards in search results. |
 | **Number of columns on mobile** | Number of columns in the grid on mobile. |
 | **Enable filtering** | Shows filters on the search results page. |
 | **Enable sorting** | Shows the sort dropdown on collection or search pages. |
@@ -66,12 +67,15 @@ The Search Results section displays the output of a search query, showing matchi
 
 ## 💡 Tips
 
+
 - Enable filtering and sorting to make it easier for visitors to narrow down results.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Products are not appearing in search results.**\
 Shopify indexes products based on title, description, and tags. Make sure products are published and have descriptive content.

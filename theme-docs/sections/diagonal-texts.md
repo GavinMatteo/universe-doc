@@ -1,6 +1,10 @@
 # Diagonal Texts
+
 The Diagonal Texts section displays two rows of scrolling marquee text arranged at a diagonal angle, with optional icon or image dividers between them. It is a purely decorative motion section that adds energy and brand character.
-📌 **When to use it:** Use it as a visual separator between content sections on the home page or campaign pages.
+
+📌 **When to use it:** Use it as a visual separator between content sections on the homepage or campaign pages.
+
+
 
 **On this page**
 
@@ -9,13 +13,14 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Top Text](#top-text)
-  - [Top Image/Separator](#top-image-separator)
-  - [Bottom Text](#bottom-text)
-  - [Bottom Image/Separator](#bottom-image-separator)
+  - [Top text](#top-text)
+  - [Top image or separator](#top-image-or-separator)
+  - [Bottom bext](#bottom-bext)
+  - [Bottom image or separator](#bottom-image-or-separator)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -51,7 +56,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 
 ## 🧩 Blocks
 
-### Top Text
+### Top text
 
 | Setting | What it does |
 |---|---|
@@ -59,7 +64,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 | **Enable outline** | When enabled, the text is rendered in outline style (hollow letters) instead of solid fill. |
 
 
-### Top Image/Separator
+### Top image or separator
 
 | Setting | What it does |
 |---|---|
@@ -68,7 +73,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 | **Image border radius** | The border radius of the image divider in pixels. Higher values produce a more rounded shape. |
 
 
-### Bottom Text
+### Bottom bext
 
 | Setting | What it does |
 |---|---|
@@ -76,7 +81,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 | **Enable outline** | When enabled, the text is rendered in outline style (hollow letters) instead of solid fill. |
 
 
-### Bottom Image/Separator
+### Bottom image or separator
 
 | Setting | What it does |
 |---|---|
@@ -88,6 +93,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -101,13 +107,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Set the two rows to scroll in opposite directions for a dynamic effect.
+
 - Keep text short and repeatable. One or two words per item work well.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I stop the text from scrolling?**\
 No. The scrolling marquee is the core behavior of this section and cannot be disabled.

@@ -1,6 +1,10 @@
 # Store Locator
+
 The Store Locator section displays an interactive Google Maps map with pinned markers for each physical store location. Each location is added as a block with name, address, coordinates, and optional custom marker. A search input can filter visible markers.
+
 📌 **When to use it:** Use it on a dedicated store locator page or on the Contact page for brands with physical retail.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Store Locator section displays an interactive Google Maps map with pinned ma
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -30,7 +35,12 @@ The Store Locator section displays an interactive Google Maps map with pinned ma
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 | **Google Maps API key** | Your Google Maps API key, required to render the interactive map. Generate it in Google Cloud Console with Maps JavaScript API enabled. |
+| **Fallback image** |  |
 | **Map's marker color** | The default color of map pin markers for locations without a custom marker image. |
 | **Map's marker size** | The size of the default map pin icons in pixels. |
 | **Map background color** | The background color of the map canvas, visible in areas with no roads or geography. |
@@ -79,6 +89,7 @@ The Store Locator section displays an interactive Google Maps map with pinned ma
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -91,16 +102,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - You need a Google Maps API key with the Maps JavaScript API enabled.
+
 - Find exact coordinates by right-clicking a location in Google Maps.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **The map is not loading.**\
 Check that your Google Maps API key is valid and has the Maps JavaScript API enabled in Google Cloud Console.
+
 
 **Can I add a phone number to the location block?**\
 Yes. Use the Store info field to add any contact details including phone numbers or emails.

@@ -1,6 +1,10 @@
 # Then vs Now
+
 The Then vs Now section displays two images in a before-and-after slider controlled by dragging a handle. It is used for product transformations, before-and-after results, or comparing old and new versions.
+
 📌 **When to use it:** Use it when showing both states simultaneously is more powerful than showing them separately.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Then vs Now section displays two images in a before-and-after slider control
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -32,6 +37,7 @@ The Then vs Now section displays two images in a before-and-after slider control
 | **Button text** | The label displayed on the button. Leave blank to hide the button. |
 | **Button link** | The page or URL the button links to when clicked. |
 | **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
@@ -75,6 +81,7 @@ The Then vs Now section displays two images in a before-and-after slider control
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -87,16 +94,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - The two images should be the same dimensions and aspect ratio to align correctly.
+
 - Label each side clearly using the Heading field in each block.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I add more than two images?**\
 No. The section is designed for exactly two images.
+
 
 **Does the slider work on touch screens?**\
 Yes. The slider handle responds to touch and drag on mobile and tablet.

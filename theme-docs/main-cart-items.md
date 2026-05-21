@@ -1,6 +1,10 @@
 # Cart Page
+
 The Cart Page section renders the full cart on the /cart page, including line items, discount code, cart notes, a terms checkbox, payment icons, and the checkout button.
+
 📌 **When to use it:** Active on the cart page when Cart type is set to Page in Theme Settings > Cart.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Cart Page section renders the full cart on the /cart page, including line it
 - [Tips](#tips)
 - [FAQ](#faq)
 
+
 ---
 
 ## ⚙️ Section Settings
@@ -21,12 +26,15 @@ The Cart Page section renders the full cart on the /cart page, including line it
 
 | Setting | What it does |
 |---|---|
-| **Enable Free Shipping Bar** | Shows a progress bar indicating how close the visitor is to the free shipping threshold. |
+| **Enable free shipping bar** | Shows a progress bar indicating how close the visitor is to the free shipping threshold. |
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
+| **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
 | **Summary color scheme** | The color palette for the cart summary footer (subtotal and checkout button). |
 | **Show cart notes** | Shows a text area where visitors can leave an order note. |
 | **Show discount code input** | Shows a field for entering a discount code in the cart. |
 | **Show terms and conditions** | Shows a checkbox visitors must accept before proceeding to checkout. |
+| **Show accelerated checkout buttons** |  |
+| **Show taxes and shipping calculated at checkout** |  |
 | **Show payment icons** | Shows accepted payment method icons below the checkout button. |
 
 
@@ -56,6 +64,7 @@ The Cart Page section renders the full cart on the /cart page, including line it
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -68,12 +77,15 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Enable the free shipping bar here with the same threshold as the Drawer Cart for a consistent experience.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **The discount code field is not showing.**\
 Enable the Show discount code input setting in this section.

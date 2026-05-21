@@ -1,6 +1,10 @@
 # Multicolumn
+
 The Multicolumn section displays a row of cards in a fixed grid. Each card can contain an image, heading, text, and button. It is used to present categories, team members, process steps, or any content that benefits from a side-by-side layout.
+
 📌 **When to use it:** Use it when you need to present multiple items of equal weight in a clean, structured way.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Multicolumn section displays a row of cards in a fixed grid. Each card can c
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -32,6 +37,10 @@ The Multicolumn section displays a row of cards in a fixed grid. Each card can c
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 | **Columns (desktop)** | The number of columns in the grid on desktop. |
 | **Enable horizontal scroll on mobile** | On mobile, displays the cards in a horizontal scrollable row instead of stacking them vertically. |
 
@@ -78,6 +87,7 @@ The Multicolumn section displays a row of cards in a fixed grid. Each card can c
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -90,12 +100,15 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Match the number of blocks to your column count to avoid orphaned cards on the last row.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can each column have a different background color?**\
 No. The background is uniform across all columns, set by the section color scheme.

@@ -1,6 +1,10 @@
 # Rich Text
+
 The Rich Text section is a minimal text layout with a heading, body text, and optional button. It is typically used as an introductory block, a transitional statement between sections, or a brand mission statement.
+
 📌 **When to use it:** Use it when you need to communicate something in words without a visual element.
+
+
 
 **On this page**
 
@@ -15,6 +19,7 @@ The Rich Text section is a minimal text layout with a heading, body text, and op
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -83,6 +88,7 @@ The Rich Text section is a minimal text layout with a heading, body text, and op
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -95,12 +101,15 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Keep the content short and focused on one idea.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I add an image inside a Rich Text section?**\
 Not in this section. Use Image With Text instead.

@@ -1,6 +1,10 @@
 # Article Content
+
 The Article Content section renders the body of a blog post along with optional sharing buttons, previous and next post navigation, and a comments section.
+
 📌 **When to use it:** This section is part of the article template and is always active on blog post pages.
+
+
 
 **On this page**
 
@@ -10,13 +14,14 @@ The Article Content section renders the body of a blog post along with optional 
 - [Blocks](#blocks)
   - [App Block](#app-block)
   - [Share](#share)
-  - [Next/Previous posts](#next-previous-posts)
+  - [Next and previous posts](#next-and-previous-posts)
   - [Comments](#comments)
   - [Custom liquid](#custom-liquid)
   - [Empty space](#empty-space)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -56,7 +61,7 @@ Supports third-party app blocks from the Shopify App Store, for example review a
 | **Show comments count** | Shows the comment count on the article card or banner. |
 
 
-### Next/Previous posts
+### Next and previous posts
 
 | Setting | What it does |
 |---|---|
@@ -89,6 +94,7 @@ _No configurable settings._
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -101,13 +107,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Enable the Share block to let readers share articles on social media.
+
 - Enable the Previous and next posts block to keep readers engaged after finishing an article.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **The comments section is not showing.**\
 Add the Comments block from the block panel and make sure comments are enabled for the blog in Shopify admin.

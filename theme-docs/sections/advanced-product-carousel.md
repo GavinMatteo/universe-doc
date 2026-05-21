@@ -1,6 +1,10 @@
 # Advanced Product Carousel
+
 The Advanced Product Carousel is an interactive product showcase with a wheel-style animation. As the visitor scrolls through products, each card rotates into view. It works best with a small, curated set of hero products rather than a full collection.
-📌 **When to use it:** Use it on the home page or a campaign page to spotlight 4 to 8 key products in a memorable way.
+
+📌 **When to use it:** Use it on the homepage or a campaign page to spotlight 4 to 8 key products in a memorable way.
+
+
 
 **On this page**
 
@@ -13,6 +17,7 @@ The Advanced Product Carousel is an interactive product showcase with a wheel-st
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -29,6 +34,7 @@ The Advanced Product Carousel is an interactive product showcase with a wheel-st
 | **Button text** | The label displayed on the button. Leave blank to hide the button. |
 | **Button link** | The page or URL the button links to when clicked. |
 | **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 | **Initial text** | Text shown in the center of the carousel before any product is selected. |
 | **Wheel animation delay** | The speed of the wheel animation between slides. Lower values are faster. |
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
@@ -36,6 +42,7 @@ The Advanced Product Carousel is an interactive product showcase with a wheel-st
 | **Mobile slide width** | How wide each slide is on mobile as a percentage of the viewport. |
 | **Background shape type** | The background shape style behind each product in the carousel. |
 | **Shape color** | The color of the background shape element. |
+| **Product text color** |  |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
@@ -76,6 +83,7 @@ The Advanced Product Carousel is an interactive product showcase with a wheel-st
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -88,16 +96,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Works best with 4 to 6 products. Too many breaks the rhythm of the animation.
+
 - Use product images with a consistent background or transparent PNGs for a cleaner result.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I link the section to a collection?**\
 No. Each product is added manually as a block, giving you full control over which products appear and in what order.
+
 
 **The animation feels slow. How do I speed it up?**\
 Lower the Wheel animation delay value in the section settings.

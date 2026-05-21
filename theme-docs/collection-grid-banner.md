@@ -1,6 +1,10 @@
 # Collection Banner
+
 The Collection Banner sits at the top of collection pages and displays the collection title, description, and an optional hero image or scrolling promotional text. It gives each collection page a distinct visual identity without requiring a custom template.
+
 📌 **When to use it:** Add it to your collection template in the Theme Editor to give every collection a branded header automatically.
+
+
 
 **On this page**
 
@@ -12,6 +16,7 @@ The Collection Banner sits at the top of collection pages and displays the colle
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -27,6 +32,8 @@ The Collection Banner sits at the top of collection pages and displays the colle
 | **Show collection image** | Shows the collection image as the banner background. |
 | **Image height** | Controls how tall the banner image appears. |
 | **Choose image** | A custom image used as the banner background instead of the collection's default. |
+| **Overlay protection** | A dark overlay applied on top of the image to improve text readability. 0 means no overlay, 100 means fully black. |
+| **Overlay color** | The color of the dark overlay behind the popup. |
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 | **Show collection text** | Shows a scrolling marquee text below the collection header content. |
 | **Promo text** | Text that scrolls in a marquee behind or alongside the product card. |
@@ -61,6 +68,7 @@ The Collection Banner sits at the top of collection pages and displays the colle
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -73,16 +81,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - If you upload a custom image it overrides the collection image set in Shopify admin.
+
 - The scrolling promotional text is a good place for a short collection tagline or a relevant discount offer.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **The collection image is not showing. Why?**\
 Make sure Show collection image is enabled and the collection has an image in Shopify admin, or a custom image is uploaded here.
+
 
 **Can I have a different banner for each collection?**\
 Settings apply globally to all collections using that template. For per-collection banners you would need separate templates.

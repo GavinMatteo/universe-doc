@@ -1,6 +1,10 @@
 # Best Choice Offer
+
 The Best Choice Offer section displays two or three products side by side in a comparison layout, with one product highlighted as the recommended choice. Each card shows key features as bullet points, a custom image, and a buy button.
-📌 **When to use it:** Use it on product pages, landing pages, or the home page to highlight a hero product alongside alternatives.
+
+📌 **When to use it:** Use it on product pages, landing pages, or the homepage to highlight a hero product alongside alternatives.
+
+
 
 **On this page**
 
@@ -9,11 +13,12 @@ The Best Choice Offer section displays two or three products side by side in a c
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Secondary Choice Product](#secondary-choice-product)
-  - [Primary Choice Product](#primary-choice-product)
+  - [Secondary choice product](#secondary-choice-product)
+  - [Primary choice product](#primary-choice-product)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -27,11 +32,15 @@ The Best Choice Offer section displays two or three products side by side in a c
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
 | **Paragraph** | The body text for this block. Supports rich text formatting. |
-| **Content alignments (desktop)** | Controls the horizontal alignment of the content on desktop specifically. |
+| **Content alignments (desktop)** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 | **Content alignments (mobile)** | Controls the horizontal alignment of the content on mobile specifically. |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -56,7 +65,7 @@ The Best Choice Offer section displays two or three products side by side in a c
 
 ## 🧩 Blocks
 
-### Secondary Choice Product
+### Secondary choice product
 
 | Setting | What it does |
 |---|---|
@@ -68,10 +77,10 @@ The Best Choice Offer section displays two or three products side by side in a c
 | **Feature 4** | The fourth feature bullet point. |
 | **Feature 5** | The fifth feature bullet point. |
 | **Glass effect on hover** | Adds a frosted glass background effect to this product card. |
-| **Add to Cart text** | The label displayed on the button. Leave blank to hide the button. |
+| **Add to cart text** | The label displayed on the button. Leave blank to hide the button. |
 
 
-### Primary Choice Product
+### Primary choice product
 
 | Setting | What it does |
 |---|---|
@@ -88,12 +97,13 @@ The Best Choice Offer section displays two or three products side by side in a c
 | **Feature 5** | The fifth feature bullet point. |
 | **Glass effect on hover** | Adds a frosted glass background effect to this product card. |
 | **Card background color** | The background color of the highlighted product card. |
-| **Add to Cart text** | The label displayed on the button. Leave blank to hide the button. |
+| **Add to cart text** | The label displayed on the button. Leave blank to hide the button. |
 
 
 ### Shape Divider
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
+
 
 | Setting | What it does |
 |---|---|
@@ -107,16 +117,21 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - The highlighted product should always be your best-margin or best-converting option.
+
 - Keep feature labels consistent across all cards so the comparison reads cleanly.
+
 
 
 ---
 
 ## ❓ FAQ
 
+
 **Can I add more than three products?**\
 No. The section supports a maximum of two secondary products plus one highlighted product.
+
 
 **The buttons do not add to cart directly. Why?**\
 The buttons link to the product page. Direct add-to-cart is not supported in this layout.

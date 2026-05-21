@@ -90,11 +90,19 @@ def render_table(settings, all_labels, descriptions, context_descriptions=None):
     return '\n'.join(lines) + '\n\n'
 
 def make_anchor(text):
-    """Convert heading text to GitBook-compatible anchor"""
-    return re.sub(r'[^a-z0-9-]', '', text.lower().replace(' ', '-'))
+    """Convert heading text to GitBook-compatible anchor.
+    Replaces invalid characters with '-' (not strip), collapses runs, trims edges.
+    Example: 'Vendor/SKU' -> 'vendor-sku'; '⚙️ Section Settings' -> 'section-settings'.
+    """
+    s = re.sub(r'[^a-z0-9-]', '-', text.lower().replace(' ', '-'))
+    return re.sub(r'-+', '-', s).strip('-')
 
-def build_toc(schema, meta_blocks):
-    """Build in-page table of contents"""
+def build_toc(schema, meta_blocks, has_tips=True, has_faq=True):
+    """Build in-page table of contents.
+    has_tips and has_faq control whether to include those anchors — only include
+    them when the corresponding meta is actually present, otherwise the anchor
+    has no matching heading.
+    """
     items = []
     items.append('- [Section Settings](#section-settings)')
     settings = schema.get('settings', [])
@@ -109,8 +117,7 @@ def build_toc(schema, meta_blocks):
     items.extend(sub)
 
     blocks = schema.get('blocks', [])
-    real_blocks = [b for b in blocks if b.get('type') != 'shape_divider']
-    if real_blocks:
+    if blocks:
         items.append('- [Blocks](#blocks)')
         for b in blocks:
             btype = b.get('type', '')
@@ -123,8 +130,10 @@ def build_toc(schema, meta_blocks):
                 anchor = make_anchor(bname)
                 items.append(f'  - [{bname}](#{anchor})')
 
-    items.append('- [Tips](#tips)')
-    items.append('- [FAQ](#faq)')
+    if has_tips:
+        items.append('- [Tips](#tips)')
+    if has_faq:
+        items.append('- [FAQ](#faq)')
     return '\n'.join(items)
 
 def write_section_doc(fname, schema, meta, all_labels, descriptions, context_overrides):
@@ -146,18 +155,18 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
     lines.append(f'# {title}\n')
     lines.append(f'{intro}\n')
     if when:
-        lines.append(f'**When to use it:** {when}\n')
+        lines.append(f'📌 **When to use it:** {when}\n')
     lines.append('\n')
 
     # In-page TOC
-    toc = build_toc(schema, block_name_map)
+    toc = build_toc(schema, block_name_map, has_tips=bool(tips), has_faq=bool(faq))
     lines.append('**On this page**\n')
     lines.append(toc + '\n')
     lines.append('\n---\n')
 
     # Section settings
     if content_s or color_s or spacing_s:
-        lines.append('## Section Settings\n')
+        lines.append('## ⚙️ Section Settings\n')
         ctx = context_overrides.get(fname, {})
         if content_s:
             lines.append('### Content and Layout\n')
@@ -172,7 +181,7 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
     # Blocks
     has_real_blocks = any(b.get('type') != 'shape_divider' for b in blocks)
     if blocks:
-        lines.append('---\n\n## Blocks\n')
+        lines.append('---\n\n## 🧩 Blocks\n')
         for block in blocks:
             btype = block.get('type', '')
             if btype == '@app':
@@ -206,14 +215,14 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
 
     # Tips
     if tips:
-        lines.append('---\n\n## Tips\n\n')
+        lines.append('---\n\n## 💡 Tips\n\n')
         for tip in tips:
             lines.append(f'- {tip}\n')
         lines.append('\n')
 
     # FAQ
     if faq:
-        lines.append('---\n\n## FAQ\n\n')
+        lines.append('---\n\n## ❓ FAQ\n\n')
         for q, a in faq:
             lines.append(f'**{q}**\\\n{a}\n\n')
 
@@ -383,41 +392,188 @@ def write_index(categories, out_path, existing_files):
         f.write(''.join(lines))
 
 
-def generate(theme_zip, out_dir):
-    # Extract theme
-    tmp = tempfile.mkdtemp()
-    with zipfile.ZipFile(theme_zip, 'r') as z:
-        z.extractall(tmp)
-    theme_dir = tmp
+# Section files that live in the root of out_dir (theme-docs/) rather than out_dir/sections/.
+# These are global chrome (header, footer, drawer, popup, announcement bar) and
+# main-* page templates (product, blog, search, page, password, 404, article, collection grid, cart).
+ROOT_SECTIONS = {
+    'u-announcement-bar.liquid',
+    'u-drawer-cart.liquid',
+    'u-footer.liquid',
+    'u-header-nav.liquid',
+    'u-popup-newsletter.liquid',
+    'main-404.liquid',
+    'main-article-banner.liquid',
+    'main-article-overlay.liquid',
+    'main-blog.liquid',
+    'main-page.liquid',
+    'main-password-footer.liquid',
+    'main-password-header.liquid',
+    'main-search.liquid',
+    'u-collection-grid-banner.liquid',
+    'u-collection-grid-product.liquid',
+    'u-main-cart-items.liquid',
+    'u-main-collection-list.liquid',
+    'u-main-product.liquid',
+}
 
-    # Load labels
-    all_labels = load_labels(theme_dir)
 
-    # Load schema labels (same file, different prefix)
+def output_filename(liquid_name):
+    """Map a section liquid filename to its markdown output filename.
+    u-main-cart-items.liquid -> main-cart-items.md  (strip leading 'u-')
+    main-blog.liquid         -> blog.md             (strip leading 'main-')
+    u-bold-slideshow.liquid  -> bold-slideshow.md   (strip leading 'u-')
+    custom-liquid.liquid     -> custom-liquid.md    (no prefix)
+    """
+    name = liquid_name
+    if name.startswith('u-main-'):
+        name = name[2:]
+    elif name.startswith('main-'):
+        name = name[5:]
+    elif name.startswith('u-'):
+        name = name[2:]
+    return name.replace('.liquid', '.md')
+
+
+def load_schema_labels(theme_dir):
+    """Load nested schema_labels from en.default.schema.json (same file as load_labels)."""
     schema_path = os.path.join(theme_dir, 'locales', 'en.default.schema.json')
-    schema_labels = {}
-    if os.path.exists(schema_path):
-        with open(schema_path, 'r', encoding='utf-8') as f:
-            raw = f.read()
-        raw = re.sub(r'/\*.*?\*/', '', raw, flags=re.DOTALL)
-        raw = re.sub(r',\s*([\]\}])', r'\1', raw)
-        try:
-            data = json.loads(raw)
-            def flatten(obj, prefix=''):
-                result = {}
-                if isinstance(obj, dict):
-                    for k, v in obj.items():
-                        new_prefix = f'{prefix}.{k}' if prefix else k
-                        if isinstance(v, str):
-                            result[new_prefix] = v
-                        else:
-                            result.update(flatten(v, new_prefix))
-                return result
-            schema_labels = flatten(data)
-        except:
-            pass
+    if not os.path.exists(schema_path):
+        return {}
+    with open(schema_path, 'r', encoding='utf-8') as f:
+        raw = f.read()
+    raw = re.sub(r'/\*.*?\*/', '', raw, flags=re.DOTALL)
+    raw = re.sub(r',\s*([\]\}])', r'\1', raw)
+    try:
+        data = json.loads(raw)
+    except Exception:
+        return {}
+
+    def flatten(obj, prefix=''):
+        result = {}
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                new_prefix = f'{prefix}.{k}' if prefix else k
+                if isinstance(v, str):
+                    result[new_prefix] = v
+                else:
+                    result.update(flatten(v, new_prefix))
+        return result
+
+    return flatten(data)
+
+
+def main(theme_path, out_dir):
+    # Lazy import to avoid hard dependency at module-load time.
+    from descriptions import SETTING_DESCRIPTIONS
+    from section_meta import SECTION_META
+    from context_overrides import CONTEXT_OVERRIDES
+
+    # Accept either a zip or an already-extracted theme directory.
+    cleanup_tmp = None
+    if os.path.isdir(theme_path):
+        theme_dir = theme_path
+    elif os.path.isfile(theme_path) and theme_path.endswith('.zip'):
+        tmp = tempfile.mkdtemp(prefix='universe-theme-')
+        with zipfile.ZipFile(theme_path, 'r') as z:
+            z.extractall(tmp)
+        theme_dir = tmp
+        cleanup_tmp = tmp
+    else:
+        sys.stderr.write(f'Error: theme_path must be a directory or .zip file: {theme_path}\n')
+        sys.exit(1)
+
+    sections_dir = os.path.join(theme_dir, 'sections')
+    if not os.path.isdir(sections_dir):
+        sys.stderr.write(f'Error: no sections/ folder in theme: {sections_dir}\n')
+        sys.exit(1)
+
+    all_labels = load_labels(theme_dir)
+    schema_labels = load_schema_labels(theme_dir)
 
     os.makedirs(out_dir, exist_ok=True)
-    return theme_dir, all_labels, schema_labels
+    os.makedirs(os.path.join(out_dir, 'sections'), exist_ok=True)
 
-print("Generator script structure ready")
+    rendered = []
+    skipped_no_meta = []
+    skipped_no_schema = []
+    errors = []
+
+    for liquid_name in sorted(os.listdir(sections_dir)):
+        if not liquid_name.endswith('.liquid'):
+            continue
+        liquid_path = os.path.join(sections_dir, liquid_name)
+
+        try:
+            schema = load_schema(liquid_path)
+        except Exception as exc:
+            errors.append(f'{liquid_name}: schema parse error: {exc}')
+            continue
+
+        if schema is None:
+            skipped_no_schema.append(liquid_name)
+            continue
+
+        meta = SECTION_META.get(liquid_name)
+        if meta is None:
+            skipped_no_meta.append(liquid_name)
+            continue
+
+        try:
+            content = write_section_doc(
+                liquid_name, schema, meta, all_labels,
+                SETTING_DESCRIPTIONS, CONTEXT_OVERRIDES
+            )
+        except Exception as exc:
+            errors.append(f'{liquid_name}: render error: {exc}')
+            continue
+
+        subdir = '' if liquid_name in ROOT_SECTIONS else 'sections'
+        out_path = os.path.join(out_dir, subdir, output_filename(liquid_name))
+        os.makedirs(os.path.dirname(out_path), exist_ok=True)
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        rendered.append(out_path)
+
+    # Theme-level settings page
+    settings_schema_path = os.path.join(theme_dir, 'config', 'settings_schema.json')
+    if os.path.isfile(settings_schema_path):
+        try:
+            write_theme_settings(
+                theme_dir, all_labels, SETTING_DESCRIPTIONS,
+                schema_labels, os.path.join(out_dir, 'theme-settings.md')
+            )
+            rendered.append(os.path.join(out_dir, 'theme-settings.md'))
+        except Exception as exc:
+            errors.append(f'theme-settings.md: render error: {exc}')
+
+    # Report
+    print(f'Rendered {len(rendered)} files into {out_dir}')
+    if skipped_no_meta:
+        print(f'\nSkipped (no SECTION_META entry): {len(skipped_no_meta)}')
+        for name in skipped_no_meta:
+            print(f'  - {name}')
+    if skipped_no_schema:
+        print(f'\nSkipped (no {{% schema %}} block or empty): {len(skipped_no_schema)}')
+        for name in skipped_no_schema:
+            print(f'  - {name}')
+    if errors:
+        print(f'\nErrors: {len(errors)}')
+        for err in errors:
+            print(f'  - {err}')
+        sys.exit(2)
+
+    if cleanup_tmp:
+        shutil.rmtree(cleanup_tmp, ignore_errors=True)
+
+
+if __name__ == '__main__':
+    if len(sys.argv) != 3:
+        sys.stderr.write(
+            'Usage: python3 generate.py <theme_zip_or_dir> <out_dir>\n'
+            '  theme_zip_or_dir: path to a Shopify theme .zip export OR an already-extracted theme directory\n'
+            '  out_dir:          output root, typically theme-docs/\n'
+        )
+        sys.exit(1)
+    # Allow imports of sibling modules (descriptions, section_meta, context_overrides)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    main(sys.argv[1], sys.argv[2])

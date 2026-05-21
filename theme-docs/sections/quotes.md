@@ -1,6 +1,10 @@
 # Quotes Carousel
+
 The Quotes Carousel displays customer testimonials or editorial quotes in a rotating carousel. Each block contains the quote text and the author name.
-📌 **When to use it:** Use it on the home page, About page, or product pages to build trust through social proof.
+
+📌 **When to use it:** Use it on the homepage, About page, or product pages to build trust through social proof.
+
+
 
 **On this page**
 
@@ -9,10 +13,11 @@ The Quotes Carousel displays customer testimonials or editorial quotes in a rota
   - [Colors](#colors)
   - [Spacing](#spacing)
 - [Blocks](#blocks)
-  - [Quote's Block](#quotes-block)
+  - [Quote's block](#quote-s-block)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
 - [FAQ](#faq)
+
 
 ---
 
@@ -26,11 +31,15 @@ The Quotes Carousel displays customer testimonials or editorial quotes in a rota
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
 | **Paragraph** | The body text for this block. Supports rich text formatting. |
-| **Content alignments (desktop)** | Controls the horizontal alignment of the content on desktop specifically. |
+| **Content alignments (desktop)** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 | **Content alignments (mobile)** | Controls the horizontal alignment of the content on mobile specifically. |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Button text** | The label displayed on the button. Leave blank to hide the button. |
+| **Button link** | The page or URL the button links to when clicked. |
+| **Button style** | The visual style of the button: Solid (filled background), Outlined (border only), or Link (text with underline). |
+| **Button size** | The size of the button: Small, Regular, Medium, Large, or Extra Large. |
 
 
 ### Colors
@@ -55,7 +64,7 @@ The Quotes Carousel displays customer testimonials or editorial quotes in a rota
 
 ## 🧩 Blocks
 
-### Quote's Block
+### Quote's block
 
 | Setting | What it does |
 |---|---|
@@ -70,6 +79,7 @@ The Quotes Carousel displays customer testimonials or editorial quotes in a rota
 
 Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.
 
+
 | Setting | What it does |
 |---|---|
 | **Choose position** | Whether the Shape Divider appears at the top or bottom of the section. |
@@ -82,13 +92,17 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 ## 💡 Tips
 
+
 - Use real, specific quotes rather than generic praise.
+
 - Three to five quotes is enough. More than that and visitors rarely see the later ones.
+
 
 
 ---
 
 ## ❓ FAQ
+
 
 **Can I add a customer photo next to the quote?**\
 Not in this section. For photo-based reviews use the Reviews Showcase section instead.
