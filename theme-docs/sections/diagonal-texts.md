@@ -15,7 +15,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 - [Blocks](#blocks)
   - [Top text](#top-text)
   - [Top image or separator](#top-image-or-separator)
-  - [Bottom bext](#bottom-bext)
+  - [Bottom text](#bottom-text)
   - [Bottom image or separator](#bottom-image-or-separator)
   - [Shape Divider](#shape-divider)
 - [Tips](#tips)
@@ -73,7 +73,7 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 | **Image border radius** | The border radius of the image divider in pixels. Higher values produce a more rounded shape. |
 
 
-### Bottom bext
+### Bottom text
 
 | Setting | What it does |
 |---|---|

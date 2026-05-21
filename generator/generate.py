@@ -37,6 +37,7 @@ def load_labels(theme_dir):
 ITALIAN_OVERRIDES = {
     'messages_type': 'Message type',
     'marquee_message': 'Marquee message',
+    'bottom-text-block': 'Bottom text',
 }
 
 def get_label(t_key, sid, all_labels):
