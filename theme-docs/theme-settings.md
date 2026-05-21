@@ -7,17 +7,17 @@ Theme Settings are global options that affect the entire store, independent of a
 - [Colors](#colors)
 - [Typography](#typography)
 - [Layout](#layout)
-- [t:settings_schema.color_swatch.name](#t-settings-schema-color-swatch-name)
-- [t:settings_schema.labels.name](#t-settings-schema-labels-name)
-- [t:settings_schema.animations.name](#t-settings-schema-animations-name)
+- [Color swatch](#color-swatch)
+- [Labels](#labels)
+- [Animations](#animations)
 - [Cart](#cart)
-- [t:settings_schema.floating_header.name](#t-settings-schema-floating-header-name)
-- [t:settings_schema.quick_add.name](#t-settings-schema-quick-add-name)
-- [t:settings_schema.breadcrumbs.name](#t-settings-schema-breadcrumbs-name)
+- [Floating header](#floating-header)
+- [Quick add](#quick-add)
+- [Breadcrumbs](#breadcrumbs)
 - [Favicon](#favicon)
-- [t:settings_schema.currency_codes.name](#t-settings-schema-currency-codes-name)
-- [t:settings_schema.gift_card.name](#t-settings-schema-gift-card-name)
-- [t:settings_schema.social-media.name](#t-settings-schema-social-media-name)
+- [Currency codes](#currency-codes)
+- [Gift card](#gift-card)
+- [Social media](#social-media)
 
 ---
 
@@ -94,19 +94,23 @@ Sets the maximum page width, side gutters, and global border radius options that
 | **Page width** | The maximum width of the page content area in pixels. Content wider than this value is centered with side margins. |
 | **Card border thickness** | The thickness of borders applied globally to cards and elements. |
 
-## t:settings_schema.color_swatch.name
+## Color swatch
+
+Configures how product variant color swatches are displayed on product and collection cards.
 
 | Setting | What it does |
 |---|---|
 | **Setup** | A configuration block for mapping swatch color names to hex values or image URLs. Each line should contain the color name and its value. |
 | **Image swatches** | When enabled, swatches use product images instead of solid color fills. |
 
-## t:settings_schema.labels.name
+## Labels
+
+Configures the appearance of Sold Out, Sale, and Custom product labels on product cards, including their typography.
 
 | Setting | What it does |
 |---|---|
-| **Font size** |  |
-| **Letter spacing** |  |
+| **Font size** | The font size used for product card labels such as Sold out, Sale, and custom labels, in pixels. |
+| **Letter spacing** | The letter spacing applied to product card labels such as Sold out, Sale, and custom labels, in pixels. |
 | **Show label** | Shows a Sold Out label on product cards when inventory reaches zero. |
 | **Background color** | The background color of the Sold Out label. |
 | **Text color** | The text color of the Sold Out label. |
@@ -117,7 +121,9 @@ Sets the maximum page width, side gutters, and global border radius options that
 | **Background color** | The background color of the custom label. |
 | **Text color** | The text color of the custom label. |
 
-## t:settings_schema.animations.name
+## Animations
+
+Controls scroll-triggered reveal animations that apply across the entire store.
 
 | Setting | What it does |
 |---|---|
@@ -138,29 +144,35 @@ Configures global cart behavior including cart type, the free shipping progress 
 | **Progress bar color** | The fill color of the free shipping progress bar. |
 | **Text color** | The text color of the free shipping bar messages. |
 
-## t:settings_schema.floating_header.name
+## Floating header
+
+Enables and styles the floating header, a rounded header panel that detaches from the page edge and follows the visitor as they scroll.
 
 | Setting | What it does |
 |---|---|
-| **Enable floating header** |  |
-| **Border color** |  |
-| **Border thickness** |  |
-| **Border radius** |  |
-| **Enable top offset** |  |
+| **Enable floating header** | When enabled, the header detaches from the page edge and floats as a rounded panel that follows the visitor as they scroll. Cannot be combined with the transparent header style. |
+| **Border color** | The border color of the floating header panel. |
+| **Border thickness** | The border thickness of the floating header panel, in pixels. |
+| **Border radius** | The corner radius of the floating header panel, in pixels. |
+| **Enable top offset** | When enabled, the floating header is offset down from the top of the viewport, so it appears to hover below the page edge instead of sticking to it. |
 
-## t:settings_schema.quick_add.name
+## Quick add
+
+Sets the color scheme for the quick add overlay that appears on product cards.
 
 | Setting | What it does |
 |---|---|
 | **Quick add color scheme** | The color palette applied to the quick add overlay that appears on product cards. |
 
-## t:settings_schema.breadcrumbs.name
+## Breadcrumbs
+
+Configures where breadcrumb navigation is shown across the store.
 
 | Setting | What it does |
 |---|---|
 | **Enable in collections** | Shows breadcrumb navigation on collection pages. |
 | **Enable in product** | Shows breadcrumb navigation on product pages. |
-| **Enable in blog** |  |
+| **Enable in blog** | Shows breadcrumb navigation on blog and article pages. |
 
 ## Favicon
 
@@ -170,20 +182,26 @@ Sets the small icon shown in browser tabs.
 |---|---|
 | **Favicon image** | The small icon shown in browser tabs and bookmarks. Recommended size is 32x32 pixels. |
 
-## t:settings_schema.currency_codes.name
+## Currency codes
+
+Controls whether currency codes (for example USD or EUR) are displayed alongside prices.
 
 | Setting | What it does |
 |---|---|
 | **Show codes** | When enabled, the currency code (for example USD or EUR) is shown alongside prices across the store. |
 
-## t:settings_schema.gift_card.name
+## Gift card
+
+Configures the brand mark and visual style of gift card pages.
 
 | Setting | What it does |
 |---|---|
-| **Logo** | The logo image displayed in the header. |
-| **Width** | The display width of the logo on desktop, in pixels. |
+| **Logo** | The logo image for the store. Used as the brand mark in the header and on gift card pages. |
+| **Width** | The display width of the logo image, in pixels. |
 
-## t:settings_schema.social-media.name
+## Social media
+
+Stores your social media profile URLs and configures sharing options.
 
 | Setting | What it does |
 |---|---|

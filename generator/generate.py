@@ -244,15 +244,16 @@ def write_theme_settings(theme_dir, all_labels, descriptions, schema_labels, out
         'Typography': 'Controls fonts, sizes, and letter spacing for headings, body text, and buttons across the entire store.',
         'Layout': 'Sets the maximum page width, side gutters, and global border radius options that apply to all sections.',
         'Buttons': 'Configures border thickness for outlined buttons across the store.',
-        'Color Swatch': 'Configures how product variant color swatches are displayed on product and collection cards.',
-        'Labels': 'Configures the appearance of Sold Out, Sale, and Custom product labels on product cards.',
+        'Color swatch': 'Configures how product variant color swatches are displayed on product and collection cards.',
+        'Labels': 'Configures the appearance of Sold Out, Sale, and Custom product labels on product cards, including their typography.',
         'Animations': 'Controls scroll-triggered reveal animations that apply across the entire store.',
         'Cart': 'Configures global cart behavior including cart type, the free shipping progress bar, and cart note visibility.',
-        'Dynamic Island': 'Enables and styles the Dynamic Island, a floating announcement element that follows the visitor as they scroll down the page.',
+        'Floating header': 'Enables and styles the floating header, a rounded header panel that detaches from the page edge and follows the visitor as they scroll.',
         'Quick add': 'Sets the color scheme for the quick add overlay that appears on product cards.',
         'Breadcrumbs': 'Configures where breadcrumb navigation is shown across the store.',
         'Favicon': 'Sets the small icon shown in browser tabs.',
         'Currency codes': 'Controls whether currency codes (for example USD or EUR) are displayed alongside prices.',
+        'Gift card': 'Configures the brand mark and visual style of gift card pages.',
         'Social media': 'Stores your social media profile URLs and configures sharing options.',
     }
 
@@ -282,7 +283,9 @@ def write_theme_settings(theme_dir, all_labels, descriptions, schema_labels, out
         if gname_raw == 'theme_info':
             continue
         if gname_raw.startswith('t:'):
-            key = gname_raw[2:] + '.name'
+            key = gname_raw[2:]
+            if not key.endswith('.name'):
+                key = key + '.name'
             gname = schema_labels.get(key, gname_raw)
         else:
             gname = gname_raw
@@ -295,7 +298,9 @@ def write_theme_settings(theme_dir, all_labels, descriptions, schema_labels, out
         if gname_raw == 'theme_info':
             continue
         if gname_raw.startswith('t:'):
-            key = gname_raw[2:] + '.name'
+            key = gname_raw[2:]
+            if not key.endswith('.name'):
+                key = key + '.name'
             gname = schema_labels.get(key, gname_raw)
         else:
             gname = gname_raw

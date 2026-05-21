@@ -326,7 +326,7 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Quantity picker** | Shows a quantity input so visitors can select how many units to add to cart. |
 | **Show dynamic checkout buttons** | Shows express checkout buttons like Buy with Shop Pay or Pay with PayPal below the main add to cart button. |
 | **Conversion booster copy** | A short reassurance message near the buy button, for example "Free returns on all orders". Leave blank to hide. |
-| **Logo** | The logo image displayed in the header. |
+| **Logo** | The logo image for the store. Used as the brand mark in the header and on gift card pages. |
 
 
 **Spacing**

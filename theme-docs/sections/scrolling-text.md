@@ -67,7 +67,7 @@ The Scrolling Text section is a continuous horizontal marquee of text and option
 | Setting | What it does |
 |---|---|
 | **Image** | A custom image used as a visual divider between scrolling text elements. |
-| **Logo** | The logo image displayed in the header. |
+| **Logo** | The logo image for the store. Used as the brand mark in the header and on gift card pages. |
 | **Image border radius** | The border radius of the image divider in pixels. Higher values produce a more rounded shape. |
 
 

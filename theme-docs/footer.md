@@ -88,7 +88,7 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 | Setting | What it does |
 |---|---|
 | **Image** | The image displayed in this section. Click to upload or select from your media library. |
-| **Logo width** | The display width of the logo on desktop, in pixels. |
+| **Logo width** | The display width of the logo image, in pixels. |
 | **Column span** | Controls how many columns wide this block is in the footer grid. Set to 2 for a wider block like a newsletter form. |
 
 

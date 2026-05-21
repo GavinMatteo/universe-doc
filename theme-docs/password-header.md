@@ -22,8 +22,8 @@ The Password Page Header appears at the top of the password-protected coming soo
 
 | Setting | What it does |
 |---|---|
-| **Logo** | The logo image displayed in the header. |
-| **Logo width** | The display width of the logo on desktop, in pixels. |
+| **Logo** | The logo image for the store. Used as the brand mark in the header and on gift card pages. |
+| **Logo width** | The display width of the logo image, in pixels. |
 
 
 ### Colors
