@@ -6,6 +6,12 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 
 
 
+![Bold Slideshow on the homepage.](../assets/screenshots/bold-slideshow.png)
+
+*Bold Slideshow on the homepage.*
+
+
+
 **On this page**
 
 - [Section Settings](#section-settings)
