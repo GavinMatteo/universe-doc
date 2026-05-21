@@ -29,7 +29,7 @@ The Featured Blog section displays the most recent articles from a selected blog
 | **Choose blog** | Selects which blog to pull recent articles from. The section automatically shows the latest posts. |
 | **View all** | Shows a View all link below the article cards, linking to the full blog page. |
 | **Show blog's date** | Shows the publication date on each article card. |
-| **Show excerpt on list articles** |  |
+| **Show excerpt on list articles** | Shows a short excerpt below the title on the secondary list articles next to the main featured article. The featured article always shows its excerpt. |
 | **Heading** | The main heading displayed at the top of this block or section. |
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |

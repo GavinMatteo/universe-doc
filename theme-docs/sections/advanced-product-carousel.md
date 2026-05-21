@@ -42,7 +42,7 @@ The Advanced Product Carousel is an interactive product showcase with a wheel-st
 | **Mobile slide width** | How wide each slide is on mobile as a percentage of the viewport. |
 | **Background shape type** | The background shape style behind each product in the carousel. |
 | **Shape color** | The color of the background shape element. |
-| **Product text color** |  |
+| **Product text color** | The color of the product title and price text displayed below each product in the wheel carousel. |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
