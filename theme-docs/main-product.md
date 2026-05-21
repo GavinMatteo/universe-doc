@@ -51,7 +51,7 @@ The Product Page section is the core of your product detail page. It is fully mo
 
 | Setting | What it does |
 |---|---|
-| **Show breadcrumbs on mobile** |  |
+| **Show breadcrumbs on mobile** | Shows breadcrumb navigation on mobile screens. Controlled independently from the desktop breadcrumbs setting. |
 | **Desktop layout** | The arrangement of the product image and content column on desktop. |
 | **Desktop thumbnail positioning** | Where the thumbnail strip appears relative to the main image on desktop. |
 | **Show mobile thumbnails** | Shows a thumbnail strip below the product image on mobile. |
@@ -91,12 +91,12 @@ The Product Page section is the core of your product detail page. It is fully mo
 | **Show low stock counter** | Shows a counter or urgency message when stock drops below the threshold. |
 | **Low inventory treshold** | The stock level below which the low stock indicator activates. |
 | **Show inventory count** | Controls when to show the exact stock number: Always, or only when below the low inventory threshold. |
-| **Label text color** |  |
-| **Label background color** |  |
+| **Label text color** | The text color of the inventory label overlaid on the product media, for example "Only 3 left". |
+| **Label background color** | The background color of the inventory label overlaid on the product media. |
 | **Show micro copy** | Shows a small urgency text on the product media, for example "Only 3 left in stock". |
 | **Text** | The urgency message shown on the product media. Leave blank to use the default text. |
-| **Label text color** |  |
-| **Label background color** |  |
+| **Label text color** | The text color of the micro-copy label overlaid on the product media, for example "Bestseller" or "Limited edition". |
+| **Label background color** | The background color of the micro-copy label overlaid on the product media. |
 
 
 ### Heading
@@ -280,7 +280,7 @@ The Product Page section is the core of your product detail page. It is fully mo
 
 | Setting | What it does |
 |---|---|
-| **Enable soft background** |  |
+| **Enable soft background** | When enabled, the block is wrapped in a subtle tinted background to visually separate it from the surrounding product page content. |
 
 
 **Spacing**
@@ -336,7 +336,7 @@ The Product Page section is the core of your product detail page. It is fully mo
 | **Date tolerance (days)** | Buffer days added to the estimated shipping date. |
 | **Delay after shipping (days)** | Number of business days from shipment to delivery. |
 | **Date tolerance (days)** | Buffer days added to the estimated delivery date. |
-| **Enable soft background** |  |
+| **Enable soft background** | When enabled, the block is wrapped in a subtle tinted background to visually separate it from the surrounding product page content. |
 | **Date format** | How the estimated date is displayed, for example as day number and month name. |
 
 
@@ -353,7 +353,7 @@ The Product Page section is the core of your product detail page. It is fully mo
 
 | Setting | What it does |
 |---|---|
-| **Enable soft background** |  |
+| **Enable soft background** | When enabled, the block is wrapped in a subtle tinted background to visually separate it from the surrounding product page content. |
 | **Icon** | The icon for the first step in the multistep trust bar. Choose from the built-in icon library. |
 | **Text** | The short label for the first step, for example "Free shipping". |
 | **Icon** | The icon for the second step. |
@@ -375,7 +375,7 @@ The Product Page section is the core of your product detail page. It is fully mo
 
 | Setting | What it does |
 |---|---|
-| **Enable soft background** |  |
+| **Enable soft background** | When enabled, the block is wrapped in a subtle tinted background to visually separate it from the surrounding product page content. |
 | **Icon** | The icon for the first row in the icons with text block. |
 | **Heading** | The heading for the first row. |
 | **Paragraph** | The supporting description for the first row. |
@@ -430,7 +430,7 @@ The Product Page section is the core of your product detail page. It is fully mo
 |---|---|
 | **Heading** | The heading displayed above the bullet points list. |
 | **Paragraph** | The bullet point items. Format each point on a new line in the rich text editor. |
-| **Enable soft background** |  |
+| **Enable soft background** | When enabled, the block is wrapped in a subtle tinted background to visually separate it from the surrounding product page content. |
 
 
 **Spacing**

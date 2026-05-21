@@ -33,8 +33,8 @@ The Cart Page section renders the full cart on the /cart page, including line it
 | **Show cart notes** | Shows a text area where visitors can leave an order note. |
 | **Show discount code input** | Shows a field for entering a discount code in the cart. |
 | **Show terms and conditions** | Shows a checkbox visitors must accept before proceeding to checkout. |
-| **Show accelerated checkout buttons** |  |
-| **Show taxes and shipping calculated at checkout** |  |
+| **Show accelerated checkout buttons** | Shows the accelerated checkout buttons (Shop Pay, Apple Pay, PayPal, and so on) below the main Checkout button, allowing visitors to skip to express payment. |
+| **Show taxes and shipping calculated at checkout** | Shows a small reassurance line below the subtotal indicating that taxes and shipping are calculated at checkout. |
 | **Show payment icons** | Shows accepted payment method icons below the checkout button. |
 
 

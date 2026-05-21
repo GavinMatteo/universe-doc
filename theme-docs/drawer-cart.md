@@ -25,7 +25,7 @@ The Drawer Cart is a slide-in cart panel that appears when a visitor adds an ite
 |---|---|
 | **Enable free shipping bar** | Shows a progress bar indicating how close the visitor is to the free shipping threshold. |
 | **Enable** | Shows a product suggestion row in the cart drawer to encourage additional purchases. |
-| **Heading** |  |
+| **Heading** | The heading displayed above the cross-sell product list in the cart. Renders responsively on both mobile and desktop. |
 | **Products** | The products to suggest in the cross-sell area. Select them from your catalog. |
 | **Show conversion boost copy** | Shows a short reassurance line with an icon above the checkout button. |
 | **Copy text** | The text of the reassurance line, for example "Free returns on all orders". |
@@ -34,8 +34,8 @@ The Drawer Cart is a slide-in cart panel that appears when a visitor adds an ite
 | **Show discount code input** | Shows a field for entering a discount code in the cart. |
 | **Show view cart button** | Shows a secondary button linking to the full /cart page. |
 | **Show checkout button** | Shows the main Checkout button. |
-| **Show accelerated checkout buttons** |  |
-| **Show taxes and shipping calculated at checkout** |  |
+| **Show accelerated checkout buttons** | Shows the accelerated checkout buttons (Shop Pay, Apple Pay, PayPal, and so on) below the main Checkout button, allowing visitors to skip to express payment. |
+| **Show taxes and shipping calculated at checkout** | Shows a small reassurance line below the subtotal indicating that taxes and shipping are calculated at checkout. |
 | **Show payment icons** | Shows accepted payment method icons below the checkout button. |
 | **Show terms and conditions** | Shows a checkbox visitors must accept before proceeding to checkout. |
 | **Message** | The message shown when the cart is empty. |
@@ -53,7 +53,7 @@ The Drawer Cart is a slide-in cart panel that appears when a visitor adds an ite
 | **Upsell cards background** | Custom background color for cross-sell product cards. |
 | **Upsell button background** | Custom background color for the add button on cross-sell cards. |
 | **Upsell text color** | Custom text color for the cross-sell product area. |
-| **Upsell button text color** |  |
+| **Upsell button text color** | Custom text color for the add button on cross-sell cards in the cart drawer. |
 
 
 ### Colors
