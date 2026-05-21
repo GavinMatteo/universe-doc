@@ -1,6 +1,5 @@
 .claude/worktrees/
 .themes/
-.venv/
 .DS_Store
 __pycache__/
 *.pyc
