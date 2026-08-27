@@ -1,6 +1,6 @@
-# Advanced Product Carousel
+# Product Carousel
 
-The Advanced Product Carousel is an interactive product showcase with a wheel-style animation. As the visitor scrolls through products, each card rotates into view. It works best with a small, curated set of hero products rather than a full collection.
+The Product Carousel is an interactive product showcase with a wheel-style animation. As the visitor scrolls through products, each card rotates into view. It works best with a small, curated set of hero products rather than a full collection.
 
 📌 **When to use it:** Use it on the homepage or a campaign page to spotlight 4 to 8 key products in a memorable way.
 

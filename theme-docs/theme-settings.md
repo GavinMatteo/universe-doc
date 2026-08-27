@@ -136,7 +136,7 @@ Configures global cart behavior including cart type, the free shipping progress 
 | Setting | What it does |
 |---|---|
 | **Cart type** | Controls how the cart is displayed: Drawer (slide-in panel), Page (full /cart page), or Popup notification. |
-| **Free shipping threshold** | The order value at which free shipping is triggered. Enter numbers only. For multiple currencies use the format USD:100,EUR:95. |
+| **Free shipping threshold** | The order value at which free shipping is triggered. Enter numbers only, in your store's base currency. Other currencies are converted automatically using your store's exchange rates. |
 | **Show truck icon** | Shows a truck icon inside the free shipping progress bar. |
 | **Shipping message** | The message shown before the threshold is reached. Use [amount] as a placeholder for the remaining amount. |
 | **Success message** | The message shown when the visitor has reached the free shipping threshold. |
@@ -196,6 +196,7 @@ Configures the brand mark and visual style of gift card pages.
 
 | Setting | What it does |
 |---|---|
+| **Color scheme** | The color palette applied to the gift card page, controlling its background, text, and button colors. |
 | **Logo** | The logo image for the store. Used as the brand mark in the header and on gift card pages. |
 | **Width** | The display width of the logo image, in pixels. |
 

@@ -34,11 +34,11 @@ Food buyers want to know where the product comes from and how it is made. Use on
 
 Keep text concise. 3 to 4 sentences per section maximum.
 
-### 6. Best Choice Offer — product comparison
+### 6. Product Offer Comparison — tiered options
 
-If you have tiered products (for example, a standard, premium, and subscription option), use Best Choice Offer to display them side by side with feature bullet points. Highlight the option you want to sell most.
+If you have tiered products (for example, a standard, premium, and subscription option), use Product Offer Comparison to display them side by side with feature bullet points. Highlight the option you want to sell most.
 
-### 7. Reviews Showcase — social proof
+### 7. Reviews Carousel — social proof
 
 For food brands, reviews that mention taste, quality, and repeat purchase are the most persuasive. Prioritize reviews with specific product mentions.
 

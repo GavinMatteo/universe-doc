@@ -1,6 +1,6 @@
-# Quotes Carousel
+# Testimonials
 
-The Quotes Carousel displays customer testimonials or editorial quotes in a rotating carousel. Each block contains the quote text and the author name.
+The Testimonials section displays customer quotes or editorial pull quotes in a rotating carousel. Each block contains the quote text and the author name.
 
 📌 **When to use it:** Use it on the homepage, About page, or product pages to build trust through social proof.
 
@@ -105,5 +105,5 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 
 **Can I add a customer photo next to the quote?**\
-Not in this section. For photo-based reviews use the Reviews Showcase section instead.
+Not in this section. For photo-based reviews use the Reviews Carousel section instead.
 

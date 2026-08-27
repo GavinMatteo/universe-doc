@@ -17,8 +17,8 @@ SECTION_META = {
         ]
     ),
     'u-advanced-hero-slideshow.liquid': (
-        'Advanced Hero Slideshow',
-        'The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines a large foreground image with scrolling text that moves at a different speed in the background. The result is a parallax-like depth effect as the visitor scrolls. It works best for editorial homepages, campaign landing pages, or brand storytelling.',
+        'Product Hero Slideshow',
+        'The Product Hero Slideshow is a full-screen or fixed-height hero that combines a large foreground image with scrolling text that moves at a different speed in the background. The result is a parallax-like depth effect as the visitor scrolls. It works best for editorial homepages, campaign landing pages, or brand storytelling.',
         'Use it when you want a strong visual opening with a cinematic feel.',
         [
             'Use a high-quality image with a clear subject that reads well at full width.',
@@ -31,8 +31,8 @@ SECTION_META = {
         ]
     ),
     'u-advanced-product-carousel.liquid': (
-        'Advanced Product Carousel',
-        'The Advanced Product Carousel is an interactive product showcase with a wheel-style animation. As the visitor scrolls through products, each card rotates into view. It works best with a small, curated set of hero products rather than a full collection.',
+        'Product Carousel',
+        'The Product Carousel is an interactive product showcase with a wheel-style animation. As the visitor scrolls through products, each card rotates into view. It works best with a small, curated set of hero products rather than a full collection.',
         'Use it on the homepage or a campaign page to spotlight 4 to 8 key products in a memorable way.',
         [
             'Works best with 4 to 6 products. Too many breaks the rhythm of the animation.',
@@ -44,8 +44,8 @@ SECTION_META = {
         ]
     ),
     'u-best-choice-offer.liquid': (
-        'Best Choice Offer',
-        'The Best Choice Offer section displays two or three products side by side in a comparison layout, with one product highlighted as the recommended choice. Each card shows key features as bullet points, a custom image, and a buy button.',
+        'Product Offer Comparison',
+        'The Product Offer Comparison section displays two or three products side by side in a comparison layout, with one product highlighted as the recommended choice. Each card shows key features as bullet points, a custom image, and a buy button.',
         'Use it on product pages, landing pages, or the homepage to highlight a hero product alongside alternatives.',
         [
             'The highlighted product should always be your best-margin or best-converting option.',
@@ -81,7 +81,7 @@ SECTION_META = {
         [
             ('Can I mix image slides and video slides in the same slideshow?', 'Yes. Add both block types to the same section. The order follows the block order in the Theme Editor.'),
             ('The video does not autoplay. Why?', 'Browsers block autoplay for videos that have an audio track. Make sure the video file is muted and in MP4 format.'),
-            ('Are the star ratings connected to my store reviews?', 'No. Stars are set manually per slide. For real review data use the Reviews Showcase section instead.'),
+            ('Are the star ratings connected to my store reviews?', 'No. Stars are set manually per slide. For real review data use the Reviews Carousel section instead.'),
         ]
     ),
     'u-collage.liquid': (
@@ -422,14 +422,14 @@ SECTION_META = {
         [('Can I use both a video and an image as the background?', 'If you upload a video file, it takes priority over the image. Upload a separate mobile video or image for the mobile experience.')]
     ),
     'u-quotes.liquid': (
-        'Quotes Carousel',
-        'The Quotes Carousel displays customer testimonials or editorial quotes in a rotating carousel. Each block contains the quote text and the author name.',
+        'Testimonials',
+        'The Testimonials section displays customer quotes or editorial pull quotes in a rotating carousel. Each block contains the quote text and the author name.',
         'Use it on the homepage, About page, or product pages to build trust through social proof.',
         [
             'Use real, specific quotes rather than generic praise.',
             'Three to five quotes is enough. More than that and visitors rarely see the later ones.',
         ],
-        [('Can I add a customer photo next to the quote?', 'Not in this section. For photo-based reviews use the Reviews Showcase section instead.')]
+        [('Can I add a customer photo next to the quote?', 'Not in this section. For photo-based reviews use the Reviews Carousel section instead.')]
     ),
     'u-related-products.liquid': (
         'Related Products',
@@ -439,8 +439,8 @@ SECTION_META = {
         [('Can I manually choose which related products to show?', 'No. Related products are determined automatically by Shopify. To influence recommendations, ensure products are correctly tagged.')]
     ),
     'u-reviews-showcase.liquid': (
-        'Reviews Showcase',
-        'The Reviews Showcase section displays customer review cards in a carousel with an overall star rating at the top. Each review block contains the reviewer photo, name, role, a star rating, and the review text. Reviews are added manually as blocks.',
+        'Reviews Carousel',
+        'The Reviews Carousel section displays customer review cards in a carousel with an overall star rating at the top. Each review block contains the reviewer photo, name, role, a star rating, and the review text. Reviews are added manually as blocks.',
         'Use it on the homepage or product pages as a dedicated social proof section.',
         [
             'Use specific, detailed reviews. Generic short reviews add little credibility.',
@@ -456,8 +456,8 @@ SECTION_META = {
         [('Can I add an image inside a Rich Text section?', 'Not in this section. Use Image With Text instead.')]
     ),
     'u-scrolling-pills.liquid': (
-        'Scrolling Pills',
-        'The Scrolling Pills section displays a horizontal row of interactive pill-shaped tags that scroll across the screen. Each pill shows a front label and can reveal a back label or image on hover. Clicking a pill navigates to a linked URL.',
+        'Pills',
+        'The Pills section displays a horizontal row of interactive pill-shaped tags that scroll across the screen. Each pill shows a front label and can reveal a back label or image on hover. Clicking a pill navigates to a linked URL.',
         'Use it as a visual navigation aid on the homepage or to add interactive motion between sections.',
         [
             'The flip effect works best when front and back labels are short and complementary.',
@@ -483,7 +483,7 @@ SECTION_META = {
             'Use a PNG product image with a transparent background for the cleanest result.',
             'Enable the Glass Effect for a frosted-glass background that separates the product from the scrolling text.',
         ],
-        [('Can I spotlight multiple products in the same section?', 'No. For multi-product carousels use Featured Collection or Advanced Product Carousel instead.')]
+        [('Can I spotlight multiple products in the same section?', 'No. For multi-product carousels use Featured Collection or Product Carousel instead.')]
     ),
     'u-sticky-section.liquid': (
         'Sticky Section',
@@ -509,8 +509,8 @@ SECTION_META = {
         ]
     ),
     'u-then-vs-now.liquid': (
-        'Then vs Now',
-        'The Then vs Now section displays two images in a before-and-after slider controlled by dragging a handle. It is used for product transformations, before-and-after results, or comparing old and new versions.',
+        'Before and After Slider',
+        'The Before and After Slider section displays two images in a before-and-after slider controlled by dragging a handle. It is used for product transformations, before-and-after results, or comparing old and new versions.',
         'Use it when showing both states simultaneously is more powerful than showing them separately.',
         [
             'The two images should be the same dimensions and aspect ratio to align correctly.',
@@ -522,8 +522,8 @@ SECTION_META = {
         ]
     ),
     'u-touch-and-take.liquid': (
-        'Touch and Take',
-        'The Touch and Take section overlays a lifestyle image with interactive product hotspots. Visitors tap or click a hotspot to reveal a product card with name, price, and a quick-add button.',
+        'Shop the Look',
+        'The Shop the Look section overlays a lifestyle image with interactive product hotspots. Visitors tap or click a hotspot to reveal a product card with name, price, and a quick-add button.',
         'Use it on the homepage or campaign pages to make lifestyle photography directly shoppable.',
         [
             'Lifestyle images with multiple products in the scene work best.',
@@ -532,8 +532,8 @@ SECTION_META = {
         [('The hotspot position looks different on mobile.', 'Use the separate horizontal and vertical mobile position fields to fine-tune placement on smaller screens.')]
     ),
     'u-ugc-carousel.liquid': (
-        'UGC Carousel',
-        'The UGC Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, a label badge, a title, and body text.',
+        'Media Carousel',
+        'The Media Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, a label badge, a title, and body text.',
         'Use it on the homepage or product pages to display customer videos, unboxing content, or testimonial clips.',
         [
             'Short vertical videos (9:16 ratio) look best in this carousel.',

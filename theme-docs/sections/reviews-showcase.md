@@ -1,6 +1,6 @@
-# Reviews Showcase
+# Reviews Carousel
 
-The Reviews Showcase section displays customer review cards in a carousel with an overall star rating at the top. Each review block contains the reviewer photo, name, role, a star rating, and the review text. Reviews are added manually as blocks.
+The Reviews Carousel section displays customer review cards in a carousel with an overall star rating at the top. Each review block contains the reviewer photo, name, role, a star rating, and the review text. Reviews are added manually as blocks.
 
 📌 **When to use it:** Use it on the homepage or product pages as a dedicated social proof section.
 

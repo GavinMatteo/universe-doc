@@ -1,6 +1,6 @@
-# Best Choice Offer
+# Product Offer Comparison
 
-The Best Choice Offer section displays two or three products side by side in a comparison layout, with one product highlighted as the recommended choice. Each card shows key features as bullet points, a custom image, and a buy button.
+The Product Offer Comparison section displays two or three products side by side in a comparison layout, with one product highlighted as the recommended choice. Each card shows key features as bullet points, a custom image, and a buy button.
 
 📌 **When to use it:** Use it on product pages, landing pages, or the homepage to highlight a hero product alongside alternatives.
 

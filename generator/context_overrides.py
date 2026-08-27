@@ -9,7 +9,7 @@ CONTEXT_OVERRIDES = {
         'height': 'Controls how tall the slideshow appears on desktop. Choose from preset options including full screen.',
         'height_mobile': 'Controls how tall the slideshow appears on mobile. Can be set independently from desktop.',
     },
-    # Then vs Now: height is the section height
+    # Before and After Slider: height is the section height
     'u-then-vs-now.liquid': {
         'height': 'Controls how tall the section appears on desktop. Choose from preset options.',
         'height_mobile': 'Controls how tall the section appears on mobile.',
@@ -25,7 +25,7 @@ CONTEXT_OVERRIDES = {
     'u-bold-slideshow.liquid::video-slide': {
         'overlay_color': 'A color tint applied on top of the background video to improve text readability.',
     },
-    # Advanced Hero Slideshow: per-slide overlay
+    # Product Hero Slideshow: per-slide overlay
     'u-advanced-hero-slideshow.liquid::advanced_slide': {
         'overlay_color': 'A color tint applied on top of the slide background image.',
     },

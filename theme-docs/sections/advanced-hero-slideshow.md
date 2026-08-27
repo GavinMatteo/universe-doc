@@ -1,6 +1,6 @@
-# Advanced Hero Slideshow
+# Product Hero Slideshow
 
-The Advanced Hero Slideshow is a full-screen or fixed-height hero that combines a large foreground image with scrolling text that moves at a different speed in the background. The result is a parallax-like depth effect as the visitor scrolls. It works best for editorial homepages, campaign landing pages, or brand storytelling.
+The Product Hero Slideshow is a full-screen or fixed-height hero that combines a large foreground image with scrolling text that moves at a different speed in the background. The result is a parallax-like depth effect as the visitor scrolls. It works best for editorial homepages, campaign landing pages, or brand storytelling.
 
 📌 **When to use it:** Use it when you want a strong visual opening with a cinematic feel.
 
