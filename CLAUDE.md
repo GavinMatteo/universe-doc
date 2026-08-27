@@ -35,9 +35,9 @@ Hand-edited Markdown pages that the generator does **not** touch (and never shou
 1. **Pull the latest theme** from the connected Shopify dev store:
    ```bash
    shopify theme pull --store=universe-theme-woofy.myshopify.com \
-     --theme=198939607383 --path=.themes/universe-latest --nodelete
+     --theme=202897129815 --path=.themes/universe-empty-2nd --nodelete
    ```
-   Theme **198939607383** is *Universe - 1.0 (Empty) NO TOUCH* — the reference empty version with the latest schema. The store has a `/password` gate; the password is currently `universe` (will become public soon).
+   Theme **202897129815** is *Universe - 1.0 (Empty) NO TOUCH - Second review* — the reference empty version with the latest schema. Note the `--path` must already exist: `mkdir -p` it first, or the CLI errors out. The store has a `/password` gate; the password is currently `universe` (will become public soon).
 
 2. **Diff the schema** against curated sources. Use the `schema-differ` subagent (see `.claude/agents/schema-differ.md`). It reports new sections, new settings, missing descriptions, stale entries.
 
@@ -45,7 +45,7 @@ Hand-edited Markdown pages that the generator does **not** touch (and never shou
 
 4. **Regenerate**:
    ```bash
-   python3 generator/generate.py .themes/universe-latest theme-docs
+   python3 generator/generate.py .themes/universe-empty-2nd theme-docs
    ```
    Expect output like `Rendered 52 files`. System sections without schema (`u-predictive-search.liquid`, `u-main-quick-add.liquid`) are intentionally skipped.
 
@@ -94,9 +94,18 @@ The first sync after going live, GitBook reformats `SUMMARY.md` (title becomes `
 `universe-theme-woofy.myshopify.com` is behind a Shopify password gate. The password is currently `universe`. The maintainer plans to make the store public; until then, any script that fetches storefront pages needs to dismiss the gate. The pattern is documented in commit `976f3e5` (now reverted but in history) for future reference.
 
 ### Theme IDs on this dev store
-- **199004782935** *Universe 1.0 - Demo Store* (role: live) — has demo content, use for visual references and screenshots
-- **198939607383** *Universe - 1.0 (Empty) NO TOUCH* (role: unpublished) — empty version, **this is the reference for schema and docs**
-- **198520176983** *Copia Sana di Universe v1.0 - Woofy - no touch* (role: unpublished) — alternate clean copy
+Theme IDs change between review rounds — always run `shopify theme list --store=universe-theme-woofy.myshopify.com` before pulling, do not trust the IDs below blindly.
+
+As of 27 August 2026 (Second Review round):
+
+- **202944479575** *Universe 1.0 - Demo Store - Second Review* (role: live) — demo content, use for visual references and screenshots
+- **202897129815** *Universe - 1.0 (Empty) NO TOUCH - Second review* (role: unpublished) — empty version, **this is the reference for schema and docs**
+- **200863809879** *Work In Progress - v1.0.1* (role: unpublished) — active development, schema may be unstable
+- **201548300631** / **201549480279** — First Review round, superseded
+
+The live demo and the empty NO TOUCH of the same round have **identical** `sections/*.liquid`, `snippets/` and `locales/`; they differ only in the content JSON (`header-group.json`, `footer-group.json`, `overlay-group.json`). Either can be used for schema; the empty one is the convention.
+
+The pre-Second-Review IDs (199004782935, 198939607383, 198520176983) no longer exist on the store.
 
 ### `.themes/` and `.venv/`
 Both are gitignored. `.themes/` holds theme exports from `shopify theme pull`. `.venv/` is reserved for the Python virtualenv if needed (Playwright experiment used it but the pipeline was reverted; current generator has zero external deps).
@@ -112,10 +121,10 @@ Two keys appear twice in the dict with slightly different descriptions: `enable_
 ```bash
 # Pull latest theme (empty reference)
 shopify theme pull --store=universe-theme-woofy.myshopify.com \
-  --theme=198939607383 --path=.themes/universe-latest --nodelete
+  --theme=202897129815 --path=.themes/universe-empty-2nd --nodelete
 
 # Regenerate docs from the pulled theme
-python3 generator/generate.py .themes/universe-latest theme-docs
+python3 generator/generate.py .themes/universe-empty-2nd theme-docs
 
 # Quick local broken-anchor check (inline, no agent)
 python3 -c "
@@ -150,9 +159,16 @@ The **May 2026 refresh** (commits `f7ecb9c` through `1e0028b`) brought the gener
 
 Detailed session log: `.claude/sessions/2026-05-21.md` (local, not committed).
 
+The **August 2026 Second Review sync** aligned the docs with the reworked theme: 2 new settings (`menu_open_trigger`, `gift_card_color_scheme`), 9 section renames (label-only — liquid filenames and therefore all `.md` page names are unchanged), and a changed multi-currency behaviour for the free shipping threshold. Full record in `docs-internal/2026-08-27-sync-second-review.md`. Most of the theme's schema churn that round was `default` color-scheme renumbering, which the generator does not render — when diffing, filter `default` changes out or the signal drowns.
+
+## Internal session log
+
+`docs-internal/` holds one Markdown file per documentation-update session (what changed, why, what is left to do by hand). **GitBook syncs only `theme-docs/`**, so nothing in `docs-internal/` is ever published — it lives on GitHub and locally only. Add a new dated file there at the end of each update round.
+
 ## When in doubt
 
 - Hand-written guides go in `theme-docs/` root or `theme-docs/guides/` — never overwrite from the generator.
+- Internal notes and session logs go in `docs-internal/` — never in `theme-docs/`.
 - New custom agents go in `.claude/agents/` (versioned).
 - New theme exports go in `.themes/` (gitignored).
 - Markdown table cells must never be empty in the "What it does" column — that means a setting has no description, which is a bug. The render check above does not catch this; grep `'\|\s*\*\*[^|]+\*\*\s*\|\s*\|$'` if you want to verify.

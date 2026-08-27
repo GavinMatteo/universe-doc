@@ -8,9 +8,9 @@ Health and beauty stores succeed when they communicate efficacy, build trust thr
 
 ## Recommended home page structure
 
-### 1. Advanced Hero Slideshow — editorial hero
+### 1. Product Hero Slideshow — editorial hero
 
-The Advanced Hero Slideshow's parallax effect gives a premium, editorial feel that works well for beauty brands. Use a high-quality product or lifestyle image with a short, benefit-focused heading ("Skin that glows from within").
+The Product Hero Slideshow's parallax effect gives a premium, editorial feel that works well for beauty brands. Use a high-quality product or lifestyle image with a short, benefit-focused heading ("Skin that glows from within").
 
 Set the background text to a relevant keyword (for example, your brand name or a key ingredient) at low opacity.
 
@@ -32,11 +32,11 @@ Feature your best-selling or most important product with the Spotlighted Product
 
 Use Feature Slide blocks to add additional product angle images alongside the hero shot.
 
-### 5. Then vs Now — before and after
+### 5. Before and After Slider — visible results
 
-If your product produces a visible result, the Then vs Now section is one of the highest-impact elements you can add. Show a before-and-after comparison with the slider. Label each side clearly.
+If your product produces a visible result, the Before and After Slider section is one of the highest-impact elements you can add. Show a before-and-after comparison with the slider. Label each side clearly.
 
-### 6. Reviews Showcase — clinical social proof
+### 6. Reviews Carousel — clinical social proof
 
 For health and beauty, reviews that mention specific results ("After 4 weeks my skin is clearer"), skin types, or ages are the most persuasive. Select reviews that reflect your target customer.
 

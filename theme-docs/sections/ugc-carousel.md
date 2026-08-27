@@ -1,6 +1,6 @@
-# UGC Carousel
+# Media Carousel
 
-The UGC Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, a label badge, a title, and body text.
+The Media Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, a label badge, a title, and body text.
 
 📌 **When to use it:** Use it on the homepage or product pages to display customer videos, unboxing content, or testimonial clips.
 

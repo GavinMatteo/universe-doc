@@ -2,7 +2,7 @@
 
 How to set up the mega menu in the Header and Navigation section.
 
-The mega menu replaces a standard dropdown with a richer panel that can include navigation links, collection cards, product cards, or a promotional image. It activates when a visitor hovers over a specific menu item in the header.
+The mega menu replaces a standard dropdown with a richer panel that can include navigation links, collection cards, product cards, or a promotional image. It opens when a visitor clicks a specific menu item in the header, or on hover if you change the trigger.
 
 ---
 
@@ -11,6 +11,19 @@ The mega menu replaces a standard dropdown with a richer panel that can include 
 The mega menu is configured using blocks inside the **Header and Navigation** section. Each block type creates a different kind of mega menu panel. You assign each block to a specific navigation item using the **Menu item to apply to** setting.
 
 **Important:** The value in **Menu item to apply to** must match the navigation item label exactly, including capitalization and spacing. If it does not match, the mega menu will not appear.
+
+---
+
+## How the menu opens
+
+The **Open dropdown menu** setting in the Header and Navigation section controls how both plain dropdowns and mega menu panels open on desktop:
+
+- **On click** (default) — the panel opens when the visitor clicks the parent menu item, and stays open until they click elsewhere.
+- **On hover** — the panel opens as soon as the pointer moves over the menu item.
+
+On touch devices the panel always opens on tap, whichever option is selected.
+
+Choose **On click** when your menu items are also links you want visitors to be able to follow, or when panels opening accidentally would be distracting. Choose **On hover** for faster browsing on large catalogs.
 
 ---
 
@@ -63,7 +76,7 @@ Combines a submenu of links with a promotional image. Similar to Explore but des
 3. In the **Menu item to apply to** field, type the exact label of the navigation menu item that should trigger the dropdown. For example, if your menu item is labeled "Collections", type "Collections".
 4. Configure the rest of the block settings.
 5. Click **Save**.
-6. Preview the header on your store. Hover over the navigation item to see the mega menu.
+6. Preview the header on your store. Click the navigation item to see the mega menu, or hover over it if you set **Open dropdown menu** to On hover.
 
 ---
 
@@ -71,6 +84,9 @@ Combines a submenu of links with a promotional image. Similar to Explore but des
 
 **The mega menu is not appearing.**
 The most common cause is a mismatch in the **Menu item to apply to** field. Open your navigation menu in Shopify admin under **Online Store > Navigation** and copy the menu item label exactly. Paste it into the **Menu item to apply to** field.
+
+**The mega menu opens on click when I expected hover, or the other way round.**
+Open the **Header and Navigation** section and check the **Open dropdown menu** setting. The default is On click. Note that touch devices always open the panel on tap regardless of this setting.
 
 **The mega menu appears for the wrong navigation item.**
 Check that you have not accidentally added the same label to two different mega menu blocks.

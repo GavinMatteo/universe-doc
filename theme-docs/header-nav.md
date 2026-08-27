@@ -32,6 +32,7 @@ The Header and Navigation section controls the top bar of every page: logo, navi
 | **Logo size** | The display width of the logo on desktop, in pixels. |
 | **Logo mobile size** | The display width of the logo on mobile, in pixels. |
 | **Primary navigation** | The primary navigation menu. Menus are created in Shopify admin under Online Store > Navigation. |
+| **Open dropdown menu** | Controls how dropdown and mega menu panels open on desktop: On click, or On hover when the pointer moves over the menu item. Touch devices always open the panel on tap. |
 | **Navigation layout** | The layout configuration of the header: controls the position of the logo, navigation, and utility icons. |
 | **Secondary navigation** | A secondary navigation menu displayed in the header or mobile drawer. |
 | **Enable transparent header in home page only** | When enabled, the header has a transparent background only on the homepage. |

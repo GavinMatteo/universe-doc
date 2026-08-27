@@ -1,6 +1,6 @@
-# Then vs Now
+# Before and After Slider
 
-The Then vs Now section displays two images in a before-and-after slider controlled by dragging a handle. It is used for product transformations, before-and-after results, or comparing old and new versions.
+The Before and After Slider section displays two images in a before-and-after slider controlled by dragging a handle. It is used for product transformations, before-and-after results, or comparing old and new versions.
 
 📌 **When to use it:** Use it when showing both states simultaneously is more powerful than showing them separately.
 

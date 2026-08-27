@@ -15,12 +15,12 @@ Initial release of Universe.
 - Announcement Bar
 - Header and Navigation (with mega menu support)
 - Bold Slideshow
-- Advanced Hero Slideshow
+- Product Hero Slideshow
 - Spotlighted Product
-- Advanced Product Carousel
-- Best Choice Offer
+- Product Carousel
+- Product Offer Comparison
 - Sticky Section
-- Touch and Take
+- Shop the Look
 - Featured Product
 - Featured Collection
 - Related Products
@@ -34,16 +34,16 @@ Initial release of Universe.
 - Collage
 - Featured Data
 - Comparison Table
-- Then vs Now
+- Before and After Slider
 - Rich Text
 - Big Text
 - Promo Banner
 - Scrolling Text
-- Scrolling Pills
+- Pills
 - Diagonal Texts
-- Reviews Showcase
-- Quotes Carousel
-- UGC Carousel
+- Reviews Carousel
+- Testimonials
+- Media Carousel
 - Newsletter
 - Newsletter Popup
 - Featured Blog
@@ -59,16 +59,16 @@ Initial release of Universe.
 **Theme Settings included at launch:**
 
 - Colors (color schemes)
-- Logo and favicon
 - Typography (headings, header navigation, body text, buttons)
 - Layout (border radius, page dimensions)
-- Buttons
-- Color Swatch
+- Color swatch
 - Labels (Sold Out, Sale, Custom)
 - Animations
 - Cart (type, free shipping bar)
-- Dynamic Island
+- Floating header
 - Quick add
 - Breadcrumbs
+- Favicon
 - Currency codes
+- Gift card
 - Social media

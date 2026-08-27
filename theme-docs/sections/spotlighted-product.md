@@ -112,5 +112,5 @@ Adds a decorative SVG shape at the top or bottom of the section to create a smoo
 
 
 **Can I spotlight multiple products in the same section?**\
-No. For multi-product carousels use Featured Collection or Advanced Product Carousel instead.
+No. For multi-product carousels use Featured Collection or Product Carousel instead.
 

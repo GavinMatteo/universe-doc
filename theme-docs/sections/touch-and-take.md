@@ -1,6 +1,6 @@
-# Touch and Take
+# Shop the Look
 
-The Touch and Take section overlays a lifestyle image with interactive product hotspots. Visitors tap or click a hotspot to reveal a product card with name, price, and a quick-add button.
+The Shop the Look section overlays a lifestyle image with interactive product hotspots. Visitors tap or click a hotspot to reveal a product card with name, price, and a quick-add button.
 
 📌 **When to use it:** Use it on the homepage or campaign pages to make lifestyle photography directly shoppable.
 

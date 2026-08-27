@@ -43,13 +43,13 @@ Use a PNG with a transparent background for the cleanest result. Enable the glas
 
 Use this section to tell a short brand story. Keep the text to 2 to 3 sentences. Alternate the image position (image left on the first instance, image right on the second if you use multiple).
 
-### 6. UGC Carousel — social proof
+### 6. Media Carousel — social proof
 
 Show customer photos or video content. For fashion, vertical video clips (9:16) from social media work particularly well. Enable autoplay on each card.
 
-### 7. Reviews Showcase — trust
+### 7. Reviews Carousel — trust
 
-End the page with a Reviews Showcase section. Use 3 to 5 real reviews that mention fit, quality, or delivery. Include reviewer photos where possible.
+End the page with a Reviews Carousel section. Use 3 to 5 real reviews that mention fit, quality, or delivery. Include reviewer photos where possible.
 
 ---
 

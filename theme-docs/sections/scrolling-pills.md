@@ -1,6 +1,6 @@
-# Scrolling Pills
+# Pills
 
-The Scrolling Pills section displays a horizontal row of interactive pill-shaped tags that scroll across the screen. Each pill shows a front label and can reveal a back label or image on hover. Clicking a pill navigates to a linked URL.
+The Pills section displays a horizontal row of interactive pill-shaped tags that scroll across the screen. Each pill shows a front label and can reveal a back label or image on hover. Clicking a pill navigates to a linked URL.
 
 📌 **When to use it:** Use it as a visual navigation aid on the homepage or to add interactive motion between sections.
 

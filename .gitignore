@@ -1,5 +1,8 @@
 .claude/worktrees/
+.claude/sessions/
+.claude/settings.local.json
 .themes/
+.venv/
 .DS_Store
 __pycache__/
 *.pyc

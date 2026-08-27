@@ -174,5 +174,5 @@ Browsers block autoplay for videos that have an audio track. Make sure the video
 
 
 **Are the star ratings connected to my store reviews?**\
-No. Stars are set manually per slide. For real review data use the Reviews Showcase section instead.
+No. Stars are set manually per slide. For real review data use the Reviews Carousel section instead.
 
