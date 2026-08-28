@@ -99,7 +99,7 @@ Image order is set in Shopify admin under the product's media tab, not in the Th
 Make sure **Enable Sticky add to cart** is turned on in the Product Page section settings, and that the **Buy buttons** block is present in the block list.
 
 **How does the Pairs well with block work?**\
-This block displays products you select manually as a cross-sell suggestion. It does not use Shopify's automatic recommendations — you choose which products to show.
+This block displays products you select manually as a cross-sell suggestion. It does not use Shopify's automatic recommendations. You choose which products to show.
 
 ---
 

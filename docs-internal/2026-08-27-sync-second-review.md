@@ -1,4 +1,4 @@
-# Sync doc — tema "Second Review"
+# Sync doc: tema "Second Review"
 
 **Data:** 27 agosto 2026
 **Branch:** `docs/sync-second-review`
@@ -11,7 +11,7 @@
 
 Sono stati scaricati due temi: il live `Universe 1.0 - Demo Store - Second Review`
 (#202944479575) e l'empty `... NO TOUCH - Second review` (#202897129815). I due export
-hanno `sections/*.liquid`, `snippets/` e `locales/` **identici** — differiscono solo nei
+hanno `sections/*.liquid`, `snippets/` e `locales/` **identici**, differiscono solo nei
 JSON di contenuto (`header-group.json`, `footer-group.json`, `overlay-group.json`).
 È stato quindi usato l'empty come reference, coerente con la convenzione del repo.
 
@@ -34,7 +34,7 @@ la doc. Nessuna sezione aggiunta o rimossa: 53 file `.liquid` prima e dopo.
 
 | Setting | Dove | Tipo |
 |---|---|---|
-| `menu_open_trigger` | `u-header-nav.liquid` | select — *On click* (default) / *On hover* |
+| `menu_open_trigger` | `u-header-nav.liquid` | select, *On click* (default) / *On hover* |
 | `gift_card_color_scheme` | Theme Settings → Gift card | color_scheme |
 
 ### 2. Sezioni rinominate (9)
@@ -56,7 +56,7 @@ I nomi cambiano **solo nell'etichetta**: i file `.liquid` e quindi i nomi delle 
 
 ### 3. Comportamento cambiato (1)
 
-`free_shipping.threshold` — la gestione multivaluta è cambiata. Prima si inserivano i
+`free_shipping.threshold`: la gestione multivaluta è cambiata. Prima si inserivano i
 valori per valuta (`USD:100,EUR:95`), ora si inserisce solo l'importo nella valuta base
 del negozio e la conversione è automatica.
 
@@ -65,9 +65,9 @@ del negozio e la conversione è automatica.
 ## Modifiche applicate
 
 ### `generator/descriptions.py`
-- **+** `menu_open_trigger` — descrizione nuova.
-- **+** `gift_card_color_scheme` — descrizione nuova (senza, la cella "What it does" restava vuota).
-- **~** `free_shipping_threshold` — riscritta per il nuovo comportamento multivaluta.
+- **+** `menu_open_trigger`: descrizione nuova.
+- **+** `gift_card_color_scheme`: descrizione nuova (senza, la cella "What it does" restava vuota).
+- **~** `free_shipping_threshold`: riscritta per il nuovo comportamento multivaluta.
 
 ### `generator/section_meta.py`
 - **~** 9 titoli rinominati (tabella sopra), in Title Case per coerenza col resto della doc.
@@ -80,25 +80,25 @@ del negozio e la conversione è automatica.
 ### `generator/context_overrides.py`
 - **~** due commenti allineati ai nuovi nomi (solo cosmetico, nessun effetto sul render).
 
-### `theme-docs/` — rigenerato
+### `theme-docs/`: rigenerato
 `python3 generator/generate.py .themes/universe-empty-2nd theme-docs` → **Rendered 52 files**.
 13 file modificati: `header-nav.md`, `theme-settings.md` e le 9 pagine rinominate, più
 `bold-slideshow.md` e `spotlighted-product.md` per i riferimenti incrociati.
 
-### `theme-docs/guide-mega-menu.md` — scritto a mano
+### `theme-docs/guide-mega-menu.md`: scritto a mano
 Era **factualmente sbagliato** dopo la modifica al tema: diceva che il mega menu si apre
 all'hover, ma il default della nuova setting è *On click*.
 - **~** intro e step 6 corretti.
 - **+** nuova sottosezione "How the menu opens" con le due modalità e quando usarle.
 - **+** nuova voce di troubleshooting sul trigger.
 
-### `theme-docs/guide-beauty.md`, `guide-fashion.md`, `guide-food.md` — scritti a mano
+### `theme-docs/guide-beauty.md`, `guide-fashion.md`, `guide-food.md`: scritti a mano
 - **~** nomi delle sezioni aggiornati.
 - **~** due sottotitoli diventati ridondanti col nuovo nome, riscritti:
-  "Before and After Slider — before and after" → "— visible results";
-  "Product Offer Comparison — product comparison" → "— tiered options".
+  "Before and After Slider: before and after" è diventato ": visible results";
+  "Product Offer Comparison: product comparison" è diventato ": tiered options".
 
-### `theme-docs/changelog.md` — scritto a mano
+### `theme-docs/changelog.md`: scritto a mano
 - **~** nomi delle sezioni nella lista di lancio v1.0.0.
 - **~** lista dei gruppi Theme Settings riallineata ai 14 gruppi reali.
   ⚠️ **Questa parte era già sbagliata prima di questa sessione**, non è una conseguenza
@@ -143,7 +143,7 @@ vecchie finché non le aggiorni dall'editor GitBook:
 | Link a file `.md` rotti | 0 |
 | Celle "What it does" vuote | 0 |
 | File orfani (non in SUMMARY) | 0 |
-| `generate.py` exit code | 0 — Rendered 52 files |
+| `generate.py` exit code | 0, Rendered 52 files |
 
 Skip attesi e invariati: `u-main-quick-add.liquid` (nessuna voce in `SECTION_META`),
 `u-predictive-search.liquid` (nessun blocco `{% schema %}`).

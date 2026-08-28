@@ -100,7 +100,7 @@ def make_anchor(text):
 
 def build_toc(schema, meta_blocks, has_tips=True, has_faq=True):
     """Build in-page table of contents.
-    has_tips and has_faq control whether to include those anchors — only include
+    has_tips and has_faq control whether to include those anchors. Only include
     them when the corresponding meta is actually present, otherwise the anchor
     has no matching heading.
     """

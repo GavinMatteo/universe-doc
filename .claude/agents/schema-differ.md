@@ -35,10 +35,10 @@ If neither is provided, ask once for the path.
 A single Markdown report with these sections, in this order. Omit any section that is empty.
 
 ```
-# Schema diff report — <theme-source>
+# Schema diff report: <theme-source>
 
 ## New sections
-- `u-foo.liquid` — N settings, M block types
+- `u-foo.liquid`: N settings, M block types
   - Settings: ...
   - Block types: ...
 
@@ -63,7 +63,7 @@ A single Markdown report with these sections, in this order. Omit any section th
 - `u-bar.liquid::block_type` → `setting_id` (not in SETTING_DESCRIPTIONS, no context override)
 
 ## Possibly stale context overrides
-- `u-bar.liquid::missing_block` — block no longer exists in schema
+- `u-bar.liquid::missing_block`: block no longer exists in schema
 
 ## Summary
 - X new sections, Y new settings, Z descriptions missing

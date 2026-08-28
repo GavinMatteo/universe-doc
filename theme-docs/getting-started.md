@@ -38,11 +38,11 @@ To publish a theme and make it live, click the three-dot menu next to the theme 
 
 After installing Universe, complete these steps before customizing:
 
-1. **Add your logo** — Go to **Theme settings > Logo** and upload your store logo. Set the desktop and mobile size.
-2. **Set up your navigation menus** — In Shopify admin under **Online Store > Navigation**, configure your main menu and footer menu. The theme references these automatically.
-3. **Configure color schemes** — Go to **Theme settings > Colors** to define your palettes. Sections reference these palettes by name.
-4. **Set typography** — Go to **Theme settings > Typography** to choose your fonts for headings, body text, and buttons.
-5. **Add social media URLs** — Go to **Theme settings > Social media** and add your profile links. Icons appear automatically wherever social media icons are enabled.
+1. **Add your logo**: Go to **Theme settings > Logo** and upload your store logo. Set the desktop and mobile size.
+2. **Set up your navigation menus**: In Shopify admin under **Online Store > Navigation**, configure your main menu and footer menu. The theme references these automatically.
+3. **Configure color schemes**: Go to **Theme settings > Colors** to define your palettes. Sections reference these palettes by name.
+4. **Set typography**: Go to **Theme settings > Typography** to choose your fonts for headings, body text, and buttons.
+5. **Add social media URLs**: Go to **Theme settings > Social media** and add your profile links. Icons appear automatically wherever social media icons are enabled.
 
 ---
 

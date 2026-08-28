@@ -18,8 +18,8 @@ The mega menu is configured using blocks inside the **Header and Navigation** se
 
 The **Open dropdown menu** setting in the Header and Navigation section controls how both plain dropdowns and mega menu panels open on desktop:
 
-- **On click** (default) — the panel opens when the visitor clicks the parent menu item, and stays open until they click elsewhere.
-- **On hover** — the panel opens as soon as the pointer moves over the menu item.
+- **On click** (default): the panel opens when the visitor clicks the parent menu item, and stays open until they click elsewhere.
+- **On hover**: the panel opens as soon as the pointer moves over the menu item.
 
 On touch devices the panel always opens on tap, whichever option is selected.
 
@@ -36,10 +36,10 @@ Displays a list of navigation links from a secondary menu, with an optional prom
 Use it for: general navigation categories, brand story links, editorial content.
 
 **Key settings:**
-- **Menu item to apply to** — the exact label of the nav item that triggers this dropdown.
-- **Submenu** — the Shopify navigation menu displayed as links inside the dropdown.
-- **Shop layout image** — an optional promotional image shown alongside the links.
-- **Image URL** — where the promotional image links to when clicked.
+- **Menu item to apply to**: the exact label of the nav item that triggers this dropdown.
+- **Submenu**: the Shopify navigation menu displayed as links inside the dropdown.
+- **Shop layout image**: an optional promotional image shown alongside the links.
+- **Image URL**: where the promotional image links to when clicked.
 
 ### Mega menu: Collections
 
@@ -48,9 +48,9 @@ Displays a grid of collection cards with images.
 Use it for: main product category navigation, highlighting featured collections.
 
 **Key settings:**
-- **Menu item to apply to** — the exact label of the nav item that triggers this dropdown.
-- **Collections** — the collections displayed as visual cards.
-- **CTA text** — a text link shown below the collection cards, for example "View all collections".
+- **Menu item to apply to**: the exact label of the nav item that triggers this dropdown.
+- **Collections**: the collections displayed as visual cards.
+- **CTA text**: a text link shown below the collection cards, for example "View all collections".
 
 ### Mega menu: Products
 
@@ -59,9 +59,9 @@ Displays a grid of product cards with images and prices.
 Use it for: featuring best-sellers or new arrivals directly in the navigation.
 
 **Key settings:**
-- **Menu item to apply to** — the exact label of the nav item that triggers this dropdown.
-- **Products** — the products displayed as cards.
-- **CTA text** — a text link shown below the product cards.
+- **Menu item to apply to**: the exact label of the nav item that triggers this dropdown.
+- **Products**: the products displayed as cards.
+- **CTA text**: a text link shown below the product cards.
 
 ### Mega menu: Shop
 

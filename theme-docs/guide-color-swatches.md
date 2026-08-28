@@ -10,8 +10,8 @@ Color swatches display a small color circle or image next to each color variant,
 
 Universe reads swatch data in two ways:
 
-1. **Automatic color matching** — if the variant option value matches a standard color name (for example, "Red", "Black", "Navy"), the theme applies a color automatically.
-2. **Manual hex or image mapping** — you define a mapping in **Theme settings > Color Swatch > Setup** that tells the theme what color or image to use for each option value.
+1. **Automatic color matching**: if the variant option value matches a standard color name (for example, "Red", "Black", "Navy"), the theme applies a color automatically.
+2. **Manual hex or image mapping**: you define a mapping in **Theme settings > Color Swatch > Setup** that tells the theme what color or image to use for each option value.
 
 ---
 

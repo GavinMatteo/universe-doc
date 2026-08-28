@@ -8,7 +8,7 @@ Fashion stores succeed when they lead with strong visuals, create desire through
 
 ## Recommended home page structure
 
-### 1. Bold Slideshow — hero
+### 1. Bold Slideshow: hero
 
 The Bold Slideshow is your opening statement. For fashion, use 2 to 3 slides maximum. Each slide should feature a single lifestyle image with minimal text.
 
@@ -18,13 +18,13 @@ The Bold Slideshow is your opening statement. For fashion, use 2 to 3 slides max
 - Use a short heading (3 to 5 words) and a single button linking to your main collection.
 - Disable autoplay or set it to at least 6 seconds if your slides contain readable text.
 
-### 2. Scrolling Text or Diagonal Texts — brand statement
+### 2. Scrolling Text or Diagonal Texts: brand statement
 
 Place a Scrolling Text or Diagonal Texts section immediately below the hero. Use it for a brand tagline, a seasonal campaign slogan, or key selling points ("Free returns, Sustainable materials, Made in Italy").
 
 This section adds energy and visual rhythm between the hero and the product grid.
 
-### 3. Featured Collection — product discovery
+### 3. Featured Collection: product discovery
 
 Show your hero collection in a 3 or 4 column grid. Enable **Quick view** so visitors can explore products without leaving the home page.
 
@@ -33,21 +33,21 @@ Show your hero collection in a 3 or 4 column grid. Enable **Quick view** so visi
 - Enable **Show color swatches** to let visitors see color options without opening each product.
 - Enable the **View all** button and link it to your main collection.
 
-### 4. Spotlighted Product — hero product
+### 4. Spotlighted Product: hero product
 
 Feature one product that represents the season or campaign. The Spotlighted Product gives a single product maximum visual weight.
 
 Use a PNG with a transparent background for the cleanest result. Enable the glass effect if the scrolling text behind the image feels too distracting.
 
-### 5. Image With Text — brand story
+### 5. Image With Text: brand story
 
 Use this section to tell a short brand story. Keep the text to 2 to 3 sentences. Alternate the image position (image left on the first instance, image right on the second if you use multiple).
 
-### 6. Media Carousel — social proof
+### 6. Media Carousel: social proof
 
 Show customer photos or video content. For fashion, vertical video clips (9:16) from social media work particularly well. Enable autoplay on each card.
 
-### 7. Reviews Carousel — trust
+### 7. Reviews Carousel: trust
 
 End the page with a Reviews Carousel section. Use 3 to 5 real reviews that mention fit, quality, or delivery. Include reviewer photos where possible.
 
