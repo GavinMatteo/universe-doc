@@ -61,7 +61,7 @@ For each section the user asks you to handle:
 
 ## Style examples (good: taken from the existing file)
 
-- Intro: "The Best Choice Offer section displays two or three products side by side in a comparison layout, with one product highlighted as the recommended choice. Each card shows key features as bullet points, a custom image, and a buy button."
+- Intro: "The Product Offer Comparison section displays two or three products side by side in a comparison layout, with one product highlighted as the recommended choice. Each card shows key features as bullet points, a custom image, and a buy button."
 - When to use: "Use it on product pages, landing pages, or the homepage to highlight a hero product alongside alternatives."
 - Tip: "Works best with 4 to 6 products. Too many breaks the rhythm of the animation."
 - FAQ: `('Can I add more than three products?', 'No. The section supports a maximum of two secondary products plus one highlighted product.')`
