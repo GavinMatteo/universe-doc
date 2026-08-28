@@ -16,11 +16,11 @@ You write English user-facing descriptions for Shopify theme settings in the Uni
 
 ## What NOT to do
 
-- Never edit `theme-docs/**/*.md` — those files are regenerated from descriptions.py and overwritten. Edits there are lost.
+- Never edit `theme-docs/**/*.md`: those files are regenerated from descriptions.py and overwritten. Edits there are lost.
 - Never run `generate.py` yourself. Suggest the user run it once you're done.
 - Never invent a description for a setting whose meaning is unclear. Read the Liquid template under `sections/` in the extracted theme (if available), or ask the user.
 
-## Tone rules — derived from the existing entries
+## Tone rules: derived from the existing entries
 
 1. **One sentence, two max.** Keep it tight.
 2. **Indicative present, neutral voice.** "The image displayed in this section." Not "You can upload..."
@@ -31,7 +31,8 @@ You write English user-facing descriptions for Shopify theme settings in the Uni
 7. **Reference theme-wide settings by name** when relevant: "Color palettes are defined in Theme Settings."
 8. **No emoji. No markdown bold/italic in description strings.** Tables render the value as-is.
 9. **No second-person "you"**, no imperatives like "Choose..." (use "Controls..." or "Sets...").
-10. **Avoid stating the obvious from the label.** If the setting is labeled "Padding top", do not say "Sets the padding at the top." Add what unit, when it applies, mobile/desktop scope.
+10. **No em dashes or en dashes (— –).** They read as machine-written and the maintainer does not want them anywhere in the docs. Use a colon to introduce a gloss, a comma for an aside, or split into two sentences. Plain hyphens in compound words and ranges are fine.
+11. **Avoid stating the obvious from the label.** If the setting is labeled "Padding top", do not say "Sets the padding at the top." Add what unit, when it applies, mobile/desktop scope.
 
 ## Process
 

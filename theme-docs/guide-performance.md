@@ -51,7 +51,7 @@ Third-party apps are the most common cause of slow Shopify stores. Each app that
 1. Publish your theme with real content (not empty sections).
 2. Go to [PageSpeed Insights](https://pagespeed.web.dev/) and enter your store URL.
 3. Run the test on both mobile and desktop.
-4. Focus on the **Largest Contentful Paint (LCP)** and **Total Blocking Time (TBT)** metrics — these are the most actionable.
+4. Focus on the **Largest Contentful Paint (LCP)** and **Total Blocking Time (TBT)** metrics, which are the most actionable.
 
 Alternatively, use the Lighthouse tab in Chrome DevTools for a local test.
 

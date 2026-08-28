@@ -17,7 +17,7 @@ The user may invoke you with:
 
 GitBook syncs only `theme-docs/`. Limit all checks to that subtree. Ignore `generator/`, `.themes/`, `.claude/`, and root-level README.
 
-## Checks — in this order
+## Checks: in this order
 
 ### 1. Generator runs cleanly (only if invoked with a zip)
 - Run `python3 generator/generate.py <zip> theme-docs/` via Bash.
@@ -35,7 +35,7 @@ GitBook syncs only `theme-docs/`. Limit all checks to that subtree. Ignore `gene
   - Compute the expected slug for each `## ` and `### ` heading using this algorithm (matches the generator's `make_anchor` in `generator/generate.py`):
     1. Lowercase
     2. Replace spaces with `-`
-    3. Replace any character not in `[a-z0-9-]` with `-` (NOT strip — this matters for headings like "Vendor/SKU" → `vendor-sku` and "⚙️ Section Settings" → `section-settings`)
+    3. Replace any character not in `[a-z0-9-]` with `-` (NOT strip: this matters for headings like "Vendor/SKU" → `vendor-sku` and "⚙️ Section Settings" → `section-settings`)
     4. Collapse runs of `-` into a single `-`
     5. Trim leading and trailing `-`
   - The link target must match at least one heading slug in the same file.
@@ -47,7 +47,7 @@ GitBook syncs only `theme-docs/`. Limit all checks to that subtree. Ignore `gene
   - `🧩` for "Blocks"
   - `💡` for "Tips"
   - `❓` for "FAQ"
-- Headings outside this set (e.g. `## Overview`) are allowed but should be intentional — list them under warnings.
+- Headings outside this set (e.g. `## Overview`) are allowed but should be intentional: list them under warnings.
 - Do not check the global pages (`getting-started.md`, `troubleshooting.md`, `support.md`, `faq-general.md`, `changelog.md`, guides), which use a different structure.
 
 ### 5. Orphan files (warning)

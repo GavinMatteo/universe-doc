@@ -1,4 +1,4 @@
-# Universe Docs — context for Claude
+# Universe Docs: context for Claude
 
 This file is auto-loaded by Claude Code at the start of every session. Read it before touching anything.
 
@@ -6,8 +6,8 @@ This file is auto-loaded by Claude Code at the start of every session. Read it b
 
 Documentation for the **Universe** Shopify theme by Developpy. The repo has two layers:
 
-1. **`generator/`** — Python (stdlib only) that reads a Shopify theme export and produces Markdown.
-2. **`theme-docs/`** — the Markdown that GitBook publishes, synced via the GitHub integration.
+1. **`generator/`**: Python (stdlib only) that reads a Shopify theme export and produces Markdown.
+2. **`theme-docs/`**: the Markdown that GitBook publishes, synced via the GitHub integration.
 
 Maintainer: **Matteo Gavin** (info@matteogavin.it). Prefers Italian in conversation, English in committed content.
 
@@ -25,7 +25,7 @@ The rendered Markdown for **sections** is generated, not hand-edited. The hand-e
 Hand-edited Markdown pages that the generator does **not** touch (and never should):
 
 - `theme-docs/README.md` (curated landing page)
-- `theme-docs/SUMMARY.md` (owned by GitBook — see caveat below)
+- `theme-docs/SUMMARY.md` (owned by GitBook, see caveat below)
 - `theme-docs/getting-started.md`, `support.md`, `faq-general.md`, `troubleshooting.md`, `changelog.md`
 - `theme-docs/general-settings.md` (cross-section concept reference)
 - `theme-docs/guide-*.md` and `theme-docs/guides/**`
@@ -37,7 +37,7 @@ Hand-edited Markdown pages that the generator does **not** touch (and never shou
    shopify theme pull --store=universe-theme-woofy.myshopify.com \
      --theme=202897129815 --path=.themes/universe-empty-2nd --nodelete
    ```
-   Theme **202897129815** is *Universe - 1.0 (Empty) NO TOUCH - Second review* — the reference empty version with the latest schema. Note the `--path` must already exist: `mkdir -p` it first, or the CLI errors out. The store has a `/password` gate; the password is currently `universe` (will become public soon).
+   Theme **202897129815** is *Universe - 1.0 (Empty) NO TOUCH - Second review*, the reference empty version with the latest schema. Note the `--path` must already exist: `mkdir -p` it first, or the CLI errors out. The store has a `/password` gate; the password is currently `universe` (will become public soon).
 
 2. **Diff the schema** against curated sources. Use the `schema-differ` subagent (see `.claude/agents/schema-differ.md`). It reports new sections, new settings, missing descriptions, stale entries.
 
@@ -51,18 +51,18 @@ Hand-edited Markdown pages that the generator does **not** touch (and never shou
 
 5. **Validate** with the `render-validator` agent (or the inline check pattern below). Must produce 0 broken anchors and resolvable SUMMARY links before push.
 
-6. **Branch + PR + merge** — never push straight to `main`. Every merge to `main` triggers GitBook sync (live within a few minutes), so the PR is the safety net. Use `gh pr create` then `gh pr merge <n> --rebase --delete-branch`.
+6. **Branch + PR + merge**: never push straight to `main`. Every merge to `main` triggers GitBook sync (live within a few minutes), so the PR is the safety net. Use `gh pr create` then `gh pr merge <n> --rebase --delete-branch`.
 
 ## Custom subagents
 
 Four agents live in `.claude/agents/` and are versioned with the repo. Future sessions can invoke them by `subagent_type` directly. They are:
 
 - **`schema-differ`** (read-only): compares a theme export against `generator/*.py` and reports the deltas. Use when a new theme is pulled.
-- **`description-writer`**: writes / rewrites entries in `descriptions.py` and `context_overrides.py`. Tone is calibrated to existing entries — read the agent file before invoking for the exact rules.
+- **`description-writer`**: writes / rewrites entries in `descriptions.py` and `context_overrides.py`. Tone is calibrated to existing entries. Read the agent file before invoking for the exact rules.
 - **`section-meta-curator`**: writes / updates the 5-tuple in `section_meta.py` for a section.
 - **`render-validator`** (read-only): the pre-push gate. Checks SUMMARY links, internal anchors, H2 emoji convention, orphan files.
 
-Custom agents are picked up at Claude Code session start. If you created an agent in the same session, it won't be selectable by name until restart — fall back to `general-purpose` with the agent file's instructions inlined into the prompt.
+Custom agents are picked up at Claude Code session start. If you created an agent in the same session, it won't be selectable by name until restart. Fall back to `general-purpose` with the agent file's instructions inlined into the prompt.
 
 ## Section file routing
 
@@ -79,7 +79,7 @@ The router is `ROOT_SECTIONS` (set) + `output_filename()` (string transform) in 
 
 1. lowercase
 2. replace spaces with `-`
-3. replace non-`[a-z0-9-]` with `-` (not strip — this is the May 2026 fix)
+3. replace non-`[a-z0-9-]` with `-` (not strip; this is the May 2026 fix)
 4. collapse runs of `-`
 5. trim leading/trailing `-`
 
@@ -94,14 +94,14 @@ The first sync after going live, GitBook reformats `SUMMARY.md` (title becomes `
 `universe-theme-woofy.myshopify.com` is behind a Shopify password gate. The password is currently `universe`. The maintainer plans to make the store public; until then, any script that fetches storefront pages needs to dismiss the gate. The pattern is documented in commit `976f3e5` (now reverted but in history) for future reference.
 
 ### Theme IDs on this dev store
-Theme IDs change between review rounds — always run `shopify theme list --store=universe-theme-woofy.myshopify.com` before pulling, do not trust the IDs below blindly.
+Theme IDs change between review rounds. Always run `shopify theme list --store=universe-theme-woofy.myshopify.com` before pulling, do not trust the IDs below blindly.
 
 As of 27 August 2026 (Second Review round):
 
-- **202944479575** *Universe 1.0 - Demo Store - Second Review* (role: live) — demo content, use for visual references and screenshots
-- **202897129815** *Universe - 1.0 (Empty) NO TOUCH - Second review* (role: unpublished) — empty version, **this is the reference for schema and docs**
-- **200863809879** *Work In Progress - v1.0.1* (role: unpublished) — active development, schema may be unstable
-- **201548300631** / **201549480279** — First Review round, superseded
+- **202944479575** *Universe 1.0 - Demo Store - Second Review* (role: live). Demo content, use for visual references and screenshots
+- **202897129815** *Universe - 1.0 (Empty) NO TOUCH - Second review* (role: unpublished). Empty version, **this is the reference for schema and docs**
+- **200863809879** *Work In Progress - v1.0.1* (role: unpublished). Active development, schema may be unstable
+- **201548300631** / **201549480279**: First Review round, superseded
 
 The live demo and the empty NO TOUCH of the same round have **identical** `sections/*.liquid`, `snippets/` and `locales/`; they differ only in the content JSON (`header-group.json`, `footer-group.json`, `overlay-group.json`). Either can be used for schema; the empty one is the convention.
 
@@ -111,7 +111,7 @@ The pre-Second-Review IDs (199004782935, 198939607383, 198520176983) no longer e
 Both are gitignored. `.themes/` holds theme exports from `shopify theme pull`. `.venv/` is reserved for the Python virtualenv if needed (Playwright experiment used it but the pipeline was reverted; current generator has zero external deps).
 
 ### Theme labels with typos
-The theme's own locale file occasionally has typos (e.g. `"Bottom bext"` for the bottom-text block name). Fix these from our side via the `ITALIAN_OVERRIDES` dict at the top of `generate.py`. The dict name is historical — it now serves any theme-side label override. Don't rename it casually; existing entries (`messages_type`, `marquee_message`, `bottom-text-block`) are key-stable.
+The theme's own locale file occasionally has typos (e.g. `"Bottom bext"` for the bottom-text block name). Fix these from our side via the `ITALIAN_OVERRIDES` dict at the top of `generate.py`. The dict name is historical, and now serves any theme-side label override. Don't rename it casually; existing entries (`messages_type`, `marquee_message`, `bottom-text-block`) are key-stable.
 
 ### Duplicates in `descriptions.py`
 Two keys appear twice in the dict with slightly different descriptions: `enable_breadcrumbs_collection` and `enable_breadcrumbs_product`. Python keeps the last write so this is not a runtime bug, but worth cleaning up if you're already in the file. Not in scope of the May 2026 refresh.
@@ -159,16 +159,25 @@ The **May 2026 refresh** (commits `f7ecb9c` through `1e0028b`) brought the gener
 
 Detailed session log: `.claude/sessions/2026-05-21.md` (local, not committed).
 
-The **August 2026 Second Review sync** aligned the docs with the reworked theme: 2 new settings (`menu_open_trigger`, `gift_card_color_scheme`), 9 section renames (label-only — liquid filenames and therefore all `.md` page names are unchanged), and a changed multi-currency behaviour for the free shipping threshold. Full record in `docs-internal/2026-08-27-sync-second-review.md`. Most of the theme's schema churn that round was `default` color-scheme renumbering, which the generator does not render — when diffing, filter `default` changes out or the signal drowns.
+The **August 2026 Second Review sync** aligned the docs with the reworked theme: 2 new settings (`menu_open_trigger`, `gift_card_color_scheme`), 9 section renames (label-only: liquid filenames and therefore all `.md` page names are unchanged), and a changed multi-currency behaviour for the free shipping threshold. Full record in `docs-internal/2026-08-27-sync-second-review.md`. Most of the theme's schema churn that round was `default` color-scheme renumbering, which the generator does not render, so when diffing, filter `default` changes out or the signal drowns.
 
 ## Internal session log
 
-`docs-internal/` holds one Markdown file per documentation-update session (what changed, why, what is left to do by hand). **GitBook syncs only `theme-docs/`**, so nothing in `docs-internal/` is ever published — it lives on GitHub and locally only. Add a new dated file there at the end of each update round.
+`docs-internal/` holds one Markdown file per documentation-update session (what changed, why, what is left to do by hand). **GitBook syncs only `theme-docs/`**, so nothing in `docs-internal/` is ever published. It lives on GitHub and locally only. Add a new dated file there at the end of each update round.
+
+## Writing style
+
+**Never use em dashes or en dashes (— –) anywhere**: not in `theme-docs/`, not in the
+generator's curated strings, not in these internal files. The maintainer finds they make
+text read as machine-written. Use a colon to introduce a gloss ("**Setting name**: what it
+does"), a comma for a short aside, or split into two sentences. Plain hyphens in compound
+words and numeric ranges are fine. The same rule is written into the
+`description-writer` and `section-meta-curator` agent files.
 
 ## When in doubt
 
-- Hand-written guides go in `theme-docs/` root or `theme-docs/guides/` — never overwrite from the generator.
-- Internal notes and session logs go in `docs-internal/` — never in `theme-docs/`.
+- Hand-written guides go in `theme-docs/` root or `theme-docs/guides/`. Never overwrite from the generator.
+- Internal notes and session logs go in `docs-internal/`. Never put them in `theme-docs/`.
 - New custom agents go in `.claude/agents/` (versioned).
 - New theme exports go in `.themes/` (gitignored).
-- Markdown table cells must never be empty in the "What it does" column — that means a setting has no description, which is a bug. The render check above does not catch this; grep `'\|\s*\*\*[^|]+\*\*\s*\|\s*\|$'` if you want to verify.
+- Markdown table cells must never be empty in the "What it does" column, which means a setting has no description, which is a bug. The render check above does not catch this; grep `'\|\s*\*\*[^|]+\*\*\s*\|\s*\|$'` if you want to verify.

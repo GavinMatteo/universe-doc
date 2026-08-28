@@ -17,7 +17,7 @@ Every section has a **Section's color palette** setting in the Colors group. Use
 
 This controls the background color, text color, button color, and link color of the entire section. Changing the palette on one section does not affect other sections.
 
-**Use gradient as background** — when enabled, the section uses the gradient defined in the selected palette instead of a solid background. Gradients are configured per palette in Theme settings > Colors.
+**Use gradient as background**: when enabled, the section uses the gradient defined in the selected palette instead of a solid background. Gradients are configured per palette in Theme settings > Colors.
 
 ---
 
@@ -47,9 +47,9 @@ Several sections include a **Highlighted text** setting on the heading. This add
 3. Click the **Italic** button (I) in the text editor toolbar.
 4. The highlighted style is applied to the italic text.
 
-**Highlighted text style** — controls the animation type: Underline, Scribble underline, Text color, Thick underline, Outline, or Background color.
+**Highlighted text style** controls the animation type: Underline, Scribble underline, Text color, Thick underline, Outline, or Background color.
 
-**Highlighted text color** — the color of the highlight effect.
+**Highlighted text color**: the color of the highlight effect.
 
 > Note: Highlighted text applies only to certain section and block headings, not to body text or paragraphs.
 
