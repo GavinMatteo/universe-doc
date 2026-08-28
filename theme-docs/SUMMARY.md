@@ -24,19 +24,19 @@
 
 ## Hero and slideshows
 
-* [Advanced Hero Slideshow](sections/advanced-hero-slideshow.md)
+* [Product Hero Slideshow](sections/advanced-hero-slideshow.md)
 * [Bold Slideshow](sections/bold-slideshow.md)
 * [Promo Banner](sections/promo-banner.md)
 * [Big Text](sections/big-text.md)
 
 ## Product sections
 
-* [Advanced Product Carousel](sections/advanced-product-carousel.md)
-* [Best Choice Offer](sections/best-choice-offer.md)
+* [Product Carousel](sections/advanced-product-carousel.md)
+* [Product Offer Comparison](sections/best-choice-offer.md)
 * [Featured Product](sections/featured-product.md)
 * [Spotlighted Product](sections/spotlighted-product.md)
 * [Sticky Section](sections/sticky-section.md)
-* [Touch and Take](sections/touch-and-take.md)
+* [Shop the Look](sections/touch-and-take.md)
 
 ## Collection sections
 
@@ -52,20 +52,20 @@
 * [Image With Text](sections/image-with-text.md)
 * [Multicolumn](sections/multicolumn.md)
 * [Rich Text](sections/rich-text.md)
-* [Then vs Now](sections/then-vs-now.md)
+* [Before and After Slider](sections/then-vs-now.md)
 
 ## Testimonials and social proof
 
-* [Quotes Carousel](sections/quotes.md)
-* [Reviews Showcase](sections/reviews-showcase.md)
-* [UGC Carousel](sections/ugc-carousel.md)
+* [Testimonials](sections/quotes.md)
+* [Reviews Carousel](sections/reviews-showcase.md)
+* [Media Carousel](sections/ugc-carousel.md)
 
 ## Marketing and conversion
 
 * [Diagonal Texts](sections/diagonal-texts.md)
 * [Featured Blog](sections/featured-blog.md)
 * [Newsletter](sections/newsletter-section.md)
-* [Scrolling Pills](sections/scrolling-pills.md)
+* [Pills](sections/scrolling-pills.md)
 * [Scrolling Text](sections/scrolling-text.md)
 
 ## Utility
