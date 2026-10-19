@@ -56,8 +56,8 @@
 
 ## Testimonials and social proof
 
-* [Testimonials](sections/quotes.md)
-* [Reviews Carousel](sections/reviews-showcase.md)
+* [Featured Testimonials](sections/quotes.md)
+* [Testimonials Carousel](sections/reviews-showcase.md)
 * [Media Carousel](sections/ugc-carousel.md)
 
 ## Marketing and conversion
