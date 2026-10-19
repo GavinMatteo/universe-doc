@@ -41,8 +41,8 @@ Initial release of Universe.
 - Scrolling Text
 - Pills
 - Diagonal Texts
-- Reviews Carousel
-- Testimonials
+- Testimonials Carousel
+- Featured Testimonials
 - Media Carousel
 - Newsletter
 - Newsletter Popup

@@ -71,7 +71,6 @@ The Collage section is a free-form CSS grid where you place text, image, and vid
 |---|---|
 | **Heading** | The heading or label for this block element. |
 | **Text** | The text content for this block. |
-| **Link** | An optional URL this block links to when clicked. |
 | **Title layout** | Controls the positioning of the title text within the text block. |
 | **Background** | The background color of the text area within this collage block. |
 | **Column** | The number of grid columns this block spans in the collage layout. |

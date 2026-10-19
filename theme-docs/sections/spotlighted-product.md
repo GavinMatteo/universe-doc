@@ -41,7 +41,7 @@ The Spotlighted Product section frames a single product as a full-width hero wit
 | **Box color** | The background color of the box behind the product image. |
 | **Box opacity** | How transparent the content box is. 0 is invisible, 100 is fully solid. |
 | **Glass effect** | Replaces the color box with a frosted glass effect. When enabled, the color and opacity settings are ignored. |
-| **Show review stars** | Shows a star rating row above or below the heading to add social proof. |
+| **Show stars** | Shows a star rating row above or below the heading to add social proof. |
 | **Number of stars** | The number of stars to display. Options are 4, 4.5, and 5. |
 | **Stars color** | The color of the star icons. |
 | **Stars background color** | An optional background color behind the stars and following text. |

@@ -42,4 +42,21 @@ CONTEXT_OVERRIDES = {
         'enable_search': 'Shows a search icon in the header that opens a full search overlay when clicked.',
         'cart_style': 'Controls the appearance of the cart icon in the header. Choose between a bag or a cart icon style.',
     },
+    # Product reviews blocks: label_text is the right badge, not a promo label
+    'u-main-product.liquid::reviews_carousel': {
+        'label_text': 'The text shown in the right badge above the review carousel, typically a review count such as 500 testimonials. The badge is hidden when the text is empty.',
+    },
+    'u-main-product.liquid::reviews_score': {
+        'label_text': 'The text shown in the right badge, typically a review count such as 500 testimonials. The badge is hidden when the text is empty.',
+    },
+    'u-featured-product.liquid::reviews_carousel': {
+        'label_text': 'The text shown in the right badge above the review carousel, typically a review count such as 500 testimonials. The badge is hidden when the text is empty.',
+    },
+    'u-featured-product.liquid::reviews_score': {
+        'label_text': 'The text shown in the right badge, typically a review count such as 500 testimonials. The badge is hidden when the text is empty.',
+    },
+    # Reviews Showcase: stars is the aggregate rating, not the slideshow select
+    'u-reviews-showcase.liquid': {
+        'stars': 'The aggregate star rating shown at the top of the section, from 0 to 5 in half-star steps.',
+    },
 }

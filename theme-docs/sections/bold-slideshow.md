@@ -78,15 +78,15 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 | **Button URL 2** | The URL the second button links to. |
 | **Button style 2** | The visual style of the second button: Solid, Outlined, or Link. |
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
-| **Content alignments (desktop)** | The position of the text block within the slide on desktop: Top left, Middle center, Bottom right, and so on. |
-| **Content alignments (mobile)** | The position of the text block on mobile. Set independently from desktop. |
+| **Desktop content position** | The position of the text block within the slide on desktop: Top left, Middle center, Bottom right, and so on. |
+| **Mobile content position** | The position of the text block on mobile. Set independently from desktop. |
 | **Content boxed** | Wraps the text content in a colored semi-transparent box, useful for readability on complex backgrounds. |
 | **Box color** | The fill color of the content box. |
 | **Box opacity** | How transparent the content box is. 0 is invisible, 100 is fully solid. |
 | **Text color** | The color of text inside this section or block. |
 | **Overlay protection** | A dark overlay applied on top of the image to improve text readability. 0 means no overlay, 100 means fully black. |
 | **Overlay color** | A color tint applied on top of the background image to improve text readability. Black by default, but you can use any brand color. |
-| **Show review stars** | Shows a star rating row above or below the heading to add social proof. |
+| **Show stars** | Shows a star rating row above or below the heading to add social proof. |
 | **Number of stars** | The number of stars to display. Options are 4, 4.5, and 5. |
 | **Stars color** | The color of the star icons. |
 | **Stars and following text background color** | An optional background color behind the stars and following text. |
@@ -117,15 +117,15 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 | **Button URL 2** | The URL the second button links to. |
 | **Button style 2** | The visual style of the second button: Solid, Outlined, or Link. |
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
-| **Content alignments (desktop)** | The position of the text block within the slide on desktop: Top left, Middle center, Bottom right, and so on. |
-| **Content alignments (mobile)** | The position of the text block on mobile. Set independently from desktop. |
+| **Desktop content position** | The position of the text block within the slide on desktop: Top left, Middle center, Bottom right, and so on. |
+| **Mobile content position** | The position of the text block on mobile. Set independently from desktop. |
 | **Content boxed** | Wraps the text content in a colored semi-transparent box, useful for readability on complex backgrounds. |
 | **Box color** | The fill color of the content box. |
 | **Box opacity** | How transparent the content box is. 0 is invisible, 100 is fully solid. |
 | **Text color** | The color of text inside this section or block. |
 | **Overlay protection** | A dark overlay applied on top of the image to improve text readability. 0 means no overlay, 100 means fully black. |
 | **Overlay color** | A color tint applied on top of the background video to improve text readability. |
-| **Show review stars** | Shows a star rating row above or below the heading to add social proof. |
+| **Show stars** | Shows a star rating row above or below the heading to add social proof. |
 | **Number of stars** | The number of stars to display. Options are 4, 4.5, and 5. |
 | **Stars color** | The color of the star icons. |
 | **Stars and following text background color** | An optional background color behind the stars and following text. |
@@ -174,5 +174,5 @@ Browsers block autoplay for videos that have an audio track. Make sure the video
 
 
 **Are the star ratings connected to my store reviews?**\
-No. Stars are set manually per slide. For real review data use the Reviews Carousel section instead.
+No. Stars are set manually per slide. For real review data use the Testimonials Carousel section instead.
 
