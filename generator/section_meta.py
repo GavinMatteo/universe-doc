@@ -81,7 +81,7 @@ SECTION_META = {
         [
             ('Can I mix image slides and video slides in the same slideshow?', 'Yes. Add both block types to the same section. The order follows the block order in the Theme Editor.'),
             ('The video does not autoplay. Why?', 'Browsers block autoplay for videos that have an audio track. Make sure the video file is muted and in MP4 format.'),
-            ('Are the star ratings connected to my store reviews?', 'No. Stars are set manually per slide. For real review data use the Reviews Carousel section instead.'),
+            ('Are the star ratings connected to my store reviews?', 'No. Stars are set manually per slide. For real review data use the Testimonials Carousel section instead.'),
         ]
     ),
     'u-collage.liquid': (
@@ -228,7 +228,7 @@ SECTION_META = {
     ),
     'u-featured-product.liquid': (
         'Featured Product',
-        'The Featured Product section embeds a full product detail experience anywhere on the page. It uses the same modular block system as the main Product Page section, letting you include title, price, variants, buy buttons, accordions, reviews, and more.',
+        'The Featured Product section embeds a full product detail experience anywhere on the page. It uses the same modular block system as the main Product Page section, letting you include title, price, variants, buy buttons, accordions, testimonials, and more.',
         'Use it on the homepage to spotlight a hero product, or on landing pages for a single-product campaign.',
         [
             'Select a product with high-quality images.',
@@ -326,7 +326,7 @@ SECTION_META = {
     ),
     'main-page.liquid': (
         'Page Content',
-        'The Page Content section renders the content of a standard Shopify page exactly as written in the page editor. It optionally displays an additional heading and subheading above the page content.',
+        'The Page Content section renders the content of a standard Shopify page exactly as written in the page editor. Layout, heading size, color scheme, and spacing are controlled from the section settings.',
         'This section is part of the page template and active on all standard pages by default.',
         ['For rich content with images and formatted text, write it in the Shopify page editor.'],
         [('Can I add sections to a standard page?', 'Yes. From the Theme Editor, add sections above or below this section on the page template.')]
@@ -367,7 +367,7 @@ SECTION_META = {
     ),
     'u-main-product.liquid': (
         'Product Page',
-        'The Product Page section is the core of your product detail page. It is fully modular: build the content column by adding and reordering blocks for title, price, description, variants, buy buttons, reviews, accordions, trust badges, and more. This section has the most direct impact on your store conversion rate.',
+        'The Product Page section is the core of your product detail page. It is fully modular: build the content column by adding and reordering blocks for title, price, description, variants, buy buttons, testimonials, accordions, trust badges, and more. This section has the most direct impact on your store conversion rate.',
         'This section is part of the product template and active on every product detail page.',
         [
             'Order blocks with conversion in mind: Title, Price, Variants, and Buy buttons should always be above the fold.',
@@ -377,6 +377,7 @@ SECTION_META = {
         [
             ('The variant selector is not showing.', 'Add the Variants block from the block panel. It does not appear by default.'),
             ('How do I remove the dynamic checkout button (Shop Pay, PayPal)?', 'Disable Show dynamic checkout buttons in the Buy buttons block settings.'),
+            ('How do I show a star rating and review count on the product page?', 'Add the Trust badges block, or use the two badges at the top of the Testimonials block. Both badge texts are free text and the icons are optional.'),
             ('Product images are showing in the wrong order.', 'Image order follows the order set in Shopify admin under the product media tab.'),
             ('The sticky add to cart bar is not appearing.', 'Make sure Sticky add to cart is enabled in the section settings and the Buy buttons block is in the block list.'),
         ]
@@ -422,14 +423,14 @@ SECTION_META = {
         [('Can I use both a video and an image as the background?', 'If you upload a video file, it takes priority over the image. Upload a separate mobile video or image for the mobile experience.')]
     ),
     'u-quotes.liquid': (
-        'Testimonials',
-        'The Testimonials section displays customer quotes or editorial pull quotes in a rotating carousel. Each block contains the quote text and the author name.',
+        'Featured Testimonials',
+        'The Featured Testimonials section displays customer quotes or editorial pull quotes in a rotating carousel. Each block contains the quote text and the author name.',
         'Use it on the homepage, About page, or product pages to build trust through social proof.',
         [
             'Use real, specific quotes rather than generic praise.',
             'Three to five quotes is enough. More than that and visitors rarely see the later ones.',
         ],
-        [('Can I add a customer photo next to the quote?', 'Not in this section. For photo-based reviews use the Reviews Carousel section instead.')]
+        [('Can I add a customer photo next to the quote?', 'Not in this section. For photo-based reviews use the Testimonials Carousel section instead.')]
     ),
     'u-related-products.liquid': (
         'Related Products',
@@ -439,14 +440,14 @@ SECTION_META = {
         [('Can I manually choose which related products to show?', 'No. Related products are determined automatically by Shopify. To influence recommendations, ensure products are correctly tagged.')]
     ),
     'u-reviews-showcase.liquid': (
-        'Reviews Carousel',
-        'The Reviews Carousel section displays customer review cards in a carousel with an overall star rating at the top. Each review block contains the reviewer photo, name, role, a star rating, and the review text. Reviews are added manually as blocks.',
+        'Testimonials Carousel',
+        'The Testimonials Carousel section displays customer testimonial cards in a carousel with a star rating at the top, set with the Stars range in half-star steps. Each Testimonial block contains the reviewer photo, name, role, a star rating, and the testimonial text. Testimonials are added manually as blocks.',
         'Use it on the homepage or product pages as a dedicated social proof section.',
         [
             'Use specific, detailed reviews. Generic short reviews add little credibility.',
             'Include reviewer photos where possible. Cards with photos perform better than text-only ones.',
         ],
-        [('Do these reviews sync with a review app?', 'No. Reviews are added manually. For live sync use the review app own embed blocks.')]
+        [('Do these reviews sync with a review app?', 'No. Testimonials are added manually. For live sync, use the embed blocks provided by your review app.')]
     ),
     'u-rich-text.liquid': (
         'Rich Text',
@@ -533,7 +534,7 @@ SECTION_META = {
     ),
     'u-ugc-carousel.liquid': (
         'Media Carousel',
-        'The Media Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, a label badge, a title, and body text.',
+        'The Media Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, and a label badge.',
         'Use it on the homepage or product pages to display customer videos, unboxing content, or testimonial clips.',
         [
             'Short vertical videos (9:16 ratio) look best in this carousel.',

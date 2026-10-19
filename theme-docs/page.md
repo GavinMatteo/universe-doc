@@ -1,6 +1,6 @@
 # Page Content
 
-The Page Content section renders the content of a standard Shopify page exactly as written in the page editor. It optionally displays an additional heading and subheading above the page content.
+The Page Content section renders the content of a standard Shopify page exactly as written in the page editor. Layout, heading size, color scheme, and spacing are controlled from the section settings.
 
 📌 **When to use it:** This section is part of the page template and active on all standard pages by default.
 
@@ -24,14 +24,8 @@ The Page Content section renders the content of a standard Shopify page exactly 
 
 | Setting | What it does |
 |---|---|
-| **Heading** | The main heading displayed at the top of this block or section. |
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
-| **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
-| **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
-| **Paragraph** | The body text for this block. Supports rich text formatting. |
-| **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
-| **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
-| **Highlighted text color** | The color applied to the highlighted words in the heading. |
+| **Heading alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 
 
 ### Colors

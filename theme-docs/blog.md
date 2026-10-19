@@ -33,14 +33,9 @@ The Blog Listing section displays all posts from a blog in a grid or collage lay
 | **Show article tags** | Shows the article tags below the article title. |
 | **Show blog's date** | Shows the publication date on each article card. |
 | **Show preview text** | Shows a short excerpt of article text on each blog card. |
-| **Heading** | The main heading displayed at the top of this block or section. |
 | **Heading size** | Controls the visual size of the heading. Options are Small, Medium, Large, and Extralarge. |
-| **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
 | **Paragraph** | The body text for this block. Supports rich text formatting. |
 | **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
-| **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
-| **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
-| **Highlighted text color** | The color applied to the highlighted words in the heading. |
 
 
 ### Colors

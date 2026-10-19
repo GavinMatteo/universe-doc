@@ -1,6 +1,6 @@
 # Product Page
 
-The Product Page section is the core of your product detail page. It is fully modular: build the content column by adding and reordering blocks for title, price, description, variants, buy buttons, reviews, accordions, trust badges, and more. This section has the most direct impact on your store conversion rate.
+The Product Page section is the core of your product detail page. It is fully modular: build the content column by adding and reordering blocks for title, price, description, variants, buy buttons, testimonials, accordions, trust badges, and more. This section has the most direct impact on your store conversion rate.
 
 📌 **When to use it:** This section is part of the product template and active on every product detail page.
 
@@ -21,8 +21,8 @@ The Product Page section is the core of your product detail page. It is fully mo
   - [Vendor/SKU](#vendor-sku)
   - [Share](#share)
   - [Inventory status bar](#inventory-status-bar)
-  - [Reviews carousel](#reviews-carousel)
-  - [Reviews score](#reviews-score)
+  - [Testimonials](#testimonials)
+  - [Trust badges](#trust-badges)
   - [Pairs well with](#pairs-well-with)
   - [Pickup availability](#pickup-availability)
   - [Variants](#variants)
@@ -52,7 +52,6 @@ The Product Page section is the core of your product detail page. It is fully mo
 | Setting | What it does |
 |---|---|
 | **Show breadcrumbs on mobile** | Shows breadcrumb navigation on mobile screens. Controlled independently from the desktop breadcrumbs setting. |
-| **Desktop layout** | The arrangement of the product image and content column on desktop. |
 | **Desktop thumbnail positioning** | Where the thumbnail strip appears relative to the main image on desktop. |
 | **Show mobile thumbnails** | Shows a thumbnail strip below the product image on mobile. |
 | **Enable sticky add to cart** | Shows a fixed bar at the bottom of the screen with the product title and Add to cart button as the visitor scrolls. |
@@ -203,32 +202,34 @@ The Product Page section is the core of your product detail page. It is fully mo
 | **Margin bottom (mobile)** | The space below this block in pixels on mobile. |
 
 
-### Reviews carousel
+### Testimonials
 
 | Setting | What it does |
 |---|---|
 | **Enable autoplay** | When enabled, slides advance automatically. |
 | **Change slide every (seconds)** | How many seconds each review is displayed before the carousel advances. Only applies when autoplay is on. |
-| **Total score** | The aggregate rating score shown in the section header, for example 4.9. |
-| **Reviews amount** | The total number of reviews shown next to the aggregate score, for example 312. |
+| **Icon left** | The icon shown in the left badge. None hides the icon, and a star is used when no icon has been selected. |
+| **Text left** | The text shown in the left badge, typically an aggregate rating such as 5. The badge is hidden when the text is empty. |
+| **Icon right** | The icon shown in the right badge. None hides the icon, and a comment bubble is used when no icon has been selected. |
+| **Text right** | The text shown in the right badge above the review carousel, typically a review count such as 500 testimonials. The badge is hidden when the text is empty. |
 | **Image** | Photo of reviewer 1. |
-| **Review score** | Star rating from reviewer 1 (1 to 5). |
+| **Stars** | Star rating from reviewer 1, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 1. |
 | **Paragraph** | Review text from reviewer 1. |
 | **Image** | Photo of reviewer 2. |
-| **Review score** | Star rating from reviewer 2. |
+| **Stars** | Star rating from reviewer 2, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 2. |
 | **Paragraph** | Review text from reviewer 2. |
 | **Image** | Photo of reviewer 3. |
-| **Review score** | Star rating from reviewer 3. |
+| **Stars** | Star rating from reviewer 3, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 3. |
 | **Paragraph** | Review text from reviewer 3. |
 | **Image** | Photo of reviewer 4. |
-| **Review score** | Star rating from reviewer 4. |
+| **Stars** | Star rating from reviewer 4, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 4. |
 | **Paragraph** | Review text from reviewer 4. |
 | **Image** | Photo of reviewer 5. |
-| **Review score** | Star rating from reviewer 5. |
+| **Stars** | Star rating from reviewer 5, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 5. |
 | **Paragraph** | Review text from reviewer 5. |
 
@@ -242,12 +243,14 @@ The Product Page section is the core of your product detail page. It is fully mo
 | **Margin bottom (mobile)** | The space below this block in pixels on mobile. |
 
 
-### Reviews score
+### Trust badges
 
 | Setting | What it does |
 |---|---|
-| **Total score** | The aggregate rating score shown in the section header, for example 4.9. |
-| **Reviews amount** | The total number of reviews shown next to the aggregate score, for example 312. |
+| **Icon left** | The icon shown in the left badge. None hides the icon, and a star is used when no icon has been selected. |
+| **Text left** | The text shown in the left badge, typically an aggregate rating such as 5. The badge is hidden when the text is empty. |
+| **Icon right** | The icon shown in the right badge. None hides the icon, and a comment bubble is used when no icon has been selected. |
+| **Text right** | The text shown in the right badge, typically a review count such as 500 testimonials. The badge is hidden when the text is empty. |
 
 
 **Spacing**
@@ -577,6 +580,10 @@ Add the Variants block from the block panel. It does not appear by default.
 
 **How do I remove the dynamic checkout button (Shop Pay, PayPal)?**\
 Disable Show dynamic checkout buttons in the Buy buttons block settings.
+
+
+**How do I show a star rating and review count on the product page?**\
+Add the Trust badges block, or use the two badges at the top of the Testimonials block. Both badge texts are free text and the icons are optional.
 
 
 **Product images are showing in the wrong order.**\

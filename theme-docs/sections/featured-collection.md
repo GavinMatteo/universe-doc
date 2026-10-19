@@ -32,8 +32,6 @@ The Featured Collection section displays a grid or carousel of products from a c
 | **Heading HTML tag** | The HTML tag used for the heading (H1, H2, H3, and so on). Use H1 only once per page, on the most important heading, as it signals the primary content to search engines. |
 | **Paragraph** | The body text for this block. Supports rich text formatting. |
 | **Content alignments (mobile)** | Controls the horizontal alignment of the text column on mobile. |
-| **Content layout** | How the product info is positioned on the card relative to the image. |
-| **Content position** | The horizontal alignment of product info within the card. |
 | **Highlighted text** | Enables an animated highlight effect on selected words inside the heading. To apply it to a word, select it in the editor and format it as italic. |
 | **Highlighted text style** | The style of the highlight animation. Options include Underline, Scribble underline, Text color, Thick underline, Outline, and Background color. |
 | **Highlighted text color** | The color applied to the highlighted words in the heading. |
@@ -49,6 +47,8 @@ The Featured Collection section displays a grid or carousel of products from a c
 | **Show view all button** | Shows a View all button below the grid linking to the full collection page. |
 | **Image ratio** | Controls the aspect ratio of product images in this section. Options typically include Square, Portrait, Landscape, and Adapt (uses the image's natural ratio). |
 | **Product card animation type** | The hover animation on product cards: Zoom, Slide, or None. |
+| **Content layout** | How the product info is positioned on the card relative to the image. |
+| **Content position** | The horizontal alignment of product info within the card. |
 | **Show vendor** | Shows the product vendor (brand) name. |
 | **Show variant options** | Displays variant options (such as color or size swatches) directly on the product card without opening the product page. |
 | **Enable quick buy** | Adds a quick buy button to product cards. For single-variant products it adds to cart directly. For multi-variant products it opens a small variant selector. |

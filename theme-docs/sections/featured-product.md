@@ -1,6 +1,6 @@
 # Featured Product
 
-The Featured Product section embeds a full product detail experience anywhere on the page. It uses the same modular block system as the main Product Page section, letting you include title, price, variants, buy buttons, accordions, reviews, and more.
+The Featured Product section embeds a full product detail experience anywhere on the page. It uses the same modular block system as the main Product Page section, letting you include title, price, variants, buy buttons, accordions, testimonials, and more.
 
 📌 **When to use it:** Use it on the homepage to spotlight a hero product, or on landing pages for a single-product campaign.
 
@@ -21,8 +21,8 @@ The Featured Product section embeds a full product detail experience anywhere on
   - [Vendor/SKU](#vendor-sku)
   - [Share](#share)
   - [Inventory status bar](#inventory-status-bar)
-  - [Reviews carousel](#reviews-carousel)
-  - [Reviews score](#reviews-score)
+  - [Testimonials](#testimonials)
+  - [Trust badges](#trust-badges)
   - [Pairs well with](#pairs-well-with)
   - [Pickup availability](#pickup-availability)
   - [Variants](#variants)
@@ -213,32 +213,34 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Margin bottom (mobile)** | The space below this block in pixels on mobile. |
 
 
-### Reviews carousel
+### Testimonials
 
 | Setting | What it does |
 |---|---|
 | **Enable autoplay** | When enabled, slides advance automatically. |
 | **Change slide every (seconds)** | How many seconds each review is displayed before the carousel advances. Only applies when autoplay is on. |
-| **Total score** | The aggregate rating score shown in the section header, for example 4.9. |
-| **Reviews amount** | The total number of reviews shown next to the aggregate score, for example 312. |
+| **Icon left** | The icon shown in the left badge. None hides the icon, and a star is used when no icon has been selected. |
+| **Text left** | The text shown in the left badge, typically an aggregate rating such as 5. The badge is hidden when the text is empty. |
+| **Icon right** | The icon shown in the right badge. None hides the icon, and a comment bubble is used when no icon has been selected. |
+| **Text right** | The text shown in the right badge above the review carousel, typically a review count such as 500 testimonials. The badge is hidden when the text is empty. |
 | **Image** | Photo of reviewer 1. |
-| **Review score** | Star rating from reviewer 1 (1 to 5). |
+| **Stars** | Star rating from reviewer 1, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 1. |
 | **Paragraph** | Review text from reviewer 1. |
 | **Image** | Photo of reviewer 2. |
-| **Review score** | Star rating from reviewer 2. |
+| **Stars** | Star rating from reviewer 2, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 2. |
 | **Paragraph** | Review text from reviewer 2. |
 | **Image** | Photo of reviewer 3. |
-| **Review score** | Star rating from reviewer 3. |
+| **Stars** | Star rating from reviewer 3, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 3. |
 | **Paragraph** | Review text from reviewer 3. |
 | **Image** | Photo of reviewer 4. |
-| **Review score** | Star rating from reviewer 4. |
+| **Stars** | Star rating from reviewer 4, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 4. |
 | **Paragraph** | Review text from reviewer 4. |
 | **Image** | Photo of reviewer 5. |
-| **Review score** | Star rating from reviewer 5. |
+| **Stars** | Star rating from reviewer 5, from 0 to 5 in half-star steps. |
 | **Author** | Name of reviewer 5. |
 | **Paragraph** | Review text from reviewer 5. |
 
@@ -252,12 +254,14 @@ The Featured Product section embeds a full product detail experience anywhere on
 | **Margin bottom (mobile)** | The space below this block in pixels on mobile. |
 
 
-### Reviews score
+### Trust badges
 
 | Setting | What it does |
 |---|---|
-| **Total score** | The aggregate rating score shown in the section header, for example 4.9. |
-| **Reviews amount** | The total number of reviews shown next to the aggregate score, for example 312. |
+| **Icon left** | The icon shown in the left badge. None hides the icon, and a star is used when no icon has been selected. |
+| **Text left** | The text shown in the left badge, typically an aggregate rating such as 5. The badge is hidden when the text is empty. |
+| **Icon right** | The icon shown in the right badge. None hides the icon, and a comment bubble is used when no icon has been selected. |
+| **Text right** | The text shown in the right badge, typically a review count such as 500 testimonials. The badge is hidden when the text is empty. |
 
 
 **Spacing**

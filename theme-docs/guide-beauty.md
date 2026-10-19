@@ -36,7 +36,7 @@ Use Feature Slide blocks to add additional product angle images alongside the he
 
 If your product produces a visible result, the Before and After Slider section is one of the highest-impact elements you can add. Show a before-and-after comparison with the slider. Label each side clearly.
 
-### 6. Reviews Carousel: clinical social proof
+### 6. Testimonials Carousel: clinical social proof
 
 For health and beauty, reviews that mention specific results ("After 4 weeks my skin is clearer"), skin types, or ages are the most persuasive. Select reviews that reflect your target customer.
 

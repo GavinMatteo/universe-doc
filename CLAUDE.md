@@ -35,9 +35,9 @@ Hand-edited Markdown pages that the generator does **not** touch (and never shou
 1. **Pull the latest theme** from the connected Shopify dev store:
    ```bash
    shopify theme pull --store=universe-theme-woofy.myshopify.com \
-     --theme=202897129815 --path=.themes/universe-empty-2nd --nodelete
+     --theme=204523602263 --path=.themes/universe-empty-3rd --nodelete
    ```
-   Theme **202897129815** is *Universe - 1.0 (Empty) NO TOUCH - Second review*, the reference empty version with the latest schema. Note the `--path` must already exist: `mkdir -p` it first, or the CLI errors out. The store has a `/password` gate; the password is currently `universe` (will become public soon).
+   Theme **204523602263** is *Universe - 1.0 (Empty) NO TOUCH - Third review*, the reference empty version with the latest schema. Note the `--path` must already exist: `mkdir -p` it first, or the CLI errors out. The store has a `/password` gate; the password is currently `universe` (will become public soon).
 
 2. **Diff the schema** against curated sources. Use the `schema-differ` subagent (see `.claude/agents/schema-differ.md`). It reports new sections, new settings, missing descriptions, stale entries.
 
@@ -45,9 +45,9 @@ Hand-edited Markdown pages that the generator does **not** touch (and never shou
 
 4. **Regenerate**:
    ```bash
-   python3 generator/generate.py .themes/universe-empty-2nd theme-docs
+   python3 generator/generate.py .themes/universe-empty-3rd theme-docs
    ```
-   Expect output like `Rendered 52 files`. System sections without schema (`u-predictive-search.liquid`, `u-main-quick-add.liquid`) are intentionally skipped.
+   Expect output like `Rendered 52 files`. Two system sections are intentionally skipped: `u-predictive-search.liquid` (no schema) and `u-main-quick-add.liquid` (empty schema, no `SECTION_META` entry).
 
 5. **Validate** with the `render-validator` agent (or the inline check pattern below). Must produce 0 broken anchors and resolvable SUMMARY links before push.
 
@@ -96,14 +96,15 @@ The first sync after going live, GitBook reformats `SUMMARY.md` (title becomes `
 ### Theme IDs on this dev store
 Theme IDs change between review rounds. Always run `shopify theme list --store=universe-theme-woofy.myshopify.com` before pulling, do not trust the IDs below blindly.
 
-As of 27 August 2026 (Second Review round):
+As of 19 October 2026 (Third Review round):
 
-- **202944479575** *Universe 1.0 - Demo Store - Second Review* (role: live). Demo content, use for visual references and screenshots
-- **202897129815** *Universe - 1.0 (Empty) NO TOUCH - Second review* (role: unpublished). Empty version, **this is the reference for schema and docs**
+- **206989590871** *Universe 1.0 - Demo Store - Third Review* (role: live). Demo content, use for visual references and screenshots
+- **204523602263** *Universe - 1.0 (Empty) NO TOUCH - Third review* (role: unpublished). Empty version, **this is the reference for schema and docs**
 - **200863809879** *Work In Progress - v1.0.1* (role: unpublished). Active development, schema may be unstable
+- **202944479575** / **202897129815**: Second Review round, superseded (still on the store)
 - **201548300631** / **201549480279**: First Review round, superseded
 
-The live demo and the empty NO TOUCH of the same round have **identical** `sections/*.liquid`, `snippets/` and `locales/`; they differ only in the content JSON (`header-group.json`, `footer-group.json`, `overlay-group.json`). Either can be used for schema; the empty one is the convention.
+The live demo and the empty NO TOUCH of the same round have **identical** `sections/*.liquid`, `snippets/` and `locales/`; they differ only in the content JSON (`header-group.json`, `footer-group.json`, `overlay-group.json`). Either can be used for schema; the empty one is the convention. (Verified for the Second Review round; not re-verified for the Third.)
 
 The pre-Second-Review IDs (199004782935, 198939607383, 198520176983) no longer exist on the store.
 
@@ -121,10 +122,10 @@ Two keys appear twice in the dict with slightly different descriptions: `enable_
 ```bash
 # Pull latest theme (empty reference)
 shopify theme pull --store=universe-theme-woofy.myshopify.com \
-  --theme=202897129815 --path=.themes/universe-empty-2nd --nodelete
+  --theme=204523602263 --path=.themes/universe-empty-3rd --nodelete
 
 # Regenerate docs from the pulled theme
-python3 generator/generate.py .themes/universe-empty-2nd theme-docs
+python3 generator/generate.py .themes/universe-empty-3rd theme-docs
 
 # Quick local broken-anchor check (inline, no agent)
 python3 -c "
@@ -160,6 +161,8 @@ The **May 2026 refresh** (commits `f7ecb9c` through `1e0028b`) brought the gener
 Detailed session log: `.claude/sessions/2026-05-21.md` (local, not committed).
 
 The **August 2026 Second Review sync** aligned the docs with the reworked theme: 2 new settings (`menu_open_trigger`, `gift_card_color_scheme`), 9 section renames (label-only: liquid filenames and therefore all `.md` page names are unchanged), and a changed multi-currency behaviour for the free shipping threshold. Full record in `docs-internal/2026-08-27-sync-second-review.md`. Most of the theme's schema churn that round was `default` color-scheme renumbering, which the generator does not render, so when diffing, filter `default` changes out or the signal drowns.
+
+The **October 2026 Third Review sync** (`docs-internal/2026-10-19-sync-third-review.md`): the reviews blocks on the product page were reworked (Testimonials and Trust badges, with free-text badges replacing numeric score fields), two sections renamed (Testimonials Carousel, Featured Testimonials), and a handful of settings removed from Page Content, Blog, Collage and Media Carousel. Many `inline_richtext` fields became plain `text`, which the generator does not render either.
 
 ## Internal session log
 

@@ -1,6 +1,6 @@
 # Media Carousel
 
-The Media Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, a label badge, a title, and body text.
+The Media Carousel displays a horizontal carousel of video or image cards styled to look like social media content. Each card supports a video file or URL, an image fallback, and a label badge.
 
 📌 **When to use it:** Use it on the homepage or product pages to display customer videos, unboxing content, or testimonial clips.
 
@@ -78,10 +78,6 @@ The Media Carousel displays a horizontal carousel of video or image cards styled
 | **Video alt text** | Alternative text describing the video content for screen readers and accessibility. |
 | **Enable video autoplay** | When enabled, the video starts playing automatically as the card comes into view. |
 | **Video cover-poster image** | A cover image shown before the video starts playing. |
-| **Heading** | The heading or label for this block element. |
-| **Paragraph** | The text content for this block. |
-| **Show paragraph only on hover (desktop)  ** | When enabled, the paragraph text is hidden until the visitor hovers over the card on desktop. |
-| **Content alignments** | Controls the horizontal alignment of the content block within the section: Left, Center, or Right. |
 | **Label** | A short badge displayed on the card, for example "New" or "Customer review". |
 | **Label background color** | The background color of the label badge. |
 | **Label text color** | The text color of the label badge. |

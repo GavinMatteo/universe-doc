@@ -47,9 +47,9 @@ Use this section to tell a short brand story. Keep the text to 2 to 3 sentences.
 
 Show customer photos or video content. For fashion, vertical video clips (9:16) from social media work particularly well. Enable autoplay on each card.
 
-### 7. Reviews Carousel: trust
+### 7. Testimonials Carousel: trust
 
-End the page with a Reviews Carousel section. Use 3 to 5 real reviews that mention fit, quality, or delivery. Include reviewer photos where possible.
+End the page with a Testimonials Carousel section. Use 3 to 5 real reviews that mention fit, quality, or delivery. Include reviewer photos where possible.
 
 ---
 
