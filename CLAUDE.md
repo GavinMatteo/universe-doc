@@ -25,7 +25,7 @@ The rendered Markdown for **sections** is generated, not hand-edited. The hand-e
 Hand-edited Markdown pages that the generator does **not** touch (and never should):
 
 - `theme-docs/README.md` (curated landing page)
-- `theme-docs/SUMMARY.md` (owned by GitBook, see caveat below)
+- `theme-docs/SUMMARY.md` (GitBook-formatted, labels editable from git, see caveat below)
 - `theme-docs/getting-started.md`, `support.md`, `faq-general.md`, `troubleshooting.md`, `changelog.md`
 - `theme-docs/general-settings.md` (cross-section concept reference)
 - `theme-docs/guide-*.md` and `theme-docs/guides/**`
@@ -87,8 +87,10 @@ This handles `"Vendor/SKU"` → `vendor-sku` and `"⚙️ Section Settings"` →
 
 ## Important caveats
 
-### SUMMARY.md is owned by GitBook
-The first sync after going live, GitBook reformats `SUMMARY.md` (title becomes `# Table of contents`, hierarchy flattens, blank lines added). If you push a hand-edited or generator-produced SUMMARY, GitBook will overwrite it on the next sync. **Add new menu entries from the GitBook editor**, not from this repo. The generator does not currently produce SUMMARY.md.
+### SUMMARY.md is GitBook-formatted and synced both ways
+GitBook keeps `SUMMARY.md` in its house style (title `# Table of contents`, flat `*` lists, blank line after each `##`) and commits its own edits back to `main` as `GITBOOK-N` commits. Keep that format untouched.
+
+**GitBook takes the page title and H1 from the SUMMARY label, not from the Markdown H1.** So when a section is renamed, change its label in `SUMMARY.md` in the same PR as the regeneration, otherwise the live page keeps the old title. Label edits from git survive the sync (verified 19 October 2026, PR #10, live within 20 seconds). Structural changes (new pages, regrouping) have not been tested from git: do those from the GitBook editor, then pull. The generator does not produce SUMMARY.md.
 
 ### Dev store password gate
 `universe-theme-woofy.myshopify.com` is behind a Shopify password gate. The password is currently `universe`. The maintainer plans to make the store public; until then, any script that fetches storefront pages needs to dismiss the gate. The pattern is documented in commit `976f3e5` (now reverted but in history) for future reference.
