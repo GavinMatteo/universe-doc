@@ -4,8 +4,12 @@
 //   node probe-editor.js --save-test       type into a setting, press the save shortcut, and check
 //                                          that the guard aborted the write and nothing persisted
 // The editor UI lives in an iframe (online-store-web.shopifyapps.com), not the top document.
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { openEditor, editorFrame, findRow, selectRow, topBarHeight } from './lib/editor.js';
 
+const here = path.dirname(fileURLToPath(import.meta.url));
+const shot = name => path.join(here, 'out/preview', name);
 const saveTest = process.argv.includes('--save-test');
 const label = process.argv.slice(2).find(a => !a.startsWith('--')) || 'Featured Collection';
 
@@ -48,7 +52,7 @@ if (!saveTest) {
     console.log('panel box', await panel.boundingBox(), 'heading', await panel.locator('h1').first().textContent());
     console.log('row children', await frame.evaluate(id => [...document.getElementById(id).querySelectorAll('li')].map(l => l.id + ' :: ' + l.textContent.trim().slice(0, 60)), id));
   }
-  await page.screenshot({ path: 'out/preview/probe-selected.png' });
+  await page.screenshot({ path: shot('probe-selected.png') });
   await browser.close();
 } else {
   // Pass 1: change a value, then try to save with the keyboard shortcut (never a click on Save).
@@ -70,7 +74,7 @@ if (!saveTest) {
   await s.page.waitForTimeout(6000);
   console.log('Aborted by guard:', JSON.stringify(s.aborted, null, 1));
   console.log('requestfailed (save related):', JSON.stringify(failed.filter(f => /app_proxy|themes/.test(f)), null, 1));
-  await s.page.screenshot({ path: 'out/preview/save-test-after-shortcut.png' });
+  await s.page.screenshot({ path: shot('save-test-after-shortcut.png') });
   await s.context.close();
   await s.browser.close();
   // Pass 2: fresh session, the value must be the original one.
