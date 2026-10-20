@@ -6,6 +6,9 @@ The Cart Page section renders the full cart on the /cart page, including line it
 
 
 
+![Cart Page](.gitbook/assets/sections/main-cart-items.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

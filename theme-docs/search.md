@@ -6,6 +6,9 @@ The Search Results section displays the output of a search query, showing matchi
 
 
 
+![Search Results](.gitbook/assets/sections/search.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

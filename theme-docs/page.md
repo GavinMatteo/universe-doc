@@ -6,6 +6,9 @@ The Page Content section renders the content of a standard Shopify page exactly 
 
 
 
+![Page Content](.gitbook/assets/sections/page.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

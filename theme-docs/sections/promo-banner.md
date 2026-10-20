@@ -6,6 +6,9 @@ The Promo Banner section displays a full-width promotional area with a large dat
 
 
 
+![Promo Banner](../.gitbook/assets/sections/promo-banner.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

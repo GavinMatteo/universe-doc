@@ -6,6 +6,9 @@ The Media Carousel displays a horizontal carousel of video or image cards styled
 
 
 
+![Media Carousel](../.gitbook/assets/sections/ugc-carousel.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

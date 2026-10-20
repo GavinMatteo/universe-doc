@@ -6,6 +6,9 @@ The Store Locator section displays an interactive Google Maps map with pinned ma
 
 
 
+![Store Locator](../.gitbook/assets/sections/store-locator.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

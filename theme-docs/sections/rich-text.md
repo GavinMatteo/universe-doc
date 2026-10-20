@@ -6,6 +6,9 @@ The Rich Text section is a minimal text layout with a heading, body text, and op
 
 
 
+![Rich Text](../.gitbook/assets/sections/rich-text.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

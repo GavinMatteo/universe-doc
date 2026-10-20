@@ -6,6 +6,9 @@ The Drawer Cart is a slide-in cart panel that appears when a visitor adds an ite
 
 
 
+![Drawer Cart](.gitbook/assets/sections/drawer-cart.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

@@ -6,6 +6,9 @@ The Featured Data section displays animated number counters alongside a label an
 
 
 
+![Featured Data](../.gitbook/assets/sections/featured-data.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

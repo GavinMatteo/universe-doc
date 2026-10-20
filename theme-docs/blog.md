@@ -6,6 +6,9 @@ The Blog Listing section displays all posts from a blog in a grid or collage lay
 
 
 
+![Blog Listing](.gitbook/assets/sections/blog.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

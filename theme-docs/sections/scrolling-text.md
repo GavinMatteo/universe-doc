@@ -6,6 +6,9 @@ The Scrolling Text section is a continuous horizontal marquee of text and option
 
 
 
+![Scrolling Text](../.gitbook/assets/sections/scrolling-text.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

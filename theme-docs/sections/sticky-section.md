@@ -6,6 +6,9 @@ The Sticky Section is a two-column layout where one side (an image) stays fixed 
 
 
 
+![Sticky Section](../.gitbook/assets/sections/sticky-section.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

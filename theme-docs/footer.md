@@ -6,6 +6,9 @@ The Footer appears at the bottom of every page. It supports multiple layout type
 
 
 
+![Footer](.gitbook/assets/sections/footer.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

@@ -6,6 +6,9 @@ The Bold Slideshow is built for impact. It spans the full width of the page and 
 
 
 
+![Bold Slideshow](../.gitbook/assets/sections/bold-slideshow.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

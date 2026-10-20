@@ -6,6 +6,9 @@ The Before and After Slider section displays two images in a before-and-after sl
 
 
 
+![Before and After Slider](../.gitbook/assets/sections/then-vs-now.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

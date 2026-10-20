@@ -6,6 +6,9 @@ The Image With Text section divides the page into two columns: one for an image 
 
 
 
+![Image With Text](../.gitbook/assets/sections/image-with-text.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

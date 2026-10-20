@@ -6,6 +6,9 @@ The Icon List section displays a grid of cards combining an icon, a heading, and
 
 
 
+![Icon List](../.gitbook/assets/sections/icon-list.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

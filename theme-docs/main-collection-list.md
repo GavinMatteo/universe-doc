@@ -6,6 +6,9 @@ The Collections List Page section automatically displays all published collectio
 
 
 
+![Collections List Page](.gitbook/assets/sections/main-collection-list.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

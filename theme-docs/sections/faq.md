@@ -6,6 +6,9 @@ The FAQ section displays questions and answers in an accordion format. Visitors 
 
 
 
+![FAQ](../.gitbook/assets/sections/faq.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

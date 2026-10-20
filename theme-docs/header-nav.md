@@ -6,6 +6,9 @@ The Header and Navigation section controls the top bar of every page: logo, navi
 
 
 
+![Header and Navigation](.gitbook/assets/sections/header-nav.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

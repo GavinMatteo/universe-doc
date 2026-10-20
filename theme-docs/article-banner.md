@@ -6,6 +6,9 @@ The Article Banner appears at the top of every blog post and displays the articl
 
 
 
+![Article Banner](.gitbook/assets/sections/article-banner.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)
