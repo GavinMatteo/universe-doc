@@ -12,6 +12,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const rawDir = path.join(here, 'out/sections');
 const finalDir = path.join(here, '../theme-docs/.gitbook/assets/sections');
 const { pages } = JSON.parse(fs.readFileSync(path.join(here, 'manifest.json'), 'utf8'));
+let missing = 0;
 const wanted = process.argv.slice(2);
 const unknown = wanted.filter(w => !pages[w]);
 if (unknown.length) { console.error(`Unknown page slug: ${unknown.join(', ')}`); process.exit(1); }
@@ -37,7 +38,7 @@ for (const [urlPath, list] of Object.entries(byPath)) {
     const { type, hero } = pages[slug];
     const sel = `.shopify-section[id$="__u_${type.replace(/-/g, '_')}"], .shopify-section[id*="__u_${type.replace(/-/g, '_')}_"]`;
     const el = page.locator(sel).first();
-    if (!(await el.count())) { console.log(`MISSING ${slug} on ${urlPath}`); continue; }
+    if (!(await el.count())) { console.log(`MISSING ${slug} on ${urlPath}`); missing++; continue; }
     // The floating header overlays whatever is scrolled under it: hide it unless this is the hero.
     await page.evaluate(h => { const hd = document.querySelector('.shopify-section[id$="__header"]'); if (hd) hd.style.visibility = h ? '' : 'hidden'; }, hero);
     await el.scrollIntoViewIfNeeded();
@@ -73,3 +74,4 @@ for (const [urlPath, list] of Object.entries(byPath)) {
   }
 }
 await browser.close();
+if (missing) { console.log(`${missing} section(s) MISSING`); process.exitCode = 1; }
