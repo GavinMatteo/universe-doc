@@ -1,0 +1,13 @@
+{
+  "name": "universe-docs-pipeline",
+  "private": true,
+  "type": "module",
+  "description": "Screenshots and video recordings of the Universe demo store for the docs",
+  "scripts": {
+    "shots": "node screenshots.js",
+    "banner": "node banner.js"
+  },
+  "dependencies": {
+    "playwright": "^1.58.0"
+  }
+}

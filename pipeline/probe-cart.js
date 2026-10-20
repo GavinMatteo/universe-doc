@@ -1,0 +1,14 @@
+import { openStore, quiet, STORE } from './lib/store.js';
+const { browser, page } = await openStore({ deviceScaleFactor: 1 });
+await page.goto(STORE + '/collections/all', { waitUntil: 'load' }); await page.waitForTimeout(1500);
+const cards = await page.$$eval('product-card, .product-card, [class*="product-card"]', els => els.length);
+const btns = await page.$$eval('button, a', els => els.filter(e => /add|cart|quick/i.test((e.textContent||'') + ' ' + (e.getAttribute('aria-label')||'') + ' ' + e.className)).slice(0,12).map(e => `${e.tagName} class="${e.className.toString().slice(0,80)}" aria="${e.getAttribute('aria-label')||''}" text="${(e.textContent||'').trim().slice(0,30)}"`));
+console.log('product cards:', cards); console.log(btns.join('\n'));
+const drawer = await page.$$eval('[id*="drawer-cart"], [class*="drawer-cart"], [class*="cart-drawer"], cart-drawer', els => els.slice(0,5).map(e => `${e.tagName}#${e.id} .${e.className.toString().slice(0,80)}`));
+console.log('drawer candidates:', drawer);
+const firstProduct = await page.$eval('a[href*="/products/"]', a => a.getAttribute('href'));
+console.log('first product:', firstProduct);
+await page.goto(STORE + firstProduct, { waitUntil: 'load' }); await page.waitForTimeout(1500);
+const atc = await page.$$eval('form[action*="/cart/add"] button, button[name="add"], [class*="add-to-cart"]', els => els.slice(0,5).map(e => `${e.tagName} name="${e.getAttribute('name')}" class="${e.className.toString().slice(0,80)}" text="${(e.textContent||'').trim().slice(0,30)}"`));
+console.log('PDP add to cart:', atc);
+await browser.close();
