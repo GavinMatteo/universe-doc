@@ -4,7 +4,7 @@
 // finals to ../theme-docs/.gitbook/assets/sections.
 //
 // Manifest entry: { path, type, hero?, selector?, maxHeight?, setup?, skip? }
-//   maxHeight crop the capture to this many css px from its top (long listings)
+//   maxHeight max height in css px, snapped down to the last full row of the grid (long listings)
 //   selector  CSS selector for the section when its id does not follow __u_<type>
 //   setup     one of the SETUPS below; such pages run in their own fresh session
 //   skip      reason string: the page is reported as SKIP and never counted as MISSING
@@ -84,6 +84,7 @@ const SETUPS = {
   'add-to-cart': async (page, entry) => {
     await addToCart(page);
     await load(page, entry.path);
+    if (!(await page.locator('.js-cart-item').count())) return 'cart is empty';
     await walk(page);
     return null;
   },
@@ -197,7 +198,31 @@ async function captureSection(page, slug, urlPath) {
     return { x: 0, y: Math.max(0, top + scrollY), width: innerWidth, height: bottom - top };
   }, hero);
   // Long listings (product grids, search, blog) only need their first rows to show the layout.
-  if (pages[slug].maxHeight && clip.height > pages[slug].maxHeight) clip.height = pages[slug].maxHeight;
+  const { maxHeight } = pages[slug];
+  if (maxHeight && clip.height > maxHeight) {
+    const snapped = await el.evaluate((sec, { top, max }) => {
+      // Cards are the card-sized children of every grid-like container (3 or more such
+      // children): a blog mixes a featured row and a 3-column grid, so one grid is not enough.
+      const isCard = n => { const r = n.getBoundingClientRect(); return r.width >= 100 && r.height >= 100; };
+      const cards = [];
+      for (const n of sec.querySelectorAll('*')) {
+        const kids = [...n.children].filter(isCard);
+        if (kids.length < 3) continue;
+        for (const c of kids) { const r = c.getBoundingClientRect(); cards.push({ top: r.top + scrollY - top, bottom: r.bottom + scrollY - top }); }
+      }
+      if (!cards.length) return null;
+      // Last card bottom inside the limit that no other card straddles: a full row.
+      const ends = cards.map(c => c.bottom).filter(b => b <= max)
+        .filter(b => !cards.some(c => c.top < b - 1 && c.bottom > b + 1)).sort((a, b) => b - a);
+      if (!ends.length) return null;
+      const pad = parseFloat(getComputedStyle(sec.firstElementChild || sec).paddingBottom) || 0;
+      // Breathing room below the row, but never into the next row: stop 1 px above its top.
+      const next = Math.min(...cards.map(c => c.top).filter(t => t > ends[0]), Infinity);
+      return Math.min(ends[0] + Math.max(pad, 40), next - 1);
+    }, { top: clip.y, max: maxHeight });
+    if (snapped) clip.height = snapped;
+    else { clip.height = maxHeight; console.log(`WARN ${slug}: maxHeight not snapped`); }
+  }
   if (clip.height < 20) { console.log(`MISSING ${slug}: section on ${urlPath} has no height`); missing++; return; }
   await shoot(page, slug, clip, true);
 }
