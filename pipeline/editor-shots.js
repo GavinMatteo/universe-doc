@@ -24,12 +24,17 @@ if (!entry) { console.error(`No manifest.json entry for page "${meta.page}"`); p
 const sectionType = liquid.replace(/\.liquid$/, '');
 const rawDir = path.join(here, 'out/editor', meta.page);
 const finalDir = path.join(repo, 'theme-docs/.gitbook/assets/editor', meta.page);
-fs.rmSync(finalDir, { recursive: true, force: true });
-fs.mkdirSync(rawDir, { recursive: true });
 
-const { browser, context, page, aborted } = await openEditor({ themeId, previewPath: entry.path });
+let session = null;
+let missing = 0;
+const miss = (label, err) => { missing++; console.log(`MISSING ${label}${err ? `  (${err.message.split('\n')[0]})` : ''}`); };
 try {
+  session = await openEditor({ themeId, previewPath: entry.path });
+  const { page } = session;
+  // Waiting for the tree proves the session is valid; only then touch the output folder.
   const frame = await editorFrame(page);
+  fs.rmSync(finalDir, { recursive: true, force: true });
+  fs.mkdirSync(rawDir, { recursive: true });
   await page.waitForTimeout(2000);
   const top = await topBarHeight(frame);
   const vp = page.viewportSize();
@@ -42,11 +47,8 @@ try {
     await page.waitForTimeout(800);
     const tree = await rowBox(frame, rowId);
     const panel = await panelBox(frame);
-    if (!tree || !panel) { console.log(`MISSING ${!tree ? 'tree item' : 'panel'} for ${name}`); return; }
-    // Keep the panel box inside the clip so its stroke is not cut by the top bar edge.
-    const bottom = panel.y + panel.height;
-    panel.y = Math.max(panel.y, top + 8); panel.height = bottom - panel.y;
-    await annotate(page, [tree, panel]);
+    if (!tree || !panel) throw new Error(`${!tree ? 'tree item' : 'panel'} has no box`);
+    await annotate(page, [tree, panel], { bounds: clip });
     const raw = path.join(rawDir, `${name}.png`);
     await page.screenshot({ path: raw, clip });
     await clearAnnotations(page);
@@ -57,26 +59,36 @@ try {
 
   const sectionId = await findRow(frame, meta.section_label, { fallbackType: sectionType });
   if (!sectionId) {
-    console.log(`MISSING ${meta.section_label}`);
+    miss(meta.section_label);
   } else {
-    await selectRow(frame, sectionId);
-    await page.waitForTimeout(1500);
-    await capture(sectionId, 'section-settings', sectionId);
-    for (const b of meta.blocks.filter(b => b.capture)) {
+    try {
       await selectRow(frame, sectionId);
-      await page.waitForTimeout(800);
-      await expandRow(frame, sectionId);
-      await page.waitForTimeout(800);
-      const blockId = await findRow(frame, b.label, { scope: sectionId, nested: true, fallbackType: b.type });
-      if (!blockId) { console.log(`MISSING ${b.label}`); continue; }
-      await selectRow(frame, blockId);
       await page.waitForTimeout(1500);
-      await capture(blockId, b.anchor, sectionId);
+      await capture(sectionId, 'section-settings', sectionId);
+    } catch (e) { miss(meta.section_label, e); }
+    for (const b of meta.blocks.filter(b => b.capture)) {
+      try {
+        await selectRow(frame, sectionId);
+        await page.waitForTimeout(800);
+        await expandRow(frame, sectionId);
+        await page.waitForTimeout(800);
+        const blockId = await findRow(frame, b.label, { scope: sectionId, nested: true, fallbackType: b.type });
+        if (!blockId) { miss(b.label); continue; }
+        await selectRow(frame, blockId);
+        await page.waitForTimeout(1500);
+        await capture(blockId, b.anchor, sectionId);
+      } catch (e) { miss(b.label, e); }
     }
   }
+} catch (e) {
+  console.error(`Editor capture failed: ${e.message}`);
+  process.exitCode = 1;
 } finally {
-  if (aborted.length) console.log(`Save guard aborted ${aborted.length} request(s)`);
-  // Close without saving: the dialog handler dismisses any "leave page" prompt.
-  await context.close().catch(() => {});
-  await browser.close();
+  if (session) {
+    if (session.aborted.length) console.log(`Save guard aborted ${session.aborted.length} request(s)`);
+    // Close without saving: the dialog handler dismisses any "leave page" prompt.
+    await session.context.close().catch(() => {});
+    await session.browser.close().catch(() => {});
+  }
+  if (missing) process.exitCode = 1;
 }

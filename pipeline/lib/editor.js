@@ -22,9 +22,9 @@
 // - Settings panel: #PowerFrame-PortalArea-SecondaryPanel. Not found: [role=treeitem] (the tree
 //   has no ARIA tree roles) and a right-hand panel at 1600 px, see VIEWPORT.
 // - Saving: the editor sends a GraphQL mutation TemplateUpdate (POST admin.shopify.com/api/
-//   app_proxy/<store>?operation=TemplateUpdate), whose URL carries no theme id, so neither the
-//   path guard nor the theme-url guard sees it. Guard 3 aborts every app proxy mutation except
-//   the two the editor needs to open. Verified with `node probe-editor.js --save-test`.
+//   app_proxy/<store>?operation=TemplateUpdate), whose URL carries no theme id, so the brief's
+//   path guard does not see it. The deny-by-default guard (guardVerdict) aborts it. Verified
+//   live with `node probe-editor.js --save-test` and offline with `node guard-cases.js`.
 // - Headless Chrome advertises "HeadlessChrome" in its user agent and then hangs on the Cloudflare
 //   check in front of the editor, so the context uses the regular agent string.
 import { chromium } from 'playwright';
@@ -41,11 +41,48 @@ export const CHROME = process.env.CHROME_BIN || '/Users/Shared/Previously Reloca
 // three columns; optimize() scales the capture down to 1600.
 export const VIEWPORT = { width: 1800, height: 1100 };
 
-// GraphQL mutations the editor needs just to open (preview session, auth token). Every other
-// mutation sent through the admin app proxy is aborted: that is where the editor saves.
-const SAFE_MUTATIONS = new Set(['CreateThemeSessionId', 'GenerateArgusToken']);
-// Admin persisted operations whose name hints at a theme write are aborted as well.
-const RISKY_OPERATION = /theme|asset|file|publish|save|upsert|setting/i;
+// Save guard, deny by default. Every write method (POST, PUT, PATCH, DELETE) to a host the editor
+// talks to is aborted unless it is one of the following:
+// - GraphQL on admin.shopify.com/api/* (app proxy, admin API, persisted operations) where every
+//   operation in the body is either a known safe mutation, or plainly a query: query text present
+//   and no "mutation" word anywhere in it, or a persisted operation whose name is a known query.
+//   Unparseable bodies are aborted.
+// - Telemetry endpoints that carry no data of ours (dux, collect).
+// The editor saves with the mutation TemplateUpdate on the app proxy, which this aborts.
+const GUARDED_HOST = /^https:\/\/(admin\.shopify\.com|online-store-web\.shopifyapps\.com|[\w-]+\.myshopify\.com\/admin\/)/;
+const WRITE_METHODS = new Set(['POST', 'PUT', 'PATCH', 'DELETE']);
+const TELEMETRY = /^https:\/\/(admin\.shopify\.com|online-store-web\.shopifyapps\.com)\/(\.well-known\/dux|api\/collect)\b/;
+const GRAPHQL = /^https:\/\/admin\.shopify\.com\/api\//;
+// Mutations the editor needs just to open (preview session, auth tokens, app bookkeeping).
+const SAFE_MUTATIONS = new Set(['CreateThemeSessionId', 'GenerateArgusToken', 'GenerateSessionToken', 'ArgusAdminContextTokenGenerate', 'UpdateAppAccessedAt', 'LoginNotificationsRead']);
+// Persisted operations (operationName only, no query text) seen while loading and that are reads.
+const KNOWN_QUERIES = new Set(['AnalyticsSchemas']);
+
+// Returns null when the request may pass, or the reason to abort it.
+export function guardVerdict(method, url, body) {
+  if (!WRITE_METHODS.has(method) || !GUARDED_HOST.test(url)) return null;
+  if (TELEMETRY.test(url)) return null;
+  if (!GRAPHQL.test(url)) return 'write to a non-GraphQL editor endpoint';
+  let parsed;
+  try { parsed = JSON.parse(body || ''); } catch { return 'unparseable GraphQL body'; }
+  const ops = Array.isArray(parsed) ? parsed : [parsed];
+  if (!ops.length) return 'empty GraphQL body';
+  const urlOp = new URL(url).searchParams.get('operation') || (url.match(/\/api\/operations\/[0-9a-f]+\/(\w+)/) || [])[1] || null;
+  for (const op of ops) {
+    if (!op || typeof op !== 'object') return 'malformed GraphQL operation';
+    const names = [op.operationName, urlOp].filter(Boolean);
+    const query = typeof op.query === 'string' ? op.query : '';
+    // A safe-listed mutation passes only when every name involved is safe-listed: the body's
+    // operationName, the URL's operation, and every mutation declared in the query text.
+    const declared = [...query.matchAll(/\bmutation\s+(\w+)/gi)].map(m => m[1]);
+    const anonymous = /\bmutation\s*[({]/i.test(query);
+    if (op.operationName && SAFE_MUTATIONS.has(op.operationName) && (!urlOp || SAFE_MUTATIONS.has(urlOp)) && !anonymous && declared.every(n => SAFE_MUTATIONS.has(n))) continue;
+    if (/\bmutation\b/i.test(query)) return `mutation ${names.join('/') || '?'}`;
+    if (query && /[{]/.test(query)) continue;
+    if (!names.length || !names.every(n => KNOWN_QUERIES.has(n))) return `unknown operation ${names.join('/') || '?'}`;
+  }
+  return null;
+}
 
 export async function openEditor({ themeId = DEFAULT_THEME, previewPath = '/', log = console.log } = {}) {
   const browser = await chromium.launch({
@@ -54,59 +91,44 @@ export async function openEditor({ themeId = DEFAULT_THEME, previewPath = '/', l
     ignoreDefaultArgs: ['--enable-automation'],
     args: ['--disable-blink-features=AutomationControlled'],
   });
-  const probe = await browser.newPage();
-  const userAgent = (await probe.evaluate(() => navigator.userAgent)).replace('HeadlessChrome', 'Chrome');
-  await probe.context().close();
-  const context = await browser.newContext({
-    userAgent,
-    storageState: path.join(here, '..', '.auth', 'shopify.json'),
-    viewport: VIEWPORT,
-    deviceScaleFactor: 2,
-  });
-  const aborted = [];
-  const block = (route, why) => {
-    const req = route.request();
-    aborted.push(`${req.method()} ${req.url()}`);
-    log(`GUARD aborted (${why}) ${req.method()} ${req.url()}`);
-    return route.abort();
-  };
-  // Save guard 1, from the brief: anything that looks like a theme write, whatever the method.
-  await context.route(/\/themes\/\d+\/(asset|settings|editor\/save|publish)/i, r => block(r, 'theme path'));
-  // Save guard 2: write methods on admin URLs that name this theme.
-  const ids = [...new Set([String(themeId), DEFAULT_THEME])];
-  await context.route(/admin\.shopify\.com/, (route) => {
-    const req = route.request();
-    const u = req.url();
-    if (['PUT', 'POST', 'PATCH'].includes(req.method()) && ids.some(id => u.includes(`/themes/${id}/`) || u.endsWith(`/themes/${id}`))) return block(route, 'write on theme url');
-    return route.fallback();
-  });
-  // Save guard 3: the editor talks GraphQL through the admin app proxy, so a save is a mutation
-  // there and its URL never contains the theme id.
-  await context.route(/admin\.shopify\.com\/api\/(app_proxy|operations)\//, (route) => {
-    const req = route.request();
-    if (req.method() !== 'POST') return route.fallback();
-    const u = req.url();
-    const body = req.postData() || '';
-    if (u.includes('/api/app_proxy/')) {
-      const m = body.match(/"query"\s*:\s*"\s*mutation\s+(\w+)/) || body.match(/^\s*mutation\s+(\w+)/);
-      const isMutation = m || /"query"\s*:\s*"\s*mutation\b/.test(body) || /^\s*mutation\b/.test(body);
-      if (isMutation && !(m && SAFE_MUTATIONS.has(m[1]))) return block(route, `mutation ${m ? m[1] : '?'}`);
-    } else {
-      const name = (u.match(/\/api\/operations\/[0-9a-f]+\/(\w+)/) || [])[1] || '';
-      if (RISKY_OPERATION.test(name)) return block(route, `operation ${name}`);
-    }
-    return route.fallback();
-  });
-  const page = await context.newPage();
-  page.on('dialog', d => d.dismiss().catch(() => {}));
-  const url = `https://admin.shopify.com/store/${STORE_HANDLE}/themes/${themeId}/editor?previewPath=${encodeURIComponent(previewPath)}`;
-  await page.goto(url, { waitUntil: 'domcontentloaded' });
-  await page.waitForLoadState('load').catch(() => {});
-  if (/accounts\.shopify\.com|\/login/i.test(page.url())) {
-    await browser.close();
-    throw new Error('Session expired: rerun `node login.js` in pipeline/');
+  try {
+    const probe = await browser.newPage();
+    const userAgent = (await probe.evaluate(() => navigator.userAgent)).replace('HeadlessChrome', 'Chrome');
+    await probe.context().close();
+    const context = await browser.newContext({
+      userAgent,
+      storageState: path.join(here, '..', '.auth', 'shopify.json'),
+      viewport: VIEWPORT,
+      deviceScaleFactor: 2,
+      // Routes do not see requests a service worker answers, so keep service workers out.
+      serviceWorkers: 'block',
+    });
+    const aborted = [];
+    const block = (route, why) => {
+      const req = route.request();
+      aborted.push(`${req.method()} ${req.url()}`);
+      log(`GUARD aborted (${why}) ${req.method()} ${req.url()}`);
+      return route.abort();
+    };
+    // Save guard 1, from the brief: anything that looks like a theme write, whatever the method.
+    await context.route(/\/themes\/\d+\/(asset|settings|editor\/save|publish)/i, r => block(r, 'theme path'));
+    // Save guard 2: deny by default on every host the editor writes to, see guardVerdict().
+    await context.route(() => true, (route) => {
+      const req = route.request();
+      const why = guardVerdict(req.method(), req.url(), req.postData());
+      return why ? block(route, why) : route.fallback();
+    });
+    const page = await context.newPage();
+    page.on('dialog', d => d.dismiss().catch(() => {}));
+    const url = `https://admin.shopify.com/store/${STORE_HANDLE}/themes/${themeId}/editor?previewPath=${encodeURIComponent(previewPath)}`;
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
+    await page.waitForLoadState('load').catch(() => {});
+    if (/accounts\.shopify\.com|\/login/i.test(page.url())) throw new Error('Session expired: rerun `node login.js` in pipeline/');
+    return { browser, context, page, aborted };
+  } catch (e) {
+    await browser.close().catch(() => {});
+    throw e;
   }
-  return { browser, context, page, aborted };
 }
 
 // The editor UI is an embedded app iframe; the storefront preview is nested inside it.
@@ -137,20 +159,20 @@ export async function topBarHeight(frame) {
 }
 
 // Finds a tree row by its visible label: exact (case-insensitive, trimmed) first, then startsWith.
-// `scope` limits the search to the children of a section row; `fallbackId` is a substring of the
-// li id or the section type, used when the label does not match.
+// `scope` is the li id of a section row and limits the search to its children (with `nested`).
+// `fallbackType` is a section or block type, matched against the li's section type attribute or
+// its id, when no label matches. Returns the li id, or null when nothing matches.
 export async function findRow(frame, label, { scope = null, fallbackType = null, nested = false } = {}) {
-  const idx = await frame.evaluate(({ label, scopeId, fallbackType, nested }) => {
+  return frame.evaluate(({ label, scopeId, fallbackType, nested }) => {
     const root = scopeId ? document.getElementById(scopeId) : document;
-    if (!root) return -1;
+    if (!root) return null;
     const rows = [...root.querySelectorAll('li[class*="Online-Store-UI-NavItem_"]')].filter(li => li.id && (nested ? li !== root : !li.className.includes('NavItem--nested')));
     const title = li => (li.querySelector(':scope > [data-interior] [class*="NavItem__Title_"]')?.textContent || '').trim().toLowerCase();
     const want = label.trim().toLowerCase();
     let hit = rows.find(li => title(li) === want) || rows.find(li => title(li).startsWith(want));
     if (!hit && fallbackType) hit = rows.find(li => li.dataset.componentExtraSection_type === fallbackType || li.id.includes(`__${fallbackType.replace(/-/g, '_')}_`));
-    return hit ? hit.id : -1;
+    return hit ? hit.id : null;
   }, { label, scopeId: scope, fallbackType, nested });
-  return idx === -1 ? null : idx;
 }
 
 const rowLocator = (frame, id) => frame.locator(`li[id="${id}"]`);
@@ -178,7 +200,7 @@ export async function rowBox(frame, id) {
   return b && { x: b.x + off.x, y: b.y + off.y, width: b.width, height: b.height };
 }
 
-// Waits for the settings panel to show `heading` (or anything) and scrolls it back to the top.
+// Waits for the settings panel, scrolls its contents back to the top and returns its page box.
 export async function panelBox(frame) {
   const panel = frame.locator('#PowerFrame-PortalArea-SecondaryPanel');
   await panel.waitFor({ timeout: 15000 });
