@@ -25,11 +25,13 @@ export async function openStore({ viewport = { width: 1440, height: 900 }, devic
   return { browser, ctx, page };
 }
 
-// Hide things that pollute a screenshot: cookie banners, chat bubbles, popups.
-export async function quiet(page) {
+// Hide things that pollute a screenshot: cookie banners, chat bubbles, the product
+// page sticky add-to-cart bar, popups.
+// keepPopup leaves the newsletter popup alone, for the capture that shows it.
+export async function quiet(page, { keepPopup = false } = {}) {
+  const popup = keepPopup ? '' : ', .popup-newsletter, [data-popup], .u-popup, .shopify-section[id*="popup_newsletter"]';
   await page.addStyleTag({ content: `
-    .shopify-pc__banner, #shopify-pc__banner, .popup-newsletter, [data-popup], .u-popup,
-    iframe[title*="chat"], .shopify-section[id*="popup_newsletter"] { display: none !important; }
+    .shopify-pc__banner, #shopify-pc__banner, iframe[title*="chat"], .js-product-sticky-form${popup} { display: none !important; }
     *, *::before, *::after { animation-duration: 0s !important; transition-duration: 0s !important; }
   `});
 }
