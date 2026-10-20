@@ -17,6 +17,8 @@ Every section has a **Section's color palette** setting in the Colors group. Use
 
 This controls the background color, text color, button color, and link color of the entire section. Changing the palette on one section does not affect other sections.
 
+![Color scheme](.gitbook/assets/infographics/general-settings/color-scheme.png)
+
 **Use gradient as background**: when enabled, the section uses the gradient defined in the selected palette instead of a solid background. Gradients are configured per palette in Theme settings > Colors.
 
 ---
