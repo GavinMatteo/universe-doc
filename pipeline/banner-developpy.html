@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  /* Developpy brand tokens. Source: BrandManual-Developpy.pdf (July 2024, Vittoria Lama)
+   and the Instagram slide system. Load fonts from ./fonts. */
+@font-face { font-family: "Figtree"; src: url("../brand/fonts/figtree/Figtree-VariableFont_wght.ttf") format("truetype"); font-weight: 300 900; font-style: normal; }
+@font-face { font-family: "Figtree"; src: url("../brand/fonts/figtree/Figtree-Italic-VariableFont_wght.ttf") format("truetype"); font-weight: 300 900; font-style: italic; }
+@font-face { font-family: "Barracuda"; src: url("../brand/fonts/barracuda/Barracuda-Light.ttf") format("truetype"); font-weight: 300; }
+@font-face { font-family: "Barracuda"; src: url("../brand/fonts/barracuda/Barracuda-regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Barracuda"; src: url("../brand/fonts/barracuda/Barracuda-Bold.ttf") format("truetype"); font-weight: 700; }
+:root {
+  /* palette, manual page 10 */
+  --dark-violet: #110b2f;   /* RGB 17 11 47,    CMYK 100 100 47 64 */
+  --mirtillo:    #4334b5;   /* RGB 67 52 181,   CMYK 87 81 0 0 */
+  --purple:      #7852fc;   /* RGB 120 82 252,  CMYK 76 72 0 0 */
+  --lilac:       #dedcfd;   /* RGB 222 220 253, CMYK 15 15 0 0 */
+  --lime:        #e0f568;   /* RGB 224 245 104, CMYK 24 0 82 0 */
+  --white:       #ffffff;
+  /* aliases used by the Instagram slide system */
+  --ink: var(--dark-violet); --brand: var(--mirtillo); --violet: var(--purple);
+  --surface: #1a1340; --glass: #1e1747; --surface-light: #f4f3fe; --lilac-muted: #9693b5; --ink-muted: #58546d;
+  /* signature gradient: purple to dark violet */
+  --gradient-brand: linear-gradient(135deg, var(--purple) 0%, var(--mirtillo) 55%, var(--dark-violet) 100%);
+  --font-copy: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-accent: "Barracuda", "Figtree", sans-serif;
+  --radius-card: 28px;
+}
+
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 2560px; height: 1440px; overflow: hidden; background: var(--dark-violet); font-family: var(--font-copy); color: var(--white); }
+  .stage { position: relative; width: 2560px; height: 1440px; overflow: hidden;
+    background:
+      radial-gradient(900px 700px at 18% 50%, rgba(120,82,252,.38), transparent 70%),
+      radial-gradient(800px 600px at 85% 45%, rgba(67,52,181,.45), transparent 70%),
+      linear-gradient(180deg, #150e3a 0%, var(--dark-violet) 100%); }
+  .grid { position: absolute; inset: 0; background-image:
+      linear-gradient(rgba(222,220,253,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(222,220,253,.045) 1px, transparent 1px);
+    background-size: 80px 80px; mask-image: radial-gradient(1200px 800px at 50% 50%, #000 30%, transparent 100%); }
+  /* client store screenshots as tilted cards, outside the 1546x423 safe area */
+  .card { position: absolute; border-radius: 28px; overflow: hidden; box-shadow: 0 40px 120px rgba(0,0,0,.55); outline: 1px solid rgba(222,220,253,.18); background: #fff; }
+  .card img { display: block; width: 100%; height: auto; }
+  .c1 { left: -140px; top: -60px; width: 640px; transform: rotate(-7deg); opacity: .8; }
+  .c2 { left: 2060px; top: 60px; width: 660px; transform: rotate(6deg); opacity: .8; }
+  .c3 { left: 560px; top: 1040px; width: 1440px; transform: rotate(-2deg); opacity: .5; }
+  .c4 { left: -200px; top: 1000px; width: 560px; transform: rotate(5deg); opacity: .6; }
+  .c5 { left: 2160px; top: 980px; width: 600px; transform: rotate(-6deg); opacity: .6; }
+  .glass { position: absolute; width: 520px; height: auto; opacity: .9; filter: drop-shadow(0 30px 60px rgba(0,0,0,.4)); }
+  .g1 { left: 1900px; top: 700px; width: 380px; transform: rotate(-12deg); }
+  .g2 { left: 300px; top: 680px; width: 300px; transform: rotate(18deg); }
+  .fade { position: absolute; inset: 0; background:
+      linear-gradient(90deg, var(--dark-violet) 0%, rgba(17,11,47,0) 14%, rgba(17,11,47,0) 86%, var(--dark-violet) 100%),
+      linear-gradient(180deg, rgba(17,11,47,0) 60%, rgba(17,11,47,.85) 100%); pointer-events: none; }
+  .glow { position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px; border-radius: 40px; background: rgba(17,11,47,.6); backdrop-filter: blur(6px); box-shadow: 0 0 0 1px rgba(222,220,253,.12), 0 30px 120px rgba(0,0,0,.45); }
+  .safe { position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px; display: flex; align-items: center; gap: 72px; padding: 0 90px; }
+  .logo { width: 560px; flex: none; }
+  .logo img { width: 100%; height: auto; display: block; }
+  .divider { width: 2px; height: 250px; background: linear-gradient(180deg, transparent, rgba(222,220,253,.5), transparent); flex: none; }
+  .copy { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+  .tag { font-size: 58px; font-weight: 500; line-height: 1.08; letter-spacing: -.01em; color: var(--white); white-space: nowrap; }
+  .tag em { font-style: normal; font-family: var(--font-accent); font-weight: 400; color: var(--lime); font-size: 62px; }
+  .sub { font-size: 30px; font-weight: 400; color: var(--lilac); line-height: 1.3; }
+  .meta { display: flex; align-items: center; gap: 28px; margin-top: 4px; }
+  .meta img { height: 40px; width: auto; opacity: .95; }
+  .url { font-size: 28px; font-weight: 500; color: var(--lilac-muted); }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="grid"></div>
+  <div class="card c1"><img src="../brand/reference/work-screens/tacchettee.webp"></div>
+  <div class="card c2"><img src="../brand/reference/work-screens/mimmu.webp"></div>
+  <div class="card c3"><img src="../brand/reference/work-screens/gastona.webp"></div>
+  <div class="card c4"><img src="../brand/reference/work-screens/restylit.webp"></div>
+  <div class="card c5"><img src="../brand/reference/work-screens/small-giants.webp"></div>
+  <img class="glass g1" src="../brand/elements/glass-shapes/Torus_3x_Knot0000.png">
+  <img class="glass g2" src="../brand/elements/glass-shapes/Spring_Thin_Tall0000.png">
+  <div class="fade"></div>
+  <div class="glow"></div>
+  <div class="safe">
+    <div class="logo"><img src="../brand/logo/logo_white.svg" alt="Developpy"></div>
+    <div class="divider"></div>
+    <div class="copy">
+      <div class="tag">Shopify <em>software house</em></div>
+      <div class="sub">Stores for brands. The Universe theme. The Checkout Upsell Builder app.</div>
+      <div class="meta"><img src="../brand/partners/shopify-select-partner-white.svg" alt="Shopify Select Partner"><span class="url">developpy.io</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

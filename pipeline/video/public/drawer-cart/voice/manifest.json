@@ -1,0 +1,22 @@
+{
+  "intro": {
+    "file": "drawer-cart/voice/intro.wav",
+    "seconds": 13.56
+  },
+  "s1": {
+    "file": "drawer-cart/voice/s1.wav",
+    "seconds": 11.94
+  },
+  "s2": {
+    "file": "drawer-cart/voice/s2.wav",
+    "seconds": 13.49
+  },
+  "s3": {
+    "file": "drawer-cart/voice/s3.wav",
+    "seconds": 7.81
+  },
+  "outro": {
+    "file": "drawer-cart/voice/outro.wav",
+    "seconds": 7.08
+  }
+}

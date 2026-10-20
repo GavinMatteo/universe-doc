@@ -1,0 +1,24 @@
+/* Developpy brand tokens. Source: BrandManual-Developpy.pdf (July 2024, Vittoria Lama)
+   and the Instagram slide system. Load fonts from ./fonts. */
+@font-face { font-family: "Figtree"; src: url("fonts/figtree/Figtree-VariableFont_wght.ttf") format("truetype"); font-weight: 300 900; font-style: normal; }
+@font-face { font-family: "Figtree"; src: url("fonts/figtree/Figtree-Italic-VariableFont_wght.ttf") format("truetype"); font-weight: 300 900; font-style: italic; }
+@font-face { font-family: "Barracuda"; src: url("fonts/barracuda/Barracuda-Light.ttf") format("truetype"); font-weight: 300; }
+@font-face { font-family: "Barracuda"; src: url("fonts/barracuda/Barracuda-regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Barracuda"; src: url("fonts/barracuda/Barracuda-Bold.ttf") format("truetype"); font-weight: 700; }
+:root {
+  /* palette, manual page 10 */
+  --dark-violet: #110b2f;   /* RGB 17 11 47,    CMYK 100 100 47 64 */
+  --mirtillo:    #4334b5;   /* RGB 67 52 181,   CMYK 87 81 0 0 */
+  --purple:      #7852fc;   /* RGB 120 82 252,  CMYK 76 72 0 0 */
+  --lilac:       #dedcfd;   /* RGB 222 220 253, CMYK 15 15 0 0 */
+  --lime:        #e0f568;   /* RGB 224 245 104, CMYK 24 0 82 0 */
+  --white:       #ffffff;
+  /* aliases used by the Instagram slide system */
+  --ink: var(--dark-violet); --brand: var(--mirtillo); --violet: var(--purple);
+  --surface: #1a1340; --glass: #1e1747; --surface-light: #f4f3fe; --lilac-muted: #9693b5; --ink-muted: #58546d;
+  /* signature gradient: purple to dark violet */
+  --gradient-brand: linear-gradient(135deg, var(--purple) 0%, var(--mirtillo) 55%, var(--dark-violet) 100%);
+  --font-copy: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-accent: "Barracuda", "Figtree", sans-serif;
+  --radius-card: 28px;
+}

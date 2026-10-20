@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+/* Developpy brand tokens. Source: BrandManual-Developpy.pdf (July 2024, Vittoria Lama)
+   and the Instagram slide system. Load fonts from ./fonts. */
+@font-face { font-family: "Figtree"; src: url("../brand/fonts/figtree/Figtree-VariableFont_wght.ttf") format("truetype"); font-weight: 300 900; font-style: normal; }
+@font-face { font-family: "Figtree"; src: url("../brand/fonts/figtree/Figtree-Italic-VariableFont_wght.ttf") format("truetype"); font-weight: 300 900; font-style: italic; }
+@font-face { font-family: "Barracuda"; src: url("../brand/fonts/barracuda/Barracuda-Light.ttf") format("truetype"); font-weight: 300; }
+@font-face { font-family: "Barracuda"; src: url("../brand/fonts/barracuda/Barracuda-regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Barracuda"; src: url("../brand/fonts/barracuda/Barracuda-Bold.ttf") format("truetype"); font-weight: 700; }
+:root {
+  /* palette, manual page 10 */
+  --dark-violet: #110b2f;   /* RGB 17 11 47,    CMYK 100 100 47 64 */
+  --mirtillo:    #4334b5;   /* RGB 67 52 181,   CMYK 87 81 0 0 */
+  --purple:      #7852fc;   /* RGB 120 82 252,  CMYK 76 72 0 0 */
+  --lilac:       #dedcfd;   /* RGB 222 220 253, CMYK 15 15 0 0 */
+  --lime:        #e0f568;   /* RGB 224 245 104, CMYK 24 0 82 0 */
+  --white:       #ffffff;
+  /* aliases used by the Instagram slide system */
+  --ink: var(--dark-violet); --brand: var(--mirtillo); --violet: var(--purple);
+  --surface: #1a1340; --glass: #1e1747; --surface-light: #f4f3fe; --lilac-muted: #9693b5; --ink-muted: #58546d;
+  /* signature gradient: purple to dark violet */
+  --gradient-brand: linear-gradient(135deg, var(--purple) 0%, var(--mirtillo) 55%, var(--dark-violet) 100%);
+  --font-copy: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-accent: "Barracuda", "Figtree", sans-serif;
+  --radius-card: 28px;
+}
+
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 2560px; height: 1440px; overflow: hidden; background: var(--ink); font-family: var(--font-copy); color: var(--white); }
+  .stage { position: relative; width: 2560px; height: 1440px; overflow: hidden;
+    background:
+      radial-gradient(900px 700px at 18% 50%, rgba(120,82,252,.38), transparent 70%),
+      radial-gradient(800px 600px at 85% 45%, rgba(67,52,181,.45), transparent 70%),
+      linear-gradient(180deg, #150e3a 0%, var(--ink) 100%); }
+  /* faint grid, like the brand slides */
+  .grid { position: absolute; inset: 0; background-image:
+      linear-gradient(rgba(222,220,253,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(222,220,253,.045) 1px, transparent 1px);
+    background-size: 80px 80px; mask-image: radial-gradient(1200px 800px at 50% 50%, #000 30%, transparent 100%); }
+  /* safe area 1546x423, centered */
+  .safe { position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px; display: flex; align-items: center; gap: 80px; }
+  .wordmark { width: 760px; color: var(--white); }
+  .wordmark svg { width: 100%; height: auto; display: block; }
+  .divider { width: 2px; height: 260px; background: linear-gradient(180deg, transparent, rgba(222,220,253,.5), transparent); }
+  .copy { display: flex; flex-direction: column; gap: 22px; }
+  .by { display: flex; align-items: center; gap: 22px; font-size: 36px; font-weight: 500; color: var(--lilac); letter-spacing: .01em; }
+  .by img { height: 54px; width: auto; }
+  .tag { font-size: 60px; font-weight: 500; line-height: 1.05; letter-spacing: -.01em; color: var(--white); }
+  .tag em { font-style: normal; font-family: var(--font-accent); font-weight: 400; color: var(--lime); font-size: 64px; }
+  .url { font-size: 30px; font-weight: 500; color: var(--lilac-muted); }
+  /* screenshots outside the safe area: tilted cards fading at the edges */
+  .card { position: absolute; border-radius: 28px; overflow: hidden; box-shadow: 0 40px 120px rgba(0,0,0,.55); outline: 1px solid rgba(222,220,253,.18); background: #fff; }
+  .card img { display: block; width: 100%; height: auto; }
+  .c1 { left: -120px; top: -40px; width: 620px; transform: rotate(-7deg); opacity: .78; }
+  .c2 { left: 2080px; top: 110px; width: 640px; transform: rotate(6deg); opacity: .78; }
+  .c3 { left: 520px; top: 1030px; width: 1500px; transform: rotate(-2deg); opacity: .55; }
+  .glass { position: absolute; width: 520px; height: auto; opacity: .9; filter: drop-shadow(0 30px 60px rgba(0,0,0,.4)); }
+  .g1 { left: 1880px; top: 940px; transform: rotate(-12deg); }
+  .g2 { left: 180px; top: 880px; width: 420px; transform: rotate(18deg); }
+  .fade { position: absolute; inset: 0; background:
+      linear-gradient(90deg, var(--ink) 0%, rgba(17,11,47,0) 14%, rgba(17,11,47,0) 86%, var(--ink) 100%),
+      linear-gradient(180deg, rgba(17,11,47,0) 60%, rgba(17,11,47,.85) 100%); pointer-events: none; }
+  .glow { position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px; border-radius: 40px; background: rgba(17,11,47,.55); backdrop-filter: blur(6px); box-shadow: 0 0 0 1px rgba(222,220,253,.12), 0 30px 120px rgba(0,0,0,.45); }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="grid"></div>
+  <div class="card c1"><img src="../out/sections/bold-slideshow.png"></div>
+  <div class="card c2"><img src="../out/sections/reviews-showcase.png"></div>
+  <div class="card c3"><img src="../out/sections/featured-collection.png"></div>
+  <img class="glass g1" src="../brand/elements/glass-shapes/Torus_3x_Knot0000.png">
+  <img class="glass g2" src="../brand/elements/glass-shapes/Spring_Thin_Tall0000.png">
+  <div class="fade"></div>
+  <div class="glow"></div>
+  <div class="safe">
+    <div class="wordmark">__UNIVERSE_SVG__</div>
+    <div class="divider"></div>
+    <div class="copy">
+      <div class="by"><span>Shopify theme by</span><img src="../brand/logo/logo_white.svg" alt="Developpy"></div>
+      <div class="tag">Setup guides and <em>tutorials</em></div>
+      <div class="url">developpy.gitbook.io/universe-doc-git</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
