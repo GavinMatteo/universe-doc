@@ -26,6 +26,9 @@ The Featured Collection section displays a grid or carousel of products from a c
 
 ## ⚙️ Section Settings
 
+![Featured Collection section settings in the theme editor](../.gitbook/assets/editor/featured-collection/section-settings.png)
+
+
 ### Content and Layout
 
 | Setting | What it does |
@@ -82,6 +85,9 @@ The Featured Collection section displays a grid or carousel of products from a c
 ## 🧩 Blocks
 
 ### Collection
+
+![Collection block settings in the theme editor](../.gitbook/assets/editor/featured-collection/collection.png)
+
 
 | Setting | What it does |
 |---|---|
