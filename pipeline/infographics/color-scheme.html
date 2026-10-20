@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Color scheme anatomy</title>
+<!-- Rendered by render-html.js from pipeline/out/, so brand assets resolve as ../brand/. -->
+<link rel="stylesheet" href="../brand/tokens.css">
+<style>
+  /* Scheme colors: real values from .themes/universe-empty-3rd/config/settings_data.json,
+     current.color_schemes. Role names: locales/en.default.schema.json, settings_schema.colors. */
+  :root {
+    --s1-bg: #01a58d; --s1-text: #f3f2f0; --s1-link: #f3f2f0;
+    --s1-btn-bg: #f7715d; --s1-btn-text: #f3f2f0; --s1-btn-bg-h: #f3f2f0; --s1-btn-text-h: #01a58d;
+    --s1-out: #f3f2f0; --s1-out-h: #f7715d;
+    --s1-card-bg: #ffffff; --s1-card-border: #01a58d; --s1-card-text: #1d1d1d;
+    --s1-arr: #594a46; --s1-arr-bg: #f3f2f0; --s1-arr-border: #d8dedd;
+    --s1-in-text: #1d1d1d; --s1-in-ph: #5a6663; --s1-in-bg: #f5f7f7; --s1-in-border: #d8dedd;
+    --line: rgba(222, 220, 253, .55);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: var(--dark-violet); }
+  body { font-family: var(--font-copy); color: var(--white); }
+
+  #frame {
+    position: relative; width: 1600px; height: 964px; overflow: hidden;
+    background: radial-gradient(900px 620px at 0% 0%, rgba(120, 82, 252, .40), transparent 70%), var(--dark-violet);
+  }
+  .glass { position: absolute; width: 420px; height: 420px; right: -110px; top: -120px; opacity: .22; }
+
+  /* header */
+  .title { position: absolute; left: 64px; top: 52px; font-size: 60px; font-weight: 400; line-height: 1.1; letter-spacing: -.01em; }
+  .title .accent { font-family: var(--font-accent); color: var(--lime); font-size: 64px; }
+  .subtitle { position: absolute; left: 64px; top: 136px; width: 1100px; font-size: 26px; font-weight: 500; color: var(--lilac); line-height: 1.35; }
+
+  /* leader lines */
+  svg.lines { position: absolute; inset: 0; width: 1600px; height: 964px; pointer-events: none; }
+  svg.lines path { fill: none; stroke: var(--line); stroke-width: 2; }
+  svg.lines circle.end { fill: var(--lime-dot, var(--white)); stroke: var(--dark-violet); stroke-width: 3; }
+  svg.lines circle.start { fill: var(--lilac); }
+
+  /* callouts */
+  .callout { position: absolute; width: 360px; }
+  .callout.left { left: 64px; text-align: right; }
+  .callout.right { left: 1176px; text-align: left; }
+  .callout .head { display: flex; align-items: center; gap: 12px; height: 32px; font-size: 25px; font-weight: 650; }
+  .callout.left .head { justify-content: flex-end; }
+  .callout .sub { margin-top: 6px; font-size: 22px; font-weight: 400; color: var(--lilac); line-height: 1.3; text-wrap: balance; }
+  .chips { display: flex; gap: 5px; }
+  .chip { width: 24px; height: 24px; border-radius: 7px; box-shadow: inset 0 0 0 1.5px rgba(222, 220, 253, .45); }
+
+  /* the mocked storefront section, scheme 1 */
+  .mock { position: absolute; left: 500px; top: 232px; width: 600px; height: 440px; border-radius: 22px;
+    background: var(--s1-bg); color: var(--s1-text); overflow: visible;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .45), 0 0 0 1px rgba(222, 220, 253, .14); }
+  .mock > * { position: absolute; }
+  .m-h { left: 40px; top: 40px; font-size: 36px; font-weight: 700; line-height: 44px; letter-spacing: -.01em; }
+  .m-p { left: 40px; top: 104px; width: 280px; font-size: 22px; line-height: 30px; font-weight: 400; }
+  .m-p u { color: var(--s1-link); text-decoration-thickness: 2px; text-underline-offset: 4px; font-weight: 600; }
+  .m-btn { top: 200px; height: 52px; width: 132px; border-radius: 26px; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 600; }
+  .m-solid { left: 40px; background: var(--s1-btn-bg); color: var(--s1-btn-text); }
+  .m-outline { left: 186px; border: 2px solid var(--s1-out); color: var(--s1-out); }
+  .m-input { left: 40px; top: 300px; width: 278px; height: 52px; border-radius: 12px; background: var(--s1-in-bg);
+    border: 2px solid var(--s1-in-border); color: var(--s1-in-ph); font-size: 22px; padding: 0 18px; display: flex; align-items: center; }
+  .m-card { left: 360px; top: 40px; width: 200px; height: 340px; border-radius: 16px; background: var(--s1-card-bg);
+    border: 2px solid var(--s1-card-border); color: var(--s1-card-text); padding: 12px; }
+  .m-img { width: 172px; height: 216px; border-radius: 10px; background: linear-gradient(160deg, #f3f2f0 0%, #d8dedd 100%); }
+  .m-card .t { margin-top: 14px; font-size: 22px; font-weight: 600; line-height: 26px; }
+  .m-card .pr { margin-top: 4px; font-size: 22px; font-weight: 400; line-height: 26px; }
+  .m-arrow { top: 140px; width: 44px; height: 44px; border-radius: 50%; background: var(--s1-arr-bg);
+    border: 2px solid var(--s1-arr-border); display: flex; align-items: center; justify-content: center; }
+  .m-arrow svg { width: 18px; height: 18px; stroke: var(--s1-arr); stroke-width: 2.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .m-arrow.l { left: 338px; } .m-arrow.r { left: 538px; }
+
+  /* the editor setting, pinned to the mock */
+  .picker { position: absolute; left: 520px; top: 208px; height: 46px; display: flex; align-items: center; gap: 14px;
+    padding: 0 18px; border-radius: 14px; background: var(--surface); border: 1.5px solid var(--purple);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .4); font-size: 22px; }
+  .picker .k { color: var(--lilac); }
+  .picker .v { display: flex; align-items: center; gap: 10px; font-weight: 650; }
+  .picker .dot { width: 20px; height: 20px; border-radius: 6px; background: var(--s1-bg); box-shadow: inset 0 0 0 1.5px rgba(222,220,253,.5); }
+  .picker svg { width: 14px; height: 14px; stroke: var(--lilac); stroke-width: 2.6; fill: none; stroke-linecap: round; }
+
+  /* example schemes */
+  .row-label { position: absolute; left: 64px; top: 712px; font-size: 22px; color: var(--lilac); }
+  .schemes { position: absolute; left: 64px; top: 752px; width: 1472px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .sc { position: relative; height: 148px; border-radius: 18px; background: var(--bg); color: var(--tx); padding: 20px 22px;
+    box-shadow: 0 0 0 1px rgba(222, 220, 253, .16), 0 16px 40px rgba(0, 0, 0, .35); overflow: hidden; }
+  .sc .name { font-size: 24px; font-weight: 700; line-height: 28px; }
+  .sc .bar { margin-top: 12px; width: 150px; height: 10px; border-radius: 5px; background: var(--tx); opacity: .85; }
+  .sc .bar.s { margin-top: 8px; width: 110px; }
+  .sc .btns { position: absolute; left: 22px; bottom: 20px; display: flex; gap: 10px; }
+  .sc .pill { width: 74px; height: 28px; border-radius: 14px; }
+  .sc .pill.solid { background: var(--btn); }
+  .sc .pill.out { border: 2px solid var(--out); }
+  .sc .card { position: absolute; right: 22px; top: 18px; width: 96px; height: 112px; border-radius: 10px; background: var(--cbg);
+    border: 2px solid var(--cbd); padding: 7px; }
+  .sc .card i { display: block; height: 60px; border-radius: 6px; background: var(--ctx); opacity: .14; }
+  .sc .card b { display: block; margin-top: 8px; width: 60px; height: 8px; border-radius: 4px; background: var(--ctx); }
+  .sc .card b + b { margin-top: 6px; width: 40px; opacity: .6; }
+</style>
+</head>
+<body>
+<div id="frame">
+  <img class="glass" src="../brand/elements/glass-shapes/Torus_Standing_1_0000.png" alt="">
+
+  <h1 class="title">One <span class="accent">palette</span>, every element</h1>
+  <p class="subtitle">Schemes live in Theme settings &gt; Colors. Each section picks one, and every element inside it takes its colors from that scheme.</p>
+
+  <!-- the section -->
+  <div class="mock">
+    <div class="m-h">New arrivals</div>
+    <p class="m-p">Soft cotton basics for every day. <u>Read the story</u></p>
+    <div class="m-btn m-solid">Shop now</div>
+    <div class="m-btn m-outline">Explore</div>
+    <div class="m-input">Your email</div>
+    <div class="m-card">
+      <div class="m-img"></div>
+      <div class="t">Linen shirt</div>
+      <div class="pr">49.00 EUR</div>
+    </div>
+    <div class="m-arrow l"><svg viewBox="0 0 18 18"><path d="M11 3 5 9l6 6"/></svg></div>
+    <div class="m-arrow r"><svg viewBox="0 0 18 18"><path d="m7 3 6 6-6 6"/></svg></div>
+  </div>
+  <div class="picker">
+    <span class="k">Section's color palette</span>
+    <span class="v"><span class="dot"></span>Scheme 1</span>
+    <svg viewBox="0 0 14 14"><path d="m3 5 4 4 4-4"/></svg>
+  </div>
+
+  <!-- leader lines: callout anchor, short stub, then to the element -->
+  <svg class="lines" viewBox="0 0 1600 964">
+    <path d="M430 292 H466 L528 366"/>
+    <path d="M430 392 H466 L538 456"/>
+    <path d="M430 512 H752 V488"/>
+    <path d="M430 610 H466 L538 560"/>
+    <path d="M1166 330 H1134 L1084 384"/>
+    <path d="M1166 470 H1134 L1062 520"/>
+    <path d="M1166 610 H1134 L1084 646"/>
+    <g>
+      <circle class="start" cx="430" cy="292" r="5"/><circle class="end" cx="528" cy="366" r="8"/>
+      <circle class="start" cx="430" cy="392" r="5"/><circle class="end" cx="538" cy="456" r="8"/>
+      <circle class="start" cx="430" cy="512" r="5"/><circle class="end" cx="752" cy="488" r="8"/>
+      <circle class="start" cx="430" cy="610" r="5"/><circle class="end" cx="538" cy="560" r="8"/>
+      <circle class="start" cx="1166" cy="330" r="5"/><circle class="end" cx="1084" cy="384" r="8"/>
+      <circle class="start" cx="1166" cy="470" r="5"/><circle class="end" cx="1062" cy="520" r="8"/>
+      <circle class="start" cx="1166" cy="610" r="5"/><circle class="end" cx="1084" cy="646" r="8"/>
+    </g>
+  </svg>
+
+  <!-- callouts: group names and setting names as the theme editor shows them -->
+  <div class="callout left" style="top: 276px">
+    <div class="head">Content <span class="chips"><span class="chip" style="background:var(--s1-text)"></span><span class="chip" style="background:var(--s1-link)"></span></span></div>
+    <div class="sub">Body, Link</div>
+  </div>
+  <div class="callout left" style="top: 376px">
+    <div class="head">Primary button <span class="chips"><span class="chip" style="background:var(--s1-btn-bg)"></span><span class="chip" style="background:var(--s1-btn-text)"></span><span class="chip" style="background:var(--s1-btn-text-h)"></span></span></div>
+    <div class="sub">Background, Text and border, plus hover</div>
+  </div>
+  <div class="callout left" style="top: 496px">
+    <div class="head">Outline button <span class="chips"><span class="chip" style="background:var(--s1-out)"></span><span class="chip" style="background:var(--s1-out-h)"></span></span></div>
+    <div class="sub">Text and border, Text hover</div>
+  </div>
+  <div class="callout left" style="top: 594px">
+    <div class="head">Input/Forms <span class="chips"><span class="chip" style="background:var(--s1-in-text)"></span><span class="chip" style="background:var(--s1-in-ph)"></span><span class="chip" style="background:var(--s1-in-bg)"></span><span class="chip" style="background:var(--s1-in-border)"></span></span></div>
+    <div class="sub">Text, Placeholder text, Background, Border</div>
+  </div>
+
+  <div class="callout right" style="top: 314px">
+    <div class="head"><span class="chips"><span class="chip" style="background:var(--s1-arr)"></span><span class="chip" style="background:var(--s1-arr-bg)"></span><span class="chip" style="background:var(--s1-arr-border)"></span></span> Slideshow arrows</div>
+    <div class="sub">Arrows text and icon, Arrows background, Arrows border</div>
+  </div>
+  <div class="callout right" style="top: 454px">
+    <div class="head"><span class="chips"><span class="chip" style="background:var(--s1-card-bg)"></span><span class="chip" style="background:var(--s1-card-border)"></span><span class="chip" style="background:var(--s1-card-text)"></span></span> Cards</div>
+    <div class="sub">Card background, Card border, Card text</div>
+  </div>
+  <div class="callout right" style="top: 594px">
+    <div class="head"><span class="chips"><span class="chip" style="background:var(--s1-bg)"></span></span> Body</div>
+    <div class="sub">Background, Background gradient</div>
+  </div>
+
+  <!-- four schemes from the theme, same section -->
+  <p class="row-label">The same section with four of the theme's schemes</p>
+  <div class="schemes">
+    <div class="sc" style="--bg:#01a58d;--tx:#f3f2f0;--btn:#f7715d;--out:#f3f2f0;--cbg:#ffffff;--cbd:#01a58d;--ctx:#1d1d1d">
+      <div class="name">Scheme 1</div><div class="bar"></div><div class="bar s"></div>
+      <div class="btns"><span class="pill solid"></span><span class="pill out"></span></div>
+      <div class="card"><i></i><b></b><b></b></div>
+    </div>
+    <div class="sc" style="--bg:#594a46;--tx:#f3f2f0;--btn:#f7715d;--out:#f3f2f0;--cbg:#000000;--cbd:#ffffff;--ctx:#ffffff">
+      <div class="name">Scheme 2</div><div class="bar"></div><div class="bar s"></div>
+      <div class="btns"><span class="pill solid"></span><span class="pill out"></span></div>
+      <div class="card"><i></i><b></b><b></b></div>
+    </div>
+    <div class="sc" style="--bg:#f7715d;--tx:#f3f2f0;--btn:#594a46;--out:#594a46;--cbg:#f9f9f8;--cbd:#d8dedd;--ctx:#594a46">
+      <div class="name">Scheme 3</div><div class="bar"></div><div class="bar s"></div>
+      <div class="btns"><span class="pill solid"></span><span class="pill out"></span></div>
+      <div class="card"><i></i><b></b><b></b></div>
+    </div>
+    <div class="sc" style="--bg:#f3f2f0;--tx:#594a46;--btn:#f7715d;--out:#f7715d;--cbg:#ffffff;--cbd:#f3f2f0;--ctx:#594a46">
+      <div class="name">Scheme 4</div><div class="bar"></div><div class="bar s"></div>
+      <div class="btns"><span class="pill solid"></span><span class="pill out"></span></div>
+      <div class="card"><i></i><b></b><b></b></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
