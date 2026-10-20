@@ -257,3 +257,32 @@ Queste le risposte che non cambiano cosa si costruisce, quindi decise qui:
 5. Lingua dell'account Shopify con cui fa il login: se è in italiano, l'editor esce
    in italiano e le catture pure. Serve inglese, o via parametro URL (da verificare nel
    test) o impostando l'account in inglese per la durata delle catture.
+
+## Revisione della strategia (20 ottobre, sera, dopo il test live)
+
+Matteo ha visto la Fase 0 su GitBook e ha chiesto a cosa serva uno screenshot con tutti
+i setting. Risposta: a poco. Rivisto il piano partendo dai tipi di pagina (Diátaxis:
+riferimento, spiegazione, procedura, tutorial) e dalle regole sugli screenshot delle doc
+migliori (uno screenshot vale solo se dice "dove", "quale" o "che effetto ha"; ritaglio
+stretto, una idea per immagine; pochi per pagina perché invecchiano; il render del
+prodotto batte lo screenshot dello strumento; i diagrammi concettuali durano di più).
+
+Decisioni confermate da Matteo:
+
+- **Pagine sezione (riferimento):** un render storefront sotto l'intro, come riferimento
+  grafico di "come viene". Nessuna cattura del pannello dell'editor: la tabella è già il
+  pannello in forma più leggibile. Confronti prima/dopo per uno o due setting che cambiano
+  davvero il look, scelti a mano per sezione, prodotti dall'anteprima dell'editor senza
+  salvare. Infografica solo dove c'è un concetto da spiegare.
+- **Pagine concettuali (spiegazione):** infografiche, senza abusarne.
+- **Guide (procedura):** qui i visual contano di più. Catture dell'editor ritagliate
+  strette, una per passo, una sola evidenziazione; infografica quando un passo è
+  concettuale.
+- **Video (tutorial):** lista a parte, `2026-10-20-videos-list.md`.
+
+Fasi aggiornate: Fase 1 render storefront per tutte le pagine (invariata); Fase 2
+confronti di setting (lista approvata da Matteo prima di renderizzare); Fase 3
+infografiche (una alla volta con ok); Fase 4 guide con catture editor per passo. Le
+due catture editor di Featured Collection andate live con la Fase 0 vengono tolte.
+`editor-shots.js` resta per la Fase 4, con un ritaglio per passo invece della finestra
+intera.
