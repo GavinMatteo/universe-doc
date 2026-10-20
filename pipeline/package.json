@@ -8,6 +8,7 @@
     "banner": "node banner.js"
   },
   "dependencies": {
-    "playwright": "^1.58.0"
+    "playwright": "^1.58.0",
+    "sharp": "^0.35.5"
   }
 }
