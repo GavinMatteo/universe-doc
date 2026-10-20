@@ -30,12 +30,11 @@
 import { chromium } from 'playwright';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { CHROME } from './chrome.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 export const STORE_HANDLE = 'universe-theme-woofy';
 export const DEFAULT_THEME = '206989590871';
-// Same Chrome as login.js: accounts.shopify.com rejects the bundled Chromium.
-export const CHROME = process.env.CHROME_BIN || '/Users/Shared/Previously Relocated Items/Google Chrome.app/Contents/MacOS/Google Chrome';
 // Below about 1800 css px the editor stacks the settings panel under the section tree in the
 // left column instead of opening it on the right, which hides the tree item. 1800 keeps the
 // three columns; optimize() scales the capture down to 1600.
@@ -169,6 +168,7 @@ export async function findRow(frame, label, { scope = null, fallbackType = null,
     const rows = [...root.querySelectorAll('li[class*="Online-Store-UI-NavItem_"]')].filter(li => li.id && (nested ? li !== root : !li.className.includes('NavItem--nested')));
     const title = li => (li.querySelector(':scope > [data-interior] [class*="NavItem__Title_"]')?.textContent || '').trim().toLowerCase();
     const want = label.trim().toLowerCase();
+    if (!want) return null;
     let hit = rows.find(li => title(li) === want) || rows.find(li => title(li).startsWith(want));
     if (!hit && fallbackType) hit = rows.find(li => li.dataset.componentExtraSection_type === fallbackType || li.id.includes(`__${fallbackType.replace(/-/g, '_')}_`));
     return hit ? hit.id : null;

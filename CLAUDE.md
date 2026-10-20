@@ -129,6 +129,11 @@ shopify theme pull --store=universe-theme-woofy.myshopify.com \
 # Regenerate docs from the pulled theme
 python3 generator/generate.py .themes/universe-empty-3rd theme-docs
 
+# Images: storefront renders, annotated editor captures (needs node pipeline/login.js once), infographics
+(cd pipeline && STORE_PASSWORD=universe node screenshots.js featured-collection)
+(cd pipeline && node editor-shots.js u-featured-collection.liquid --theme-dir ../.themes/universe-empty-3rd)
+(cd pipeline && node render-html.js infographics/color-scheme.html ../theme-docs/.gitbook/assets/infographics/general-settings/color-scheme.png)
+
 # Quick local broken-anchor check (inline, no agent)
 python3 -c "
 import re, os

@@ -8,7 +8,8 @@ from context_overrides import CONTEXT_OVERRIDES
 THEME = os.path.join(ROOT, '.themes', 'universe-empty-3rd')
 
 def touch(p):
-    os.makedirs(os.path.dirname(p), exist_ok=True); open(p, 'wb').write(b'\x89PNG')
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    with open(p, 'wb') as fh: fh.write(b'\x89PNG')
 
 class ImageLineTest(unittest.TestCase):
     def test_prefix_for_sections_subdir(self):

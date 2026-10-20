@@ -8,10 +8,9 @@ import { chromium } from 'playwright';
 import readline from 'node:readline';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { CHROME } from './lib/chrome.js';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const STORE = 'universe-theme-woofy';
-// Google Chrome on this Mac lives outside /Applications, so the path is explicit.
-export const CHROME = process.env.CHROME_BIN || '/Users/Shared/Previously Relocated Items/Google Chrome.app/Contents/MacOS/Google Chrome';
 const ctx = await chromium.launchPersistentContext(path.join(here, '.auth', 'chrome-profile'), {
   executablePath: CHROME,
   headless: false,

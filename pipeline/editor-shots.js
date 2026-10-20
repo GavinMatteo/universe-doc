@@ -1,5 +1,9 @@
 // Annotated theme editor captures: the section's settings and each capturable block's settings.
-// Usage: node editor-shots.js <section.liquid> [--theme <id>]
+// Usage: node editor-shots.js <section.liquid> [--theme <id>] [--theme-dir <path>]
+//   --theme      Shopify theme id to open in the editor (default DEFAULT_THEME in lib/editor.js).
+//   --theme-dir  Local theme export used for the schema anchors. Also settable with the THEME_DIR
+//                environment variable (the flag wins). Default: .themes/universe-empty-3rd.
+//                A relative path is resolved against the current working directory.
 // Needs .auth/shopify.json (run `node login.js` once). Never saves: see the guards in lib/editor.js.
 import { openEditor, editorFrame, topBarHeight, findRow, selectRow, expandRow, rowBox, panelBox, revealInPreview, DEFAULT_THEME } from './lib/editor.js';
 import { annotate, clearAnnotations } from './lib/annotate.js';
@@ -15,9 +19,13 @@ const args = process.argv.slice(2);
 const liquid = args.find(a => a.endsWith('.liquid'));
 const ti = args.indexOf('--theme');
 const themeId = ti >= 0 ? args[ti + 1] : DEFAULT_THEME;
-if (!liquid) { console.error('Usage: node editor-shots.js <section.liquid> [--theme <id>]'); process.exit(1); }
+const di = args.indexOf('--theme-dir');
+const themeDir = di >= 0 ? path.resolve(args[di + 1] || '') : process.env.THEME_DIR ? path.resolve(process.env.THEME_DIR) : path.join(repo, '.themes/universe-empty-3rd');
+if (!liquid) { console.error('Usage: node editor-shots.js <section.liquid> [--theme <id>] [--theme-dir <path>]'); process.exit(1); }
+if (!fs.existsSync(themeDir)) { console.error(`Theme directory not found: ${themeDir}`); process.exit(1); }
+console.log(`Theme directory: ${themeDir}`);
 
-const meta = JSON.parse(execFileSync('python3', [path.join(repo, 'generator/anchors.py'), path.join(repo, '.themes/universe-empty-3rd'), liquid], { cwd: repo, encoding: 'utf8' }));
+const meta = JSON.parse(execFileSync('python3', [path.join(repo, 'generator/anchors.py'), themeDir, liquid], { cwd: repo, encoding: 'utf8' }));
 const { pages } = JSON.parse(fs.readFileSync(path.join(here, 'manifest.json'), 'utf8'));
 const entry = pages[meta.page];
 if (!entry) { console.error(`No manifest.json entry for page "${meta.page}"`); process.exit(1); }
