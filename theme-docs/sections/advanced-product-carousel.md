@@ -6,6 +6,9 @@ The Product Carousel is an interactive product showcase with a wheel-style anima
 
 
 
+![Product Carousel](../.gitbook/assets/sections/advanced-product-carousel.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

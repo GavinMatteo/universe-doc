@@ -6,6 +6,9 @@ The Shop the Look section overlays a lifestyle image with interactive product ho
 
 
 
+![Shop the Look](../.gitbook/assets/sections/touch-and-take.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

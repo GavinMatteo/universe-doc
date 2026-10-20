@@ -6,6 +6,9 @@ The Comparison Table displays a structured table comparing up to three products 
 
 
 
+![Comparison Table](../.gitbook/assets/sections/comparison-table.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

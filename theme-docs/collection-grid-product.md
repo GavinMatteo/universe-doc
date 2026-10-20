@@ -6,6 +6,9 @@ The Collection Product Grid is the main product listing area on collection pages
 
 
 
+![Collection Product Grid](.gitbook/assets/sections/collection-grid-product.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

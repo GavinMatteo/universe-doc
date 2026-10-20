@@ -6,6 +6,9 @@ The Featured Testimonials section displays customer quotes or editorial pull quo
 
 
 
+![Featured Testimonials](../.gitbook/assets/sections/quotes.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

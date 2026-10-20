@@ -6,6 +6,9 @@ The Product Page section is the core of your product detail page. It is fully mo
 
 
 
+![Product Page](.gitbook/assets/sections/main-product.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

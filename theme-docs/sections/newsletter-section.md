@@ -6,6 +6,9 @@ The Newsletter section displays a full-width email signup form with a block-base
 
 
 
+![Newsletter](../.gitbook/assets/sections/newsletter-section.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

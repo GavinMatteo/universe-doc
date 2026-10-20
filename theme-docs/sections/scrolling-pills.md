@@ -6,6 +6,9 @@ The Pills section displays a horizontal row of interactive pill-shaped tags that
 
 
 
+![Pills](../.gitbook/assets/sections/scrolling-pills.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

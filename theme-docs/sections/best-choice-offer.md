@@ -6,6 +6,9 @@ The Product Offer Comparison section displays two or three products side by side
 
 
 
+![Product Offer Comparison](../.gitbook/assets/sections/best-choice-offer.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

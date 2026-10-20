@@ -6,6 +6,9 @@ The Product Hero Slideshow is a full-screen or fixed-height hero that combines a
 
 
 
+![Product Hero Slideshow](../.gitbook/assets/sections/advanced-hero-slideshow.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

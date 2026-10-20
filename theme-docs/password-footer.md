@@ -6,6 +6,9 @@ The Password Page Footer appears at the bottom of the coming soon page and shows
 
 
 
+![Password Page Footer](.gitbook/assets/sections/password-footer.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

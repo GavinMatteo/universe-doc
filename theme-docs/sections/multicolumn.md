@@ -6,6 +6,9 @@ The Multicolumn section displays a row of cards in a fixed grid. Each card can c
 
 
 
+![Multicolumn](../.gitbook/assets/sections/multicolumn.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

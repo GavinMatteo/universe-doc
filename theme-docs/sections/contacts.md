@@ -6,6 +6,9 @@ The Contact Form section displays a heading, a paragraph, an optional image, and
 
 
 
+![Contact Form](../.gitbook/assets/sections/contacts.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

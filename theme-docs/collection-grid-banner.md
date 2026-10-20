@@ -6,6 +6,9 @@ The Collection Banner sits at the top of collection pages and displays the colle
 
 
 
+![Collection Banner](.gitbook/assets/sections/collection-grid-banner.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

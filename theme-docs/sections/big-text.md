@@ -6,6 +6,9 @@ The Big Text section uses large typographic text as its main visual element, wit
 
 
 
+![Big Text](../.gitbook/assets/sections/big-text.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

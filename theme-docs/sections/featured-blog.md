@@ -6,6 +6,9 @@ The Featured Blog section displays the most recent articles from a selected blog
 
 
 
+![Featured Blog](../.gitbook/assets/sections/featured-blog.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

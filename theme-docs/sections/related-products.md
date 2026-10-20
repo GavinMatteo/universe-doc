@@ -6,6 +6,9 @@ The Related Products section displays a carousel or grid of products related to 
 
 
 
+![Related Products](../.gitbook/assets/sections/related-products.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

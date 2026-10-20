@@ -6,6 +6,9 @@ The Spotlighted Product section frames a single product as a full-width hero wit
 
 
 
+![Spotlighted Product](../.gitbook/assets/sections/spotlighted-product.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

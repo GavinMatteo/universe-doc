@@ -6,6 +6,9 @@ The Password Page Header appears at the top of the password-protected coming soo
 
 
 
+![Password Page Header](.gitbook/assets/sections/password-header.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

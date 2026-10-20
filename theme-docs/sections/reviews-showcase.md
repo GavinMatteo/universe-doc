@@ -6,6 +6,9 @@ The Testimonials Carousel section displays customer testimonial cards in a carou
 
 
 
+![Testimonials Carousel](../.gitbook/assets/sections/reviews-showcase.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

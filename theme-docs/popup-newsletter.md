@@ -6,6 +6,9 @@ The Newsletter Popup is a timed overlay that appears after a set delay. Once dis
 
 
 
+![Newsletter Popup](.gitbook/assets/sections/popup-newsletter.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

@@ -6,6 +6,9 @@ The Diagonal Texts section displays two rows of scrolling marquee text arranged 
 
 
 
+![Diagonal Texts](../.gitbook/assets/sections/diagonal-texts.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)

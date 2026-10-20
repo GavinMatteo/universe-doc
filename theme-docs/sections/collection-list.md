@@ -6,6 +6,9 @@ The Collection List section displays a curated selection of collections in a gri
 
 
 
+![Collection List](../.gitbook/assets/sections/collection-list.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)
