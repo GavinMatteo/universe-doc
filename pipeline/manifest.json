@@ -1,0 +1,7 @@
+{
+  "pages": {
+    "bold-slideshow": { "path": "/", "type": "bold-slideshow", "hero": true },
+    "reviews-showcase": { "path": "/", "type": "reviews-showcase", "hero": false },
+    "featured-collection": { "path": "/", "type": "featured-collection", "hero": false }
+  }
+}
