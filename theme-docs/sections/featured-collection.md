@@ -6,6 +6,9 @@ The Featured Collection section displays a grid or carousel of products from a c
 
 
 
+![Featured Collection](../.gitbook/assets/sections/featured-collection.png)
+
+
 **On this page**
 
 - [Section Settings](#section-settings)
