@@ -137,8 +137,29 @@ def build_toc(schema, meta_blocks, has_tips=True, has_faq=True):
         items.append('- [FAQ](#faq)')
     return '\n'.join(items)
 
-def write_section_doc(fname, schema, meta, all_labels, descriptions, context_overrides):
+def image_line(assets_dir, subdir, rel_path, alt):
+    """Markdown image line for a pipeline asset, or '' when the file does not exist."""
+    if not os.path.isfile(os.path.join(assets_dir, rel_path)):
+        return ''
+    prefix = '../' if subdir == 'sections' else ''
+    return f'![{alt}]({prefix}.gitbook/assets/{rel_path})\n\n'
+
+def write_section_doc(fname, schema, meta, all_labels, descriptions, context_overrides, assets_dir=None):
     title, intro, when, tips, faq = meta
+    page = output_filename(fname)[:-3]
+    subdir = '' if fname in ROOT_SECTIONS else 'sections'
+
+    def fig(rel, alt):
+        if assets_dir:
+            img = image_line(assets_dir, subdir, rel, alt)
+            if img:
+                lines.append(img)
+
+    def heading_fig(heading):
+        """Infographic for a heading, alt text without emoji."""
+        text = re.sub(r'^[^A-Za-z0-9]+', '', heading)
+        fig(f'infographics/{page}/{make_anchor(heading)}.png', text)
+
     settings = schema.get('settings', [])
     blocks = schema.get('blocks', [])
 
@@ -158,6 +179,7 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
     if when:
         lines.append(f'📌 **When to use it:** {when}\n')
     lines.append('\n')
+    fig(f'sections/{page}.png', title)
 
     # In-page TOC
     toc = build_toc(schema, block_name_map, has_tips=bool(tips), has_faq=bool(faq))
@@ -168,29 +190,37 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
     # Section settings
     if content_s or color_s or spacing_s:
         lines.append('## ⚙️ Section Settings\n')
+        fig(f'editor/{page}/section-settings.png', f'{title} section settings in the theme editor')
+        heading_fig('Section Settings')
         ctx = context_overrides.get(fname, {})
         if content_s:
             lines.append('### Content and Layout\n')
+            heading_fig('Content and Layout')
             lines.append(render_table(content_s, all_labels, descriptions, ctx))
         if color_s:
             lines.append('### Colors\n')
+            heading_fig('Colors')
             lines.append(render_table(color_s, all_labels, descriptions))
         if spacing_s:
             lines.append('### Spacing\n')
+            heading_fig('Spacing')
             lines.append(render_table(spacing_s, all_labels, descriptions))
 
     # Blocks
     has_real_blocks = any(b.get('type') != 'shape_divider' for b in blocks)
     if blocks:
         lines.append('---\n\n## 🧩 Blocks\n')
+        heading_fig('Blocks')
         for block in blocks:
             btype = block.get('type', '')
             if btype == '@app':
                 lines.append('### App Block\n')
+                heading_fig('App Block')
                 lines.append('Supports third-party app blocks from the Shopify App Store, for example review apps or loyalty programs.\n\n')
                 continue
             if btype == 'shape_divider':
                 lines.append('### Shape Divider\n')
+                heading_fig('Shape Divider')
                 lines.append('Adds a decorative SVG shape at the top or bottom of the section to create a smooth visual transition into the next section.\n\n')
                 bs = block.get('settings', [])
                 if bs:
@@ -198,6 +228,8 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
                 continue
             bname = get_label(block.get('name', ''), btype, all_labels)
             lines.append(f'### {bname}\n')
+            fig(f'editor/{page}/{make_anchor(bname)}.png', f'{bname} block settings in the theme editor')
+            heading_fig(bname)
             bs = block.get('settings', [])
             real_bs = [s for s in bs if s.get('type') not in ('header', 'paragraph')]
             if real_bs:
@@ -217,6 +249,7 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
     # Tips
     if tips:
         lines.append('---\n\n## 💡 Tips\n\n')
+        heading_fig('Tips')
         for tip in tips:
             lines.append(f'- {tip}\n')
         lines.append('\n')
@@ -224,6 +257,7 @@ def write_section_doc(fname, schema, meta, all_labels, descriptions, context_ove
     # FAQ
     if faq:
         lines.append('---\n\n## ❓ FAQ\n\n')
+        heading_fig('FAQ')
         for q, a in faq:
             lines.append(f'**{q}**\\\n{a}\n\n')
 
@@ -527,7 +561,8 @@ def main(theme_path, out_dir):
         try:
             content = write_section_doc(
                 liquid_name, schema, meta, all_labels,
-                SETTING_DESCRIPTIONS, CONTEXT_OVERRIDES
+                SETTING_DESCRIPTIONS, CONTEXT_OVERRIDES,
+                assets_dir=os.path.join(out_dir, '.gitbook', 'assets')
             )
         except Exception as exc:
             errors.append(f'{liquid_name}: render error: {exc}')
