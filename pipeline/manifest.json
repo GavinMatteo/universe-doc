@@ -1,7 +1,240 @@
 {
   "pages": {
-    "bold-slideshow": { "path": "/", "type": "bold-slideshow", "hero": true },
-    "reviews-showcase": { "path": "/", "type": "reviews-showcase", "hero": false },
-    "featured-collection": { "path": "/", "type": "featured-collection", "hero": false }
+    "advanced-hero-slideshow": {
+      "path": "/",
+      "type": "advanced-hero-slideshow",
+      "hero": true
+    },
+    "advanced-product-carousel": {
+      "path": "/",
+      "type": "advanced-product-carousel"
+    },
+    "best-choice-offer": {
+      "path": "/",
+      "type": "best-choice-offer"
+    },
+    "big-text": {
+      "path": "/",
+      "type": "big-text"
+    },
+    "bold-slideshow": {
+      "path": "/",
+      "type": "bold-slideshow",
+      "hero": true
+    },
+    "collection-list": {
+      "path": "/",
+      "type": "collection-list"
+    },
+    "comparison-table": {
+      "path": "/",
+      "type": "comparison-table"
+    },
+    "diagonal-texts": {
+      "path": "/",
+      "type": "diagonal-texts"
+    },
+    "featured-blog": {
+      "path": "/",
+      "type": "featured-blog"
+    },
+    "featured-collection": {
+      "path": "/",
+      "type": "featured-collection"
+    },
+    "featured-data": {
+      "path": "/",
+      "type": "featured-data"
+    },
+    "icon-list": {
+      "path": "/",
+      "type": "icon-list"
+    },
+    "image-with-text": {
+      "path": "/",
+      "type": "image-with-text"
+    },
+    "multicolumn": {
+      "path": "/",
+      "type": "multicolumn"
+    },
+    "newsletter-section": {
+      "path": "/",
+      "type": "newsletter-section"
+    },
+    "promo-banner": {
+      "path": "/",
+      "type": "promo-banner"
+    },
+    "reviews-showcase": {
+      "path": "/",
+      "type": "reviews-showcase"
+    },
+    "rich-text": {
+      "path": "/",
+      "type": "rich-text"
+    },
+    "scrolling-pills": {
+      "path": "/",
+      "type": "scrolling-pills"
+    },
+    "spotlighted-product": {
+      "path": "/",
+      "type": "spotlighted-product"
+    },
+    "sticky-section": {
+      "path": "/",
+      "type": "sticky-section"
+    },
+    "then-vs-now": {
+      "path": "/",
+      "type": "then-vs-now"
+    },
+    "touch-and-take": {
+      "path": "/",
+      "type": "touch-and-take"
+    },
+    "ugc-carousel": {
+      "path": "/",
+      "type": "ugc-carousel"
+    },
+    "main-product": {
+      "path": "/products/beef-bites",
+      "type": "main-product",
+      "selector": ".shopify-section[id$=\"__main\"]"
+    },
+    "related-products": {
+      "path": "/products/beef-bites",
+      "type": "related-products"
+    },
+    "scrolling-text": {
+      "path": "/products/beef-bites",
+      "type": "scrolling-text"
+    },
+    "faq": {
+      "path": "/products/beef-bites",
+      "type": "faq"
+    },
+    "quotes": {
+      "path": "/pages/about",
+      "type": "quotes"
+    },
+    "contacts": {
+      "path": "/pages/contact",
+      "type": "contacts",
+      "selector": ".shopify-section[id$=\"__contacts\"]"
+    },
+    "store-locator": {
+      "path": "/pages/store-locator",
+      "type": "store-locator"
+    },
+    "page": {
+      "path": "/pages/size-chart",
+      "type": "main-page",
+      "selector": ".shopify-section[id$=\"__main\"]"
+    },
+    "collection-grid-banner": {
+      "path": "/collections/all",
+      "type": "collection-grid-banner",
+      "selector": ".shopify-section[id$=\"__banner\"]"
+    },
+    "collection-grid-product": {
+      "path": "/collections/all",
+      "type": "collection-grid-product",
+      "selector": ".shopify-section[id$=\"__product-grid\"]",
+      "maxHeight": 1400
+    },
+    "main-collection-list": {
+      "path": "/collections",
+      "type": "main-collection-list",
+      "selector": ".shopify-section[id$=\"__main\"]",
+      "maxHeight": 1140
+    },
+    "blog": {
+      "path": "/blogs/news",
+      "type": "main-blog",
+      "selector": ".shopify-section[id$=\"__main\"]",
+      "maxHeight": 1230
+    },
+    "article-banner": {
+      "path": "/blogs/news/dog-paw-care",
+      "type": "main-article-banner",
+      "selector": ".shopify-section[id$=\"__main-article-banner\"]"
+    },
+    "search": {
+      "path": "/search?q=a",
+      "type": "main-search",
+      "selector": ".shopify-section[id$=\"__main\"]",
+      "maxHeight": 1400
+    },
+    "main-cart-items": {
+      "path": "/cart",
+      "type": "main-cart-items",
+      "selector": ".shopify-section[id$=\"__main\"]",
+      "setup": "add-to-cart"
+    },
+    "404": {
+      "path": "/nonexistent-404",
+      "type": "main-404",
+      "selector": ".shopify-section[id$=\"__main-404\"]"
+    },
+    "password-header": {
+      "path": "/password",
+      "type": "main-password-header",
+      "selector": "#shopify-section-main-password-header"
+    },
+    "password-footer": {
+      "path": "/password",
+      "type": "main-password-footer",
+      "selector": "#shopify-section-main-password-footer"
+    },
+    "header-nav": {
+      "path": "/",
+      "type": "header-nav",
+      "selector": ".shopify-section[id$=\"__header\"]",
+      "setup": "open-menu"
+    },
+    "footer": {
+      "path": "/",
+      "type": "footer",
+      "selector": ".shopify-section[id*=\"__u_footer\"]"
+    },
+    "drawer-cart": {
+      "path": "/",
+      "type": "drawer-cart",
+      "selector": ".shopify-section[id$=\"__drawer-cart\"]",
+      "setup": "open-cart"
+    },
+    "popup-newsletter": {
+      "path": "/",
+      "type": "popup-newsletter",
+      "selector": ".shopify-section[id*=\"__u_popup_newsletter\"]",
+      "setup": "open-popup"
+    },
+    "announcement-bar": {
+      "path": "/",
+      "type": "announcement-bar",
+      "skip": "disabled in the header group on the demo store"
+    },
+    "collage": {
+      "path": "/",
+      "type": "collage",
+      "skip": "not placed on the demo store, Phase 2 will render it from the editor preview"
+    },
+    "featured-product": {
+      "path": "/",
+      "type": "featured-product",
+      "skip": "not placed on the demo store, Phase 2 will render it from the editor preview"
+    },
+    "custom-liquid": {
+      "path": "/",
+      "type": "custom-liquid",
+      "skip": "no visual"
+    },
+    "article-overlay": {
+      "path": "/blogs/news",
+      "type": "main-article-overlay",
+      "skip": "no article uses the overlay template on the demo store"
+    }
   }
 }
