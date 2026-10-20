@@ -147,6 +147,24 @@ print('OK' if not problems else '\n'.join(problems))
 print(f'Total broken anchors: {len(problems)}')
 "
 
+# Quick local image check (broken image links, orphan assets)
+python3 -c "
+import re, os
+docs='theme-docs'; refs=set(); problems=[]
+for root,_,files in os.walk(docs):
+    for f in files:
+        if not f.endswith('.md'): continue
+        p=os.path.join(root,f)
+        for m in re.finditer(r'!\[[^\]]*\]\(([^)]+)\)', open(p).read()):
+            t=os.path.normpath(os.path.join(root,m.group(1)))
+            refs.add(t)
+            if not os.path.isfile(t): problems.append(f'{p}: {m.group(1)}')
+assets=os.path.join(docs,'.gitbook','assets')
+orphans=[os.path.join(r,f) for r,_,fs in os.walk(assets) for f in fs if os.path.join(r,f) not in refs]
+print('\n'.join(problems) or 'OK'); print(f'Broken images: {len(problems)}; orphan assets: {len(orphans)}')
+for o in orphans: print('  orphan:', o)
+"
+
 # Create feature branch, commit, push, open PR, merge
 git checkout -b <branch-name>
 # ... edit, regenerate ...

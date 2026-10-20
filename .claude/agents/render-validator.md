@@ -1,6 +1,6 @@
 ---
 name: render-validator
-description: Validates the state of theme-docs/ for GitBook safety. Optionally runs generate.py against a theme zip first. Checks SUMMARY.md link integrity, internal anchors, H2 emoji convention, and orphan files. Must pass before any push to main, since GitBook syncs main live.
+description: Validates the state of theme-docs/ for GitBook safety. Optionally runs generate.py against a theme zip first. Checks SUMMARY.md link integrity, internal anchors, H2 emoji convention, orphan files, broken image links, and orphan image assets. Must pass before any push to main, since GitBook syncs main live.
 tools: Read, Bash, Grep, Glob
 model: sonnet
 ---
@@ -58,6 +58,15 @@ GitBook syncs only `theme-docs/`. Limit all checks to that subtree. Ignore `gene
 ### 6. Stray emoji in H1 (warning)
 - H1 titles in section files should NOT contain an emoji (see commit `fd6c85a fix: move section files to sections/, strip emoji from H1 titles`).
 - Flag any `# ` line in `theme-docs/sections/*.md` that starts with a non-ASCII character before the title.
+
+### 7. Image links (blocking)
+- For every file under `theme-docs/**/*.md`, find every image of the form `![alt](path)`.
+- The path must resolve to an existing file, relative to the directory of the page that contains it (for example `../.gitbook/assets/sections/foo.png` from a page in `theme-docs/sections/`).
+- Report broken images as `file.md: image "path" does not exist`.
+
+### 8. Orphan image assets (warning)
+- Every file under `theme-docs/.gitbook/assets/` should be referenced by at least one `![alt](path)` in some page.
+- Report any unreferenced file as a warning. Orphans are harmless to GitBook, but usually mean a stale capture or a page that lost its image line.
 
 ## Output
 
