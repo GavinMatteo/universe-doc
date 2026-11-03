@@ -42,3 +42,20 @@ test('parses the real SUMMARY', () => {
   assert.equal(pages.find(p => p.file === 'sections/featured-collection.md').route, '/collection-sections/featured-collection/');
   assert.equal(pages.find(p => p.file === 'header-nav.md').route, '/global-sections/header-nav/');
 });
+
+test('throws on a nested entry', () => {
+  const nested = sample + '  * [Child](child.md)\n';
+  assert.throws(() => parseSummary(nested), /\* \[Child\]\(child\.md\)/);
+});
+
+test('throws on a non-README entry before the first group', () => {
+  assert.throws(() => parseSummary('# T\n\n* [Early](early.md)\n'), /early\.md/);
+});
+
+test('throws on a group label that slugifies to nothing', () => {
+  assert.throws(() => parseSummary('# T\n\n## ???\n\n* [A](a.md)\n'), /\?\?\?/);
+});
+
+test('throws on a page stem that is not slug-safe', () => {
+  assert.throws(() => parseSummary('# T\n\n## G\n\n* [A](My_Page.md)\n'), /My_Page/);
+});

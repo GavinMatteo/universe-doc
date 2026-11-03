@@ -39,6 +39,12 @@ for (const file of htmlFiles(dist)) {
     const entry = `${rel}: ${href}`;
     if (!ok && !ALLOWLIST.includes(entry)) problems.push(entry);
   }
+  for (const m of html.matchAll(/<img\s[^>]*?src="([^"]*)"/g)) {
+    const src = m[1].replaceAll('&amp;', '&');
+    if (!src.startsWith('/') || src.startsWith('//')) continue;
+    const entry = `${rel}: ${src}`;
+    if (!resolves(src) && !ALLOWLIST.includes(entry)) problems.push(entry);
+  }
 }
 
 for (const p of problems) console.log(p);

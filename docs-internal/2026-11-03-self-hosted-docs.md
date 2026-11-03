@@ -21,7 +21,7 @@ Pieces:
 - Link check: a post-build script verifies internal links and anchors in `dist/`.
 - Branding: palette, Figtree, logo, light and dark mode.
 - Worker: `site/wrangler.jsonc`, first deploy done by hand.
-- CI: `.github/workflows/deploy-site.yml` runs `pnpm check` on every PR and push, and deploys.
+- CI: `.github/workflows/deploy-site.yml` runs `pnpm check` when `site/**`, `theme-docs/**` or the workflow file change (PR and push to main), and deploys.
 
 ## Live URL
 
