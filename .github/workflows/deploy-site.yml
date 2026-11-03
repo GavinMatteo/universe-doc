@@ -1,0 +1,90 @@
+name: Docs site
+
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'theme-docs/**', '.github/workflows/deploy-site.yml']
+  pull_request:
+    paths: ['site/**', 'theme-docs/**', '.github/workflows/deploy-site.yml']
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+    working-directory: site
+
+jobs:
+  check:
+    name: Build and check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      # No version input: pnpm comes from packageManager in site/package.json.
+      - uses: pnpm/action-setup@v6
+        with:
+          package_json_file: site/package.json
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: site/pnpm-lock.yaml
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build, link check and tests
+        run: pnpm check
+
+  deploy:
+    name: Deploy to Cloudflare
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+        with:
+          package_json_file: site/package.json
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: site/pnpm-lock.yaml
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        run: pnpm build
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+      # Secrets cannot be read in `if`, so the guard goes through a step output.
+      - name: Check Cloudflare secrets
+        id: secrets
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "has=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has=false" >> "$GITHUB_OUTPUT"
+          fi
+      # Never `pnpm deploy`: that is a pnpm built-in. Call wrangler directly.
+      - name: Deploy main
+        if: steps.secrets.outputs.has == 'true' && github.event_name == 'push'
+        run: pnpm exec wrangler deploy --message "main ${{ github.sha }}"
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+      # Fork pull requests get no secrets, so they never reach this step.
+      - name: Upload preview
+        if: steps.secrets.outputs.has == 'true' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          pnpm exec wrangler versions upload --preview-alias "pr-${{ github.event.pull_request.number }}" | tee wrangler-output.txt
+          {
+            echo "## Preview"
+            echo ""
+            grep -E "Version Preview (Alias )?URL" wrangler-output.txt || echo "No preview URL in the wrangler output."
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Skipped
+        if: steps.secrets.outputs.has != 'true'
+        run: echo "Cloudflare secrets not set, deploy skipped" >> "$GITHUB_STEP_SUMMARY"
