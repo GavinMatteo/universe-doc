@@ -195,7 +195,7 @@ The **October 2026 Third Review sync** (`docs-internal/2026-10-19-sync-third-rev
 
 ## Self-hosted site (site/)
 
-`site/` is an Astro + Starlight copy of the docs, deployed as the Cloudflare Worker `universe-docs` (assets only, `site/wrangler.jsonc`) on `workers.dev` as a backup next to GitBook. Read `site/README.md` for commands, the `SITE_URL` indexing switch, the `docs.developpy.io` cutover recipe and the CI secrets.
+`site/` is an Astro + Starlight copy of the docs, deployed as the Cloudflare Worker `universe-docs` (assets only, `site/wrangler.jsonc`) on `workers.dev` as a backup next to GitBook. Read `site/README.md` for commands (`pnpm deploy:worker` deploys; plain `pnpm deploy` is a pnpm built-in and fails), the `SITE_URL` indexing switch, the `docs.developpy.io` cutover recipe and the CI secrets.
 
 - **Never write into `theme-docs/` from `site/`.** It is read-only input there; `site/scripts/sync-content.mjs` is the only writer of `site/src/content/docs/` and `site/public/assets/` (both gitignored).
 - Run `pnpm check` from `site/` before a PR that touches `site/` or `theme-docs/`.
