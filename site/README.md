@@ -1,0 +1,43 @@
+# Universe docs site
+
+A self-hosted copy of the Universe theme documentation, built with Astro and Starlight and served by a Cloudflare Worker (assets only) named `universe-docs`. It runs next to GitBook as a backup and is the planned replacement for `docs.developpy.io`.
+
+## Content source
+
+`../theme-docs/` is the only content source. `scripts/sync-content.mjs` reads `theme-docs/SUMMARY.md` and is the only writer of `src/content/docs/` and `public/assets/`; both are gitignored and rebuilt on every `pnpm dev` and `pnpm build`. Never edit them, and never write into `theme-docs/` from this folder. To change a page, change `theme-docs/` (or the generator) as usual.
+
+## Commands
+
+Run all of them from inside `site/`.
+
+- `pnpm dev`: sync the content and start the dev server.
+- `pnpm check`: build, scan `dist/` for broken links and anchors, run the tests. Must be green before a PR.
+- `pnpm deploy`: build and run `wrangler deploy` to the Developpy Cloudflare account.
+
+Wrangler is a dev dependency and is already logged in on the maintainer's Mac; use `pnpm exec wrangler ...` for anything else.
+
+## Indexing switch: `SITE_URL`
+
+Without the `SITE_URL` environment variable the build ships `<meta name="robots" content="noindex">` and a `robots.txt` that disallows everything, so the `workers.dev` copy never competes with GitBook in search. With `SITE_URL` set (for example `https://docs.developpy.io`) the build uses it as the Astro `site`, emits the sitemap and canonical tags, and drops the noindex and the disallow.
+
+## Live URL
+
+The first deploy is at `https://universe-docs.developpy-website.workers.dev`. Paths without a trailing slash answer 307 to the slash form; that is the `auto-trailing-slash` behaviour, not an error.
+
+## Domain cutover to docs.developpy.io
+
+Do this only after the review described in `docs-internal/2026-11-03-self-hosted-docs-design.md`.
+
+1. In the Cloudflare zone for `developpy.io`, remove the Webflow DNS record for `docs`.
+2. In `wrangler.jsonc`, add `"routes": [{ "pattern": "docs.developpy.io", "custom_domain": true }]`.
+3. Set the repository variable `SITE_URL` to `https://docs.developpy.io` so the workflow builds with indexing on.
+4. Merge; the workflow deploys and Cloudflare provisions the certificate.
+
+## CI secrets
+
+The deploy workflow needs two repository secrets:
+
+- `CLOUDFLARE_API_TOKEN`: a token with the Workers Scripts edit permission.
+- `CLOUDFLARE_ACCOUNT_ID`: `6cf5af20f0ddb075dc5eca2bd75a5e0e`.
+
+Until they exist the deploy job skips with a notice instead of failing. `SITE_URL` is a repository variable, set at cutover.

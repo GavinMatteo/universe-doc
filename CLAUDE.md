@@ -193,6 +193,14 @@ The **October 2026 Third Review sync** (`docs-internal/2026-10-19-sync-third-rev
 
 `docs-internal/` holds one Markdown file per documentation-update session (what changed, why, what is left to do by hand). **GitBook syncs only `theme-docs/`**, so nothing in `docs-internal/` is ever published. It lives on GitHub and locally only. Add a new dated file there at the end of each update round.
 
+## Self-hosted site (site/)
+
+`site/` is an Astro + Starlight copy of the docs, deployed as the Cloudflare Worker `universe-docs` (assets only, `site/wrangler.jsonc`) on `workers.dev` as a backup next to GitBook. Read `site/README.md` for commands, the `SITE_URL` indexing switch, the `docs.developpy.io` cutover recipe and the CI secrets.
+
+- **Never write into `theme-docs/` from `site/`.** It is read-only input there; `site/scripts/sync-content.mjs` is the only writer of `site/src/content/docs/` and `site/public/assets/` (both gitignored).
+- Run `pnpm check` from `site/` before a PR that touches `site/` or `theme-docs/`.
+- Do not add `docs.developpy.io` or any `workers.dev` hostname to site code; the domain is added in `wrangler.jsonc` routes at cutover only.
+
 ## Writing style
 
 **Never use em dashes or en dashes (— –) anywhere**: not in `theme-docs/`, not in the

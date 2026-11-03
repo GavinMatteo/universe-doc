@@ -15,6 +15,7 @@
     "build": "astro build",
     "preview": "astro preview --port 4321",
     "test": "node --test",
+    "deploy": "pnpm build && wrangler deploy",
     "check": "pnpm build && node scripts/check-dist.mjs && pnpm test"
   },
   "dependencies": {
