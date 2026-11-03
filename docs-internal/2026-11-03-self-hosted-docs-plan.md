@@ -187,7 +187,7 @@ test('parses the real SUMMARY', () => {
   const real = readFileSync(new URL('../../theme-docs/SUMMARY.md', import.meta.url), 'utf8');
   const { groups, pages } = parseSummary(real);
   assert.equal(groups.length, 15);
-  assert.equal(pages.length, 67);
+  assert.equal(pages.length, 66);
   assert.equal(pages.find(p => p.file === 'sections/featured-collection.md').route, '/collection-sections/featured-collection/');
   assert.equal(pages.find(p => p.file === 'header-nav.md').route, '/global-sections/header-nav/');
 });
@@ -364,7 +364,7 @@ Use `node:fs` (`rmSync`, `mkdirSync`, `cpSync`, `readFileSync`, `writeFileSync`)
 - [ ] **Step 2: Run the sync**
 
 Run: `cd site && pnpm sync`
-Expected: `Synced 67 pages, 47 assets`; `ls src/content/docs` shows `index.md`, `404.md` and 15 group folders; `src/content/docs/collection-sections/featured-collection.md` starts with `title: "Featured Collection"`.
+Expected: `Synced 66 pages, 47 assets`; `ls src/content/docs` shows `index.md`, `404.md` and 15 group folders; `src/content/docs/collection-sections/featured-collection.md` starts with `title: "Featured Collection"`.
 
 - [ ] **Step 3: Build the full site**
 
