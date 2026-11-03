@@ -1,7 +1,11 @@
 import path from 'node:path';
 
-const LINK_RE = /(!?)\[([^\]]*)\]\(([^)\s]+)\)/g;
-const EXTERNAL_RE = /^(https?:\/\/|mailto:|#)/;
+// Target allows one level of balanced parentheses; optional "title" is kept.
+const LINK_RE = /(!?)\[([^\]]*)\]\(((?:[^()\s]|\([^()\s]*\))+)(\s+"[^"]*")?\)/g;
+// Scheme links, fragment links and site-absolute paths are left untouched.
+const EXTERNAL_RE = /^([a-z][a-z0-9+.-]*:|#|\/)/i;
+// A relative .md target that survived rewriting.
+const LEFTOVER_RE = /\]\((?![a-z][a-z0-9+.-]*:|#|\/)[^\s]*?\.md(?=[#)\s"])/i;
 const ASSETS_MARKER = '.gitbook/assets/';
 
 function stripH1(lines) {
@@ -32,7 +36,9 @@ function rewriteTarget(target, page, routes) {
   if (assetAt !== -1) {
     return `/assets/${filePart.slice(assetAt + ASSETS_MARKER.length)}${fragment}`;
   }
-  if (!filePart.endsWith('.md')) return target;
+  if (!filePart.endsWith('.md')) {
+    throw new Error(`${page.file}: relative link "${target}" is neither a .md page nor a .gitbook/assets path`);
+  }
 
   const resolved = path.posix.normalize(path.posix.join(path.posix.dirname(page.file), filePart));
   const route = routes.get(resolved);
@@ -46,7 +52,9 @@ export function transformPage({ page, source, routes }) {
   const { lines, h1 } = stripH1(source.split('\n'));
   const body = stripOnThisPage(lines)
     .join('\n')
-    .replace(LINK_RE, (_m, bang, text, target) => `${bang}[${text}](${rewriteTarget(target, page, routes)})`);
+    .replace(LINK_RE, (_m, bang, text, target, title = '') => `${bang}[${text}](${rewriteTarget(target, page, routes)}${title})`);
+  const leftover = LEFTOVER_RE.exec(body);
+  if (leftover) throw new Error(`${page.file}: unrewritten link near "${leftover[0]}"`);
   const title = page.file === 'README.md' && h1 ? h1 : page.label;
   return `---\ntitle: ${JSON.stringify(title)}\n---\n${body}`;
 }

@@ -60,3 +60,31 @@ test('unknown link target throws naming page and link', () => {
     (e) => e.message.includes('sections/featured-collection.md') && e.message.includes('nope.md'),
   );
 });
+
+test('link with a title is rewritten and keeps the title', () => {
+  const out = transformPage({ page, source: '# T\n\n[Bold](bold-slideshow.md#x "Tip")\n', routes });
+  assert.ok(out.includes('[Bold](/hero-and-slideshows/bold-slideshow/#x "Tip")'));
+});
+
+test('titled link to an unknown page throws', () => {
+  assert.throws(
+    () => transformPage({ page, source: '# T\n\n[x](nope.md "t")\n', routes }),
+    (e) => e.message.includes('sections/featured-collection.md') && e.message.includes('nope.md'),
+  );
+});
+
+test('target with parentheses is captured whole and throws when unknown', () => {
+  assert.throws(
+    () => transformPage({ page, source: '# T\n\n[x](a_(1).md)\n', routes }),
+    (e) => e.message.includes('sections/featured-collection.md') && e.message.includes('a_(1).md'),
+  );
+});
+
+test('relative non-md, non-asset target throws', () => {
+  for (const bad of ['foo', '../images/x.png']) {
+    assert.throws(
+      () => transformPage({ page, source: `# T\n\n[x](${bad})\n`, routes }),
+      (e) => e.message.includes('sections/featured-collection.md') && e.message.includes(bad),
+    );
+  }
+});
