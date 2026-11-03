@@ -12,9 +12,9 @@ Run all of them from inside `site/`.
 
 - `pnpm dev`: sync the content and start the dev server.
 - `pnpm check`: build, scan `dist/` for broken links and anchors, run the tests. Must be green before a PR.
-- `pnpm deploy`: build and run `wrangler deploy` to the Developpy Cloudflare account.
+- `pnpm deploy:worker`: build and run `wrangler deploy` to the Developpy Cloudflare account.
 
-Wrangler is a dev dependency and is already logged in on the maintainer's Mac; use `pnpm exec wrangler ...` for anything else.
+Wrangler is a dev dependency and needs `wrangler login` once, or `CLOUDFLARE_API_TOKEN` in the environment; use `pnpm exec wrangler ...` for anything else.
 
 ## Indexing switch: `SITE_URL`
 
@@ -28,7 +28,7 @@ The first deploy is at `https://universe-docs.developpy-website.workers.dev`. Pa
 
 Do this only after the review described in `docs-internal/2026-11-03-self-hosted-docs-design.md`.
 
-1. In the Cloudflare zone for `developpy.io`, remove the Webflow DNS record for `docs`.
+1. In the Cloudflare zone for `developpy.io`, remove the Webflow DNS record for `docs`. `docs.developpy.io` serves nothing between this step and the deploy that adds the custom domain, so prepare the PR first and remove the record right before merging. Rollback is re-adding the record.
 2. In `wrangler.jsonc`, add `"routes": [{ "pattern": "docs.developpy.io", "custom_domain": true }]`.
 3. Set the repository variable `SITE_URL` to `https://docs.developpy.io` so the workflow builds with indexing on.
 4. Merge; the workflow deploys and Cloudflare provisions the certificate.
