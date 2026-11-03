@@ -15,12 +15,16 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Universe docs',
-      logo: { light: './src/assets/logo-light.svg', dark: './src/assets/logo-dark.svg', alt: 'Developpy' },
+      // Light only: one Dark Violet logo, no dark variant.
+      logo: { src: './src/assets/logo.svg', alt: 'Developpy' },
       favicon: '/favicon.svg',
       head: [
         // Without SITE_URL the build is a preview copy: keep it out of search engines.
         ...(SITE_URL ? [] : [{ tag: 'meta', attrs: { name: 'robots', content: 'noindex' } }]),
         { tag: 'link', attrs: { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' } },
+        // Light only: tell the browser not to apply its dark UI (scrollbars, form controls, address bar).
+        { tag: 'meta', attrs: { name: 'color-scheme', content: 'light' } },
+        { tag: 'meta', attrs: { name: 'theme-color', content: '#ffffff' } },
         // Figtree is the only webfont: preload it so the first paint is already on brand.
         {
           tag: 'link',
@@ -28,7 +32,23 @@ export default defineConfig({
         },
       ],
       customCss: ['./src/styles/brand.css'],
-      components: { Footer: './src/components/Footer.astro' },
+      components: {
+        Footer: './src/components/Footer.astro',
+        // Light only: force data-theme="light" and drop the theme toggle.
+        ThemeProvider: './src/components/ThemeProvider.astro',
+        ThemeSelect: './src/components/ThemeSelect.astro',
+      },
+      // Light only: code blocks ship a single light theme instead of a dark and light pair.
+      expressiveCode: {
+        themes: ['starlight-light'],
+        // Code blocks as brand cards: surface ground, hairline rule, media radius, no shadow.
+        styleOverrides: {
+          borderRadius: '14px',
+          borderColor: 'rgb(17 11 47 / 0.12)',
+          codeBackground: '#f4f3fe',
+          frames: { frameBoxShadowCssValue: 'none' },
+        },
+      },
       editLink: undefined,
       lastUpdated: false,
       pagination: true,

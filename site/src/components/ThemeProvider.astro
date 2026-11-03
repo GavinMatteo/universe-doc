@@ -1,0 +1,10 @@
+---
+// Light only: replaces Starlight's ThemeProvider, which picks dark or light from
+// localStorage and prefers-color-scheme. Inline so the attribute is set before first paint.
+---
+
+<script is:inline>
+	document.documentElement.dataset.theme = 'light';
+	// Starlight's types declare this global; keep a no-op so nothing that calls it throws.
+	window.StarlightThemeProvider = { updatePickers() {} };
+</script>
