@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 import rehypeAnchors from './scripts/rehype-anchors.mjs';
 import { parseSummary } from './scripts/lib/summary.mjs';
 
-const SITE_URL = process.env.SITE_URL;
+const SITE_URL = process.env.SITE_URL || undefined;
 
 const { groups } = parseSummary(readFileSync(new URL('../theme-docs/SUMMARY.md', import.meta.url), 'utf8'));
 
