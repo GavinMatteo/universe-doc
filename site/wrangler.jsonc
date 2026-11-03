@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "universe-docs",
+  "account_id": "6cf5af20f0ddb075dc5eca2bd75a5e0e",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": true,
+  "observability": { "enabled": true },
+  // Assets only, no Worker script. The custom domain is added here at cutover
+  // (docs-internal/2026-11-03-self-hosted-docs-design.md), together with SITE_URL in CI.
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
