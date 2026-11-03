@@ -8,19 +8,31 @@ export function parseSummary(text) {
   let current = null;
 
   for (const line of text.split('\n')) {
+    if (line.trim() === '' || /^# /.test(line)) continue;
     const heading = line.match(/^## (.+)$/);
     if (heading) {
       const label = heading[1].trim();
+      if (slugify(label) === '') {
+        throw new Error(`SUMMARY group label "${label}" slugifies to an empty string`);
+      }
       current = { label, slug: slugify(label), pages: [] };
       groups.push(current);
       continue;
     }
     const entry = line.match(/^\* \[(.+?)\]\((.+?)\)$/);
-    if (!entry) continue;
+    if (!entry) {
+      throw new Error(`Unsupported SUMMARY line (nested pages are not supported): "${line}"`);
+    }
 
     const [, label, file] = entry;
     const stem = file.split('/').pop().replace(/\.md$/, '');
-    const isReadme = !current && file === 'README.md';
+    if (!current && file !== 'README.md') {
+      throw new Error(`SUMMARY entry before the first "## " group must be README.md: "${line}"`);
+    }
+    if (current && stem !== slugify(stem)) {
+      throw new Error(`SUMMARY page stem "${stem}" (${file}) is not slug-safe, expected "${slugify(stem)}"`);
+    }
+    const isReadme = !current;
     const route = isReadme ? '/' : `/${current ? current.slug : ''}/${stem}/`;
     const page = { label, file, group: current ? current.label : null, route, stem };
 

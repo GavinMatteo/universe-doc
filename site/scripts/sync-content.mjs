@@ -51,6 +51,8 @@ function main() {
 try {
   main();
 } catch (err) {
-  console.error(err.message);
+  // Message only for our own Error; full stack for DEBUG or anything unexpected (e.g. TypeError).
+  const ours = err instanceof Error && err.constructor === Error;
+  console.error(process.env.DEBUG || !ours ? (err?.stack ?? err) : err.message);
   process.exit(1);
 }
