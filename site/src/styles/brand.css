@@ -1,6 +1,8 @@
-/* Developpy brand layer for the Universe docs.
-   Palette and type from pipeline/brand (BRAND.md, tokens.css): Dark Violet ink,
-   Mirtillo, Purple accent, Lilac surfaces, Figtree only. Lime is never used here. */
+/* Developpy brand layer for the Universe docs: GitBook-like, light only.
+   Tokens are the light-section tokens of the Developpy website (theme.css .on-light and
+   tokens.css): white ground, Dark Violet ink, muted grey, hairline rule, Lilac surfaces,
+   Mirtillo for links and the active state, Purple only for focus. Lime is never used.
+   Starlight's own styles live in cascade layers, so these unlayered rules win without !important. */
 
 @font-face {
   font-family: "Figtree";
@@ -9,63 +11,68 @@
   font-display: swap;
 }
 
+/* Tokens */
 :root {
-  --sl-font: "Figtree", ui-sans-serif, system-ui, sans-serif;
-
-  /* Brand constants, identical in both themes */
-  --dp-dark-violet: #110b2f;
-  --dp-mirtillo: #4334b5;
-  --dp-purple: #7852fc;
+  --dp-ground: #ffffff;
+  --dp-ink: #110b2f;
+  --dp-muted: #58546d;
+  --dp-rule: rgb(17 11 47 / 0.12);
+  --dp-soft-line: #888597; /* non-text only */
+  --dp-surface: #f4f3fe;
   --dp-lilac: #dedcfd;
-  --dp-radius-sm: 8px;
-  --dp-radius: 12px;
-  --dp-radius-lg: 20px;
+  --dp-brand: #4334b5; /* Mirtillo */
+  --dp-violet: #7852fc; /* small accents and focus only */
+  --dp-active-bg: rgb(222 220 253 / 0.55); /* lilac at low alpha */
+  --dp-radius-pill: 999px;
+  --dp-radius-media: 14px;
+  --dp-radius-card: 24px;
+
+  color-scheme: light;
+  --sl-font: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --sl-text-body: 1.0625rem;
+  --sl-line-height: 1.7;
+  --sl-content-width: 46rem;
 }
 
-/* dark (Starlight default theme) */
-:root {
-  --sl-color-accent-low: #2a1f6e; --sl-color-accent: #7852fc; --sl-color-accent-high: #dedcfd;
-  --sl-color-white: #ffffff; --sl-color-gray-1: #dedcfd; --sl-color-gray-2: #c9c6ea; --sl-color-gray-3: #9693b5;
-  --sl-color-gray-4: #58546d; --sl-color-gray-5: #2b2452; --sl-color-gray-6: #1a1340; --sl-color-black: #110b2f;
+/* Light palette mapped onto Starlight's variables. Set at :root so it applies whatever
+   data-theme says (the server renders data-theme="dark" before ThemeProvider runs). */
+:root,
+::backdrop {
+  --sl-color-white: var(--dp-ink); /* Starlight's strongest text colour */
+  --sl-color-gray-1: var(--dp-ink);
+  --sl-color-gray-2: var(--dp-muted);
+  --sl-color-gray-3: var(--dp-muted);
+  --sl-color-gray-4: var(--dp-soft-line);
+  --sl-color-gray-5: var(--dp-rule);
+  --sl-color-gray-6: var(--dp-surface);
+  --sl-color-gray-7: var(--dp-surface);
+  --sl-color-black: var(--dp-ground);
 
-  --sl-color-text: var(--sl-color-gray-2);
-  --sl-color-bg-nav: var(--sl-color-black);
-  --sl-color-bg-sidebar: var(--sl-color-black);
-  --sl-color-hairline: var(--sl-color-gray-5);
-  --sl-color-hairline-light: var(--sl-color-gray-5);
-  --sl-color-hairline-shade: var(--sl-color-gray-5);
-  --sl-color-backdrop-overlay: rgb(17 11 47 / 0.72);
-  --dp-link: var(--dp-lilac);
-  --dp-link-hover: #ffffff;
-  --dp-heading: #ffffff;
-  --dp-surface: var(--sl-color-gray-6);
-  --dp-selection-bg: var(--dp-purple);
-  --dp-selection-fg: #ffffff;
-}
+  --sl-color-accent-low: var(--dp-lilac);
+  --sl-color-accent: var(--dp-brand);
+  --sl-color-accent-high: var(--dp-ink);
 
-:root[data-theme="light"] {
-  --sl-color-accent-low: #dedcfd; --sl-color-accent: #4334b5; --sl-color-accent-high: #110b2f;
-  --sl-color-white: #110b2f; --sl-color-gray-1: #2b2452; --sl-color-gray-2: #58546d; --sl-color-gray-3: #9693b5;
-  --sl-color-gray-4: #c9c6ea; --sl-color-gray-5: #dedcfd; --sl-color-gray-6: #f4f3fe; --sl-color-gray-7: #faf9ff; --sl-color-black: #ffffff;
+  --sl-color-text: var(--dp-ink);
+  --sl-color-text-accent: var(--dp-brand);
+  --sl-color-text-invert: var(--dp-ground);
+  --sl-color-bg: var(--dp-ground);
+  --sl-color-bg-nav: var(--dp-ground);
+  --sl-color-bg-sidebar: var(--dp-ground);
+  --sl-color-bg-inline-code: var(--dp-surface);
+  --sl-color-bg-accent: var(--dp-brand);
+  --sl-color-hairline: var(--dp-rule);
+  --sl-color-hairline-light: var(--dp-rule);
+  --sl-color-hairline-shade: var(--dp-rule);
+  --sl-color-backdrop-overlay: rgb(17 11 47 / 0.32);
 
-  --sl-color-text: var(--sl-color-gray-1);
-  --sl-color-bg-nav: var(--sl-color-black);
-  --sl-color-bg-sidebar: var(--sl-color-gray-7);
-  --sl-color-hairline: var(--sl-color-gray-5);
-  --sl-color-hairline-light: var(--sl-color-gray-5);
-  --sl-color-hairline-shade: var(--sl-color-gray-5);
-  --sl-color-backdrop-overlay: rgb(17 11 47 / 0.4);
-  --dp-link: var(--dp-mirtillo);
-  --dp-link-hover: var(--dp-dark-violet);
-  --dp-heading: var(--dp-dark-violet);
-  --dp-surface: var(--sl-color-gray-6);
-  --dp-selection-bg: var(--dp-lilac);
-  --dp-selection-fg: var(--dp-dark-violet);
+  --sl-shadow-sm: 0 1px 2px rgb(17 11 47 / 0.06);
+  --sl-shadow-md: 0 4px 12px rgb(17 11 47 / 0.06);
+  --sl-shadow-lg: 0 12px 32px rgb(17 11 47 / 0.1);
 }
 
 ::selection {
-  background: var(--dp-selection-bg);
-  color: var(--dp-selection-fg);
+  background: var(--dp-lilac);
+  color: var(--dp-ink);
 }
 
 body {
@@ -73,26 +80,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Focus: always Purple, visible on both themes */
 :focus-visible {
-  outline: 2px solid var(--dp-purple);
+  outline: 2px solid var(--dp-violet);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-/* Header: a thin signature gradient (Purple to Dark Violet) along the top edge */
-header.header::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--dp-purple) 0%, var(--dp-mirtillo) 55%, var(--dp-dark-violet) 100%);
-}
+/* Header: white with a hairline rule (the rule itself comes from PageFrame via --sl-color-hairline-shade) */
 .site-title {
   font-family: var(--sl-font);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--dp-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--dp-ink);
   gap: 0.75rem;
 }
 .site-title img {
@@ -101,151 +100,328 @@ header.header::before {
 }
 .site-title span {
   padding-inline-start: 0.75rem;
-  border-inline-start: 1px solid var(--sl-color-gray-4);
+  border-inline-start: 1px solid var(--dp-rule);
   font-size: var(--sl-text-base);
   line-height: 1.5rem;
 }
+/* Starlight's search trigger button */
 button[data-open-modal] {
-  border-radius: 999px;
-  border-color: var(--sl-color-gray-5);
-  background-color: var(--dp-surface);
+  border-radius: var(--dp-radius-pill);
 }
-button[data-open-modal]:hover {
-  border-color: var(--dp-purple);
+@media (min-width: 50rem) {
+  button[data-open-modal] {
+    max-width: 26rem;
+    height: 2.5rem;
+    border: 1px solid transparent;
+    padding-inline: 1rem 0.625rem;
+    background-color: var(--dp-surface);
+    color: var(--dp-muted);
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+  }
+  button[data-open-modal]:hover {
+    border-color: var(--dp-rule);
+    background-color: var(--dp-ground);
+    color: var(--dp-ink);
+  }
+}
+/* Starlight's Ctrl/Cmd K hint inside the search button: one small muted key cap */
+button[data-open-modal] > kbd {
+  gap: 0.15em;
+  border: 1px solid var(--dp-rule);
+  border-radius: 6px;
+  padding: 0.1em 0.4em;
+  background-color: var(--dp-ground);
+  color: var(--dp-muted);
+  font-family: var(--sl-font);
+  font-size: var(--sl-text-2xs);
+}
+button[data-open-modal] kbd kbd {
+  border: 0;
+  padding: 0;
+  background: none;
+  font: inherit;
+}
+/* Starlight's header separator after the (empty) social icons: nothing follows it now */
+.social-icons::after {
+  content: none;
+}
+/* Starlight's mobile menu footer: it only held the theme toggle, hide it while empty */
+.mobile-preferences:not(:has(a, select)) {
+  display: none;
 }
 
-/* Sidebar */
+/* Sidebar: white, hairline on its right (from PageFrame), muted links, Mirtillo pill for the current page */
 .sidebar-pane {
-  border-inline-end: 1px solid var(--sl-color-hairline);
+  border-inline-end: 1px solid var(--dp-rule);
 }
+.sidebar-content {
+  padding-top: 1.25rem;
+}
+/* Starlight's group label inside the collapsible <summary> */
 .sidebar-content summary .large {
   font-size: var(--sl-text-sm);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: var(--dp-heading);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--dp-ink);
+}
+.sidebar-content summary {
+  padding-block: 0.3rem;
+}
+/* Starlight's top-level sidebar list spacing */
+.sidebar-content .top-level > li + li {
+  margin-top: 0.25rem;
+}
+/* Starlight's group chevron */
+.sidebar-content .caret {
+  color: var(--dp-soft-line);
+  font-size: 1rem;
 }
 .sidebar-content a {
-  border-radius: var(--dp-radius-sm);
+  border-radius: var(--dp-radius-pill);
+  padding-block: 0.375rem;
+  padding-inline: 0.75rem;
   font-size: var(--sl-text-sm);
+  font-weight: 400;
+  color: var(--dp-muted);
   transition: background-color 0.15s ease, color 0.15s ease;
 }
-.sidebar-content a:hover:not([aria-current="page"]) {
-  background-color: var(--sl-color-gray-5);
-  color: var(--dp-heading);
+.sidebar-content a:hover:not([aria-current="page"]),
+.sidebar-content a:focus-visible:not([aria-current="page"]) {
+  background-color: var(--dp-surface);
+  color: var(--dp-ink);
 }
 .sidebar-content a[aria-current="page"],
 .sidebar-content a[aria-current="page"]:hover,
 .sidebar-content a[aria-current="page"]:focus {
-  background-color: var(--dp-purple);
-  color: #ffffff;
+  background-color: var(--dp-active-bg);
+  color: var(--dp-brand);
   font-weight: 600;
 }
+/* Starlight's nested list: drop the vertical guide line, keep a small indent */
 .sidebar-content ul ul li {
-  border-inline-start-color: var(--sl-color-gray-5);
+  border-inline-start: 0;
+  margin-inline-start: 0;
+  padding-inline-start: 0.5rem;
+}
+.sidebar-content ul ul {
+  margin-block: 0.125rem 0.5rem;
 }
 
-/* Page title and headings */
+/* Content column: no rule between the title panel and the body panel (Starlight's ContentPanel) */
+.content-panel + .content-panel {
+  border-top: 0;
+  padding-top: 0.5rem;
+}
+.content-panel:first-child {
+  padding-top: 2.5rem;
+}
+
+/* Headings: weight and tracking, no colour tricks */
 h1#_top {
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  color: var(--dp-heading);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  color: var(--dp-ink);
 }
 .sl-markdown-content :is(h2, h3, h4):not(:where(.not-content *)) {
-  font-weight: 700;
-  letter-spacing: -0.015em;
-  color: var(--dp-heading);
+  color: var(--dp-ink);
+  line-height: 1.25;
 }
 .sl-markdown-content h2:not(:where(.not-content *)) {
-  padding-top: 0.25em;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.sl-markdown-content h3:not(:where(.not-content *)) {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.sl-markdown-content h4:not(:where(.not-content *)) {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
-/* Links */
+/* Section breaks: every h2 starts after a hairline. The generated pages put a --- before most h2s,
+   so the <hr> is the rule there; an h2 without one draws its own. .sl-heading-wrapper is Starlight's
+   anchor-link wrapper around each heading. */
+.sl-markdown-content hr:not(:where(.not-content *)) {
+  border: 0;
+  border-top: 1px solid var(--dp-rule);
+  margin-block: 3rem 0;
+}
+.sl-markdown-content hr + .sl-heading-wrapper.level-h2 {
+  margin-top: 2rem;
+}
+.sl-markdown-content :not(hr) + .sl-heading-wrapper.level-h2 {
+  margin-top: 3rem;
+  border-top: 1px solid var(--dp-rule);
+  padding-top: 2rem;
+}
+.sl-markdown-content .sl-heading-wrapper.level-h3 {
+  margin-top: 2rem;
+}
+/* Starlight's heading anchor icon */
+.sl-markdown-content .sl-anchor-link {
+  color: var(--dp-soft-line);
+}
+
+/* Body text and secondary text */
+.sl-markdown-content :is(p, li):not(:where(.not-content *)) {
+  color: var(--dp-ink);
+}
+
+/* Links: Mirtillo, thin underline that strengthens on hover */
 .sl-markdown-content a:not(:where(.not-content *)) {
-  color: var(--dp-link);
+  color: var(--dp-brand);
   font-weight: 500;
-  text-decoration-color: color-mix(in srgb, var(--dp-link) 40%, transparent);
-  text-underline-offset: 0.2em;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(67 52 181 / 0.3);
   text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 0.15s ease;
 }
 .sl-markdown-content a:hover:not(:where(.not-content *)) {
-  color: var(--dp-link-hover);
-  text-decoration-color: var(--dp-purple);
+  text-decoration-color: var(--dp-brand);
 }
 
 /* Inline code */
 .sl-markdown-content code:not(:where(.not-content *)) {
   border-radius: 6px;
-  padding: 0.1em 0.35em;
+  padding: 0.12em 0.4em;
+  background-color: var(--dp-surface);
+  color: var(--dp-ink);
 }
 
-/* Tables: rounded card with a tinted header row */
+/* Tables: full-width card, header row on surface. Starlight makes tables display:block for overflow;
+   two-column tables fit at every width here, so they go back to display:table at 100%. */
 .sl-markdown-content table:not(:where(.not-content *)) {
-  border: 1px solid var(--sl-color-gray-5);
-  border-radius: var(--dp-radius);
+  display: table;
+  width: 100%;
+  border: 1px solid var(--dp-rule);
+  border-radius: var(--dp-radius-media);
   border-collapse: separate;
   border-spacing: 0;
-  width: fit-content;
-  max-width: 100%;
-  font-size: var(--sl-text-sm);
+  font-size: 0.9375rem;
+  line-height: 1.6;
 }
 .sl-markdown-content :is(th, td):not(:where(.not-content *)) {
-  padding: 0.65rem 1rem;
-  border-bottom: 1px solid var(--sl-color-gray-5);
+  padding: 0.85rem 1.125rem;
+  border-bottom: 1px solid var(--dp-rule);
+  overflow-wrap: anywhere;
 }
 .sl-markdown-content :is(th:first-child, td:first-child):not(:where(.not-content *)) {
-  padding-inline-start: 1rem;
+  padding-inline-start: 1.125rem;
 }
 .sl-markdown-content :is(th:last-child, td:last-child):not(:where(.not-content *)) {
-  padding-inline-end: 1rem;
+  padding-inline-end: 1.125rem;
 }
 .sl-markdown-content tr:last-child td:not(:where(.not-content *)) {
   border-bottom: 0;
 }
 .sl-markdown-content th:not(:where(.not-content *)) {
-  background-color: var(--sl-color-gray-6);
-  color: var(--dp-heading);
-  font-weight: 700;
+  background-color: var(--dp-surface);
+  color: var(--dp-ink);
+  font-weight: 600;
+}
+.sl-markdown-content th:first-child:not(:where(.not-content *)) {
+  border-start-start-radius: calc(var(--dp-radius-media) - 1px);
+}
+.sl-markdown-content th:last-child:not(:where(.not-content *)) {
+  border-start-end-radius: calc(var(--dp-radius-media) - 1px);
 }
 .sl-markdown-content td:first-child:not(:where(.not-content *)) {
-  color: var(--dp-heading);
+  width: 32%;
+  color: var(--dp-ink);
+}
+.sl-markdown-content td:not(:first-child):not(:where(.not-content *)) {
+  color: var(--dp-muted);
 }
 
-/* Images, asides, pagination: soft rounded corners */
+/* Media */
 .sl-markdown-content img:not(:where(.not-content *)) {
-  border-radius: var(--dp-radius);
+  border: 1px solid var(--dp-rule);
+  border-radius: var(--dp-radius-media);
 }
+
+/* Asides (Starlight's callouts) */
 .starlight-aside {
-  border-radius: var(--dp-radius);
+  border-radius: var(--dp-radius-media);
+}
+
+/* Prev/next cards (Starlight's Pagination) */
+.pagination-links {
+  margin-top: 2rem;
 }
 .pagination-links a {
-  border-radius: var(--dp-radius);
-  border-color: var(--sl-color-gray-5);
+  border: 1px solid var(--dp-rule);
+  border-radius: var(--dp-radius-media);
+  padding: 1rem 1.25rem;
+  box-shadow: none;
+  color: var(--dp-muted);
+  font-size: var(--sl-text-sm);
   transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 .pagination-links a:hover {
-  border-color: var(--dp-purple);
-  background-color: var(--dp-surface);
+  border-color: var(--dp-brand);
+}
+.pagination-links a svg {
+  color: var(--dp-soft-line);
+}
+.pagination-links a:hover svg {
+  color: var(--dp-brand);
 }
 .pagination-links .link-title {
-  color: var(--dp-heading);
+  display: inline-block;
+  margin-top: 0.15rem;
+  color: var(--dp-ink);
+  font-size: var(--sl-text-lg);
   font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
-/* Right-hand table of contents */
+/* Right-hand "On this page" (Starlight's PageSidebar and TableOfContents) */
+.right-sidebar {
+  border-inline-start: 0;
+}
+.right-sidebar-panel {
+  padding-top: 2.5rem;
+}
+.right-sidebar-panel h2 {
+  font-size: var(--sl-text-xs);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--dp-ink);
+}
 starlight-toc a {
-  color: var(--sl-color-gray-2);
+  font-size: var(--sl-text-sm);
+  color: var(--dp-muted);
+  padding-block: 0.3rem;
 }
 starlight-toc a:hover {
-  color: var(--dp-heading);
+  color: var(--dp-ink);
 }
 starlight-toc a[aria-current="true"] {
-  color: var(--dp-link);
+  color: var(--dp-brand);
   font-weight: 600;
+}
+/* Mobile "On this page" bar (Starlight's MobileTableOfContents) */
+mobile-starlight-toc .toggle {
+  border-radius: var(--dp-radius-pill);
+  border-color: var(--dp-rule);
+  background-color: var(--dp-surface);
+}
+mobile-starlight-toc a[aria-current="true"] {
+  color: var(--dp-brand);
 }
 
 /* Brand footer line (Footer.astro) */
+.brand-footer {
+  color: var(--dp-muted);
+}
 .brand-footer a {
-  color: var(--dp-link);
+  color: var(--dp-brand);
   font-weight: 600;
   text-decoration: none;
 }

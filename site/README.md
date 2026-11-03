@@ -15,6 +15,10 @@ A self-hosted copy of the Universe theme documentation, built with Astro and Sta
 - A sync error "unresolved link" means: fix the link in `theme-docs/`, or add the target page to SUMMARY.
 - A `check-dist` failure means a stale anchor or image: fix it at the source. `ALLOWLIST` in `scripts/check-dist.mjs` is the last resort.
 
+## Look
+
+Light only, styled like GitBook with the light-section tokens of the Developpy website. There is no dark mode and no theme toggle: `src/components/ThemeProvider.astro` forces `data-theme="light"` and `src/components/ThemeSelect.astro` is empty, both wired in through Starlight's `components` overrides. The page also declares `color-scheme: light`, and code blocks use a single light theme. All styling lives in `src/styles/brand.css`; the logo is `src/assets/logo.svg` (Dark Violet).
+
 ## Commands
 
 Run all of them from inside `site/`.
